@@ -1,7 +1,7 @@
 {
   "id": "principal",
   "name": "Minijuegos",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "minecraft": "1.21.1",
   "loader": {
     "type": "neoforge",
@@ -9,7 +9,7 @@
   },
   "neoforge": "21.1.256",
   "modsEstrictos": true,
-  "publicado": "2026-10-07T21:55:35.446Z",
+  "publicado": "2026-10-07T21:57:25.568Z",
   "files": [
     {
       "path": "mods/alejate-1.0.0.jar",
@@ -46,6 +46,18 @@
       "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/8e5dae4d2355f109a4eae780aba1de869db7759e/principal/archivos/mods/jei-1.21.1-neoforge-19.51.0.418.jar",
       "sha1": "d19552586f686eae4ef5e7199f31604d1d3cfca7",
       "size": 1804792
+    },
+    {
+      "path": "mods/konkrete_neoforge_1.9.9_MC_1.21.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/db70e708d475f696b914b9d77017231ab3993a20/principal/archivos/mods/konkrete_neoforge_1.9.9_MC_1.21.jar",
+      "sha1": "97771eb287d5ac7fe667d1df9493d5e54c8ca1fa",
+      "size": 618842
+    },
+    {
+      "path": "mods/melody_neoforge_1.0.10_MC_1.21.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/db70e708d475f696b914b9d77017231ab3993a20/principal/archivos/mods/melody_neoforge_1.0.10_MC_1.21.jar",
+      "sha1": "e83052a92c4ca0016bcfe7f0207273983dc84698",
+      "size": 36096
     },
     {
       "path": "mods/MouseTweaks-neoforge-mc1.21-2.26.1.jar",
