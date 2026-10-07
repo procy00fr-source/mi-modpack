@@ -11,13 +11,13 @@
       "id": "principal",
       "name": "Mercraft",
       "description": "",
-      "version": "1.0.7",
+      "version": "1.0.8",
       "minecraft": "1.21.1",
       "loader": {
         "type": "neoforge",
         "version": "21.1.256"
       },
-      "manifest": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/2fb904a3d40b1b2325c2d33f162bc96860150332/principal/manifest.json"
+      "manifest": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/aa8f477c096a9ca2ca844c6f340d8c6ff4cd7306/principal/manifest.json"
     },
     {
       "id": "forge-1201",
