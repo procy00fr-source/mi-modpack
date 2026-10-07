@@ -1,10 +1,10 @@
 {
   "name": "Merc Pack",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "minecraft": "1.21.1",
   "neoforge": "21.1.256",
   "modsEstrictos": true,
-  "publicado": "2026-10-07T05:06:19.885Z",
+  "publicado": "2026-10-07T05:27:24.241Z",
   "news": [
     {
       "titulo": "Primera versión del modpack",
@@ -15,31 +15,43 @@
   "files": [
     {
       "path": "mods/bingo-1.0.0.jar",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/60fb6468a594355671fae0bd015876da364d2c98/archivos/mods/bingo-1.0.0.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/8fc1d5ae56501903b8d3eb1196308b0dbacc7813/archivos/mods/bingo-1.0.0.jar",
       "sha1": "eb115c89ae7df0b1fc2e49ce2ef5941d117a04ea",
       "size": 50349
     },
     {
+      "path": "mods/sophisticatedbackpacks-1.21.1-3.26.9.2195.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/8fc1d5ae56501903b8d3eb1196308b0dbacc7813/archivos/mods/sophisticatedbackpacks-1.21.1-3.26.9.2195.jar",
+      "sha1": "a628a502c6faf34bf77139f93bb47c53bea63ffe",
+      "size": 1242171
+    },
+    {
+      "path": "mods/sophisticatedcore-1.21.1-1.5.7.2381.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/8fc1d5ae56501903b8d3eb1196308b0dbacc7813/archivos/mods/sophisticatedcore-1.21.1-1.5.7.2381.jar",
+      "sha1": "eb40e4ddea0c5f6e5f1b206ad18184647131cd9a",
+      "size": 1814171
+    },
+    {
       "path": "config/fml.toml",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/60fb6468a594355671fae0bd015876da364d2c98/archivos/config/fml.toml",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/8fc1d5ae56501903b8d3eb1196308b0dbacc7813/archivos/config/fml.toml",
       "sha1": "8172b80069c15d439d38bc532ff55e0120110e3d",
       "size": 1551
     },
     {
       "path": "config/neoforge-client.toml",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/60fb6468a594355671fae0bd015876da364d2c98/archivos/config/neoforge-client.toml",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/8fc1d5ae56501903b8d3eb1196308b0dbacc7813/archivos/config/neoforge-client.toml",
       "sha1": "b51515abb0c65a891514baffb4c78d2357ecd1ed",
       "size": 578
     },
     {
       "path": "config/neoforge-common.toml",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/60fb6468a594355671fae0bd015876da364d2c98/archivos/config/neoforge-common.toml",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/8fc1d5ae56501903b8d3eb1196308b0dbacc7813/archivos/config/neoforge-common.toml",
       "sha1": "6b10e4debbf06a33453f4e0ffb80281ff0752f9f",
       "size": 772
     },
     {
       "path": "config/neoforge-server.toml",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/60fb6468a594355671fae0bd015876da364d2c98/archivos/config/neoforge-server.toml",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/8fc1d5ae56501903b8d3eb1196308b0dbacc7813/archivos/config/neoforge-server.toml",
       "sha1": "536538f1f29efb49318318113530bd4fd74c235b",
       "size": 1177
     }
