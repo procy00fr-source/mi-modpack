@@ -1,6 +1,6 @@
 {
   "id": "principal",
-  "name": "Mercraft",
+  "name": "Minijuegos",
   "version": "1.0.9",
   "minecraft": "1.21.1",
   "loader": {
@@ -9,7 +9,7 @@
   },
   "neoforge": "21.1.256",
   "modsEstrictos": true,
-  "publicado": "2026-10-07T17:42:48.472Z",
+  "publicado": "2026-10-07T20:09:09.456Z",
   "files": [
     {
       "path": "mods/bingo-1.0.0.jar",

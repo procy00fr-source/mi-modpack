@@ -1,6 +1,6 @@
 {
   "id": "forge-1201",
-  "name": "Minecraft 1.20.1 forge",
+  "name": "Dinamicas Scarius",
   "version": "1.0.0",
   "minecraft": "1.20.1",
   "loader": {
@@ -8,7 +8,7 @@
     "version": "47.4.10"
   },
   "modsEstrictos": true,
-  "publicado": "2026-10-07T16:49:30.844Z",
+  "publicado": "2026-10-07T20:09:09.471Z",
   "files": [
     {
       "path": "config/advancementplaques-common.toml",
