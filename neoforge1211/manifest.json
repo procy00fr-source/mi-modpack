@@ -1,0 +1,14 @@
+{
+  "id": "neoforge1211",
+  "name": "Survival W.I.P",
+  "version": "1.0.0",
+  "minecraft": "1.21.1",
+  "loader": {
+    "type": "neoforge",
+    "version": "21.1.256"
+  },
+  "neoforge": "21.1.256",
+  "modsEstrictos": true,
+  "publicado": "2026-10-07T20:15:45.472Z",
+  "files": []
+}
