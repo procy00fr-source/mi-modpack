@@ -30,6 +30,18 @@
         "version": "47.4.10"
       },
       "manifest": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c92bdc772e6e0d39fde7f89bf64731cbe6d9e38f/forge-1201/manifest.json"
+    },
+    {
+      "id": "neoforge1211",
+      "name": "Survival W.I.P",
+      "description": "",
+      "version": "1.0.0",
+      "minecraft": "1.21.1",
+      "loader": {
+        "type": "neoforge",
+        "version": "21.1.256"
+      },
+      "manifest": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/04fa8fc37ffadaa74ec1b0ca8a04f1f5044e32bd/neoforge1211/manifest.json"
     }
   ]
 }
