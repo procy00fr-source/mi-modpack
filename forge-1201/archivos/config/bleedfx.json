@@ -1,0 +1,22 @@
+{
+  "enable_mod": true,
+  "creative_disable": true,
+  "peaceful_mode_disable": true,
+  "wound_blood_particle_multiplier": 1.0,
+  "splatter_chance": 0.65,
+  "bleed_damage_threshold": 5.0,
+  "decal_lifetime_ticks": 1200,
+  "soft_decal_limit": 550,
+  "hard_decal_limit": 750,
+  "preset": "balanced",
+  "enable_death_puddles": false,
+  "mob_specific_blood_colors": true,
+  "armour_splatter_enabled": true,
+  "shield_splatter_enabled": true,
+  "wet_gloss_stains": false,
+  "player_skin_splatter": true,
+  "player_bleed_overlay": true,
+  "player_bleed_hud_icon": true,
+  "squelch_sound_volume": 0.45,
+  "server_enforce_client_settings": false
+}

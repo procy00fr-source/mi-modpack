@@ -1,0 +1,32 @@
+
+#Prop Hunt Configuration
+[freeze]
+	#Maximum freeze time in seconds (how long a prop can stay frozen)
+	#Range: 5 ~ 120
+	maxFreezeTime = 30
+	#Cooldown time in seconds after freeze is exhausted
+	#Range: 5 ~ 120
+	freezeCooldown = 30
+	#Freeze regeneration multiplier when not sneaking (0 = no regen, 2 = 2x faster regen)
+	#Range: 0 ~ 10
+	freezeRegenRate = 2
+
+[sound]
+	#Interval in seconds between prop whistle sounds during PLAYING phase
+	#Range: 10 ~ 120
+	propSoundInterval = 30
+
+[game]
+	#Hide phase duration in seconds (time props have to hide before hunters are released)
+	#Range: 10 ~ 120
+	hidePhaseTime = 30
+	#Total game time in seconds
+	#Range: 60 ~ 1800
+	gameTime = 300
+	#Minimum number of players to start a game
+	#Range: 1 ~ 10
+	minPlayers = 2
+	#Ratio of players that become hunters (0.33 = 1/3 of players)
+	#Range: 0.1 ~ 0.9
+	hunterRatio = 0.33
+
