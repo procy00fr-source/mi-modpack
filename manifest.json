@@ -1,7 +1,7 @@
 {
   "id": "principal",
   "name": "Minijuegos",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "minecraft": "1.21.1",
   "loader": {
     "type": "neoforge",
@@ -9,8 +9,14 @@
   },
   "neoforge": "21.1.256",
   "modsEstrictos": true,
-  "publicado": "2026-10-07T20:09:09.456Z",
+  "publicado": "2026-10-07T21:35:16.030Z",
   "files": [
+    {
+      "path": "mods/alejate-1.0.0.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/707025e5d5499e417d20f36084f13266495d4d2a/principal/archivos/mods/alejate-1.0.0.jar",
+      "sha1": "b9c9ebf353a333af6a9bb155bba68de38d1cb6a5",
+      "size": 83526
+    },
     {
       "path": "mods/bingo-1.0.0.jar",
       "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/8e5dae4d2355f109a4eae780aba1de869db7759e/principal/archivos/mods/bingo-1.0.0.jar",
