@@ -1,10 +1,10 @@
 {
   "name": "Merc Pack",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "minecraft": "1.21.1",
   "neoforge": "21.1.256",
   "modsEstrictos": true,
-  "publicado": "2026-10-07T04:47:54.906Z",
+  "publicado": "2026-10-07T05:04:07.990Z",
   "news": [
     {
       "titulo": "Primera versión del modpack",
@@ -15,31 +15,31 @@
   "files": [
     {
       "path": "mods/bingo-1.0.0.jar",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/main/archivos/mods/bingo-1.0.0.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/main/archivos/mods/bingo-1.0.0.jar?v=eb115c89ae7d",
       "sha1": "eb115c89ae7df0b1fc2e49ce2ef5941d117a04ea",
       "size": 50349
     },
     {
       "path": "config/fml.toml",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/main/archivos/config/fml.toml",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/main/archivos/config/fml.toml?v=8172b80069c1",
       "sha1": "8172b80069c15d439d38bc532ff55e0120110e3d",
       "size": 1551
     },
     {
       "path": "config/neoforge-client.toml",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/main/archivos/config/neoforge-client.toml",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/main/archivos/config/neoforge-client.toml?v=b51515abb0c6",
       "sha1": "b51515abb0c65a891514baffb4c78d2357ecd1ed",
       "size": 578
     },
     {
       "path": "config/neoforge-common.toml",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/main/archivos/config/neoforge-common.toml",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/main/archivos/config/neoforge-common.toml?v=6b10e4debbf0",
       "sha1": "6b10e4debbf06a33453f4e0ffb80281ff0752f9f",
       "size": 772
     },
     {
       "path": "config/neoforge-server.toml",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/main/archivos/config/neoforge-server.toml",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/main/archivos/config/neoforge-server.toml?v=536538f1f29e",
       "sha1": "536538f1f29efb49318318113530bd4fd74c235b",
       "size": 1177
     }
