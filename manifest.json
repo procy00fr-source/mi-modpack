@@ -1,7 +1,7 @@
 {
   "id": "principal",
   "name": "Mercraft",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "minecraft": "1.21.1",
   "loader": {
     "type": "neoforge",
@@ -9,7 +9,7 @@
   },
   "neoforge": "21.1.256",
   "modsEstrictos": true,
-  "publicado": "2026-10-07T17:10:29.637Z",
+  "publicado": "2026-10-07T17:42:48.472Z",
   "files": [
     {
       "path": "mods/bingo-1.0.0.jar",
@@ -40,6 +40,12 @@
       "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/8e5dae4d2355f109a4eae780aba1de869db7759e/principal/archivos/mods/MouseTweaks-neoforge-mc1.21-2.26.1.jar",
       "sha1": "6dae57f4f50f7808d2ed9a18f6cd1c0d4640c6bc",
       "size": 73938
+    },
+    {
+      "path": "mods/ruletaretos-1.0.0.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/f622501e768a8362c29562e03f8bfaeef72c8c48/principal/archivos/mods/ruletaretos-1.0.0.jar",
+      "sha1": "c05731e5903ddddf20c1682f4d2fe4eb4ffe8393",
+      "size": 62125
     },
     {
       "path": "mods/teleswap-1.0.0.jar",
