@@ -1,0 +1,23 @@
+{
+  "news": [
+    {
+      "titulo": "Primera versión del modpack",
+      "fecha": "7 de octubre de 2026",
+      "texto": "Primera actualizacion de novedad."
+    }
+  ],
+  "modpacks": [
+    {
+      "id": "principal",
+      "name": "Mercraft",
+      "description": "",
+      "version": "1.0.7",
+      "minecraft": "1.21.1",
+      "loader": {
+        "type": "neoforge",
+        "version": "21.1.256"
+      },
+      "manifest": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/2fb904a3d40b1b2325c2d33f162bc96860150332/principal/manifest.json"
+    }
+  ]
+}
