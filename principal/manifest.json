@@ -1,7 +1,7 @@
 {
   "id": "principal",
   "name": "Minijuegos",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "minecraft": "1.21.1",
   "loader": {
     "type": "neoforge",
@@ -9,7 +9,7 @@
   },
   "neoforge": "21.1.256",
   "modsEstrictos": true,
-  "publicado": "2026-10-08T02:58:30.511Z",
+  "publicado": "2026-10-08T03:34:24.518Z",
   "files": [
     {
       "path": "mods/alejate-1.0.0.jar",
@@ -28,6 +28,18 @@
       "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/8e5dae4d2355f109a4eae780aba1de869db7759e/principal/archivos/mods/citadel-1.21.1-2.7.6.jar",
       "sha1": "e0392370117ec16a721f8d65728944398de77607",
       "size": 3028943
+    },
+    {
+      "path": "mods/entity_model_features-3.3.11-1.21-neoforge.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/8e2af8ac00d514e9824545a391d6bc5a7392ba21/principal/archivos/mods/entity_model_features-3.3.11-1.21-neoforge.jar",
+      "sha1": "fc551f0a284a5864fbc1a11fde5e27ab0ac95f43",
+      "size": 655485
+    },
+    {
+      "path": "mods/entity_texture_features-7.2.5-1.21-neoforge.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/8e2af8ac00d514e9824545a391d6bc5a7392ba21/principal/archivos/mods/entity_texture_features-7.2.5-1.21-neoforge.jar",
+      "sha1": "ae5d4d282221a455ccd87bef7cd0f5122685426d",
+      "size": 806812
     },
     {
       "path": "mods/fancymenu_neoforge_3.9.12_MC_1.21.1.jar",
@@ -82,6 +94,12 @@
       "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/8e5dae4d2355f109a4eae780aba1de869db7759e/principal/archivos/mods/teleswap-1.0.0.jar",
       "sha1": "15eba927212a6a450dfe88c5140f875d04e65014",
       "size": 11216
+    },
+    {
+      "path": "resourcepacks/FA+Player-v1.1.zip",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/8e2af8ac00d514e9824545a391d6bc5a7392ba21/principal/archivos/resourcepacks/FA%2BPlayer-v1.1.zip",
+      "sha1": "122e397af111e3dc5fb6b60004aad9464980f13a",
+      "size": 110203
     }
   ]
 }
