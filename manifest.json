@@ -1,7 +1,7 @@
 {
   "id": "principal",
   "name": "Minijuegos",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "minecraft": "1.21.1",
   "loader": {
     "type": "neoforge",
@@ -9,7 +9,7 @@
   },
   "neoforge": "21.1.256",
   "modsEstrictos": true,
-  "publicado": "2026-10-08T02:50:29.249Z",
+  "publicado": "2026-10-08T02:58:30.511Z",
   "files": [
     {
       "path": "mods/alejate-1.0.0.jar",
@@ -67,9 +67,9 @@
     },
     {
       "path": "mods/pantallanegra-1.0.0.jar",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/d4b36d96af712923b458cd7dca83ca4219687df3/principal/archivos/mods/pantallanegra-1.0.0.jar",
-      "sha1": "e2d108ce0866d24060aee8688423724030ca1114",
-      "size": 15437
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/66bdf5c1f8301904ef1edbf64076841fe4f61796/principal/archivos/mods/pantallanegra-1.0.0.jar",
+      "sha1": "745005f2767db338082c301283bb1bfe1096be7a",
+      "size": 17984
     },
     {
       "path": "mods/ruletaretos-1.0.0.jar",
