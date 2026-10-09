@@ -11,13 +11,13 @@
       "id": "principal",
       "name": "Minijuegos",
       "description": "",
-      "version": "1.0.15",
+      "version": "1.0.16",
       "minecraft": "1.21.1",
       "loader": {
         "type": "neoforge",
         "version": "21.1.256"
       },
-      "manifest": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/0e7e6702c6c4d67ca948f0d4af82c482842e7cc2/principal/manifest.json"
+      "manifest": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/28b6e5c50e34b97977f58b711274856349c6a73e/principal/manifest.json"
     },
     {
       "id": "forge-1201",
