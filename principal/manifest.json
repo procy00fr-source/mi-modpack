@@ -1,7 +1,7 @@
 {
   "id": "principal",
   "name": "Minijuegos",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "minecraft": "1.21.1",
   "loader": {
     "type": "neoforge",
@@ -9,8 +9,14 @@
   },
   "neoforge": "21.1.256",
   "modsEstrictos": true,
-  "publicado": "2026-10-08T03:34:24.518Z",
+  "publicado": "2026-10-09T02:44:51.548Z",
   "files": [
+    {
+      "path": "mods/aceleramundo-1.0.0.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/dcc22af2fc5c738189cf95a17d210f4ae5990238/principal/archivos/mods/aceleramundo-1.0.0.jar",
+      "sha1": "6175a4d0d5f5a17f51fa227d6b445f9dfeaeeb13",
+      "size": 17414
+    },
     {
       "path": "mods/alejate-1.0.0.jar",
       "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/707025e5d5499e417d20f36084f13266495d4d2a/principal/archivos/mods/alejate-1.0.0.jar",
@@ -94,6 +100,13 @@
       "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/8e5dae4d2355f109a4eae780aba1de869db7759e/principal/archivos/mods/teleswap-1.0.0.jar",
       "sha1": "15eba927212a6a450dfe88c5140f875d04e65014",
       "size": 11216
+    },
+    {
+      "path": "options.txt",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/dcc22af2fc5c738189cf95a17d210f4ae5990238/principal/archivos/options.txt",
+      "sha1": "b49a5df08774c52a5886a33433108ddd350c647d",
+      "size": 5728,
+      "soloSiFalta": true
     },
     {
       "path": "resourcepacks/FA+Player-v1.1.zip",
