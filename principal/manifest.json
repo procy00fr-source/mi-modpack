@@ -1,7 +1,7 @@
 {
   "id": "principal",
   "name": "Minijuegos",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "minecraft": "1.21.1",
   "loader": {
     "type": "neoforge",
@@ -9,7 +9,7 @@
   },
   "neoforge": "21.1.256",
   "modsEstrictos": true,
-  "publicado": "2026-10-10T16:30:23.607Z",
+  "publicado": "2026-10-10T16:32:16.475Z",
   "files": [
     {
       "path": "mods/aceleramundo-1.0.0.jar",
@@ -113,12 +113,6 @@
       "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/8e2af8ac00d514e9824545a391d6bc5a7392ba21/principal/archivos/resourcepacks/FA%2BPlayer-v1.1.zip",
       "sha1": "122e397af111e3dc5fb6b60004aad9464980f13a",
       "size": 110203
-    },
-    {
-      "path": "resourcepacks/RuletaColores.zip",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c2b342a58531e5dafc9c237ebd8817cde011703d/principal/archivos/resourcepacks/RuletaColores.zip",
-      "sha1": "f54bc05909c91ec00817409a9dfcab11eeeaaf0a",
-      "size": 3657827
     }
   ]
 }
