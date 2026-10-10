@@ -1,14 +1,14 @@
 {
   "id": "forge-1201",
   "name": "Dinamicas Scarius",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "minecraft": "1.20.1",
   "loader": {
     "type": "forge",
     "version": "47.4.10"
   },
   "modsEstrictos": true,
-  "publicado": "2026-10-10T16:32:16.483Z",
+  "publicado": "2026-10-10T22:20:26.413Z",
   "files": [
     {
       "path": "config/advancementplaques-common.toml",
@@ -701,10 +701,10 @@
       "size": 1105891
     },
     {
-      "path": "resourcepacks/RuletaColores.zip",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/00f4a1289221d54dfb0f441e993b68c65998d9fb/forge-1201/archivos/resourcepacks/RuletaColores.zip",
-      "sha1": "f54bc05909c91ec00817409a9dfcab11eeeaaf0a",
-      "size": 3657827
+      "path": "resourcepacks/DinamicasPack.zip",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/07049ba22d8b3eba331b2869dfdc41e71aee0473/forge-1201/archivos/resourcepacks/DinamicasPack.zip",
+      "sha1": "0e0232693c8d42c0bb4ea30a45300b49db26b507",
+      "size": 4319929
     },
     {
       "path": "tacz/tacz-pre.toml",
