@@ -23,13 +23,13 @@
       "id": "forge-1201",
       "name": "Dinamicas Scarius",
       "description": "Minecraft",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "minecraft": "1.20.1",
       "loader": {
         "type": "forge",
         "version": "47.4.10"
       },
-      "manifest": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/902b34047222a07867fa5267892fedb0f795e18c/forge-1201/manifest.json"
+      "manifest": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/627a5a85ab2ec40ccafbf32d5d6b9e9b25252c68/forge-1201/manifest.json"
     },
     {
       "id": "neoforge1211",
