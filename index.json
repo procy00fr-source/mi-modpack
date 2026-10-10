@@ -11,25 +11,25 @@
       "id": "principal",
       "name": "Minijuegos",
       "description": "",
-      "version": "1.0.17",
+      "version": "1.0.18",
       "minecraft": "1.21.1",
       "loader": {
         "type": "neoforge",
         "version": "21.1.256"
       },
-      "manifest": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/71c3dd4f301476b6eb91084f965d78e5adade6b5/principal/manifest.json"
+      "manifest": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/902b34047222a07867fa5267892fedb0f795e18c/principal/manifest.json"
     },
     {
       "id": "forge-1201",
       "name": "Dinamicas Scarius",
       "description": "Minecraft",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "minecraft": "1.20.1",
       "loader": {
         "type": "forge",
         "version": "47.4.10"
       },
-      "manifest": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c92bdc772e6e0d39fde7f89bf64731cbe6d9e38f/forge-1201/manifest.json"
+      "manifest": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/902b34047222a07867fa5267892fedb0f795e18c/forge-1201/manifest.json"
     },
     {
       "id": "neoforge1211",
