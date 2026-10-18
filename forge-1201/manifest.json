@@ -1,14 +1,14 @@
 {
   "id": "forge-1201",
   "name": "Dinamicas Scarius",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "minecraft": "1.20.1",
   "loader": {
     "type": "forge",
     "version": "47.4.10"
   },
   "modsEstrictos": true,
-  "publicado": "2026-10-10T22:20:26.413Z",
+  "publicado": "2026-10-18T23:44:21.574Z",
   "files": [
     {
       "path": "config/advancementplaques-common.toml",
@@ -449,6 +449,18 @@
       "size": 35
     },
     {
+      "path": "kubejs/startup_scripts/boxeo_hud.js",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/83bd12b235da72602740f97cbdd4429cf588511a/forge-1201/archivos/kubejs/startup_scripts/boxeo_hud.js",
+      "sha1": "c0e46a5703b609a924393314eb7934c1fcac89ee",
+      "size": 115143
+    },
+    {
+      "path": "kubejs/startup_scripts/musica_volumen.js",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/83bd12b235da72602740f97cbdd4429cf588511a/forge-1201/archivos/kubejs/startup_scripts/musica_volumen.js",
+      "sha1": "4a3f47cb6d72c104d125d92c2ffa603ed55a5c6a",
+      "size": 31767
+    },
+    {
       "path": "mods/AdvancementPlaques-1.20.1-forge-1.6.9.jar",
       "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/ae965a3d9d78ef6717ce632946a473c970cde98e/forge-1201/archivos/mods/AdvancementPlaques-1.20.1-forge-1.6.9.jar",
       "sha1": "6e7b01db61f9646977bd06e9d85492a667d4a8bd",
@@ -519,6 +531,12 @@
       "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/ae965a3d9d78ef6717ce632946a473c970cde98e/forge-1201/archivos/mods/cupboard-1.20.1-3.9.jar",
       "sha1": "b44f4d66a62f2accca149b22a5418b9c92c6c9cc",
       "size": 31724
+    },
+    {
+      "path": "mods/dinamicas_camara-1.0.0.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/83bd12b235da72602740f97cbdd4429cf588511a/forge-1201/archivos/mods/dinamicas_camara-1.0.0.jar",
+      "sha1": "79dcd8a5ae686ef845f604af0a8809dd1ac0f91d",
+      "size": 2754
     },
     {
       "path": "mods/embeddium-0.3.31+mc1.20.1.jar",
@@ -617,6 +635,12 @@
       "size": 2851119
     },
     {
+      "path": "mods/offlineskins-1.20.1-v1.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/83bd12b235da72602740f97cbdd4429cf588511a/forge-1201/archivos/mods/offlineskins-1.20.1-v1.jar",
+      "sha1": "ee0166b3ec3878963dec8d840dc86e3faf53f11a",
+      "size": 93967
+    },
+    {
       "path": "mods/ok_zoomer-forge-5.4.0-beta.9.jar",
       "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/ae965a3d9d78ef6717ce632946a473c970cde98e/forge-1201/archivos/mods/ok_zoomer-forge-5.4.0-beta.9.jar",
       "sha1": "68578eb7a2bb2f7c1eba041d67e558ebe5e63414",
@@ -657,6 +681,12 @@
       "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/ae965a3d9d78ef6717ce632946a473c970cde98e/forge-1201/archivos/mods/shieldexp-forge-1.20.1-1.3.7.jar",
       "sha1": "087e0e34864dc4f077d78026b58d440859591b37",
       "size": 419824
+    },
+    {
+      "path": "mods/ShoulderSurfing-Forge-1.20.1-5.2.0.jar.disabled",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/83bd12b235da72602740f97cbdd4429cf588511a/forge-1201/archivos/mods/ShoulderSurfing-Forge-1.20.1-5.2.0.jar.disabled",
+      "sha1": "e53a03212e2d181b6d9c47928ba91c4866489c6e",
+      "size": 426606
     },
     {
       "path": "mods/skinrestorer-2.9.0+1.20-forge.jar",
@@ -701,10 +731,10 @@
       "size": 1105891
     },
     {
-      "path": "resourcepacks/DinamicasPack.zip",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/07049ba22d8b3eba331b2869dfdc41e71aee0473/forge-1201/archivos/resourcepacks/DinamicasPack.zip",
-      "sha1": "0e0232693c8d42c0bb4ea30a45300b49db26b507",
-      "size": 4319929
+      "path": "resourcepacks/DinamicasPack_v14.zip",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/83bd12b235da72602740f97cbdd4429cf588511a/forge-1201/archivos/resourcepacks/DinamicasPack_v14.zip",
+      "sha1": "1cf0a3b4c1eeabfa2f97ccddf3974a6693bee980",
+      "size": 88989475
     },
     {
       "path": "tacz/tacz-pre.toml",
