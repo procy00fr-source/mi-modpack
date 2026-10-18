@@ -1,7 +1,7 @@
 {
   "id": "neoforge1211",
   "name": "Survival W.I.P",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "minecraft": "1.21.1",
   "loader": {
     "type": "neoforge",
@@ -9,6 +9,199 @@
   },
   "neoforge": "21.1.256",
   "modsEstrictos": true,
-  "publicado": "2026-10-07T20:15:45.472Z",
-  "files": []
+  "publicado": "2026-10-18T00:52:50.562Z",
+  "files": [
+    {
+      "path": "mods/Aquaculture-1.21.1-2.7.21.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/1a6afc14553ddcfeaf691ae37cc7722641ddc0e9/neoforge1211/archivos/mods/Aquaculture-1.21.1-2.7.21.jar",
+      "sha1": "93c2043c6a5cfbfbfba93321d044bc61d8a6547b",
+      "size": 605949
+    },
+    {
+      "path": "mods/ars_nouveau-1.21.1-5.13.3.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/1a6afc14553ddcfeaf691ae37cc7722641ddc0e9/neoforge1211/archivos/mods/ars_nouveau-1.21.1-5.13.3.jar",
+      "sha1": "541b3286d187deeb9a1297a509d0d3539d8af0f6",
+      "size": 19841105
+    },
+    {
+      "path": "mods/better-advanced-tooltips-2101.1.0-build.5.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/1a6afc14553ddcfeaf691ae37cc7722641ddc0e9/neoforge1211/archivos/mods/better-advanced-tooltips-2101.1.0-build.5.jar",
+      "sha1": "5b73537b908764f2d3fd593a0f56a8b1b034bc50",
+      "size": 37653
+    },
+    {
+      "path": "mods/bettercombat-neoforge-2.4.0+1.21.1.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/1a6afc14553ddcfeaf691ae37cc7722641ddc0e9/neoforge1211/archivos/mods/bettercombat-neoforge-2.4.0%2B1.21.1.jar",
+      "sha1": "bacbc8c86671663e9998b141c5732250c1f4d4fb",
+      "size": 1045389
+    },
+    {
+      "path": "mods/BiomesOPlenty-neoforge-1.21.1-21.1.0.14.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/1a6afc14553ddcfeaf691ae37cc7722641ddc0e9/neoforge1211/archivos/mods/BiomesOPlenty-neoforge-1.21.1-21.1.0.14.jar",
+      "sha1": "6a12e1a249d074fb18f07d1f141b80ca2885e2be",
+      "size": 22338157
+    },
+    {
+      "path": "mods/casino-1.0.0.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/1a6afc14553ddcfeaf691ae37cc7722641ddc0e9/neoforge1211/archivos/mods/casino-1.0.0.jar",
+      "sha1": "ac8e676e66d268adfe313dd0f1f5370c1989d888",
+      "size": 40289183
+    },
+    {
+      "path": "mods/cloth-config-15.0.140-neoforge.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/1a6afc14553ddcfeaf691ae37cc7722641ddc0e9/neoforge1211/archivos/mods/cloth-config-15.0.140-neoforge.jar",
+      "sha1": "c3e5733ba4503b102589a026000fd5ce0212f6f2",
+      "size": 1163890
+    },
+    {
+      "path": "mods/Clumps-neoforge-1.21.1-19.0.0.1.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/1a6afc14553ddcfeaf691ae37cc7722641ddc0e9/neoforge1211/archivos/mods/Clumps-neoforge-1.21.1-19.0.0.1.jar",
+      "sha1": "fa2576297c7bd12b28aa7070e8141792bd66da4c",
+      "size": 18382
+    },
+    {
+      "path": "mods/create-1.21.1-6.0.10.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/1a6afc14553ddcfeaf691ae37cc7722641ddc0e9/neoforge1211/archivos/mods/create-1.21.1-6.0.10.jar",
+      "sha1": "0e97e49837bed766e6f28a4c95b04885d6acc353",
+      "size": 19123767
+    },
+    {
+      "path": "mods/curios-neoforge-9.5.1+1.21.1.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/1a6afc14553ddcfeaf691ae37cc7722641ddc0e9/neoforge1211/archivos/mods/curios-neoforge-9.5.1%2B1.21.1.jar",
+      "sha1": "418fcd42e3a7844c9bdc71c9b6401fdb3894e0c4",
+      "size": 410690
+    },
+    {
+      "path": "mods/FarmersDelight-1.21.1-1.3.4.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/1a6afc14553ddcfeaf691ae37cc7722641ddc0e9/neoforge1211/archivos/mods/FarmersDelight-1.21.1-1.3.4.jar",
+      "sha1": "27675ddfcb8cc37e6ea1ab6c15051c7949d94657",
+      "size": 3160490
+    },
+    {
+      "path": "mods/ferritecore-7.0.3-neoforge.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/1a6afc14553ddcfeaf691ae37cc7722641ddc0e9/neoforge1211/archivos/mods/ferritecore-7.0.3-neoforge.jar",
+      "sha1": "9563692efb708b6b568df27a01ec52f6311928ef",
+      "size": 121559
+    },
+    {
+      "path": "mods/geckolib-neoforge-1.21.1-4.9.3.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/1a6afc14553ddcfeaf691ae37cc7722641ddc0e9/neoforge1211/archivos/mods/geckolib-neoforge-1.21.1-4.9.3.jar",
+      "sha1": "5cfe835472a5c5457ae9ac192d9d7b317454d5ac",
+      "size": 634531
+    },
+    {
+      "path": "mods/GlitchCore-neoforge-1.21.1-2.1.0.2.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/1a6afc14553ddcfeaf691ae37cc7722641ddc0e9/neoforge1211/archivos/mods/GlitchCore-neoforge-1.21.1-2.1.0.2.jar",
+      "sha1": "a31c3f36330f19aa538add3d727782a62c9c30ad",
+      "size": 90717
+    },
+    {
+      "path": "mods/irons_lib-1.21.1-2.2.0.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/1a6afc14553ddcfeaf691ae37cc7722641ddc0e9/neoforge1211/archivos/mods/irons_lib-1.21.1-2.2.0.jar",
+      "sha1": "33ca1a58dc0b384a6de26171f34b3bf608aaeeb2",
+      "size": 462255
+    },
+    {
+      "path": "mods/irons_spellbooks-1.21.1-3.16.3.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/1a6afc14553ddcfeaf691ae37cc7722641ddc0e9/neoforge1211/archivos/mods/irons_spellbooks-1.21.1-3.16.3.jar",
+      "sha1": "e8832385c01db56b9fcb19c48fcedc76a3a70d92",
+      "size": 13890045
+    },
+    {
+      "path": "mods/kubejs-neoforge-2101.7.2-build.377.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/1a6afc14553ddcfeaf691ae37cc7722641ddc0e9/neoforge1211/archivos/mods/kubejs-neoforge-2101.7.2-build.377.jar",
+      "sha1": "7313fcd99318834c642ee9f3a05ed7fd7bcb6ef4",
+      "size": 2294111
+    },
+    {
+      "path": "mods/lionfishapi-3.1.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/1a6afc14553ddcfeaf691ae37cc7722641ddc0e9/neoforge1211/archivos/mods/lionfishapi-3.1.jar",
+      "sha1": "353ca00ed118eb67cf11085abbbd699884722326",
+      "size": 91596
+    },
+    {
+      "path": "mods/lithium-neoforge-0.15.4+mc1.21.1.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/1a6afc14553ddcfeaf691ae37cc7722641ddc0e9/neoforge1211/archivos/mods/lithium-neoforge-0.15.4%2Bmc1.21.1.jar",
+      "sha1": "97212e45c963730bbfc7c44780df99317814c21b",
+      "size": 774220
+    },
+    {
+      "path": "mods/lootr-neoforge-1.21.1-1.11.38.127.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/1a6afc14553ddcfeaf691ae37cc7722641ddc0e9/neoforge1211/archivos/mods/lootr-neoforge-1.21.1-1.11.38.127.jar",
+      "sha1": "7a305b581abd90e1a8b7c1bb5eb4511d2653aa58",
+      "size": 1075929
+    },
+    {
+      "path": "mods/L_Ender's Cataclysm 1.21.1-3.33.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/1a6afc14553ddcfeaf691ae37cc7722641ddc0e9/neoforge1211/archivos/mods/L_Ender's%20Cataclysm%201.21.1-3.33.jar",
+      "sha1": "f0310277167c82fd16a5c2bab220b5c5c262f133",
+      "size": 73375667
+    },
+    {
+      "path": "mods/modernfix-neoforge-5.27.26+mc1.21.1.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/1a6afc14553ddcfeaf691ae37cc7722641ddc0e9/neoforge1211/archivos/mods/modernfix-neoforge-5.27.26%2Bmc1.21.1.jar",
+      "sha1": "69d468b70e53f6a014c778a81116a41a38fbab33",
+      "size": 611043
+    },
+    {
+      "path": "mods/moonlight-1.21.1-3.7.2-neoforge.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/1a6afc14553ddcfeaf691ae37cc7722641ddc0e9/neoforge1211/archivos/mods/moonlight-1.21.1-3.7.2-neoforge.jar",
+      "sha1": "0da45e6bc941f4b9b18dda24f8d047431ddc7226",
+      "size": 2299162
+    },
+    {
+      "path": "mods/naturalist-2.0.5-neoforge-1.21.1.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/1a6afc14553ddcfeaf691ae37cc7722641ddc0e9/neoforge1211/archivos/mods/naturalist-2.0.5-neoforge-1.21.1.jar",
+      "sha1": "ea9ebf082eb978dcf583255e8fca1004a8114ab6",
+      "size": 11325729
+    },
+    {
+      "path": "mods/Patchouli-1.21.1-93-NEOFORGE.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/1a6afc14553ddcfeaf691ae37cc7722641ddc0e9/neoforge1211/archivos/mods/Patchouli-1.21.1-93-NEOFORGE.jar",
+      "sha1": "5413bb9b8fc35ebe46b06b48bf9afafbd8471140",
+      "size": 646777
+    },
+    {
+      "path": "mods/player-animation-lib-forge-2.0.4+1.21.1.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/1a6afc14553ddcfeaf691ae37cc7722641ddc0e9/neoforge1211/archivos/mods/player-animation-lib-forge-2.0.4%2B1.21.1.jar",
+      "sha1": "05be8ddcc78532b9a5520c718edc6c971cd0057c",
+      "size": 203149
+    },
+    {
+      "path": "mods/rhino-2101.2.8-build.91.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/1a6afc14553ddcfeaf691ae37cc7722641ddc0e9/neoforge1211/archivos/mods/rhino-2101.2.8-build.91.jar",
+      "sha1": "56eab1d464ed0811c64040c64bd047df5cbc3aad",
+      "size": 980936
+    },
+    {
+      "path": "mods/SereneSeasons-neoforge-1.21.1-10.1.0.3.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/1a6afc14553ddcfeaf691ae37cc7722641ddc0e9/neoforge1211/archivos/mods/SereneSeasons-neoforge-1.21.1-10.1.0.3.jar",
+      "sha1": "8b9034d4c43f880b1f1ebdd3943219de0b0bc4c5",
+      "size": 159205
+    },
+    {
+      "path": "mods/spark-1.10.124-neoforge.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/1a6afc14553ddcfeaf691ae37cc7722641ddc0e9/neoforge1211/archivos/mods/spark-1.10.124-neoforge.jar",
+      "sha1": "9430cc2ab64ff89d698be593769fb9f9ee4efae6",
+      "size": 3642581
+    },
+    {
+      "path": "mods/TerraBlender-neoforge-1.21.1-4.1.0.8.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/1a6afc14553ddcfeaf691ae37cc7722641ddc0e9/neoforge1211/archivos/mods/TerraBlender-neoforge-1.21.1-4.1.0.8.jar",
+      "sha1": "2016eed89eac0eb0510d2190c3b0b80bf4346191",
+      "size": 120364
+    },
+    {
+      "path": "mods/YungsApi-1.21.1-NeoForge-5.1.9.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/1a6afc14553ddcfeaf691ae37cc7722641ddc0e9/neoforge1211/archivos/mods/YungsApi-1.21.1-NeoForge-5.1.9.jar",
+      "sha1": "2c4b740c8ad27bbcb2a21b85b64f011b809aed91",
+      "size": 413763
+    },
+    {
+      "path": "mods/YungsBetterDungeons-1.21.1-NeoForge-5.1.4.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/1a6afc14553ddcfeaf691ae37cc7722641ddc0e9/neoforge1211/archivos/mods/YungsBetterDungeons-1.21.1-NeoForge-5.1.4.jar",
+      "sha1": "73a660c13063450e555e5e2c015ae24d606b32b4",
+      "size": 782160
+    }
+  ]
 }
