@@ -1,15 +1,15 @@
 {
   "id": "neoforge1211",
   "name": "Survival W.I.P",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "minecraft": "1.21.1",
   "loader": {
     "type": "neoforge",
-    "version": "21.1.256"
+    "version": "21.1.259"
   },
-  "neoforge": "21.1.256",
+  "neoforge": "21.1.259",
   "modsEstrictos": true,
-  "publicado": "2026-10-18T00:52:50.562Z",
+  "publicado": "2026-10-18T00:54:29.478Z",
   "files": [
     {
       "path": "mods/Aquaculture-1.21.1-2.7.21.jar",
