@@ -1,14 +1,14 @@
 {
   "id": "forge-1201",
   "name": "Dinamicas Scarius",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "minecraft": "1.20.1",
   "loader": {
     "type": "forge",
     "version": "47.4.10"
   },
   "modsEstrictos": true,
-  "publicado": "2026-10-18T23:44:21.574Z",
+  "publicado": "2026-11-06T00:04:46.194Z",
   "files": [
     {
       "path": "config/advancementplaques-common.toml",
@@ -485,6 +485,12 @@
       "size": 528949
     },
     {
+      "path": "mods/a_good_place-1.20-1.2.8.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/32512b760e8a20098eddc09fdb122e047f908d3f/forge-1201/archivos/mods/a_good_place-1.20-1.2.8.jar",
+      "sha1": "6880cb588e81d14c7d42a3e36805d3717fff4f30",
+      "size": 260591
+    },
+    {
       "path": "mods/betterfpsdist-1.20.1-6.0.jar",
       "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/ae965a3d9d78ef6717ce632946a473c970cde98e/forge-1201/archivos/mods/betterfpsdist-1.20.1-6.0.jar",
       "sha1": "8e4fe2cd85c08c24ab363b47a63d1c872fc3cc1e",
@@ -681,6 +687,12 @@
       "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/ae965a3d9d78ef6717ce632946a473c970cde98e/forge-1201/archivos/mods/shieldexp-forge-1.20.1-1.3.7.jar",
       "sha1": "087e0e34864dc4f077d78026b58d440859591b37",
       "size": 419824
+    },
+    {
+      "path": "mods/ShoulderSurfing-Forge-1.20.1-5.2.0.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/32512b760e8a20098eddc09fdb122e047f908d3f/forge-1201/archivos/mods/ShoulderSurfing-Forge-1.20.1-5.2.0.jar",
+      "sha1": "e53a03212e2d181b6d9c47928ba91c4866489c6e",
+      "size": 426606
     },
     {
       "path": "mods/ShoulderSurfing-Forge-1.20.1-5.2.0.jar.disabled",
