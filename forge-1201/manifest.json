@@ -1,14 +1,14 @@
 {
   "id": "forge-1201",
   "name": "Dinamicas Scarius",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "minecraft": "1.20.1",
   "loader": {
     "type": "forge",
     "version": "47.4.10"
   },
   "modsEstrictos": true,
-  "publicado": "2026-11-06T00:04:46.194Z",
+  "publicado": "2026-11-06T00:08:36.445Z",
   "files": [
     {
       "path": "config/advancementplaques-common.toml",
@@ -83,9 +83,21 @@
       "size": 1304
     },
     {
+      "path": "config/dinamicas_efectos.properties",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c1a32e20343285f0dd838cde5128c5cde200dddb/forge-1201/archivos/config/dinamicas_efectos.properties",
+      "sha1": "fdf1ba4300ff1ad5c5d30025f3d97359cc8e8ee5",
+      "size": 726
+    },
+    {
+      "path": "config/dinamicas_estilos-client.toml",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c1a32e20343285f0dd838cde5128c5cde200dddb/forge-1201/archivos/config/dinamicas_estilos-client.toml",
+      "sha1": "56b7f09e1d68c148b0ddfe2679f2ff7babd3f8aa",
+      "size": 999
+    },
+    {
       "path": "config/embeddium-fingerprint.json",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/ae965a3d9d78ef6717ce632946a473c970cde98e/forge-1201/archivos/config/embeddium-fingerprint.json",
-      "sha1": "5e85fa71770c5fa5c16a141b9ecd4dac5df2e6ff",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c1a32e20343285f0dd838cde5128c5cde200dddb/forge-1201/archivos/config/embeddium-fingerprint.json",
+      "sha1": "1b1103d476dee345c8a3a9c1ca46a07b8dbd01e9",
       "size": 427
     },
     {
@@ -96,15 +108,15 @@
     },
     {
       "path": "config/embeddium-options.json",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/ae965a3d9d78ef6717ce632946a473c970cde98e/forge-1201/archivos/config/embeddium-options.json",
-      "sha1": "c46718c2b687959e2f8f7c46ba64eb2b7413a80d",
-      "size": 852
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c1a32e20343285f0dd838cde5128c5cde200dddb/forge-1201/archivos/config/embeddium-options.json",
+      "sha1": "de8add0f213fe49e16011076be4efa52e5f4b570",
+      "size": 851
     },
     {
       "path": "config/emotecraft.json",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/ae965a3d9d78ef6717ce632946a473c970cde98e/forge-1201/archivos/config/emotecraft.json",
-      "sha1": "2c23d0e58c2a17fd48cdc2d4de80a03ebc59b2e4",
-      "size": 977
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c1a32e20343285f0dd838cde5128c5cde200dddb/forge-1201/archivos/config/emotecraft.json",
+      "sha1": "611567180c27f7c04fd64389b2ae7e3a404e2123",
+      "size": 972
     },
     {
       "path": "config/emotecraft_emote_map.json",
@@ -132,8 +144,8 @@
     },
     {
       "path": "config/fml.toml",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/ae965a3d9d78ef6717ce632946a473c970cde98e/forge-1201/archivos/config/fml.toml",
-      "sha1": "726869383a0dd9368201319b75b902b2e5c8207f",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c1a32e20343285f0dd838cde5128c5cde200dddb/forge-1201/archivos/config/fml.toml",
+      "sha1": "4bc88e2b23204279c4509a2b046e86366e6b7305",
       "size": 1148
     },
     {
@@ -354,21 +366,27 @@
     },
     {
       "path": "config/mtsconfig.json",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/ae965a3d9d78ef6717ce632946a473c970cde98e/forge-1201/archivos/config/mtsconfig.json",
-      "sha1": "eece06c964f7c9e6b4639c78bca9ef7ff4a35208",
-      "size": 13283
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c1a32e20343285f0dd838cde5128c5cde200dddb/forge-1201/archivos/config/mtsconfig.json",
+      "sha1": "14ac66f2ba5ef23d283e12ea86ad32355d36ab29",
+      "size": 13331
     },
     {
       "path": "config/mtsconfigclient.json",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/ae965a3d9d78ef6717ce632946a473c970cde98e/forge-1201/archivos/config/mtsconfigclient.json",
-      "sha1": "b1e8db627871039fc5375537c763637360eceb51",
-      "size": 24696
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c1a32e20343285f0dd838cde5128c5cde200dddb/forge-1201/archivos/config/mtsconfigclient.json",
+      "sha1": "773e76089d90f78b8d9353bc059d2bb9447ebb61",
+      "size": 24695
     },
     {
       "path": "config/oculus.properties",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/ae965a3d9d78ef6717ce632946a473c970cde98e/forge-1201/archivos/config/oculus.properties",
-      "sha1": "d75810067beeca34ed8ba87a05df108d7bfa5d19",
-      "size": 275
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c1a32e20343285f0dd838cde5128c5cde200dddb/forge-1201/archivos/config/oculus.properties",
+      "sha1": "66dd905d25a07c910c0ccffa7b7338aee477bfdb",
+      "size": 276
+    },
+    {
+      "path": "config/offlineskins.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c1a32e20343285f0dd838cde5128c5cde200dddb/forge-1201/archivos/config/offlineskins.json",
+      "sha1": "6cbc1f650e9ba397ca8f8b81340fb1420e817fce",
+      "size": 271
     },
     {
       "path": "config/ok_zoomer/config.json5",
@@ -396,8 +414,8 @@
     },
     {
       "path": "config/quick boot.properties",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/ae965a3d9d78ef6717ce632946a473c970cde98e/forge-1201/archivos/config/quick%20boot.properties",
-      "sha1": "77c2c150279796025869cd4a8cf552ab56476487",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c1a32e20343285f0dd838cde5128c5cde200dddb/forge-1201/archivos/config/quick%20boot.properties",
+      "sha1": "7ef4568c175dffa7e108ae034a2ae2aad3c41f67",
       "size": 1110
     },
     {
@@ -405,6 +423,12 @@
       "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/ae965a3d9d78ef6717ce632946a473c970cde98e/forge-1201/archivos/config/shieldexp-common.json",
       "sha1": "17ece86069637236638422644cd0887c19303e48",
       "size": 434
+    },
+    {
+      "path": "config/shouldersurfing-client.toml",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c1a32e20343285f0dd838cde5128c5cde200dddb/forge-1201/archivos/config/shouldersurfing-client.toml",
+      "sha1": "aac86b840fa09d62d4983f1a45203d905a290ea3",
+      "size": 19224
     },
     {
       "path": "config/skinrestorer/config.json",
@@ -449,10 +473,70 @@
       "size": 35
     },
     {
+      "path": "kubejs/assets/kubejs/textures/block/example_block.png",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c1a32e20343285f0dd838cde5128c5cde200dddb/forge-1201/archivos/kubejs/assets/kubejs/textures/block/example_block.png",
+      "sha1": "87f5ec8c26493050fc83543af8d33f2d28a98766",
+      "size": 247
+    },
+    {
+      "path": "kubejs/assets/kubejs/textures/item/example_item.png",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c1a32e20343285f0dd838cde5128c5cde200dddb/forge-1201/archivos/kubejs/assets/kubejs/textures/item/example_item.png",
+      "sha1": "d9912cb709ad496b10f19f8b2c66d1e419eb760c",
+      "size": 372
+    },
+    {
+      "path": "kubejs/boxeo_hud.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c1a32e20343285f0dd838cde5128c5cde200dddb/forge-1201/archivos/kubejs/boxeo_hud.json",
+      "sha1": "9ad18916af513f7bca823d6046df0d9204e3df46",
+      "size": 17
+    },
+    {
+      "path": "kubejs/client_scripts/example.js",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c1a32e20343285f0dd838cde5128c5cde200dddb/forge-1201/archivos/kubejs/client_scripts/example.js",
+      "sha1": "dfe0a9197b4b80a3f1235afa6f825857d9ead98a",
+      "size": 126
+    },
+    {
+      "path": "kubejs/config/client.properties",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c1a32e20343285f0dd838cde5128c5cde200dddb/forge-1201/archivos/kubejs/config/client.properties",
+      "sha1": "50e574b449d4a9034c29f816cfd251179d260114",
+      "size": 375
+    },
+    {
+      "path": "kubejs/config/common.properties",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c1a32e20343285f0dd838cde5128c5cde200dddb/forge-1201/archivos/kubejs/config/common.properties",
+      "sha1": "0268c415dc2910ab26cc0acd34ca7aa4d26b2283",
+      "size": 342
+    },
+    {
+      "path": "kubejs/musica_volumen.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c1a32e20343285f0dd838cde5128c5cde200dddb/forge-1201/archivos/kubejs/musica_volumen.json",
+      "sha1": "eac72d12358d857a9c7ec2e1a66dfd6196a5cc15",
+      "size": 70
+    },
+    {
+      "path": "kubejs/README.txt",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c1a32e20343285f0dd838cde5128c5cde200dddb/forge-1201/archivos/kubejs/README.txt",
+      "sha1": "3e56c097cd0c5be61b767a9a9ae73ae083d2eca9",
+      "size": 1203
+    },
+    {
+      "path": "kubejs/server_scripts/example.js",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c1a32e20343285f0dd838cde5128c5cde200dddb/forge-1201/archivos/kubejs/server_scripts/example.js",
+      "sha1": "9530c6a8d3608ca41418ccb29a01d179d5c06bab",
+      "size": 126
+    },
+    {
       "path": "kubejs/startup_scripts/boxeo_hud.js",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/83bd12b235da72602740f97cbdd4429cf588511a/forge-1201/archivos/kubejs/startup_scripts/boxeo_hud.js",
-      "sha1": "c0e46a5703b609a924393314eb7934c1fcac89ee",
-      "size": 115143
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c1a32e20343285f0dd838cde5128c5cde200dddb/forge-1201/archivos/kubejs/startup_scripts/boxeo_hud.js",
+      "sha1": "cedb44d78c622a5b34133d0a10cd35b51e763c18",
+      "size": 144213
+    },
+    {
+      "path": "kubejs/startup_scripts/example.js",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c1a32e20343285f0dd838cde5128c5cde200dddb/forge-1201/archivos/kubejs/startup_scripts/example.js",
+      "sha1": "bbeca4224e5e4dd007400d47b0f1e6618e8c68ec",
+      "size": 127
     },
     {
       "path": "kubejs/startup_scripts/musica_volumen.js",
@@ -537,12 +621,6 @@
       "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/ae965a3d9d78ef6717ce632946a473c970cde98e/forge-1201/archivos/mods/cupboard-1.20.1-3.9.jar",
       "sha1": "b44f4d66a62f2accca149b22a5418b9c92c6c9cc",
       "size": 31724
-    },
-    {
-      "path": "mods/dinamicas_camara-1.0.0.jar",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/83bd12b235da72602740f97cbdd4429cf588511a/forge-1201/archivos/mods/dinamicas_camara-1.0.0.jar",
-      "sha1": "79dcd8a5ae686ef845f604af0a8809dd1ac0f91d",
-      "size": 2754
     },
     {
       "path": "mods/embeddium-0.3.31+mc1.20.1.jar",
@@ -689,18 +767,6 @@
       "size": 419824
     },
     {
-      "path": "mods/ShoulderSurfing-Forge-1.20.1-5.2.0.jar",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/32512b760e8a20098eddc09fdb122e047f908d3f/forge-1201/archivos/mods/ShoulderSurfing-Forge-1.20.1-5.2.0.jar",
-      "sha1": "e53a03212e2d181b6d9c47928ba91c4866489c6e",
-      "size": 426606
-    },
-    {
-      "path": "mods/ShoulderSurfing-Forge-1.20.1-5.2.0.jar.disabled",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/83bd12b235da72602740f97cbdd4429cf588511a/forge-1201/archivos/mods/ShoulderSurfing-Forge-1.20.1-5.2.0.jar.disabled",
-      "sha1": "e53a03212e2d181b6d9c47928ba91c4866489c6e",
-      "size": 426606
-    },
-    {
       "path": "mods/skinrestorer-2.9.0+1.20-forge.jar",
       "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/ae965a3d9d78ef6717ce632946a473c970cde98e/forge-1201/archivos/mods/skinrestorer-2.9.0%2B1.20-forge.jar",
       "sha1": "f4bc45f766af19118a01079892430df757fc885e",
@@ -743,10 +809,100 @@
       "size": 1105891
     },
     {
-      "path": "resourcepacks/DinamicasPack_v14.zip",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/83bd12b235da72602740f97cbdd4429cf588511a/forge-1201/archivos/resourcepacks/DinamicasPack_v14.zip",
-      "sha1": "1cf0a3b4c1eeabfa2f97ccddf3974a6693bee980",
-      "size": 88989475
+      "path": "resourcepacks/A Good Place Sample Pack.zip",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c1a32e20343285f0dd838cde5128c5cde200dddb/forge-1201/archivos/resourcepacks/A%20Good%20Place%20Sample%20Pack.zip",
+      "sha1": "d8c1844f7425e507e77aa9422f381882a35eafc2",
+      "size": 15153
+    },
+    {
+      "path": "resourcepacks/ColoresPack.zip",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c1a32e20343285f0dd838cde5128c5cde200dddb/forge-1201/archivos/resourcepacks/ColoresPack.zip",
+      "sha1": "51931d4887ab3fb5f48448aa72c5a231bab4eaab",
+      "size": 1812370
+    },
+    {
+      "path": "resourcepacks/DinamicasPack_v15.zip",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c1a32e20343285f0dd838cde5128c5cde200dddb/forge-1201/archivos/resourcepacks/DinamicasPack_v15.zip",
+      "sha1": "d5046ca3cb487349f8e7c87214125b87dd076628",
+      "size": 90006830
+    },
+    {
+      "path": "resourcepacks/EmbellishedStone-1.20.1-1.0.0.zip",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c1a32e20343285f0dd838cde5128c5cde200dddb/forge-1201/archivos/resourcepacks/EmbellishedStone-1.20.1-1.0.0.zip",
+      "sha1": "7e681fdb997ca95a56e7394977955b2e2624b29e",
+      "size": 2525
+    },
+    {
+      "path": "resourcepacks/Enchantment Glows 1.9 1.20.x.zip",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c1a32e20343285f0dd838cde5128c5cde200dddb/forge-1201/archivos/resourcepacks/Enchantment%20Glows%201.9%201.20.x.zip",
+      "sha1": "9ccb0d40a18bd851ce4710c376d491964296264a",
+      "size": 288771
+    },
+    {
+      "path": "resourcepacks/FA+Player-v1.1.zip",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c1a32e20343285f0dd838cde5128c5cde200dddb/forge-1201/archivos/resourcepacks/FA%2BPlayer-v1.1.zip",
+      "sha1": "122e397af111e3dc5fb6b60004aad9464980f13a",
+      "size": 110203
+    },
+    {
+      "path": "resourcepacks/Item Rarity Borders.zip",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c1a32e20343285f0dd838cde5128c5cde200dddb/forge-1201/archivos/resourcepacks/Item%20Rarity%20Borders.zip",
+      "sha1": "7419cd75340cb4bfe9f94a43b8a74ca5412580fc",
+      "size": 123362
+    },
+    {
+      "path": "resourcepacks/LowOnFire_1.20.1.zip",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c1a32e20343285f0dd838cde5128c5cde200dddb/forge-1201/archivos/resourcepacks/LowOnFire_1.20.1.zip",
+      "sha1": "08db918bc8642b5501402fe25c9b6a8286a538b5",
+      "size": 49395
+    },
+    {
+      "path": "resourcepacks/MandalasGUI+Dakmode_1.21.8_v2.5.zip",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c1a32e20343285f0dd838cde5128c5cde200dddb/forge-1201/archivos/resourcepacks/MandalasGUI%2BDakmode_1.21.8_v2.5.zip",
+      "sha1": "dfa57fb7edc7a2489d09031287da1d7d49788cfa",
+      "size": 727410
+    },
+    {
+      "path": "resourcepacks/MinecraftWords.zip",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c1a32e20343285f0dd838cde5128c5cde200dddb/forge-1201/archivos/resourcepacks/MinecraftWords.zip",
+      "sha1": "193a54d7c636632507b1e9b43ea8708c7562a73f",
+      "size": 9506
+    },
+    {
+      "path": "resourcepacks/NewGlowingOres§6[BV-1.3][1.20].zip",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c1a32e20343285f0dd838cde5128c5cde200dddb/forge-1201/archivos/resourcepacks/NewGlowingOres%C2%A76%5BBV-1.3%5D%5B1.20%5D.zip",
+      "sha1": "5386de443f769021ac09e7be77f04faf4198b7bf",
+      "size": 212005
+    },
+    {
+      "path": "resourcepacks/SE Vanilla Consistency 1.20.1.zip",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c1a32e20343285f0dd838cde5128c5cde200dddb/forge-1201/archivos/resourcepacks/SE%20Vanilla%20Consistency%201.20.1.zip",
+      "sha1": "c279b5a5d7dc5218e80ec1fd20f6eb41e67bfb07",
+      "size": 85743
+    },
+    {
+      "path": "shaderpacks/Bliss_v2.1.2_(Chocapic13_Shaders_edit).zip",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c1a32e20343285f0dd838cde5128c5cde200dddb/forge-1201/archivos/shaderpacks/Bliss_v2.1.2_(Chocapic13_Shaders_edit).zip",
+      "sha1": "ded6c8a98305f8aff90ef781e7585b33b8452cfd",
+      "size": 1791406
+    },
+    {
+      "path": "shaderpacks/Mellow Shader v3.2.zip",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c1a32e20343285f0dd838cde5128c5cde200dddb/forge-1201/archivos/shaderpacks/Mellow%20Shader%20v3.2.zip",
+      "sha1": "1dafdeb90ea0ba507a27ecdd0217d0f6f44a2d77",
+      "size": 629784
+    },
+    {
+      "path": "shaderpacks/Sildur's Vibrant Shaders v1.51 Extreme-VL.zip",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c1a32e20343285f0dd838cde5128c5cde200dddb/forge-1201/archivos/shaderpacks/Sildur's%20Vibrant%20Shaders%20v1.51%20Extreme-VL.zip",
+      "sha1": "871e4a5b6aa77f8d6693b63c070f81b8bba62b01",
+      "size": 142239
+    },
+    {
+      "path": "shaderpacks/Solas Shader V3.7.zip",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c1a32e20343285f0dd838cde5128c5cde200dddb/forge-1201/archivos/shaderpacks/Solas%20Shader%20V3.7.zip",
+      "sha1": "0b8296fccb872babba488acec206816c7b48e222",
+      "size": 1241525
     },
     {
       "path": "tacz/tacz-pre.toml",
