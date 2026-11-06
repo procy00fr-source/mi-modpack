@@ -1,25 +1,29 @@
 // ==========================================================
-// HUD del BOXEO v5 (KubeJS, solo en el cliente)   kubejs/startup_scripts/boxeo_hud.js
+// HUD del BOXEO v6 (KubeJS, solo en el cliente)   kubejs/startup_scripts/boxeo_hud.js
 //
 //  Lee los marcadores invisibles del server: bxhud1 / bxhud2 (cada ring) y bxest (estilos de cada jugador).
 //   - ARRIBA: cara, nombre y ESTILO de cada boxeador, VIDA (roja), ESTAMINA (blanca), caidas y RONDA.
 //   - A LA DERECHA: "\u00A1CONTRAGOLPE!", "GOLPES x1 x2..." y debajo, en gris y chiquito, los CONTROLES.
 //   - Mientras pelea NO se ve la barra de abajo (vida, comida, inventario): solo los botones 1 2 3 de
 //     las habilidades (como en Roblox), la ULTI y F.
-//   - CAMARA FIJADA en el rival. Los golpes ya no se pueden spamear (cada estilo tiene su ritmo).
-//     ESPACIO = ESQUIVAR (con A / D = a ese lado). Esquiva justo a tiempo = \u00A1ESQUIVA PERFECTA! (2 s de
-//     camara lenta: blanco y negro, reloj tic-tac y la musica baja).
+//   - CAMARA DE HOMBRO (mod Shoulder Surfing Reloaded) SOLO mientras pelea y sin poder cambiarla (F5 no hace
+//     nada); fijada en el rival. Fuera del boxeo F5 funciona como siempre. Sin el mod: camara de espaldas.
+//   - Los golpes ya no se pueden spamear. Mientras te pegan NO te puedes mover ni atacar: solo ESQUIVAR.
+//     ESPACIO = ESQUIVAR (A / D = de lado, S = para atras, nada = agacharte).
+//     AVISO ROJO: cuando el otro carga un golpe fuerte o una habilidad, un aro rojo se cierra sobre ti:
+//     esquiva cuando llegue al centro = \u00A1ESQUIVA PERFECTA! (2 s de camara lenta, reloj tic-tac, musica baja).
 //   - F MANTENIDA = cubrirse.  R = ULTI (cinematica de cada estilo).  1 2 3 = habilidades (MITICO+).
-//     RELAMPAGO: barra de TIMING.  ESCOPETA: 1 = DOBLE GATILLO (barra recta: 1/2 y 2/2) y su ULTI es el
-//     minijuego de flechas (W A S D) con el ESCOPETA pegandole de fondo.
-//   - K.O.: la camara enfoca al que cayo mientras intenta levantarse ("DOWN!" y la cuenta grande).
-//   - Tecla Y = MENU DE ESTILOS (ya no abre el chat): ruleta a pantalla completa, GIRO y GIRO DE LA SUERTE,
-//     aura epica (MITICO morada, LEGENDARIO amarilla como el ki, LIMITADO roja y negra).
+//     RELAMPAGO: barra de TIMING.  ESCOPETA: 1 = CARGAR (barra 1/2 y 2/2, una vez) y despues 1 = RAFAGA.
+//     ULTI de ESCOPETA: minijuego de flechas (W A S D).  ULTI de NECROID: la GALAXIA y el minijuego
+//     CONSTELACION (CLIC o ESPACIO cuando el anillo toca la estrella).  ULTI de CALAVERA: RAYOS X.
+//   - K.O.: la camara enfoca al que cayo ("DOWN!" y la cuenta grande). LIMITADO: 4 caidas y levantada epica.
+//   - Tecla Y = MENU DE ESTILOS: ruleta a pantalla completa, GIRAR y GIRO DE LA SUERTE, 2 ranuras
+//     (EQUIPADO y GUARDADO), aviso si vas a perder un LEGENDARIO o LIMITADO, gesto y aura al sacar uno bueno.
 //   - Tecla B = RUEDA DE GESTOS.   Espectador: boton "SALIR DE ESPECTADOR" (con T) o SHIFT.
 //   - VICTORIA (/win): el baile lo dibuja este script. El chat queda transparente (solo las letras).
 //  Las teclas se cambian en Opciones > Controles > Asignar teclas > "Din\u00E1micas".
-//  Necesita el DinamicasPack v14 y el mod dinamicas_camara (la camara atraviesa las barreras).
-//  Si no sale nada, mira logs/kubejs/startup.log ("HUD del boxeo v5 cargado").
+//  Necesita el DinamicasPack v15. Recomendado: Shoulder Surfing Reloaded y el mod dinamicas_camara.
+//  Si no sale nada, mira logs/kubejs/startup.log ("HUD del boxeo v6 cargado").
 // ==========================================================
 
 function boxeoHudIniciar() {
@@ -39,6 +43,10 @@ function boxeoHudIniciar() {
     try { $ChatScreen = Java.loadClass('net.minecraft.client.gui.screens.ChatScreen') } catch (e) { console.warn('boxeo_hud.js: sin ChatScreen: ' + e) }
     try { $InvScreen = Java.loadClass('net.minecraft.client.gui.screens.inventory.InventoryScreen') } catch (e) { console.warn('boxeo_hud.js: sin InventoryScreen: ' + e) }
     try { $Double = Java.loadClass('java.lang.Double') } catch (e) { }
+    // el mod dinamicas_efectos (camara de la pelea con cuerpos animados): se le avisa cuando este HUD hace una cinematica
+    // propia (ULTIS de los estilos que no son del mod) para que su camara no la pise
+    var $Pelea = null
+    try { $Pelea = Java.loadClass('dinamicas.pelea.Pelea') } catch (e) { console.warn('boxeo_hud.js: sin dinamicas.pelea.Pelea (la camara de la pelea no se entera de las cinematicas): ' + e) }
     var $SS = null
     try { $SS = Java.loadClass('net.minecraft.sounds.SoundSource') } catch (e) { console.warn('boxeo_hud.js: sin SoundSource: ' + e) }
     try {
@@ -80,6 +88,12 @@ function boxeoHudIniciar() {
         koCam: { activo: false, desde: 0 },
         cnt: { en: 0, v: -1 },   // cuenta del K.O. (para la animacion del numero)
         mg: null,                // minijuego de flechas de la ULTI de ESCOPETA
+        cos: null,               // minijuego CONSTELACION de la ULTI del NECROID
+        cof: 0,                  // cuando se abrio el AGUJERO NEGRO (final de la ULTI del NECROID)
+        aviso: null,             // aro rojo: viene un golpe fuerte / habilidad
+        xr: null,                // RAYOS X (ULTI de CALAVERA): { desde, k }
+        ep: null,                // LEVANTADA EPICA (limitado)
+        conf: null,              // ruleta: "\u00BFseguro que quieres girar?" (pierdes un LEGENDARIO / LIMITADO)
         spEn: 0, esqEn: 0, tmEnv: 0,     // para no mandar comandos de mas
         grisShader: false, grisNo: false,
         cfg: { chat: false }
@@ -116,10 +130,10 @@ function boxeoHudIniciar() {
           desc: 'Lento como una monta\u00F1a, duro como el acero. Martillazos pesados, recibes menos da\u00F1o y tu escudo aguanta m\u00E1s. ULTI: golpe al suelo que lo levanta y martillazo final.' },
         { nom: 'SUPERNOVA', tier: 2, ulti: 'SUPERNOVA', hab: [['1', 'ESTALLIDO', 280], ['2', 'DESTELLO', 200]], ritmo: 10,
           desc: 'Una estrella a punto de explotar. 1 ESTALLIDO SOLAR: te cruzas de brazos y explotas (lo ciega y lo lanza). 2 DESTELLO: te lanzas como un rayo. ULTI: brillas, 3 golpes y explotas.' },
-        { nom: 'ESCOPETA', tier: 3, ulti: 'LLUVIA DE PLOMO', hab: [['1', 'DOBLE GATILLO', 240]], ritmo: 9,
-          desc: 'Cada golpe es un disparo. 1 DOBLE GATILLO: acierta la barra 2 veces (1/2 y 2/2) y sueltas 2 golpes dobles. ULTI: minijuego de flechas mientras lo acribillas; al final, DOBLE GATILLO con tu porcentaje.' },
-        { nom: 'NECROID', tier: 4, ulti: 'QUIEBRAHUESOS', hab: [['1', 'ZARPA', 200], ['2', 'ALMA ROBADA', 320], ['3', 'PASO SOMBRA', 240]], ritmo: 9,
-          desc: 'Una sombra que no se deja tocar: esquivas mucho m\u00E1s f\u00E1cil. 1 ZARPA, 2 ALMA ROBADA (le robas vida), 3 PASO SOMBRA (apareces detr\u00E1s). ULTI: le rompes las costillas y lo mandas a volar en c\u00E1mara lenta.' },
+        { nom: 'ESCOPETA', tier: 3, ulti: 'LLUVIA DE PLOMO', hab: [['1', 'ESCOPETA', 240]], ritmo: 9,
+          desc: 'Cada golpe es un disparo. 1 ESCOPETA: la 1a vez CARGAS (acierta la barra 1/2 y 2/2); la 2a sueltas una R\u00C1FAGA de golpes como loco hasta acabar tu estamina (si se cubre, su escudo se rompe rapid\u00EDsimo). ULTI: minijuego de flechas mientras lo acribillas.' },
+        { nom: 'NECROID', tier: 4, ulti: 'COLAPSO ESTELAR', hab: [['1', 'ZARPA', 200], ['2', 'ALMA ROBADA', 320], ['3', 'PASO SOMBRA', 240]], ritmo: 9,
+          desc: 'Una sombra que no se deja tocar: esquivas mucho m\u00E1s f\u00E1cil. 1 ZARPA, 2 ALMA ROBADA, 3 PASO SOMBRA. ULTI: te lo llevas a la GALAXIA, lo golpeas estrella por estrella y lo lanzas a un AGUJERO NEGRO. 4 ca\u00EDdas.' },
         { nom: 'CALLEJERO', tier: 0, ulti: 'PELEA DE BAR', hab: [], ritmo: 12,
           desc: 'Aprendiste a pelear en la calle. Volados y golpes al cuerpo, cabezazo como golpe fuerte. ULTI: patada, cabezazo y martillazo con las 2 manos.' },
         { nom: 'RANA', tier: 1, ulti: 'SALTO DE RANA', hab: [], ritmo: 11,
@@ -127,14 +141,16 @@ function boxeoHudIniciar() {
         { nom: 'FANTASMA', tier: 2, ulti: 'POSESI\u00D3N', hab: [['1', 'ESPECTRO', 300], ['2', 'SUSTO', 260]], ritmo: 10,
           desc: 'Flotas como un fantasma. Rev\u00E9s girando como golpe fuerte. 1 ESPECTRO: los golpes te atraviesan 3 s. 2 SUSTO: \u00A1BUU! lo paralizas. ULTI: te metes en su cuerpo y se pega solo.' },
         { nom: 'EMPERADOR', tier: 3, ulti: 'DECRETO REAL', hab: [['1', 'PU\u00D1O IMPERIAL', 260], ['2', 'ARMADURA', 400]], ritmo: 10,
-          desc: 'Peleas con una mano en la espalda. 1 PU\u00D1O IMPERIAL: la mano de atr\u00E1s sale con todo y rompe guardias. 2 ARMADURA DORADA: 4 s recibiendo la mitad. ULTI: lo obligas a arrodillarse y lo aplastas.' }
+          desc: 'Peleas con una mano en la espalda. 1 PU\u00D1O IMPERIAL: la mano de atr\u00E1s sale con todo y rompe guardias. 2 ARMADURA DORADA: 4 s recibiendo la mitad. ULTI: lo obligas a arrodillarse y lo aplastas.' },
+        { nom: 'CALAVERA', tier: 4, ulti: 'RAYOS X', hab: [['1', 'CRUJIDO', 220], ['2', 'RODILLAZO', 260], ['3', 'HUESOS', 400]], ritmo: 10,
+          desc: 'Puro hueso y furia: esquivas mucho m\u00E1s f\u00E1cil. 1 CRUJIDO (le crujen las costillas), 2 RODILLAZO, 3 HUESOS DE ACERO. ULTI: 4 golpes en c\u00E1mara lenta y en RAYOS X se ve c\u00F3mo se le rompen los huesos. 4 ca\u00EDdas.' }
     ]
     var TIERS = [
-        { nom: 'B\u00C1SICO', pct: 60, su: 0, c: 0xFF43D160, o: 0xFF1D6B30, lista: 'Boxeador \u00B7 Callejero' },
-        { nom: 'RARO', pct: 27, su: 0, c: 0xFF3B8CFF, o: 0xFF183F8C, lista: 'Rel\u00E1mpago \u00B7 Tit\u00E1n \u00B7 Rana' },
-        { nom: 'M\u00CDTICO', pct: 8, su: 65, c: 0xFFC65CFF, o: 0xFF5E1C86, lista: 'Supernova \u00B7 Fantasma', aura: 'm' },
-        { nom: 'LEGENDARIO', pct: 4, su: 28, c: 0xFFF0D04A, o: 0xFF7A6512, lista: 'Escopeta \u00B7 Emperador', aura: 'l' },
-        { nom: 'LIMITADO', pct: 1, su: 7, c: 0xFFFF2E3E, o: 0xFF2A0508, limitado: true, lista: 'Necroid', aura: 'x' }
+        { nom: 'B\u00C1SICO', pct: '72.59', su: 0, c: 0xFF43D160, o: 0xFF1D6B30, lista: 'Boxeador \u00B7 Callejero' },
+        { nom: 'RARO', pct: '25', su: 0, c: 0xFF3B8CFF, o: 0xFF183F8C, lista: 'Rel\u00E1mpago \u00B7 Tit\u00E1n \u00B7 Rana' },
+        { nom: 'M\u00CDTICO', pct: '2', su: 97, c: 0xFFC65CFF, o: 0xFF5E1C86, lista: 'Supernova \u00B7 Fantasma', aura: 'm' },
+        { nom: 'LEGENDARIO', pct: '0.4', su: 2.9, c: 0xFFF0D04A, o: 0xFF7A6512, lista: 'Escopeta \u00B7 Emperador', aura: 'l' },
+        { nom: 'LIMITADO', pct: '0.01', su: 0.1, c: 0xFFFF2E3E, o: 0xFF2A0508, limitado: true, lista: 'Necroid \u00B7 Calavera', aura: 'x' }
     ]
     var estilo = (k) => ESTILOS[k] || ESTILOS[0]
     // color de una categoria (LIMITADO: rojo sangre que late con negro)
@@ -145,9 +161,9 @@ function boxeoHudIniciar() {
         var r = Math.round(150 + 105 * f), gg = Math.round(10 + 40 * f), b = Math.round(20 + 40 * f)
         return col(0xFF000000 | (r << 16) | (gg << 8) | b)
     }
-    // duracion maxima de la cinematica de cada ULTI (ticks, por estilo 0..9); PF = esquiva perfecta
-    var PF = 10
-    var ULTI_DUR = [56, 50, 50, 54, 330, 70, 56, 62, 56, 60, 40]
+    // duracion maxima de la cinematica de cada ULTI (ticks, por estilo 0..10); PF = esquiva perfecta
+    var PF = 11
+    var ULTI_DUR = [56, 50, 50, 400, 420, 360, 56, 62, 56, 60, 270, 40]   // SUPERNOVA 20 s y ESCOPETA 21 s: lo que dura su animacion
 
     var WIN_G = ["kazotsky", "roblox", "saludo", "aplauso", "senalar"]
     var WIN_N = [23, 43, 50, 23, 83]
@@ -274,6 +290,9 @@ function boxeoHudIniciar() {
             p.dg = n('#dg' + i, 0)
             p.tm = n('#tm' + i, 0)
             p.cd = [n('#cd' + i + '1', 0), n('#cd' + i + '2', 0), n('#cd' + i + '3', 0), n('#cd' + i + '4', 0)]
+            p.qu = n('#qu' + i, 0)       // 1 = no se puede mover (le estan pegando, esquiva perfecta...)
+            p.el = n('#el' + i, 0)       // ESCOPETA: 1 lista, 2 rafaga, 3 cargando
+            p.lm = n('#lm' + i, 0)       // LIMITADO (4 caidas)
         }
         d.dn = n('#dn', 0)
         d.cnt = n('#cnt', -1)
@@ -286,6 +305,9 @@ function boxeoHudIniciar() {
         d.pf = n('#pf', 0); d.pfq = n('#pfq', 0); d.pfe = n('#pfe', 0)
         d.fin = n('#fin', 0)
         d.sl = n('#sl', 0)
+        d.wf = n('#wf', 0); d.wfq = n('#wfq', 0); d.wfd = n('#wfd', 10)
+        d.xr = n('#xr', 0); d.xrk = n('#xrk', 0); d.cof = n('#cof', 0)
+        d.ep = n('#ep', 0); d.epw = n('#epw', 0)
         d.n1 = miembro(sb, 'bxrojo' + r)
         d.n2 = miembro(sb, 'bxazul' + r)
         d.yoN = yo
@@ -356,7 +378,7 @@ function boxeoHudIniciar() {
     // avisos: cuando un contador del server sube, se muestra el aviso
     var bxAvisos = (d) => {
         var t = ahora()
-        var claves = ['cg', 'uc', 'ub', 'dn', 'gc', 'ui', 'uf', 'pf', 'pfe', 'r', 'sl']
+        var claves = ['cg', 'uc', 'ub', 'dn', 'gc', 'ui', 'uf', 'pf', 'pfe', 'r', 'sl', 'wf', 'xr', 'cof', 'ep']
         var foto = {}
         for (var k = 0; k < claves.length; k++) foto[claves[k]] = d[claves[k]]
         foto.tm = d.yo > 0 ? d.p[d.yo].tm : 0
@@ -377,6 +399,10 @@ function boxeoHudIniciar() {
             cineEmpezar(d, PF, d.pfq)
         }
         if (d.sl != BX.ev.sl) BX.lento.desde = t
+        if (d.wf != BX.ev.wf && d.wfq > 0) BX.aviso = { desde: t, dur: Math.max(4, d.wfd) * 50, q: d.wfq }
+        if (d.xr != BX.ev.xr) BX.xr = { desde: t, k: d.xrk }
+        if (d.cof != BX.ev.cof) BX.cof = t
+        if (d.ep != BX.ev.ep) BX.ep = { desde: t, q: d.epw }
         if (d.cnt != BX.cnt.v) { BX.cnt.v = d.cnt; BX.cnt.en = t }
         if (d.pfe != BX.ev.pfe) BX.pf.fin = t
         BX.ev = foto
@@ -590,16 +616,17 @@ function boxeoHudIniciar() {
         caja(g, x0, ys, bw, sh, 0xFF303030)
         if (lado < 0) caja(g, x1 - fsw, ys, fsw, sh, cSt)
         else caja(g, x0, ys, fsw, sh, cSt)
-        // caidas: 3 cuadritos (rojo = ya lo noquearon esa vez)
+        // caidas: 3 cuadritos (4 si es LIMITADO; rojo = ya lo noquearon esa vez)
         var yk = ys + sh + 3
-        for (var k = 0; k < 3; k++) {
+        var nko = p.lm == 1 ? 4 : 3
+        for (var k = 0; k < nko; k++) {
             var xk = lado < 0 ? x0 + k * 8 : x1 - 6 - k * 8
             caja(g, xk, yk, 6, 6, 0xFF000000)
             caja(g, xk + 1, yk + 1, 4, 4, k < p.ko ? 0xFFFF3030 : 0x80A0A0A0)
         }
         if (p.cs == 1) {
             var tc = '\u00A1CANSADO!'
-            texto(g, tc, lado < 0 ? x0 + 28 : x1 - 28 - ancho(tc), yk - 1, 0xFFB0B0B0, true)
+            texto(g, tc, lado < 0 ? x0 + 36 : x1 - 36 - ancho(tc), yk - 1, 0xFFB0B0B0, true)
         }
         // escudo al lado de la cara mientras se cubre (o roto)
         if (p.g >= 1) {
@@ -655,7 +682,10 @@ function boxeoHudIniciar() {
             var cd = p.cd[k - 1] || 0
             var total = Math.max(1, Math.round((h[2] || 200) / 20))
             var listo = cd <= 0 && p.cs != 1
-            caja(g, x, y, bw, bw, listo ? 0xE0182030 : 0xE0101014)
+            // ESCOPETA: el boton dice si hay que CARGAR, si esta LISTA o si esta en RAFAGA
+            var esc = p.es == 4 && k == 1
+            if (esc && (p.el == 1 || p.el == 2)) { listo = true; cd = 0 }
+            caja(g, x, y, bw, bw, listo ? (esc && p.el == 1 && (ahora() % 400) < 200 ? 0xE0806010 : 0xE0182030) : 0xE0101014)
             if (!listo && cd > 0) {
                 // se va llenando de abajo hacia arriba mientras recarga
                 var f = Math.max(0, Math.min(1, cd / total))
@@ -666,6 +696,7 @@ function boxeoHudIniciar() {
             if (cd > 0) textoC(g, String(cd), x + bw / 2, y + 12, 0xFFFF9999)
             // nombre cortito debajo (escala pequena)
             var nm = h[1]
+            if (esc) nm = p.el == 1 ? '\u00A1LISTA! R\u00C1FAGA' : (p.el == 2 ? 'R\u00C1FAGA' : (p.el == 3 ? 'CARGANDO' : 'CARGAR'))
             var pz = g.pose()
             pz.pushPose()
             pz.scale(0.5, 0.5, 1)
@@ -688,7 +719,7 @@ function boxeoHudIniciar() {
     // ---- CONTROLES (a la derecha, debajo de los avisos; gris y chiquito) ----
     var controlesDibujar = (g, W, H) => {
         var ls = ['Clic izquierdo: golpe normal', 'Clic derecho: golpe fuerte', nombreTecla(TECLA.ulti, 'R') + ': ulti',
-                  'Espacio: esquivar', nombreTecla(TECLA.cubrir, 'F') + ': cubrirse']
+                  'Espacio: esquivar (A/D/S)', nombreTecla(TECLA.cubrir, 'F') + ': cubrirse']
         var y = Math.floor(H * 0.22) + 96
         var pz = g.pose()
         pz.pushPose()
@@ -774,14 +805,15 @@ function boxeoHudIniciar() {
         var t = ahora()
         if (h.etapa == 0) {
             var ok = h.res == 'ok'
-            textoG(g, ok ? '\u00A1DOBLE GATILLO 2/2!' : '\u00A1FALLASTE!', cx, y - 4, 2, ok ? 0xFFFFD040 : 0xFFFF5050)
+            textoG(g, ok ? '\u00A1ESCOPETA LISTA!' : '\u00A1FALLASTE!', cx, y - 4, 2, ok ? 0xFFFFD040 : 0xFFFF5050)
+            textoC(g, ok ? 'Pulsa 1 = R\u00C1FAGA' : 'Vuelve a cargar (tecla 1)', cx, y + 16, 0xFFFFE080)
             return
         }
         var W = $Minecraft.getInstance().getWindow().getGuiScaledWidth()
         var w = Math.min(240, Math.floor(Number(W) * 0.55)), bh = 9
         var x = cx - w / 2
         caja(g, x - 3, y - 15, w + 6, bh + 30, 0x90000000)
-        texto(g, 'DOBLE GATILLO', x, y - 12, 0xFFF0D04A, true)
+        texto(g, 'CARGANDO LA ESCOPETA', x, y - 12, 0xFFF0D04A, true)
         var et = h.etapa + '/2'
         textoGI(g, et, x + w - ancho(et) * 1.4, y - 14, 1.4, 0xFFFFFFFF, true)
         // la barra: rayitas grises y la zona verde
@@ -804,8 +836,16 @@ function boxeoHudIniciar() {
         { k: 'A', c: 0xFFC24BFF, codes: [65, 263], fl: '\u25C0' },
         { k: 'S', c: 0xFF3FD0FF, codes: [83, 264], fl: '\u25BC' },
         { k: 'W', c: 0xFF4CFF6A, codes: [87, 265], fl: '\u25B2' },
-        { k: 'D', c: 0xFFFF4A4A, codes: [68, 262], fl: '\u25B6' }
+        { k: 'D', c: 0xFFFF8A3A, codes: [68, 262], fl: '\u25B6' }
     ]
+    // Box.v2: la forma de la flecha (11 x 11, apuntando a la izquierda) y su contorno / centro; se gira para cada carril
+    var MG_ARR = ['...........', '....#......', '...##......', '..########.', '.#########.', '##########.', '.#########.', '..########.', '...##......', '....#......', '...........']
+    var mgDil = (M, d) => { var o = []; for (var y = 0; y < 11; y++) { var s = ''; for (var x = 0; x < 11; x++) { var v = false; for (var dy = -1; dy <= 1; dy++) for (var dx = -1; dx <= 1; dx++) { var yy = y + dy, xx = x + dx; var en = yy >= 0 && yy < 11 && xx >= 0 && xx < 11 && M[yy].charAt(xx) == '#'; if (d && en) v = true } if (!d) { v = M[y].charAt(x) == '#'; for (var dy2 = -1; dy2 <= 1; dy2++) for (var dx2 = -1; dx2 <= 1; dx2++) { var y2 = y + dy2, x2 = x + dx2; if (y2 < 0 || y2 >= 11 || x2 < 0 || x2 >= 11 || M[y2].charAt(x2) != '#') v = false } } s += v ? '#' : '.' } o.push(s) } return o }
+    var MG_ARR_D = mgDil(MG_ARR, true), MG_ARR_E = mgDil(MG_ARR, false)
+    // carril 0 A izquierda, 1 S abajo, 2 W arriba, 3 D derecha
+    var mgCelda = (M, k, x, y) => { var r, c; if (k == 0) { r = y; c = x } else if (k == 3) { r = y; c = 10 - x } else if (k == 2) { r = x; c = y } else { r = x; c = 10 - y } return M[r].charAt(c) == '#' }
+    // tamano de las flechas del minijuego de ESCOPETA (1.0 = normal, 0.8 = mas chicas, 1.2 = mas grandes)
+    var FLECHAS_ESCALA = 1.0
     var MG_N = 24, MG_VIAJE = 1300, MG_VENT = 150
     var mgEmpezar = () => {
         var notas = []
@@ -818,7 +858,9 @@ function boxeoHudIniciar() {
             ant = c
             tt += (i >= 10 && i < 16) ? 270 : 470   // en el medio: rafaga rapida
         }
-        BX.mg = { desde: ahora(), notas: notas, ac: 0, fallos: 0, combo: 0, maxc: 0, pts: 0, fin: tt + 300, enviado: false, flash: [0, 0, 0, 0], txt: null }
+        // Box.v2: el minijuego empieza a los 2 s de la ULTI (como la escena): la ULTIMA flecha llega a ~13,4 s y la nota sale ahi;
+        // recien despues la escena pone los golpes extra de la nota
+        BX.mg = { desde: ahora() + 2000, notas: notas, ac: 0, fallos: 0, combo: 0, maxc: 0, pts: 0, fin: tt + 300, enviado: false, flash: [0, 0, 0, 0], txt: null }
     }
     var mgTecla = (code) => {
         var m = BX.mg
@@ -867,6 +909,8 @@ function boxeoHudIniciar() {
             m.pc = Math.round(m.ac * 100 / MG_N)
             m.finEn = ahora()
             comando('bxk uf ' + m.pc)
+            // Box.v2: la escena de la ULTI de Escopeta pone los golpes extra segun la nota
+            try { Java.loadClass('dinamicas.ultis.Ultis').notaEscopeta(m.pc) } catch (e) { bxLog('nota escopeta', e) }
         }
         if (m.enviado && t >= m.fin + 2600) BX.mg = null
     }
@@ -876,41 +920,57 @@ function boxeoHudIniciar() {
         if (m == null) return
         var ta = ahora()
         var t = ta - m.desde
-        var lw = 28, x0 = Math.floor(W / 2 - lw * 2)
-        var yHit = Math.max(50, Math.floor(H * 0.17)), yBot = Math.floor(H * 0.86)
-        // fondo suave: se ve la pelea detras
-        caja(g, x0 - 6, yHit - 6, lw * 4 + 12, yBot - yHit + 12, 0x50000000)
+        if (t < -200) return          // (antes de empezar: la activacion de la ULTI se ve limpia)
+        // Box.v2 (Paul 20/10 23:34): como el minijuego de Shotgun: receptores ARRIBA, las flechas SUBEN desde abajo, grandes,
+        // cada tecla con su color y su letra (A W S D) escrita en cada flecha; la rafaga se ve de fondo
+        var lw = Math.max(14, Math.min(90, Math.floor(H * 0.11 * FLECHAS_ESCALA))), gap = Math.floor(lw * 0.14), paso = lw + gap
+        var x0 = Math.floor(W / 2 - paso * 2 + gap / 2)
+        var yHit = Math.max(26, Math.floor(H * 0.10)), yBot = Math.floor(H * 0.86)
+        // flecha como las de Shotgun (FNF): contorno oscuro, color y el centro mas claro; con su letra chiquita
+        var px = lw / 11
+        var claro = (c) => { var r = (c >> 16) & 255, gg2 = (c >> 8) & 255, b = c & 255; r = Math.floor(r + (255 - r) * 0.45); gg2 = Math.floor(gg2 + (255 - gg2) * 0.45); b = Math.floor(b + (255 - b) * 0.45); return ((0xFF << 24) | (r << 16) | (gg2 << 8) | b) >>> 0 }
+        var flecha = (x, y, C, k, relleno, borde, letra) => {
+            var capas = [[MG_ARR_D, borde], [MG_ARR, relleno], [MG_ARR_E, claro(relleno)]]
+            for (var q = 0; q < 3; q++) {
+                var M = capas[q][0], col = capas[q][1]
+                for (var yy = 0; yy < 11; yy++) {
+                    var xx = 0
+                    while (xx < 11) {
+                        if (!mgCelda(M, k, xx, yy)) { xx++; continue }
+                        var x1 = xx
+                        while (x1 < 11 && mgCelda(M, k, x1, yy)) x1++
+                        caja(g, Math.floor(x + xx * px), Math.floor(y + yy * px), Math.ceil((x1 - xx) * px), Math.ceil(px), col)
+                        xx = x1
+                    }
+                }
+            }
+            textoC(g, C.k, x + lw / 2, y + lw / 2 - 4, letra)
+        }
         for (var k = 0; k < 4; k++) {
             var C = MG_CARRIL[k]
-            var xl = x0 + k * lw
-            caja(g, xl + lw / 2 - 1, yHit, 2, yBot - yHit, 0x30FFFFFF)
-            // receptor (arriba)
+            var xl = x0 + k * paso
+            caja(g, xl + lw / 2 - 1, yHit + lw, 2, yBot - yHit - lw, 0x28FFFFFF)
+            // receptor (arriba): gris con borde blanco; se pinta de su color al apretar
             var fl = ta - m.flash[k] < 120
-            caja(g, xl + 3, yHit - 1, lw - 6, lw - 6, fl ? conAlfa(C.c, 0.95) : 0x50FFFFFF)
-            marco(g, xl + 3, yHit - 1, lw - 6, lw - 6, C.c)
-            textoC(g, C.fl, xl + lw / 2, yHit + 7, fl ? 0xFF000000 : 0xFFFFFFFF)
-            textoC(g, C.k, xl + lw / 2, yHit - 12, 0xFFDDDDDD)
+            flecha(xl, yHit, C, k, fl ? C.c : 0xFF9AA8B8, 0xFF1A2230, 0xFF1A2230)
         }
         // flechas que suben
         for (var i = 0; i < m.notas.length; i++) {
             var n = m.notas[i]
             if (n.ok == 1) continue
             var f = 1 - (n.t - t) / MG_VIAJE
-            if (f < 0 || f > 1.2) continue
+            if (f < 0 || f > 1.25) continue
             var y = yBot - (yBot - yHit) * f
             var C2 = MG_CARRIL[n.c]
-            var xn = x0 + n.c * lw
-            var col2 = n.ok == -1 ? 0xA0606060 : C2.c
-            caja(g, xn + 4, y, lw - 8, lw - 8, col2)
-            marco(g, xn + 4, y, lw - 8, lw - 8, 0xFF000000)
-            textoC(g, C2.fl, xn + lw / 2, y + 6, 0xFFFFFFFF)
+            var xn = x0 + n.c * paso
+            flecha(xn, Math.floor(y), C2, n.c, n.ok == -1 ? 0xFF606060 : C2.c, 0xFF101018, 0xFF101018)
         }
-        // SICK!! / GOOD / FALLO al lado de las flechas
+        // SICK!! / GOOD / FALLO debajo de las flechas
         if (m.txt != null && ta - m.txt.en < 500) {
             var sj = 1.8 + Math.max(0, 1 - (ta - m.txt.en) / 120) * 0.6
-            textoGI(g, m.txt.s, x0 + lw * 4 + 12, yHit + 26, sj, conAlfa(m.txt.c, ta - m.txt.en > 380 ? (500 - (ta - m.txt.en)) / 120 : 1), true)
+            textoG(g, m.txt.s, W / 2, yHit + lw + 10, sj, conAlfa(m.txt.c, ta - m.txt.en > 380 ? (500 - (ta - m.txt.en)) / 120 : 1))
         }
-        if (m.combo >= 3) textoGI(g, m.combo + 'x', x0 - 12 - ancho(m.combo + 'x') * 1.6, yHit + 26, 1.6, 0xFFFFFFFF, true)
+        if (m.combo >= 3) textoGI(g, m.combo + 'x', x0 - 14 - ancho(m.combo + 'x') * 1.6, yHit + lw / 2 - 6, 1.6, 0xFFFFFFFF, true)
         // Combinacion | Precision (abajo)
         var hechas = m.ac + m.fallos
         var prec = hechas > 0 ? Math.round(m.pts * 100 / hechas) : 100
@@ -918,24 +978,23 @@ function boxeoHudIniciar() {
         var tb = 'Combinaci\u00F3n: ' + m.maxc + '  |  Precisi\u00F3n: ' + prec + '%'
         caja(g, W / 2 - ancho(tb) / 2 - 6, yBot + 6, ancho(tb) + 12, 13, 0xB0000000)
         textoC(g, tb, W / 2, yBot + 9, 0xFFFFFFFF)
-        texto(g, 'LLUVIA DE PLOMO', x0 - 6, yHit - 24, 0xFFF0D04A, true)
+        texto(g, 'LLUVIA DE PLOMO', x0 - 2, yHit - 13, 0xFFF0D04A, true)
         var tp = pc + '%'
-        texto(g, tp, x0 + lw * 4 + 6 - ancho(tp), yHit - 24, pc >= 99 ? 0xFFFFD040 : (pc >= 50 ? 0xFF7CFF8A : 0xFFFF8080), true)
+        texto(g, tp, x0 + paso * 4 - gap - ancho(tp), yHit - 13, pc >= 99 ? 0xFFFFD040 : (pc >= 50 ? 0xFF7CFF8A : 0xFFFF8080), true)
         if (m.enviado) {
             // NIVEL y da\u00F1o adicional (el DOBLE GATILLO final con tu porcentaje)
             var nv = mgNivel(m.pc)
             var tf = ta - (m.finEn || ta)
             var sN = 3.4 + Math.max(0, 1 - tf / 200) * 1.6
-            textoGI(g, 'NIVEL', W / 2 - 60, Math.floor(H * 0.40), 1.6, 0xFFFFFFFF, true)
-            textoGI(g, nv[0], W / 2 + 4, Math.floor(H * 0.40) - 10, sN, nv[1], true)
+            textoGI(g, 'NIVEL', W / 2 - 60, Math.floor(H * 0.45), 1.6, 0xFFFFFFFF, true)
+            textoGI(g, nv[0], W / 2 + 4, Math.floor(H * 0.45) - 10, sN, nv[1], true)
             var dano = m.pc >= 99 ? 40 : Math.round(8 + 24 * m.pc / 100)
-            textoC(g, 'DOBLE GATILLO: da\u00F1o adicional +' + dano + (m.pc >= 99 ? '  (\u00A1100%! DOBLE)' : ''), W / 2, Math.floor(H * 0.40) + 30, 0xFFFFE080)
+            textoC(g, 'DOBLE GATILLO: da\u00F1o adicional +' + dano + (m.pc >= 99 ? '  (\u00A1100%! DOBLE)' : ''), W / 2, Math.floor(H * 0.45) + 30, 0xFFFFE080)
         } else if (t < 1500) {
-            textoG(g, 'W A S D', W / 2, Math.floor(H * 0.45), 2.4, 0xFFFFFFFF)
-            textoC(g, 'Aprieta cada flecha cuando llegue arriba', W / 2, Math.floor(H * 0.45) + 24, 0xFFDDDDDD)
+            textoG(g, 'A   S   W   D', W / 2, Math.floor(H * 0.5), 2.4, 0xFFFFFFFF)
+            textoC(g, 'Aprieta cada flecha cuando llegue arriba', W / 2, Math.floor(H * 0.5) + 24, 0xFFDDDDDD)
         }
     }
-
     // ---- GOLPES xN (a la derecha, debajo del contragolpe) ----
     var golpesDibujar = (g, d, W, H) => {
         var tg = ahora() - BX.gol.desde
@@ -956,7 +1015,7 @@ function boxeoHudIniciar() {
 
     // ---- CINEMATICA (ULTI de cada estilo 0..9; PF = ESQUIVA PERFECTA) ----
     // rol 1 = la lanza (o esquivo), 2 = la recibe, 3 = espectador
-    var CINE = { activo: false, desde: 0, est: 0, q: 0, rol: 0, mira: null, real: null }
+    var CINE = { activo: false, desde: 0, est: 0, q: 0, rol: 0, mira: null, real: null, java: false }
     // tomas: [desde, hasta, giro de la camara (respecto a mirar al otro), altura (grados), a quien mira, deriva]
     //  mira: 'o' = el otro, 'm' = yo, 'c' = el medio de los dos
     var TOMAS = [
@@ -975,9 +1034,10 @@ function boxeoHudIniciar() {
         // 4 ESCOPETA: minijuego (camara lenta alrededor; se ve como le pega)
         { a: [[0, 22, 165, -6, 'm', 10], [22, 110, 40, 6, 'c', 50], [110, 200, -45, 8, 'c', -50], [200, 999, 95, 18, 'c', 35]],
           v: [[0, 22, -25, 4, 'o', -5], [22, 110, -60, 6, 'c', -45], [110, 200, 55, 8, 'c', 45], [200, 999, -95, 18, 'c', -35]] },
-        // 5 NECROID: QUIEBRAHUESOS (costillas de cerca en camara lenta, el uppercut y el vuelo de lado)
-        { a: [[0, 10, 95, 4, 'c', 15], [10, 34, 55, 2, 'o', 25], [34, 58, 100, 10, 'o', 45], [58, 99, -130, 18, 'c', 10]],
-          v: [[0, 10, -95, 4, 'c', -15], [10, 34, 160, -4, 'm', -10], [34, 58, -100, 10, 'm', -45], [58, 99, 130, 18, 'c', -10]] },
+        // 5 NECROID: COLAPSO ESTELAR (lo agarra, se van a la galaxia, camara que gira lento alrededor; el final se
+        //  ve de lado con el AGUJERO NEGRO: ver cinePreparar)
+        { a: [[0, 14, 95, 4, 'c', 15], [14, 46, 150, -10, 'm', 20], [46, 170, 70, 8, 'c', 70], [170, 999, -70, 10, 'c', -70]],
+          v: [[0, 14, -95, 4, 'c', -15], [14, 46, -30, 10, 'o', -10], [46, 170, -70, 8, 'c', -70], [170, 999, 70, 10, 'c', 70]] },
         // 6 CALLEJERO: PELEA DE BAR
         { a: [[0, 8, 120, 6, 'c', 20], [8, 20, 60, 4, 'o', 10], [20, 34, -80, 8, 'c', -20], [34, 99, 160, 15, 'o', 15]],
           v: [[0, 8, -120, 6, 'c', -20], [8, 20, 170, -6, 'm', -8], [20, 34, 80, 8, 'c', 20], [34, 99, -150, 15, 'm', -15]] },
@@ -990,6 +1050,9 @@ function boxeoHudIniciar() {
         // 9 EMPERADOR: DECRETO REAL (de abajo como un rey, el otro se arrodilla, martillazo desde arriba)
         { a: [[0, 16, 170, -14, 'm', 12], [16, 28, 70, 10, 'o', 20], [28, 44, -60, 6, 'c', -20], [44, 99, 120, 25, 'c', 15]],
           v: [[0, 16, -30, 6, 'o', -6], [16, 28, 160, 12, 'm', -10], [28, 44, 60, 6, 'c', 20], [44, 99, -120, 25, 'c', -15]] },
+        // 10 CALAVERA: RAYOS X (de cerca y de lado en cada golpe: 30 costillas, 90 columna, 150 mandibula, 210 uppercut)
+        { a: [[0, 26, 160, -8, 'm', 10], [26, 60, 95, 4, 'c', 20], [60, 120, -80, 2, 'c', -25], [120, 180, 60, 10, 'c', 30], [180, 206, 170, -20, 'm', 10], [206, 999, 100, 12, 'c', 40]],
+          v: [[0, 26, -20, 6, 'o', -6], [26, 60, -95, 4, 'c', -20], [60, 120, 80, 2, 'c', 25], [120, 180, -60, 10, 'c', -30], [180, 206, -20, -15, 'o', -10], [206, 999, -100, 12, 'c', -40]] },
         // PF ESQUIVA PERFECTA: de lado y de cerca: el pu\u00F1o pasa por encima del que se agacha
         { a: [[0, 99, 92, 2, 'c', 16]],
           v: [[0, 99, -92, 2, 'c', -16]] }
@@ -1000,6 +1063,8 @@ function boxeoHudIniciar() {
             if (mc.player == null || d == null) return
             var A = entidad(nombreDe(d, q)), V = entidad(nombreDe(d, 3 - q))
             if (A == null || V == null) return
+            // SUPERNOVA, ESCOPETA y WHITE ASH JOE: la cinematica la hace el mod (dinamicas.ultis)
+            CINE.java = (est == 3 || est == 4 || est == 11)
             var rol = 3
             if (d.yo == q) rol = 1
             else if (d.yo > 0) rol = 2
@@ -1010,8 +1075,11 @@ function boxeoHudIniciar() {
             CINE.q = q
             CINE.rol = rol
             CINE.mira = null
-            // ULTI de ESCOPETA: el que la lanza juega el minijuego de flechas
+            BX.xr = null
+            BX.cof = 0
+            // ULTI de ESCOPETA: el que la lanza juega el minijuego de flechas; NECROID: la CONSTELACION
             if (CINE.est == 4 && rol == 1) mgEmpezar()
+            if (CINE.est == 5 && rol == 1) cosEmpezar()
         } catch (e) {
             bxLog('cine empezar', e)
             CINE.activo = false
@@ -1036,7 +1104,7 @@ function boxeoHudIniciar() {
     // antes de dibujar el cuadro: camara de cine (se cambia la mirada SOLO para dibujar; el server
     // nunca la ve porque al terminar el cuadro se devuelve la de verdad)
     var cinePreparar = (d, pt) => {
-        if (!CINE.activo) return
+        if (!CINE.activo || CINE.java) return
         var mc = $Minecraft.getInstance()
         var yo = mc.player
         var tk = cineTicks()
@@ -1061,6 +1129,11 @@ function boxeoHudIniciar() {
         var s = lista[lista.length - 1]
         for (var i = 0; i < lista.length; i++) {
             if (tk >= lista[i][0] && tk < lista[i][1]) { s = lista[i]; break }
+        }
+        // NECROID: el final (AGUJERO NEGRO) siempre de lado, empieza cuando el server lo dice
+        if (CINE.est == 5 && BX.cof > CINE.desde) {
+            var tc = (BX.cof - CINE.desde) / 50
+            s = CINE.rol == 1 ? [tc, tc + 60, 100, 6, 'c', 30] : [tc, tc + 60, -100, 6, 'c', -30]
         }
         var fin = Math.min(s[1], ULTI_DUR[CINE.est])
         var frac = Math.max(0, Math.min(1, (tk - s[0]) / Math.max(1, fin - s[0])))
@@ -1101,17 +1174,18 @@ function boxeoHudIniciar() {
         var a = pos(yo, pt), b = pos(otro, pt)
         var ang = angulos({ x: a.x, y: a.y + 1.62, z: a.z }, { x: b.x, y: b.y + 1.25, z: b.z })
         if (ang.h < 0.3) return
+        // FIJA de verdad: cada cuadro se pone exactamente mirando al rival (el raton no mueve nada,
+        //  ni a los lados ni arriba/abajo)
         var pit = Math.max(-25, Math.min(30, ang.pitch))
-        var k = 1 - Math.exp(-dt / 0.05)
         var cur = Number(yo.getYaw())
-        var ny = cur + difAng(cur, ang.yaw) * k
-        var cp = Number(yo.getPitch())
-        var np = cp + (pit - cp) * k
+        var ny = cur + difAng(cur, ang.yaw)
+        var np = pit
         yo.setYaw(ny)
         yo.setPitch(np)
         yo.yRotO = ny
         yo.xRotO = np
         try { yo.setYHeadRot(ny) } catch (e) { }
+        ssMirar(ny, np)
     }
 
     // ---- ESQUIVA PERFECTA: blanco y negro (shader del paquete; si no, un velo gris) ----
@@ -1204,10 +1278,312 @@ function boxeoHudIniciar() {
         }
     }
 
+    // ---- AVISO del golpe que viene (golpe fuerte / habilidad del otro): aro rojo que se cierra ----
+    //  cuando el aro llega al centro llega el golpe: ESE es el momento de esquivar (ESPACIO)
+    var avisoDibujar = (g, d, W, H) => {
+        var a = BX.aviso
+        if (a == null || d.yo == 0 || a.q == d.yo) return
+        var t = ahora()
+        var el = t - a.desde
+        if (el > a.dur + 350) { BX.aviso = null; return }
+        var cx = W / 2, cy = H / 2 + 6
+        var f = Math.max(0, 1 - el / a.dur)
+        var r = 8 + 52 * f
+        var col1 = el >= a.dur - 120 ? 0xFFFFFFFF : 0xFFFF3B3B
+        var al = el > a.dur ? Math.max(0, 1 - (el - a.dur) / 350) : 1
+        for (var q = 0; q < 48; q++) {
+            var an = (2 * PI_ * q) / 48
+            caja(g, cx + Math.cos(an) * r * 1.25 - 1, cy + Math.sin(an) * r - 1, 3, 3, conAlfa(col1, 0.9 * al))
+        }
+        // el aro fijo de "ahora"
+        for (var q2 = 0; q2 < 24; q2++) {
+            var an2 = (2 * PI_ * q2) / 24
+            caja(g, cx + Math.cos(an2) * 8 * 1.25 - 1, cy + Math.sin(an2) * 8 - 1, 2, 2, conAlfa(0xFFFFE04A, 0.8 * al))
+        }
+        var s = el >= a.dur - 120 && el < a.dur + 200 ? 2.4 : 1.8
+        textoG(g, '!', cx, cy - 8 * s / 2 - 1, s, conAlfa(el >= a.dur - 120 ? 0xFFFFFFFF : 0xFFFF4040, al))
+        if (el < a.dur) textoC(g, '\u00A1VIENE UN GOLPE FUERTE! Esquiva (ESPACIO) cuando el aro se cierre', cx, cy + 66, conAlfa(0xFFFFB0B0, al))
+    }
+
+    // ---- NECROID: minijuego CONSTELACION (su ULTI). Estrellas con un anillo que se cierra:
+    //  CLIC (o ESPACIO) justo cuando el anillo toca la estrella = un golpe en el espacio (bxk ch).
+    //  Al final manda bxk cf <porcentaje> y el server abre el AGUJERO NEGRO ----
+    var COS_N = 12, COS_AP = 950, COS_VENT = 150, COS_PERF = 60
+    var cosEmpezar = () => {
+        var es = []
+        var tt = 2700
+        var a0 = Math.random() * 2 * PI_
+        for (var i = 0; i < COS_N; i++) {
+            var an = a0 + i * 2.4
+            var rr = 0.16 + Math.random() * 0.14
+            es.push({ t: tt, x: 0.5 + Math.cos(an) * rr * 1.3, y: 0.47 + Math.sin(an) * rr, ok: 0, en: 0 })
+            tt += (i >= 6 && i < 9) ? 520 : 680
+        }
+        BX.cos = { desde: ahora(), es: es, ac: 0, fallos: 0, combo: 0, maxc: 0, pts: 0, fin: tt + 1300, enviado: false, txt: null, fin2: 0 }
+    }
+    var cosPulsar = () => {
+        var c = BX.cos
+        if (c == null || c.enviado) return false
+        var t = ahora() - c.desde
+        for (var i = 0; i < c.es.length; i++) {
+            var e = c.es[i]
+            if (e.ok != 0) continue
+            if (Math.abs(e.t - t) <= COS_VENT) {
+                e.ok = 1
+                e.en = ahora()
+                c.ac++
+                c.combo++
+                c.maxc = Math.max(c.maxc, c.combo)
+                var dt = Math.abs(e.t - t)
+                if (dt < COS_PERF) { c.txt = { s: '\u00A1PERFECTO!', en: ahora(), c: 0xFFFFF4A0 }; c.pts += 1 }
+                else { c.txt = { s: '\u00A1BIEN!', en: ahora(), c: 0xFFB8A0FF }; c.pts += 0.7 }
+                comando('bxk ch')
+                return true
+            }
+            // apretar antes de tiempo con la estrella ya en camino = fallo
+            if (e.t - t < COS_AP * 0.55 && e.t - t > COS_VENT) {
+                e.ok = -1
+                c.fallos++
+                c.combo = 0
+                c.txt = { s: 'FALLO', en: ahora(), c: 0xFFFF5050 }
+                return true
+            }
+            break
+        }
+        return true
+    }
+    var cosRevisar = () => {
+        var c = BX.cos
+        if (c == null) return
+        var t = ahora() - c.desde
+        for (var i = 0; i < c.es.length; i++) {
+            var e = c.es[i]
+            if (e.ok == 0 && t > e.t + COS_VENT) {
+                e.ok = -1
+                c.fallos++
+                c.combo = 0
+                c.txt = { s: 'FALLO', en: ahora(), c: 0xFFFF5050 }
+            }
+        }
+        if (!c.enviado && t >= c.fin) {
+            c.enviado = true
+            c.pc = Math.round(c.ac * 100 / COS_N)
+            c.fin2 = ahora()
+            comando('bxk cf ' + c.pc)
+        }
+        if (c.enviado && ahora() - c.fin2 > 2600) BX.cos = null
+    }
+    var estrella = (g, x, y, s, c) => {
+        caja(g, x - s, y - 1, 2 * s + 1, 3, c)
+        caja(g, x - 1, y - s, 3, 2 * s + 1, c)
+        caja(g, x - s / 2, y - s / 2, s + 1, s + 1, c)
+    }
+    var cosDibujar = (g, W, H) => {
+        var c = BX.cos
+        if (c == null) return
+        var ta = ahora()
+        var t = ta - c.desde
+        // lineas de la constelacion entre las estrellas acertadas
+        var prev = null
+        for (var i = 0; i < c.es.length; i++) {
+            var e = c.es[i]
+            if (e.ok != 1) continue
+            var px = e.x * W, py = e.y * H
+            if (prev != null) {
+                var n = 14
+                for (var k = 0; k <= n; k++) caja(g, prev.x + (px - prev.x) * k / n, prev.y + (py - prev.y) * k / n, 2, 2, 0x90C8B8FF)
+            }
+            prev = { x: px, y: py }
+        }
+        for (var j = 0; j < c.es.length; j++) {
+            var e2 = c.es[j]
+            var x = e2.x * W, y = e2.y * H
+            if (e2.ok == 1) {
+                var te = ta - e2.en
+                estrella(g, x, y, 4, 0xFFFFF4C0)
+                if (te < 400) {
+                    var rr = 6 + te / 12
+                    for (var q = 0; q < 20; q++) {
+                        var an = 2 * PI_ * q / 20
+                        caja(g, x + Math.cos(an) * rr, y + Math.sin(an) * rr, 2, 2, conAlfa(0xFFFFFFFF, 1 - te / 400))
+                    }
+                }
+                continue
+            }
+            var falta = e2.t - t
+            if (falta > COS_AP || falta < -COS_VENT - 200) continue
+            if (e2.ok == -1) {
+                estrella(g, x, y, 3, 0x80606070)
+                continue
+            }
+            var f = Math.max(0, falta / COS_AP)
+            var r = 6 + 34 * f
+            var brillo = (ta % 300) < 150 ? 0xFFFFFFFF : 0xFFC8B8FF
+            estrella(g, x, y, 5, brillo)
+            for (var q2 = 0; q2 < 32; q2++) {
+                var an2 = 2 * PI_ * q2 / 32
+                caja(g, x + Math.cos(an2) * r - 1, y + Math.sin(an2) * r - 1, 2, 2, conAlfa(0xFFB070FF, 0.9))
+            }
+        }
+        if (c.txt != null && ta - c.txt.en < 500) {
+            textoGI(g, c.txt.s, W / 2 + 70, Math.floor(H * 0.2), 1.8, conAlfa(c.txt.c, ta - c.txt.en > 380 ? (500 - (ta - c.txt.en)) / 120 : 1), true)
+        }
+        if (c.combo >= 3) textoGI(g, c.combo + 'x', W / 2 - 110, Math.floor(H * 0.2), 1.6, 0xFFFFFFFF, true)
+        var pc = Math.round(c.ac * 100 / COS_N)
+        texto(g, 'CONSTELACI\u00D3N', 10, Math.floor(H * 0.12), 0xFFC8B8FF, true)
+        texto(g, pc + '%  \u00B7  ' + c.ac + '/' + COS_N, 10, Math.floor(H * 0.12) + 11, pc >= 99 ? 0xFFFFD040 : 0xFFFFFFFF, true)
+        if (c.enviado) {
+            var nv = mgNivel(c.pc)
+            textoGI(g, 'NIVEL', W / 2 - 60, Math.floor(H * 0.40), 1.6, 0xFFFFFFFF, true)
+            textoGI(g, nv[0], W / 2 + 4, Math.floor(H * 0.40) - 10, 3.6, nv[1], true)
+            textoC(g, 'COLAPSO ESTELAR: golpe final +' + Math.round(18 + 32 * c.pc / 100), W / 2, Math.floor(H * 0.40) + 30, 0xFFE0C8FF)
+        } else if (t < 2600) {
+            textoG(g, 'CONSTELACI\u00D3N', W / 2, Math.floor(H * 0.40), 2.4, 0xFFE0D0FF)
+            textoC(g, 'CLIC (o ESPACIO) cuando el anillo toque la estrella', W / 2, Math.floor(H * 0.40) + 24, 0xFFDDDDDD)
+        }
+    }
+
+    // ---- fondo GALACTICO de la ULTI del NECROID (textura con el centro transparente: se ve la pelea) ----
+    var galaxiaDibujar = (g, W, H, el) => {
+        var t = ahora()
+        var entra = Math.min(1, el / 700)
+        var tex = 'dinamicas:textures/gui/boxeo/galaxia.png'
+        if (existe(tex)) {
+            var fr = Math.floor(t / 120) % 8
+            g.setColor(1, 1, 1, Math.max(0.03, 0.95 * entra))
+            g.blit(rl(tex), 0, 0, W, H, 0, fr * 180, 320, 180, 320, 1440)
+            g.setColor(1, 1, 1, 1)
+        } else {
+            caja(g, 0, 0, W, H, conAlfa(0xFF10062A, 0.55 * entra))
+        }
+        // estrellas que titilan
+        for (var q = 0; q < 70; q++) {
+            var ch = chispas[q % chispas.length]
+            var x = ch[0] * W, y = ch[1] * H
+            var dx = (x - W / 2) / (W * 0.33), dy = (y - H / 2) / (H * 0.38)
+            if (dx * dx + dy * dy < 1) continue
+            var b = (Math.sin(t / 200 + ch[2]) + 1) / 2
+            caja(g, x, y, 1 + (q % 3 == 0 ? 1 : 0), 1 + (q % 3 == 0 ? 1 : 0), conAlfa(q % 4 == 0 ? 0xFFC8B8FF : 0xFFFFFFFF, (0.3 + 0.7 * b) * entra))
+        }
+        // AGUJERO NEGRO (el final)
+        if (BX.cof > CINE.desde) {
+            var tc = t - BX.cof
+            var tex2 = 'dinamicas:textures/item/agujero/agujero.png'
+            var s = Math.min(1, tc / 600) * Math.min(W, H) * 0.95
+            if (existe(tex2)) {
+                var fr2 = Math.floor(t / 70) % 8
+                g.setColor(1, 1, 1, 0.92)
+                g.blit(rl(tex2), Math.round(W / 2 - s / 2), Math.round(H / 2 - s / 2), Math.round(s), Math.round(s), 0, fr2 * 64, 64, 64, 64, 512)
+                g.setColor(1, 1, 1, 1)
+            } else {
+                for (var k = 6; k >= 1; k--) caja(g, W / 2 - s * k / 12, H / 2 - s * k / 12, s * k / 6, s * k / 6, conAlfa(k % 2 ? 0xFF6A1AA0 : 0xFF000000, 0.15))
+            }
+            if (tc < 1600) textoG(g, '\u00A1AGUJERO NEGRO!', W / 2, Math.floor(H * 0.16), 2.6, (t % 300) < 150 ? 0xFFFFFFFF : 0xFFC070FF)
+        }
+    }
+
+    // ---- CALAVERA: RAYOS X (su ULTI). En cada golpe se ve la RADIOGRAFIA del hueso que se rompe ----
+    var XR = [null, ['COSTILLAS', '\u00A1COSTILLAS ROTAS!', 'costillas'], ['COLUMNA', '\u00A1COLUMNA CRUJIDA!', 'columna'], ['MAND\u00CDBULA', '\u00A1MAND\u00CDBULA ROTA!', 'mandibula'], ['CR\u00C1NEO', '\u00A1CR\u00C1NEO PARTIDO!', 'craneo']]
+    var xrDibujar = (g, W, H) => {
+        var x = BX.xr
+        if (x == null || x.k < 1 || x.k > 4) return
+        var t = ahora()
+        var el = t - x.desde
+        if (el > 3000) return
+        var entra = Math.min(1, el / 180), sale = Math.min(1, Math.max(0, (3000 - el) / 300))
+        var a = Math.min(entra, sale)
+        var pw = Math.min(170, Math.floor(W * 0.36)), ph = Math.floor(pw * 1.1)
+        var px = W - pw - 14 + (1 - entra) * 120, py = Math.floor(H * 0.2)
+        // sacudida en el golpe
+        if (el > 350 && el < 650) { px += Math.sin(t * 0.9) * 5; py += Math.cos(t * 1.1) * 4 }
+        caja(g, px - 4, py - 4, pw + 8, ph + 8, conAlfa(0xFF000000, 0.9 * a))
+        caja(g, px, py, pw, ph, conAlfa(0xFF06142C, 0.95 * a))
+        marco(g, px, py, pw, ph, conAlfa(0xFF7FD4FF, a))
+        // lineas de escaner
+        for (var yy = 0; yy < ph; yy += 3) caja(g, px, py + yy, pw, 1, conAlfa(0xFF0A2850, 0.5 * a))
+        var tex = 'dinamicas:textures/gui/boxeo/xray_' + XR[x.k][2] + '.png'
+        var tex2 = 'dinamicas:textures/gui/boxeo/xray_' + XR[x.k][2] + '_rota.png'
+        var m = 10
+        if (!imagen(g, tex, px + m, py + m, pw - 2 * m, ph - 2 * m - 12, 128, 128, a)) {
+            textoC(g, '\u2620', px + pw / 2, py + ph / 2 - 4, conAlfa(0xFFE8F6FF, a))
+        }
+        if (el > 380) {
+            var fr = Math.min(1, (el - 380) / 160)
+            imagen(g, tex2, px + m, py + m, pw - 2 * m, ph - 2 * m - 12, 128, 128, fr * a)
+        }
+        var bar = py + ((el / 4) % ph)
+        caja(g, px, bar, pw, 2, conAlfa(0xFFB8ECFF, 0.6 * a))
+        // Box.v2 (Paul 20/10 23:23): sin textos, solo la imagen del hueso rompiendose
+        if (el > 380 && el < 420) caja(g, 0, 0, W, H, conAlfa(0xFFFFFFFF, 0.6))
+    }
+
+    // ---- LEVANTADA EPICA (LIMITADO en su 3a caida) ----
+    var epDibujar = (g, d, W, H) => {
+        var e = BX.ep
+        if (e == null) return
+        var el = ahora() - e.desde
+        if (el > 2600) { BX.ep = null; return }
+        if (el < 250) caja(g, 0, 0, W, H, conAlfa(0xFFFF2030, 0.6 * (1 - el / 250)))
+        var s = 2.8 + Math.max(0, 1 - el / 220) * 1.6
+        textoG(g, '\u00A1RESURGE DEL ABISMO!', W / 2, Math.floor(H * 0.3), s, (ahora() % 300) < 150 ? 0xFFFF2E3E : 0xFFFFFFFF)
+        var quien = nombreDe(d, e.q)
+        if (quien != '') textoC(g, quien + ' (LIMITADO) se levant\u00F3 por \u00FAltima vez', W / 2, Math.floor(H * 0.3) + 34, 0xFFFFC0C0)
+    }
+
+    // ---- camara de hombro (mod Shoulder Surfing Reloaded): solo en el boxeo ----
+    var SS = null
+    try {
+        SS = { api: Java.loadClass('com.github.exopandora.shouldersurfing.api.client.ShoulderSurfing'),
+               P: Java.loadClass('com.github.exopandora.shouldersurfing.api.client.Perspective') }
+        if (SS.api == null || SS.P == null) SS = null
+        else console.info('boxeo_hud.js: Shoulder Surfing encontrado (camara de hombro en el boxeo)')
+    } catch (e) {
+        SS = null
+    }
+    var ssInst = () => {
+        if (SS == null) return null
+        try {
+            return SS.api.getInstance()
+        } catch (e) {
+            bxLog('hombro', e)
+            SS = null
+            return null
+        }
+    }
+    var ssEn = (ss) => {
+        if (ss == null) return false
+        try {
+            return ss.isShoulderSurfing() == true
+        } catch (e) {
+            return false
+        }
+    }
+    var ssPoner = (ss, nombre) => {
+        try {
+            ss.changePerspective(SS.P.valueOf(nombre))
+        } catch (e) {
+            bxLog('hombro ' + nombre, e)
+            SS = null
+        }
+    }
+    // la camara de hombro mira al rival (cuando la camara va separada del jugador)
+    var ssMirar = (yaw, pitch) => {
+        var ss = ssInst()
+        if (ss == null || !ssEn(ss)) return
+        try {
+            var c = ss.getCamera()
+            c.setYRot(yaw)
+            c.setXRot(pitch)
+        } catch (e) {
+            bxLog('hombro mirar', e)
+        }
+    }
+
     // ---- RULETA DE ESTILOS (pantalla completa, como la del video) ----
     // [estilo, probabilidad]: giro normal y GIRO DE LA SUERTE (solo MITICO, LEGENDARIO y LIMITADO)
-    var POZO = [[0, 30], [6, 30], [1, 9], [2, 9], [7, 9], [3, 4], [8, 4], [4, 2], [9, 2], [5, 1]]
-    var POZO_SUERTE = [[3, 32.5], [8, 32.5], [4, 14], [9, 14], [5, 7]]
+    //  (lo que se ve pasar en la ruleta; lo que sale de verdad lo decide el server con las probabilidades de arriba)
+    var POZO = [[0, 26], [6, 26], [1, 10], [2, 10], [7, 10], [3, 5], [8, 5], [4, 3], [9, 3], [5, 1], [10, 1]]
+    var POZO_SUERTE = [[3, 34], [8, 34], [4, 12], [9, 12], [5, 4], [10, 4]]
     // tipo: 0 normal, 1 suerte, 2 regalo (no gira: sale directo)
     var giroEmpezar = (res, tipo) => {
         if (tipo == 2) {
@@ -1273,15 +1649,20 @@ function boxeoHudIniciar() {
         var W = Number(win.getGuiScaledWidth()), H = Number(win.getGuiScaledHeight())
         var c = { W: W, H: H, cx: Math.floor(W / 2) }
         c.volver = { x: 6, y: 6, w: 54, h: 16 }
+        // 2 RANURAS: 1 = EQUIPADO (al girar se cambia solo), 2 = GUARDADO (GUARDAR / CAMBIAR)
         c.slots = []
-        var sw = Math.min(96, Math.floor(W * 0.2)), sh = 54
-        var sy = Math.max(30, Math.floor(H / 2 - (sh * 3 + 12) / 2))
-        for (var i = 0; i < 3; i++) {
-            var s = { x: 8, y: sy + i * (sh + 6), w: sw, h: sh }
-            s.bt = { x: s.x + 6, y: s.y + 24, w: sw - 12, h: 14 }
-            s.gd = { x: s.x + 6, y: s.y + 40, w: sw - 12, h: 11 }
+        var sw = Math.min(100, Math.floor(W * 0.21)), sh = 60
+        var sy = Math.max(30, Math.floor(H / 2 - (sh * 2 + 8) / 2))
+        for (var i = 0; i < 2; i++) {
+            var s = { x: 8, y: sy + i * (sh + 8), w: sw, h: sh }
+            s.bt = { x: s.x + 6, y: s.y + 26, w: sw - 12, h: 15 }
             c.slots.push(s)
         }
+        // "\u00BFseguro?" (girar con un LEGENDARIO o LIMITADO equipado)
+        var cw = Math.min(260, W - 20), chh = 104
+        c.conf = { x: Math.floor(W / 2 - cw / 2), y: Math.floor(H / 2 - chh / 2), w: cw, h: chh }
+        c.si = { x: c.conf.x + 14, y: c.conf.y + chh - 30, w: Math.floor(cw / 2) - 20, h: 20 }
+        c.no = { x: c.conf.x + Math.floor(cw / 2) + 6, y: c.conf.y + chh - 30, w: Math.floor(cw / 2) - 20, h: 20 }
         var tw = Math.min(150, Math.floor(W * 0.3))
         c.tiers = { x: W - tw - 8, y: 8, w: tw }
         var bw = Math.min(120, Math.floor(W * 0.24)), bh = 26
@@ -1382,19 +1763,29 @@ function boxeoHudIniciar() {
             }
         }
         if (tr >= 2 && fuerzaAura > 0) auraDibujar(g, tr, mxc, pisoM + esm * 0.15, esm, fuerzaAura, true)
-        // particulas alrededor mientras gira / aura si salio MITICO, LEGENDARIO o LIMITADO
+        // particulas alrededor mientras gira / si salio MITICO, LEGENDARIO o LIMITADO: muchas mas y mas grandes
         if (ga.girando || ga.aura) {
-            var nP = ga.aura ? 46 : 26
+            var nP = ga.aura ? (tr >= 4 ? 140 : (tr >= 3 ? 110 : 80)) : 30
             for (var q = 0; q < nP; q++) {
                 var ch = chispas[q % chispas.length]
-                var vel = ga.aura ? 900 : 1400
-                var f = ((t + ch[2] * 137) % vel) / vel
-                var an = ch[0] * 2 * PI_ + t / (ga.aura ? 500 : 300)
-                var rx = esm * (0.7 + 0.25 * ch[1]), ry = esm * 1.15
-                var px = mxc + Math.cos(an) * rx
-                var py = ga.aura ? myc + esm * 0.9 - f * esm * 2.2 : myc + Math.sin(an) * ry * 0.9
-                var s2 = ga.aura ? 3 : 2
-                caja(g, px, py, s2, s2, conAlfa(q % 3 == 0 ? 0xFFFFFFFF : cT, ga.aura ? 1 - f * 0.8 : 0.8))
+                var vel = ga.aura ? 800 + (q % 5) * 90 : 1400
+                var f = ((t + ch[2] * 137 + q * 53) % vel) / vel
+                var an = ch[0] * 2 * PI_ + q * 0.7 + t / (ga.aura ? 500 : 300)
+                var rx = esm * (0.7 + 0.45 * ch[1]), ry = esm * 1.15
+                var px = mxc + Math.cos(an) * rx * (ga.aura ? 1 + 0.4 * f : 1)
+                var py = ga.aura ? myc + esm * 0.95 - f * esm * 2.6 : myc + Math.sin(an) * ry * 0.9
+                var s2 = ga.aura ? (q % 4 == 0 ? 6 : 4) : 2
+                caja(g, px, py, s2, s2, conAlfa(q % 3 == 0 ? 0xFFFFFFFF : cT, ga.aura ? 1 - f * 0.85 : 0.8))
+            }
+            if (ga.aura) {
+                // anillos de energia que se abren desde el personaje
+                for (var o2 = 0; o2 < (tr >= 4 ? 3 : 2); o2++) {
+                    var rr2 = ((t / 6 + o2 * 70) % 210) + 10
+                    for (var q4 = 0; q4 < 44; q4++) {
+                        var an4 = 2 * PI_ * q4 / 44
+                        caja(g, mxc + Math.cos(an4) * rr2 * 1.3, myc + Math.sin(an4) * rr2 * 0.5 + esm * 0.9, 3, 3, conAlfa(cT, 0.55 * (1 - rr2 / 220)))
+                    }
+                }
             }
         }
         if (ga.aura) {
@@ -1411,36 +1802,39 @@ function boxeoHudIniciar() {
         caja(g, v.x, v.y, v.w, v.h, hvv ? 0xFF3A3A48 : 0xFF1A1A22)
         marco(g, v.x, v.y, v.w, v.h, 0xFF606070)
         textoC(g, '< VOLVER', v.x + v.w / 2, v.y + 4, 0xFFFFFFFF)
-        // ranuras (izquierda): 1, 2 y el estilo que llevas
+        // ranuras (izquierda): 1 = EQUIPADO (al girar se cambia solo y se guarda solo), 2 = GUARDADO
         var libre = !peleando(d)
-        for (var i = 0; i < 3; i++) {
+        for (var i = 0; i < 2; i++) {
             var s = c.slots[i]
-            var se = i == 0 ? est.s1 : (i == 1 ? est.s2 : est.es)
-            if (i == 2 && ga.girando) se = -2
+            var se = i == 0 ? est.es : est.s2
+            if (i == 0 && ga.girando) se = -2
             caja(g, s.x, s.y, s.w, s.h, 0xFF14161C)
             marco(g, s.x, s.y, s.w, s.h, se >= 0 ? colorTier(estilo(se).tier) : 0xFF404048)
-            var et = i < 2 ? 'RANURA ' + (i + 1) : 'TU ESTILO'
+            var et = i == 0 ? 'RANURA 1 \u00B7 EQUIPADO' : 'RANURA 2 \u00B7 GUARDADO'
             var pz = g.pose()
             pz.pushPose()
             pz.scale(0.5, 0.5, 1)
             texto(g, et, (s.x + 3) * 2, (s.y + 2) * 2, 0xFF9090A0, true)
             pz.popPose()
             var sn = se >= 0 ? estilo(se).nom : (se == -2 ? '???' : 'VAC\u00CDA')
-            textoC(g, sn, s.x + s.w / 2, s.y + 10, se >= 0 ? colorTier(estilo(se).tier) : 0xFF707070)
-            if (i == 2) {
-                botonDibujar(g, s.bt, 'EQUIPADO', 0xFF2F8F3F, 0xFF1F6A2C, false, true, 1)
+            textoC(g, sn, s.x + s.w / 2, s.y + 11, se >= 0 ? colorTier(estilo(se).tier) : 0xFF707070)
+            if (i == 0) {
+                botonDibujar(g, s.bt, ga.girando ? 'GIRANDO...' : 'EQUIPADO', 0xFF2F8F3F, 0xFF1F6A2C, false, !ga.girando, 1)
+                pz.pushPose()
+                pz.scale(0.5, 0.5, 1)
+                var n1 = 'al girar se cambia solo'
+                texto(g, n1, (s.x + s.w / 2) * 2 - ancho(n1) / 2, (s.y + 45) * 2, 0xFF8890A0, true)
+                pz.popPose()
                 continue
             }
-            var equipado = se >= 0 && se == est.es
-            var okE = se >= 0 && !equipado && libre
-            botonDibujar(g, s.bt, equipado ? 'EQUIPADO' : 'EQUIPAR', equipado ? 0xFF2F8F3F : 0xFFE0485C, equipado ? 0xFF1F6A2C : 0xFFB02A3E,
-                okE && dentro(mx, my, s.bt.x, s.bt.y, s.bt.w, s.bt.h), okE || equipado, 1)
-            var hg = libre && dentro(mx, my, s.gd.x, s.gd.y, s.gd.w, s.gd.h)
-            caja(g, s.gd.x, s.gd.y, s.gd.w, s.gd.h, hg ? 0xFF3A4A6A : 0xFF20283A)
+            var vacia = se < 0
+            var ok2 = libre && !ga.girando && (vacia || se != est.es)
+            botonDibujar(g, s.bt, vacia ? 'GUARDAR' : 'CAMBIAR', vacia ? 0xFF3A6AE0 : 0xFFE0485C, vacia ? 0xFF2448A8 : 0xFFB02A3E,
+                ok2 && dentro(mx, my, s.bt.x, s.bt.y, s.bt.w, s.bt.h), ok2, 1)
             pz.pushPose()
             pz.scale(0.5, 0.5, 1)
-            var gt = 'GUARDAR EL ACTUAL AQU\u00CD'
-            texto(g, gt, (s.gd.x + s.gd.w / 2) * 2 - ancho(gt) / 2, (s.gd.y + 3) * 2, libre ? 0xFFDDE6FF : 0xFF707070, true)
+            var n2 = vacia ? 'guarda tu equipado aqu\u00ED' : 'intercambia la 1 y la 2'
+            texto(g, n2, (s.x + s.w / 2) * 2 - ancho(n2) / 2, (s.y + 45) * 2, 0xFF8890A0, true)
             pz.popPose()
         }
         // categorias (derecha) con su probabilidad y sus estilos
@@ -1459,7 +1853,7 @@ function boxeoHudIniciar() {
                 caja(g, x, yy2 + h - 3, w, 3, T.o)
             }
             marco(g, x, yy2, w, h, q2 == tr && !ga.girando ? 0xFFFFFFFF : 0xFF000000)
-            textoBI(g, T.nom + ' (' + T.pct + '%)', x + 4, yy2 + 4, 0xFFFFFFFF, true)
+            textoBI(g, T.nom + ' ' + T.pct + '%', x + 4, yy2 + 4, 0xFFFFFFFF, true)
             if (T.su > 0) {
                 var pzs = g.pose()
                 pzs.pushPose()
@@ -1472,19 +1866,38 @@ function boxeoHudIniciar() {
             texto(g, T.lista, x + 4, yy2 + h + 2, 0xFFBBBBBB, true)
             yy2 += h + 15
         }
-        // GIRAR (o SALTAR mientras gira), GIRO DE LA SUERTE y los giros que quedan
+        // GIRAR (mientras gira se queda gris, "plomo"), GIRO DE LA SUERTE y los giros que quedan
         var b = c.girar
-        var okG = libre && (ga.girando || est.gr > 0)
-        var hb = okG && dentro(mx, my, b.x, b.y, b.w, b.h)
-        botonDibujar(g, b, ga.girando ? 'SALTAR' : 'GIRAR', 0xFF6BE35A, 0xFF3FB43A, hb, okG, 2)
+        var okG = libre && !ga.girando && est.gr > 0
+        var hb = okG && BX.conf == null && dentro(mx, my, b.x, b.y, b.w, b.h)
+        botonDibujar(g, b, 'GIRAR', 0xFF6BE35A, 0xFF3FB43A, hb, okG, 2)
         var bs = c.suerte
         var okS = libre && !ga.girando && est.gl > 0
-        var hs = okS && dentro(mx, my, bs.x, bs.y, bs.w, bs.h)
+        var hs = okS && BX.conf == null && dentro(mx, my, bs.x, bs.y, bs.w, bs.h)
         botonDibujar(g, bs, '\u2605 SUERTE', 0xFFFFD040, 0xFFE09A10, hs, okS, 2)
         var nota = !libre ? 'No puedes girar mientras peleas' : 'Giros: ' + Math.max(0, est.gr) + '   \u00B7   Giros de la suerte: ' + Math.max(0, est.gl)
         textoC(g, nota, cx, b.y + b.h + 5, !libre || (est.gr <= 0 && est.gl <= 0) ? 0xFFFF7070 : 0xFFFFFFFF)
         var gp = 'Gana: +10 giros \u00B7 pierde: +5 \u00B7 RACHA ' + Math.max(0, est.rc) + '/3 = +5 de la suerte'
         textoC(g, gp, cx, b.y - 12, 0xFF9AA0B0)
+        // \u00BFSEGURO? (vas a perder tu LEGENDARIO / LIMITADO)
+        if (BX.conf != null) {
+            caja(g, 0, 0, W, H, 0xB0000000)
+            var cf = c.conf
+            var eq = estilo(est.es)
+            caja(g, cf.x - 2, cf.y - 2, cf.w + 4, cf.h + 4, colorTier(eq.tier))
+            caja(g, cf.x, cf.y, cf.w, cf.h, 0xFF101218)
+            textoG(g, '\u00BFEST\u00C1S SEGURO?', cx, cf.y + 8, 1.8, 0xFFFFFFFF)
+            textoC(g, 'Vas a perder tu estilo ' + TIERS[eq.tier].nom + ':', cx, cf.y + 30, 0xFFDDDDDD)
+            textoC(g, eq.nom, cx, cf.y + 41, colorTier(eq.tier))
+            var pzc = g.pose()
+            pzc.pushPose()
+            pzc.scale(0.5, 0.5, 1)
+            var nt = '(gu\u00E1rdalo en la RANURA 2 antes de girar si no lo quieres perder)'
+            texto(g, nt, cx * 2 - ancho(nt) / 2, (cf.y + 54) * 2, 0xFF9AA0B0, true)
+            pzc.popPose()
+            botonDibujar(g, c.si, 'S\u00CD, GIRAR', 0xFFE0485C, 0xFFB02A3E, dentro(mx, my, c.si.x, c.si.y, c.si.w, c.si.h), true, 1)
+            botonDibujar(g, c.no, 'NO', 0xFF6BE35A, 0xFF3FB43A, dentro(mx, my, c.no.x, c.no.y, c.no.w, c.no.h), true, 1)
+        }
     }
     // clic en la ruleta
     var ruletaClic = (d, est, x, y) => {
@@ -1496,37 +1909,45 @@ function boxeoHudIniciar() {
             return
         }
         var libre = !peleando(d)
+        var girar = (tipo) => {
+            if (t - BX.giroPedido < 1200) return
+            BX.giroPedido = t
+            comando(tipo == 1 ? 'bxestilo suerte' : 'bxestilo girar')
+        }
+        // \u00BFSEGURO? abierto: solo SI / NO
+        if (BX.conf != null) {
+            var tipoC = BX.conf.tipo
+            if (dentro(x, y, c.si.x, c.si.y, c.si.w, c.si.h)) {
+                BX.conf = null
+                if (libre) girar(tipoC)
+            } else if (dentro(x, y, c.no.x, c.no.y, c.no.w, c.no.h)) {
+                BX.conf = null
+            }
+            return
+        }
+        // con un LEGENDARIO o LIMITADO equipado (y sin guardar en la ranura 2) pregunta antes de girar
+        var pregunta = estilo(est.es).tier >= 3 && est.s2 != est.es
         var b = c.girar
         if (dentro(x, y, b.x, b.y, b.w, b.h)) {
             var ga = giroActual(est)
-            if (ga.girando) {
-                BX.giro.desde = t - GIRO_MS   // SALTAR: se ve el resultado ya
-                return
-            }
-            if (!libre || est.gr <= 0 || t - BX.giroPedido < 1200) return
-            BX.giroPedido = t
-            comando('bxestilo girar')
+            if (ga.girando || !libre || est.gr <= 0) return
+            if (pregunta) BX.conf = { tipo: 0, desde: t }
+            else girar(0)
             return
         }
         var bs = c.suerte
         if (dentro(x, y, bs.x, bs.y, bs.w, bs.h)) {
             var ga2 = giroActual(est)
-            if (ga2.girando || !libre || est.gl <= 0 || t - BX.giroPedido < 1200) return
-            BX.giroPedido = t
-            comando('bxestilo suerte')
+            if (ga2.girando || !libre || est.gl <= 0) return
+            if (pregunta) BX.conf = { tipo: 1, desde: t }
+            else girar(1)
             return
         }
-        if (!libre) return
-        for (var i = 0; i < 2; i++) {
-            var s = c.slots[i]
-            if (dentro(x, y, s.bt.x, s.bt.y, s.bt.w, s.bt.h)) {
-                comando('bxestilo equipar ' + (i + 1))
-                return
-            }
-            if (dentro(x, y, s.gd.x, s.gd.y, s.gd.w, s.gd.h)) {
-                comando('bxestilo guardar ' + (i + 1))
-                return
-            }
+        if (!libre || giroActual(est).girando) return
+        var s2b = c.slots[1].bt
+        if (dentro(x, y, s2b.x, s2b.y, s2b.w, s2b.h)) {
+            if (est.s2 < 0) comando('bxestilo guardar')
+            else if (est.s2 != est.es) comando('bxestilo cambiar')
         }
     }
 
@@ -1642,15 +2063,17 @@ function boxeoHudIniciar() {
             caja(g, 0, 0, W, H, conAlfa(0xFFFF8A20, 0.08 + 0.14 * cr))
             if (tk > 42 && tk < 50) caja(g, 0, 0, W, H, conAlfa(0xFFFFF0C0, 0.9 * (1 - (tk - 42) / 8)))
         } else if (CINE.est == 5) {
-            // NECROID: todo se oscurece en rojo sangre; destello rojo al romper las costillas y al uppercut
-            var ga2 = Math.min(1, tk / 8) * Math.min(1, sale * 2)
-            caja(g, 0, 0, W, H, conAlfa(0xFF2A0006, 0.45 * ga2))
+            // NECROID: COLAPSO ESTELAR = fondo GALACTICO (y al final el AGUJERO NEGRO)
+            if (tk > 10) galaxiaDibujar(g, W, H, el - 500)
+            if (tk > 10 && tk < 16) caja(g, 0, 0, W, H, conAlfa(0xFFE0D0FF, 0.7 * (1 - (tk - 10) / 6)))
+        } else if (CINE.est == 10) {
+            // CALAVERA: RAYOS X = todo frio y azul; la radiografia se dibuja aparte (xrDibujar)
+            var gx = Math.min(1, tk / 10) * Math.min(1, sale * 2)
+            caja(g, 0, 0, W, H, conAlfa(0xFF04122A, 0.35 * gx))
             for (var e = 0; e < 8; e++) {
                 caja(g, 0, e * 5, W, 5, conAlfa(0xFF000000, 0.35 - e * 0.04))
                 caja(g, 0, H - (e + 1) * 5, W, 5, conAlfa(0xFF000000, 0.35 - e * 0.04))
             }
-            if (tk > 10 && tk < 16) caja(g, 0, 0, W, H, conAlfa(0xFFFF2030, 0.6 * (1 - (tk - 10) / 6)))
-            if (tk > 34 && tk < 40) caja(g, 0, 0, W, H, conAlfa(0xFFFFFFFF, 0.8 * (1 - (tk - 34) / 6)))
         } else if (CINE.est == 4) {
             caja(g, 0, 0, W, H, conAlfa(0xFF3A2A10, 0.18))
         } else if (CINE.est == 6) {
@@ -1678,7 +2101,7 @@ function boxeoHudIniciar() {
         // rayas de velocidad: al empezar y en cada impacto
         var rayas = el < 1300 || (BX.imp > CINE.desde && tim < 450)
         if (rayas) {
-            var cols = CINE.est == 5 ? [0xFFFF2E3E, 0xFFFFFFFF, 0xFF7A0010, 0xFFFF8080] : (CINE.est == 3 ? [0xFFFFC060, 0xFFFFFFFF, 0xFFFF7A30, 0xFFFFE0A0] : (CINE.est == 9 ? [0xFFFFE070, 0xFFFFFFFF, 0xFFFFC020, 0xFFFFF0B0] : [0xFF8FE6FF, 0xFFFFFFFF, 0xFFFF6FB0, 0xFF6F8BFF]))
+            var cols = CINE.est == 5 ? [0xFFC070FF, 0xFFFFFFFF, 0xFF6A1AA0, 0xFFB8D8FF] : (CINE.est == 10 ? [0xFF9FE2FF, 0xFFFFFFFF, 0xFF3A7AC0, 0xFFE8F6FF] : (CINE.est == 3 ? [0xFFFFC060, 0xFFFFFFFF, 0xFFFF7A30, 0xFFFFE0A0] : (CINE.est == 9 ? [0xFFFFE070, 0xFFFFFFFF, 0xFFFFC020, 0xFFFFF0B0] : [0xFF8FE6FF, 0xFFFFFFFF, 0xFFFF6FB0, 0xFF6F8BFF])))
             for (var r = 0; r < 16; r++) {
                 var semilla = Math.floor(t / 60) * 31 + r * 97
                 var yy = fb + 4 + (semilla * 13) % Math.max(1, H - 2 * fb - 8)
@@ -1692,10 +2115,15 @@ function boxeoHudIniciar() {
         var xs = 18 - Math.max(0, 1 - el / 260) * 220
         var ys = Math.floor(H * 0.58)
         var al = Math.min(1, sale * 1.5)
-        if (CINE.est == 4 && BX.mg != null) al = Math.max(0, 1 - el / 1600)   // que no tape el minijuego
+        if ((CINE.est == 4 && BX.mg != null) || (CINE.est == 5 && BX.cos != null)) al = Math.max(0, 1 - el / 1600)   // que no tape el minijuego
         if (al > 0.04) {
+            // Box.v2: "Ulti" en celeste a la izquierda, con una linea de velocidad (antes "ULTIMATE!")
+            var uw = ancho('Ulti') * 3.2, ly = ys + 9 * 3.2 * 0.62
+            caja(g, 0, ly, xs + uw + 46, 2, conAlfa(0xFF5FD8FF, al * 0.8))
+            caja(g, 0, ly - 5, xs + uw * 0.7, 1, conAlfa(0xFFFFFFFF, al * 0.45))
+            caja(g, xs * 0.5, ly + 5, xs + uw + 18 - xs * 0.5, 1, conAlfa(0xFF5FD8FF, al * 0.45))
             for (var s = 2; s >= 0; s--) {
-                textoGI(g, 'ULTIMATE!', xs - s * 9 * Math.max(0, 1 - el / 400), ys, 3, conAlfa(s == 0 ? 0xFFEFFBFF : 0xFF5FC8FF, al * (s == 0 ? 1 : 0.35)), true)
+                textoGI(g, 'Ulti', xs - s * 9 * Math.max(0, 1 - el / 400), ys, 3.2, conAlfa(s == 0 ? 0xFF5FD8FF : 0xFF2FA8E0, al * (s == 0 ? 1 : 0.35)), true)
             }
             textoGI(g, es.ulti, xs + 2, ys + 30, 1.6, conAlfa(colorTier(es.tier), al), true)
             var quien = nombreDe(d, CINE.q)
@@ -1725,7 +2153,7 @@ function boxeoHudIniciar() {
         var enPf = pfActivo()
         if (enPf) pfDibujar(g, d, W, H)
         if (enCine && CINE.est == PF) cinePfDibujar(g, W, H)
-        else if (enCine) cineDibujar(g, d, W, H)
+        else if (enCine && !CINE.java) cineDibujar(g, d, W, H)
         // ---------- arriba: los 2 boxeadores ----------
         var TW = Math.min(W - 16, 420)
         var half = Math.floor(TW / 2)
@@ -1744,19 +2172,20 @@ function boxeoHudIniciar() {
         texto(g, rt, cx * 2 - ancho(rt) / 2, (y0 + 23) * 2, 0xFFB0B0B0, true)
         pz.popPose()
         // ---------- avisos ----------
-        // CONTRAGOLPE: a la derecha, naranja, 2 s
+        // CONTRAGOLPE (Box.v2, como el video): a la IZQUIERDA, rojo, entra deslizando con una linea de velocidad, 1,6 s
         var tcg = t - BX.cg.desde
-        if (BX.cg.desde > 0 && tcg < 2000) {
-            var desl = Math.max(0, 1 - tcg / 180) * 170
-            var iw = 150, ih = 33
-            var xx = W - iw - 6 + desl, yy = Math.floor(H * 0.22)
-            if (!imagen(g, 'dinamicas:textures/gui/boxeo/contragolpe.png', xx, yy, iw, ih, 288, 64, 1)) {
-                var p0 = g.pose(); p0.pushPose(); p0.scale(1.6, 1.6, 1)
-                texto(g, '\u00A1CONTRAGOLPE!', (xx + 6) / 1.6, (yy + 8) / 1.6, 0xFFFF8800, true)
-                p0.popPose()
-            }
+        if (BX.cg.desde > 0 && tcg < 1600) {
+            var alc = Math.min(1, Math.max(0, (1600 - tcg) / 300))
+            var desl = Math.max(0, 1 - tcg / 160) * 200
+            var tx = '\u00A1CONTRAGOLPE!', sc = 2.0
+            var xx = 14 - desl, yy = Math.floor(H * 0.50)
+            var tw = ancho(tx) * sc
+            caja(g, 0, yy + 9 * sc * 0.62, xx + tw + 40, 2, conAlfa(0xFFFF2A2A, alc * 0.8))
+            caja(g, xx * 0.5, yy + 9 * sc * 0.62 + 5, xx + tw * 0.7, 1, conAlfa(0xFFFFFFFF, alc * 0.4))
+            for (var s2 = 1; s2 >= 0; s2--)
+                textoGI(g, tx, xx - s2 * 8 * Math.max(0, 1 - tcg / 350), yy, sc, conAlfa(s2 == 0 ? 0xFFFF3030 : 0xFF901010, alc * (s2 == 0 ? 1 : 0.4)), true)
             var quien = nombreDe(d, BX.cg.q)
-            if (quien != '') texto(g, quien, xx + iw - ancho(quien) - 8, yy + ih, 0xFFFFC080, true)
+            if (quien != '') texto(g, quien, xx + 2, yy + 9 * sc + 3, conAlfa(0xFFFFB0B0, alc), true)
         }
         // GOLPES xN
         golpesDibujar(g, d, W, H)
@@ -1811,8 +2240,13 @@ function boxeoHudIniciar() {
                 }
             }
         }
-        // minijuego de la ULTI de ESCOPETA
+        // minijuegos de las ULTIS (ESCOPETA y NECROID), RAYOS X (CALAVERA), aviso del golpe y levantada epica
         if (BX.mg != null) mgDibujar(g, W, H)
+        if (BX.cos != null) cosDibujar(g, W, H)
+        if (enCine && CINE.est == 10) xrDibujar(g, W, H)
+        // Box.v2: sin el aro rojo de "esquiva ahora" (la esquiva es por instinto, como en el juego de referencia)
+            // if (!enCine && d.fa == 1) avisoDibujar(g, d, W, H)
+        epDibujar(g, d, W, H)
         // ---------- solo el boxeador ----------
         if (d.yo > 0 && !enCine) {
             var p = d.p[d.yo]
@@ -1830,7 +2264,13 @@ function boxeoHudIniciar() {
             }
             // en el suelo: ESPACIO para levantarse
             if (d.dn == d.yo) {
-                if (p.ck > 0) {
+                if (p.ck > 0 && p.lm == 1 && p.ko >= 3) {
+                    // LIMITADO: ultima oportunidad (LEVANTADA EPICA)
+                    if ((t % 400) < 240) textoG(g, '\u00A1\u00DALTIMA OPORTUNIDAD!', cx, Math.floor(H / 2) + 4, 2.2, 0xFFFF2E3E)
+                    textoG(g, '\u00A1ESPACIO!', cx, Math.floor(H / 2) + 26, 2.5, (t % 300) < 150 ? 0xFFFFFFFF : 0xFFFF8080)
+                    textoG(g, String(p.ck), cx, Math.floor(H / 2) + 52, 2, 0xFFFF8888)
+                    textoC(g, 'Levantada \u00E9pica: aprieta ESPACIO 40 veces', cx, Math.floor(H / 2) + 72, 0xFFFFC0C0)
+                } else if (p.ck > 0) {
                     if ((t % 500) < 300) textoG(g, '\u00A1ESPACIO!', cx, Math.floor(H / 2) + 24, 2.5, 0xFFFFFFFF)
                     textoG(g, String(p.ck), cx, Math.floor(H / 2) + 50, 2, 0xFFFFFF88)
                     textoC(g, 'Aprieta ESPACIO muchas veces para levantarte', cx, Math.floor(H / 2) + 70, 0xFFDDDDDD)
@@ -1844,23 +2284,46 @@ function boxeoHudIniciar() {
         blend(false)
     }
 
-    // ---- camara: el boxeador en tercera persona (de espaldas) y sin poder cambiarla ----
+    // ---- camara: mientras pelea, CAMARA DE HOMBRO (Shoulder Surfing) sin poder cambiarla; en la cinematica
+    //  y en el K.O. la de espaldas normal. Fuera del boxeo NO se usa la de hombro: F5 hace lo de siempre ----
+    var CAMS = { prev: null }
     var bxCamara = (d) => {
         if ($CameraType == null) return
         var opt = $Minecraft.getInstance().options
         var actual = String(opt.getCameraType())
+        var ss = ssInst()
+        var enSS = ssEn(ss)
         if (d != null && d.yo > 0) {
             if (BX.cam == null) BX.cam = actual
-            if (actual != 'THIRD_PERSON_BACK') opt.setCameraType($CameraType.THIRD_PERSON_BACK)
-        } else if (BX.cam != null) {
+            var cine = cineActivo() || koActivo(d)
+            if (ss != null && !cine) {
+                if (!enSS) ssPoner(ss, 'SHOULDER_SURFING')
+            } else if (enSS) {
+                ssPoner(ss, 'THIRD_PERSON_BACK')
+            } else if (actual != 'THIRD_PERSON_BACK') {
+                opt.setCameraType($CameraType.THIRD_PERSON_BACK)
+            }
+            return
+        }
+        if (BX.cam != null) {
             var antes = BX.cam
             BX.cam = null
-            if (actual != antes) {
-                if (antes == 'FIRST_PERSON') opt.setCameraType($CameraType.FIRST_PERSON)
-                else if (antes == 'THIRD_PERSON_FRONT') opt.setCameraType($CameraType.THIRD_PERSON_FRONT)
-                else opt.setCameraType($CameraType.THIRD_PERSON_BACK)
-            }
+            var obj = antes == 'FIRST_PERSON' ? 'FIRST_PERSON' : (antes == 'THIRD_PERSON_FRONT' ? 'THIRD_PERSON_FRONT' : 'THIRD_PERSON_BACK')
+            if (ss != null) ssPoner(ss, obj)
+            else if (obj == 'FIRST_PERSON') opt.setCameraType($CameraType.FIRST_PERSON)
+            else if (obj == 'THIRD_PERSON_FRONT') opt.setCameraType($CameraType.THIRD_PERSON_FRONT)
+            else opt.setCameraType($CameraType.THIRD_PERSON_BACK)
+            CAMS.prev = obj
+            return
         }
+        if (ss != null && enSS) {
+            // apretaron F5 fuera del boxeo y salto la de hombro: se pone la que tocaria normalmente
+            var sig = CAMS.prev == 'THIRD_PERSON_FRONT' ? 'FIRST_PERSON' : (CAMS.prev == 'THIRD_PERSON_BACK' ? 'THIRD_PERSON_FRONT' : 'THIRD_PERSON_BACK')
+            ssPoner(ss, sig)
+            CAMS.prev = sig
+            return
+        }
+        CAMS.prev = actual
     }
 
     // ---- F MANTENIDA: se le avisa al server al apretar (f1) y al soltar (f0) ----
@@ -2003,6 +2466,7 @@ function boxeoHudIniciar() {
                 BX.ev = null
                 BX.gs = null
                 BX.mg = null
+                BX.cos = null
                 BX.hab = null
                 BX.hola = ''
                 CINE.activo = false
@@ -2015,7 +2479,6 @@ function boxeoHudIniciar() {
             chatTransparente()
             BX.est = estLeer()
             BX.d = bxLeer(BX.est)
-            bxCamara(BX.d)
             // le aviso al server que tengo el script (una vez por pelea)
             if (BX.d != null && BX.d.yo > 0) {
                 var clave = BX.d.r + ':' + BX.d.n1 + ':' + BX.d.n2
@@ -2058,12 +2521,16 @@ function boxeoHudIniciar() {
                 BX.ev = null
                 CINE.activo = false
                 BX.mg = null
+                BX.cos = null
                 BX.hab = null
+                BX.aviso = null
                 BX.pf.activo = false
             }
+            bxCamara(BX.d)
             grisPoner(BX.d != null && pfActivo())
             musicaBaja(BX.d != null && (pfActivo() || cineActivo()))
             mgRevisar()
+            cosRevisar()
             gatRevisar()
             if (mc.options.hideGui) return
             if (BX.d != null) bxDibujar(g, BX.d)
@@ -2092,6 +2559,10 @@ function boxeoHudIniciar() {
             BX.rtEn = t
             var pt = Number(event.renderTickTime)
             if (isNaN(pt)) pt = 1
+            // cinematica de este HUD en marcha (las del mod dinamicas.ultis se encargan solas): la camara de la pelea se aparta
+            if ($Pelea != null) {
+                try { $Pelea.cineJs(cineActivo() && !CINE.java) } catch (e) { $Pelea = null; bxLog('pelea cine', e) }
+            }
             bxCubrir(BX.d)
             if (cineActivo() && CINE.rol != 3) {
                 cinePreparar(BX.d, pt)
@@ -2177,7 +2648,7 @@ function boxeoHudIniciar() {
         }
     })
 
-    // teclas 1 2 3: habilidades (ESCOPETA: la 1 es el DOBLE GATILLO, y mientras corre la barra, el disparo)
+    // teclas 1 2 3: habilidades (ESCOPETA: la 1 CARGA la escopeta con la barra (una vez) y despues es la RAFAGA)
     var habTecla = (n) => {
         var d = BX.d
         if (d == null || d.yo == 0) return
@@ -2189,9 +2660,16 @@ function boxeoHudIniciar() {
                 return
             }
             if (d.fa != 1 || d.dn != 0 || cineActivo()) return
-            if (p.cd[0] > 0 || p.cs == 1) return
-            if (BX.hab != null || t - BX.habFin < 1500) return
             if (pfActivo() && BX.pf.q == d.yo && BX.pf.fin == 0) return
+            if (t - (BX.habEn || 0) < 300) return
+            BX.habEn = t
+            if (p.el == 1) {
+                // \u00A1LISTA!: la RAFAGA
+                comando('bxk h 1')
+                return
+            }
+            if (p.el != 0 || p.cd[0] > 0 || p.cs == 1) return
+            if (BX.hab != null || t - BX.habFin < 900) return
             comando('bxk h 1')
             gatEmpezar(1)
             return
@@ -2214,6 +2692,10 @@ function boxeoHudIniciar() {
                     if (i < 3) habTecla(i + 1)
                 }
             }
+            // F5: mientras pelea no se puede cambiar la camara
+            try {
+                while (mc.options.keyTogglePerspective.consumeClick()) { }
+            } catch (e2) { }
         } catch (e) {
             bxLog('teclas 1 2 3', e)
         }
@@ -2279,7 +2761,15 @@ function boxeoHudIniciar() {
             }
             var inp = event.getInput()
             var j = inp.jumping == true
-            if (BX.mg != null && !BX.mg.enviado) {
+            // hacia donde esquiva (antes de quitar el movimiento)
+            var dir = 'b'
+            if (inp.left == true) dir = 'l'
+            else if (inp.right == true) dir = 'r'
+            else if (inp.down == true) dir = 'a'
+            var p = d.yo > 0 ? d.p[d.yo] : null
+            var quieto = (BX.mg != null && !BX.mg.enviado) || (BX.cos != null && !BX.cos.enviado) || (p != null && p.qu == 1 && d.fa == 1)
+            if (quieto) {
+                // le estan pegando / esquiva perfecta / minijuego: no se puede mover (solo esquivar)
                 inp.up = false
                 inp.down = false
                 inp.left = false
@@ -2289,16 +2779,15 @@ function boxeoHudIniciar() {
             }
             if (j && !BX.salto && $Minecraft.getInstance().screen == null) {
                 var t = ahora()
-                if (d.dn == d.yo) {
+                if (BX.cos != null && !BX.cos.enviado) {
+                    cosPulsar()
+                } else if (d.dn == d.yo) {
                     if (t - BX.spEn > 60) {
                         BX.spEn = t
                         comando('bxk sp')
                     }
                 } else if (d.fa == 1 && !cineActivo() && BX.mg == null && t - BX.esqEn > 300) {
                     BX.esqEn = t
-                    var dir = 'b'
-                    if (inp.left == true) dir = 'l'
-                    else if (inp.right == true) dir = 'r'
                     comando('bxk d ' + dir)
                 }
             }
@@ -2314,6 +2803,13 @@ function boxeoHudIniciar() {
         try {
             if (!event.isAttack()) return
             var d = BX.d
+            // CONSTELACION (ULTI del NECROID): el clic es para las estrellas
+            if (BX.cos != null && !BX.cos.enviado) {
+                event.setCanceled(true)
+                try { event.setSwingHand(false) } catch (e3) { }
+                cosPulsar()
+                return
+            }
             if (d == null || d.yo == 0 || d.fa != 1 || d.dn != 0) return
             var p = d.p[d.yo]
             var t = ahora()
@@ -2433,7 +2929,7 @@ function boxeoHudIniciar() {
         }
     })
 
-    console.info('boxeo_hud.js: HUD del boxeo v5 cargado (10 estilos, giros de la suerte, botones 1 2 3, sin barra de abajo, camara del K.O., esquiva perfecta 2 s)')
+    console.info('boxeo_hud.js: HUD del boxeo v6 cargado (11 estilos, camara de hombro, aviso de golpes, ESCOPETA rafaga, CONSTELACION, RAYOS X, ruleta con 2 ranuras)')
 }
 
 if (Platform.isClientEnvironment()) {

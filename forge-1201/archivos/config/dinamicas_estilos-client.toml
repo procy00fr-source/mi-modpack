@@ -1,0 +1,27 @@
+
+[escudo]
+	#Dibujar el escudo blanco sobre los jugadores que se estan cubriendo
+	ver = true
+	#Alto del escudo en bloques (0.5 = la misma proporcion que en la imagen de referencia)
+	#Range: 0.15 ~ 3.0
+	tamano = 0.5
+	#Altura del centro del escudo como parte del alto del jugador (0.65 = el pecho)
+	#Range: 0.1 ~ 1.2
+	altura = 0.65
+	#Cuanto sale hacia la camara, en bloques (para que no quede dentro del cuerpo)
+	#Range: 0.0 ~ 2.0
+	adelante = 0.35
+	#En primera persona, mostrar el escudito debajo de la mira
+	icono_primera_persona = true
+
+[guantes]
+	#Cuando se ven los guantes de boxeo 3D de tu estilo en las manos vacias: "pelea" (al golpear, cubrirte o recibir un golpe), "siempre" o "nunca"
+	modo = "pelea"
+	#Tamano de los guantes (1.0 = el normal)
+	#Range: 0.4 ~ 1.6
+	escala = 1.0
+	#Verlos tambien en primera persona (tu mano)
+	primera_persona = true
+	#En primera persona, dibujar tambien la mano izquierda con su guante cuando se ven los guantes
+	mano_izquierda = true
+
