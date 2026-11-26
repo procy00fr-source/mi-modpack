@@ -1,0 +1,848 @@
+{
+  "id": "dragonmine",
+  "name": "DragonMineZ",
+  "version": "1.0.0",
+  "minecraft": "1.20.1",
+  "loader": {
+    "type": "forge",
+    "version": "47.4.10"
+  },
+  "modsEstrictos": true,
+  "publicado": "2026-11-26T04:47:34.499Z",
+  "files": [
+    {
+      "path": "mods/AI-Improvements-1.20-0.5.2.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/AI-Improvements-1.20-0.5.2.jar",
+      "sha1": "11ad483d1fd1f7ebd84b4940b1dc0926b3e9daa8",
+      "size": 29553
+    },
+    {
+      "path": "mods/alexsmobs-1.22.9.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/alexsmobs-1.22.9.jar",
+      "sha1": "dbf93d2f1da19e16739e91e8ea0fc6f4bc2f228f",
+      "size": 26350793
+    },
+    {
+      "path": "mods/Apotheosis-1.20.1-7.4.8.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/Apotheosis-1.20.1-7.4.8.jar",
+      "sha1": "e508c4724a24f0c80836818fcdd3df6424b1fc40",
+      "size": 2803994
+    },
+    {
+      "path": "mods/ApothicAttributes-1.20.1-1.3.7.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/ApothicAttributes-1.20.1-1.3.7.jar",
+      "sha1": "1dc0744d17f0861fe6b067798d39abce9d8e0e86",
+      "size": 227511
+    },
+    {
+      "path": "mods/apothicdmz-1.0.3.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/apothicdmz-1.0.3.jar",
+      "sha1": "0c79eab9e80d4e33caa60cc94374d0d5d54e3e20",
+      "size": 63349
+    },
+    {
+      "path": "mods/appleskin-forge-mc1.20.1-2.5.1.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/appleskin-forge-mc1.20.1-2.5.1.jar",
+      "sha1": "81919356f84eab14258db98924b66c3c38e372b1",
+      "size": 47428
+    },
+    {
+      "path": "mods/architectury-9.2.14-forge.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/architectury-9.2.14-forge.jar",
+      "sha1": "a52918a500ff421180a1cbd1a0cabee712134ec4",
+      "size": 580602
+    },
+    {
+      "path": "mods/Arda-s-Uncrafting-Table-1.4-FORGE-1.20.1.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/Arda-s-Uncrafting-Table-1.4-FORGE-1.20.1.jar",
+      "sha1": "8e26a4129252d3e0c469923738eb8774d3d266c5",
+      "size": 242238
+    },
+    {
+      "path": "mods/baguettelib-1.20.1-Forge-2.0.7.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/baguettelib-1.20.1-Forge-2.0.7.jar",
+      "sha1": "e4f18588d02137f34989393fad5a7369ef03a862",
+      "size": 63126
+    },
+    {
+      "path": "mods/balm-forge-1.20.1-7.3.44.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/balm-forge-1.20.1-7.3.44.jar",
+      "sha1": "b3f8a6a5823d3b4f2dce19c8aea9373e24bcb443",
+      "size": 561741
+    },
+    {
+      "path": "mods/BetterAdvancements-Forge-1.20.1-0.6.0.73.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/BetterAdvancements-Forge-1.20.1-0.6.0.73.jar",
+      "sha1": "a62ed641fe95d9fea041dea8689f5a037aece597",
+      "size": 100436
+    },
+    {
+      "path": "mods/BHMenu-Forge-1.20.1-2.4.4.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/BHMenu-Forge-1.20.1-2.4.4.jar",
+      "sha1": "bb45d46fcf2213aa329c648c431d1881afea5230",
+      "size": 164295
+    },
+    {
+      "path": "mods/Biome-Radar-1.20.1-1.0.0-forge.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/Biome-Radar-1.20.1-1.0.0-forge.jar",
+      "sha1": "3f986ad461f2b283f737f17007fc57f387e449d4",
+      "size": 199615
+    },
+    {
+      "path": "mods/Bookshelf-Forge-1.20.1-20.2.15.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/Bookshelf-Forge-1.20.1-20.2.15.jar",
+      "sha1": "9df4908f606c6dc62a358b3e04e3fdedba59a12c",
+      "size": 343925
+    },
+    {
+      "path": "mods/botarium-forge-1.20.1-2.3.4.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/botarium-forge-1.20.1-2.3.4.jar",
+      "sha1": "a6928cb03b7c5f81900d3d3c8e8c8f6a89a51a5b",
+      "size": 157633
+    },
+    {
+      "path": "mods/Capsule-1.20.1-8.0.251.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/Capsule-1.20.1-8.0.251.jar",
+      "sha1": "887804400a55dd4d115aacdba8eeedd164e12481",
+      "size": 394393
+    },
+    {
+      "path": "mods/cataclysmfortresses-1.20.1-Forge.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/cataclysmfortresses-1.20.1-Forge.jar",
+      "sha1": "f2124c088990f46a1b02ec7fdb249f948bb24a6a",
+      "size": 19871
+    },
+    {
+      "path": "mods/citadel-2.6.3-1.20.1.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/citadel-2.6.3-1.20.1.jar",
+      "sha1": "fb0b1fa96ce28e4be77b38ad95d83c3da7ec8316",
+      "size": 3185275
+    },
+    {
+      "path": "mods/Clumps-forge-1.20.1-12.0.0.4.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/Clumps-forge-1.20.1-12.0.0.4.jar",
+      "sha1": "97cc669f68dbe812cb77cc3631339334fc28b877",
+      "size": 20299
+    },
+    {
+      "path": "mods/collective-1.20.1-8.88.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/collective-1.20.1-8.88.jar",
+      "sha1": "8f67948eaed0744bbc3731fab8d024c0445dc2d1",
+      "size": 1131599
+    },
+    {
+      "path": "mods/configured-forge-1.20.1-2.2.3.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/configured-forge-1.20.1-2.2.3.jar",
+      "sha1": "065c2d287a52f52fc8d33d780192325ee6f4b6ae",
+      "size": 418929
+    },
+    {
+      "path": "mods/Controlling-forge-1.20.1-12.0.2.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/Controlling-forge-1.20.1-12.0.2.jar",
+      "sha1": "f6d3cdd3ec68c5590cf5b2e89c38dbf031824bfd",
+      "size": 115280
+    },
+    {
+      "path": "mods/corpse-forge-1.20.1-1.0.23.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/corpse-forge-1.20.1-1.0.23.jar",
+      "sha1": "843b16ca88bc5c390bb22a2a84437e6bffdd43dd",
+      "size": 245644
+    },
+    {
+      "path": "mods/corpsecurioscompat-1.20.1-Forge-3.1.3.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/corpsecurioscompat-1.20.1-Forge-3.1.3.jar",
+      "sha1": "3b36538ca8c6cc16982788c8e058cb726357a90c",
+      "size": 23655
+    },
+    {
+      "path": "mods/cosmeticarmorreworked-1.20.1-v1a.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/cosmeticarmorreworked-1.20.1-v1a.jar",
+      "sha1": "afd9fa3fe95e8c086e8d439df403ed1e5ea5cbea",
+      "size": 88752
+    },
+    {
+      "path": "mods/CraftTweaker-forge-1.20.1-14.0.60.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/CraftTweaker-forge-1.20.1-14.0.60.jar",
+      "sha1": "79ddddd3f14f8d4992ba90a7a8980918ed1b9ff8",
+      "size": 3271742
+    },
+    {
+      "path": "mods/create-1.20.1-6.0.8.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/create-1.20.1-6.0.8.jar",
+      "sha1": "b13d912b9247a38d66d11598c121442585a1c1e9",
+      "size": 19170905
+    },
+    {
+      "path": "mods/cupboard-1.20.1-4.2.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/cupboard-1.20.1-4.2.jar",
+      "sha1": "db25dfc4935b7f1bde62c69f13a7b70e2ecd9f2f",
+      "size": 33422
+    },
+    {
+      "path": "mods/curios-forge-5.14.1+1.20.1.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/curios-forge-5.14.1%2B1.20.1.jar",
+      "sha1": "452175b95ad3db6ff58bb8968f6bf7a9d1e0f480",
+      "size": 398066
+    },
+    {
+      "path": "mods/Disenchanting-forge-1.20.1-2.2.4.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/Disenchanting-forge-1.20.1-2.2.4.jar",
+      "sha1": "cacd9bb861428421687d1061e383368f2e11a105",
+      "size": 81717
+    },
+    {
+      "path": "mods/DMZCharactersPlus-1.0.0.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/DMZCharactersPlus-1.0.0.jar",
+      "sha1": "1897f8b340c533bb072ad965091ab59f3e2cd0fe",
+      "size": 654059
+    },
+    {
+      "path": "mods/dmzkidrops-1.0.2.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/dmzkidrops-1.0.2.jar",
+      "sha1": "4253e2251fb00e929b35f0a03bc6bd978d92cfd6",
+      "size": 13557
+    },
+    {
+      "path": "mods/dmzlivingworldrenewed-2.5.1-HOTFIX.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/dmzlivingworldrenewed-2.5.1-HOTFIX.jar",
+      "sha1": "ef8b6817a62c6e00716f4b34d0c32a63f9771040",
+      "size": 3309217
+    },
+    {
+      "path": "mods/dmzrevamp-2.2.4.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/dmzrevamp-2.2.4.jar",
+      "sha1": "6dadbf91238cf128fc2a5bd51fe46535a3da8b8f",
+      "size": 1631020
+    },
+    {
+      "path": "mods/dmzsparking-1.5.1.jar",
+      "url": "https://github.com/procy00fr-source/mi-modpack/releases/download/archivos-grandes/84b50996ce-dmzsparking-1.5.1.jar",
+      "sha1": "84b50996ce90753b0b03cad5f4a322e659f22dce",
+      "size": 101131603
+    },
+    {
+      "path": "mods/dmzswordki-1.1.1.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/dmzswordki-1.1.1.jar",
+      "sha1": "dbb87099ab67f9cd351277dedf329d042a73a383",
+      "size": 23520
+    },
+    {
+      "path": "mods/dmztransformmusic-1.0.0.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/dmztransformmusic-1.0.0.jar",
+      "sha1": "5c2f37e9e7805923cdfbf539e9d175e37bbc11c2",
+      "size": 3093023
+    },
+    {
+      "path": "mods/dmzultra-0.6.1.jar",
+      "url": "https://github.com/procy00fr-source/mi-modpack/releases/download/archivos-grandes/f8387531dc-dmzultra-0.6.1.jar",
+      "sha1": "f8387531dcf97b638f652f0be506e47f51b08c2d",
+      "size": 217573828
+    },
+    {
+      "path": "mods/dragonminez-2.2.1.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/dragonminez-2.2.1.jar",
+      "sha1": "516645f7028116faf0decac8e0cadca70c0de298",
+      "size": 78431496
+    },
+    {
+      "path": "mods/dummmmmmy-1.20-2.0.12-forge.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/dummmmmmy-1.20-2.0.12-forge.jar",
+      "sha1": "3b6da54436955ea2ca6e8891ef69d0f6621ab878",
+      "size": 839685
+    },
+    {
+      "path": "mods/EasyTweaker 1.20.1-1.0.4.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/EasyTweaker%201.20.1-1.0.4.jar",
+      "sha1": "8f49df43438faea264f52280bc390aaf3344e980",
+      "size": 132708
+    },
+    {
+      "path": "mods/embeddium-0.3.31+mc1.20.1.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/embeddium-0.3.31%2Bmc1.20.1.jar",
+      "sha1": "bb2fa8f3e493af16af9160d049f96c614a1faf2f",
+      "size": 1320675
+    },
+    {
+      "path": "mods/EnchantingInfuser-v8.0.3-1.20.1-Forge.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/EnchantingInfuser-v8.0.3-1.20.1-Forge.jar",
+      "sha1": "d939ec7d3771062f24a44ee1fdfa17e476e51634",
+      "size": 177437
+    },
+    {
+      "path": "mods/EnchantmentDescriptions-Forge-1.20.1-17.1.21.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/EnchantmentDescriptions-Forge-1.20.1-17.1.21.jar",
+      "sha1": "0328a8350cf0a6d1c44265367a077649088b354b",
+      "size": 66883
+    },
+    {
+      "path": "mods/enhanced_enchanting-1.3.2.2-forge-1.20.1.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/enhanced_enchanting-1.3.2.2-forge-1.20.1.jar",
+      "sha1": "24bb7b3476ec344ad4def032026383fa9b62300b",
+      "size": 998491
+    },
+    {
+      "path": "mods/Essential_1-5-2_forge_1-20-1.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/Essential_1-5-2_forge_1-20-1.jar",
+      "sha1": "3ee77bfdc284c58a35ef6c9405d718ae4b73f94b",
+      "size": 51510241
+    },
+    {
+      "path": "mods/etstlib-3.0.0-beta.20.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/etstlib-3.0.0-beta.20.jar",
+      "sha1": "5993a03a300c75d950dbe45676796745a1500cc5",
+      "size": 364843
+    },
+    {
+      "path": "mods/Evolved-Mekanism-1.20.1-1.3.0-fix3.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/Evolved-Mekanism-1.20.1-1.3.0-fix3.jar",
+      "sha1": "872cc98c89b355b08369258787cf56ae266ee241",
+      "size": 4269139
+    },
+    {
+      "path": "mods/ExplorersCompass-1.20.1-1.4.0-forge.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/ExplorersCompass-1.20.1-1.4.0-forge.jar",
+      "sha1": "23b7544ab3ebd1ab9c88255434ff9dc7f217766b",
+      "size": 174387
+    },
+    {
+      "path": "mods/Explorify-v1.6.6.mod.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/Explorify-v1.6.6.mod.jar",
+      "sha1": "d7b21626ad33d898536634764cec6c9a8cd55063",
+      "size": 775401
+    },
+    {
+      "path": "mods/fallen_gems_affixes-1.20.1-2.1.5.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/fallen_gems_affixes-1.20.1-2.1.5.jar",
+      "sha1": "d77f7bd41c77fa72eb950a3bda70ed55890e09f3",
+      "size": 1627428
+    },
+    {
+      "path": "mods/fallen_lib-1.4.6.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/fallen_lib-1.4.6.jar",
+      "sha1": "fee810c926ca7dd5a642c5219be40ff324720cc8",
+      "size": 320263
+    },
+    {
+      "path": "mods/FarmersDelight-1.20.1-1.3.4.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/FarmersDelight-1.20.1-1.3.4.jar",
+      "sha1": "26f615fd35f652021f5b0f1cba68afa7d578fe15",
+      "size": 3311051
+    },
+    {
+      "path": "mods/ferritecore-6.0.1-forge.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/ferritecore-6.0.1-forge.jar",
+      "sha1": "417fb6ce8f52abf40bd9d0390371790f9576f8ba",
+      "size": 123034
+    },
+    {
+      "path": "mods/ftb-chunks-forge-2001.3.8.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/ftb-chunks-forge-2001.3.8.jar",
+      "sha1": "ee2d0cdac6d2ca31f43da30f76dff8c6bae9d687",
+      "size": 1159043
+    },
+    {
+      "path": "mods/ftb-essentials-forge-2001.2.4.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/ftb-essentials-forge-2001.2.4.jar",
+      "sha1": "4f898578e3cc321397dbc59a0c44e2927000bd32",
+      "size": 157732
+    },
+    {
+      "path": "mods/ftb-library-forge-2001.2.13.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/ftb-library-forge-2001.2.13.jar",
+      "sha1": "a5427d5ff07eb044144ed0b54308370d88bce17e",
+      "size": 780558
+    },
+    {
+      "path": "mods/ftb-teams-forge-2001.3.2.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/ftb-teams-forge-2001.3.2.jar",
+      "sha1": "c49023f5d471aa1ba7fc624d2565fe9e82b7117e",
+      "size": 252579
+    },
+    {
+      "path": "mods/geckolib-forge-1.20.1-4.8.5.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/geckolib-forge-1.20.1-4.8.5.jar",
+      "sha1": "a117dc87ce46a5ea0da0f549199d2e80e81a26fe",
+      "size": 1044857
+    },
+    {
+      "path": "mods/GlitchCore-forge-1.20.1-0.0.1.1.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/GlitchCore-forge-1.20.1-0.0.1.1.jar",
+      "sha1": "1a0aaf7c33b9acb26bf75899a43e8941cac1f6e7",
+      "size": 87550
+    },
+    {
+      "path": "mods/GlobalGameRules-1.20.1-8.1.0.12.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/GlobalGameRules-1.20.1-8.1.0.12.jar",
+      "sha1": "13a9e41740aa17a31f81beba233055bc84152eb0",
+      "size": 24511
+    },
+    {
+      "path": "mods/holdmybeer-1.20.1-1.2.3.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/holdmybeer-1.20.1-1.2.3.jar",
+      "sha1": "69535d0ca75b9887f2c71daa68703eeee9c20acb",
+      "size": 110816
+    },
+    {
+      "path": "mods/Iceberg-1.20.1-forge-1.1.25.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/Iceberg-1.20.1-forge-1.1.25.jar",
+      "sha1": "d551ff55814cfb01403b812459ee5a02b020d87b",
+      "size": 134551
+    },
+    {
+      "path": "mods/Iglee's Library-1.20.1-1.2.7.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/Iglee's%20Library-1.20.1-1.2.7.jar",
+      "sha1": "c8a241bbbe58ddd4b1875ec0330e8c1adf01aa35",
+      "size": 238626
+    },
+    {
+      "path": "mods/ImmediatelyFast-Forge-1.5.5+1.20.4.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/ImmediatelyFast-Forge-1.5.5%2B1.20.4.jar",
+      "sha1": "9eacd407b7dea636d375dc47335d92f616484ea2",
+      "size": 532063
+    },
+    {
+      "path": "mods/industrial-foregoing-1.20.1-3.5.28.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/industrial-foregoing-1.20.1-3.5.28.jar",
+      "sha1": "8d52593b26fe960aa1e1cfeeeb996b7f6d362099",
+      "size": 4625957
+    },
+    {
+      "path": "mods/infuserapothcompat-1.2.5.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/infuserapothcompat-1.2.5.jar",
+      "sha1": "c12a48c1f093b83180fb86d70f5989e099b0c927",
+      "size": 31264
+    },
+    {
+      "path": "mods/item_split_bug_fix-1.20.1-1.4.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/item_split_bug_fix-1.20.1-1.4.jar",
+      "sha1": "200682cd4b74d9fd873cdb718a747616f3f79497",
+      "size": 9315
+    },
+    {
+      "path": "mods/Jade-1.20.1-Forge-11.13.3.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/Jade-1.20.1-Forge-11.13.3.jar",
+      "sha1": "d08e64e66521d69e083c8525f1fc507f1c202384",
+      "size": 553487
+    },
+    {
+      "path": "mods/jei-1.20.1-forge-15.75.0.242.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/jei-1.20.1-forge-15.75.0.242.jar",
+      "sha1": "ace1b76256d09c47b5c46a94d24056862ab5ae5a",
+      "size": 6629654
+    },
+    {
+      "path": "mods/journeymap-forge-1.20.1-6.0.8.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/journeymap-forge-1.20.1-6.0.8.jar",
+      "sha1": "2a1f35b5157faeb7910ce31e47e9145d03f5f3bb",
+      "size": 4360299
+    },
+    {
+      "path": "mods/JsonThings-1.20.1-0.9.13.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/JsonThings-1.20.1-0.9.13.jar",
+      "sha1": "80a644b44ae3951813dd6d5b780ce407f7de6faf",
+      "size": 528983
+    },
+    {
+      "path": "mods/JustEnoughResources-1.20.1-1.4.0.247.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/JustEnoughResources-1.20.1-1.4.0.247.jar",
+      "sha1": "2747c58f439c37a01139d35cab59ca1a54114009",
+      "size": 276231
+    },
+    {
+      "path": "mods/justzoom_forge_3.1.0_MC_1.20.1.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/justzoom_forge_3.1.0_MC_1.20.1.jar",
+      "sha1": "9b421058072bc809457832227d85b7ef268892a2",
+      "size": 355850
+    },
+    {
+      "path": "mods/konkrete_forge_1.8.0_MC_1.20-1.20.1.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/konkrete_forge_1.8.0_MC_1.20-1.20.1.jar",
+      "sha1": "2019d821bed9071daabed43979433a5473ceee49",
+      "size": 625185
+    },
+    {
+      "path": "mods/lionfishapi-3.0.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/lionfishapi-3.0.jar",
+      "sha1": "79d0404f87fa066480b18c844c1e0b1c5f5475f9",
+      "size": 101931
+    },
+    {
+      "path": "mods/lmft-1.0.4+1.20.1-forge.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/lmft-1.0.4%2B1.20.1-forge.jar",
+      "sha1": "e44a12eb51813b16faaab89b8073ec63c746c1b0",
+      "size": 178625
+    },
+    {
+      "path": "mods/L_Enders_Cataclysm-3.31.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/L_Enders_Cataclysm-3.31.jar",
+      "sha1": "4f1165cb39521292e826b471b4808bb89f0f4f3f",
+      "size": 73916104
+    },
+    {
+      "path": "mods/majrusz-library-forge-1.20.1-7.0.8.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/majrusz-library-forge-1.20.1-7.0.8.jar",
+      "sha1": "be0e1b5808206abcc2ff6a369ce0c2ba53968c55",
+      "size": 437340
+    },
+    {
+      "path": "mods/Mantle-1.20.1-1.11.128.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/Mantle-1.20.1-1.11.128.jar",
+      "sha1": "602bcad5fcb9f7a49c57f897cf4abe28bc8261d7",
+      "size": 1668148
+    },
+    {
+      "path": "mods/Mekanism-1.20.1-10.4.16.80.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/Mekanism-1.20.1-10.4.16.80.jar",
+      "sha1": "b7f12ae710888b01746507a0aa8cb375f5897158",
+      "size": 12558456
+    },
+    {
+      "path": "mods/MekanismGenerators-1.20.1-10.4.16.80.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/MekanismGenerators-1.20.1-10.4.16.80.jar",
+      "sha1": "53fa707fd204ca1dd099a08995c2197145ff9a36",
+      "size": 1054586
+    },
+    {
+      "path": "mods/MekanismWeapons-1.20.1-4.2.1.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/MekanismWeapons-1.20.1-4.2.1.jar",
+      "sha1": "aa5b96f2fab1f0d6bd110b0096e027da9001dc4b",
+      "size": 150905
+    },
+    {
+      "path": "mods/mekanism_weaponry-1.1.3.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/mekanism_weaponry-1.1.3.jar",
+      "sha1": "50bced9025068ee9137b7536cbee5a15c9c8a014",
+      "size": 1018443
+    },
+    {
+      "path": "mods/melody_forge_1.0.3_MC_1.20.1-1.20.4.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/melody_forge_1.0.3_MC_1.20.1-1.20.4.jar",
+      "sha1": "e0942d396a70c09038e6c2e5e1da6505178249b8",
+      "size": 37178
+    },
+    {
+      "path": "mods/mezz_config-1.20.1-forge-0.7.1.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/mezz_config-1.20.1-forge-0.7.1.jar",
+      "sha1": "10e5446b633bd264e5e61de8e115f6dac4d8062d",
+      "size": 387068
+    },
+    {
+      "path": "mods/mininggadgets-1.15.6.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/mininggadgets-1.15.6.jar",
+      "sha1": "79cfc6e0afc3ed3fc86bbda274ef3fccdc8260dd",
+      "size": 642638
+    },
+    {
+      "path": "mods/MoogsEndStructures-universal-1.20-2.1.0.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/MoogsEndStructures-universal-1.20-2.1.0.jar",
+      "sha1": "a581935313f819fe67bbe810e03fb8a44b356089",
+      "size": 2546120
+    },
+    {
+      "path": "mods/MoogsStructureLib-forge-1.20-3.4.2.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/MoogsStructureLib-forge-1.20-3.4.2.jar",
+      "sha1": "f91a62466de6e9b3a1166a1e88a837668cbb6eae",
+      "size": 1089534
+    },
+    {
+      "path": "mods/moonlight-1.20-2.16.39-forge.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/moonlight-1.20-2.16.39-forge.jar",
+      "sha1": "12405de298c0d6c8ba53effdc5c8f28edee3aadc",
+      "size": 1423451
+    },
+    {
+      "path": "mods/MouseTweaks-forge-mc1.20.1-2.25.1.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/MouseTweaks-forge-mc1.20.1-2.25.1.jar",
+      "sha1": "d751153e722a4e014691c83f39f5b07c6ec5333c",
+      "size": 76237
+    },
+    {
+      "path": "mods/MyMusic_Disc_official_V1.2.Jav1.20.1F.47.4.2.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/MyMusic_Disc_official_V1.2.Jav1.20.1F.47.4.2.jar",
+      "sha1": "3d2964e8dc9edd033e40a47c413c325d9d882d45",
+      "size": 75212
+    },
+    {
+      "path": "mods/NaturesCompass-1.20.1-1.12.0-forge.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/NaturesCompass-1.20.1-1.12.0-forge.jar",
+      "sha1": "a8589de59cdd8fed9c29610e624063a2990e422b",
+      "size": 227495
+    },
+    {
+      "path": "mods/neruina-3.3.5+1.20.1-forge.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/neruina-3.3.5%2B1.20.1-forge.jar",
+      "sha1": "12cea1380f341863361c6072597a3e84a1428314",
+      "size": 1486117
+    },
+    {
+      "path": "mods/Patchouli-1.20.1-85-FORGE.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/Patchouli-1.20.1-85-FORGE.jar",
+      "sha1": "d4614507d6e4c7cb464bba5eca891978272062ef",
+      "size": 642732
+    },
+    {
+      "path": "mods/Placebo-1.20.1-8.6.3.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/Placebo-1.20.1-8.6.3.jar",
+      "sha1": "e85f53de2e582a79ce25ff1df1e7b5b5fc08440f",
+      "size": 282474
+    },
+    {
+      "path": "mods/Prism-1.20.1-forge-1.0.5.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/Prism-1.20.1-forge-1.0.5.jar",
+      "sha1": "bcb4bbb1052f49ed4fe6e7d5d7f91f68d45c3fe3",
+      "size": 52205
+    },
+    {
+      "path": "mods/PuzzlesLib-v8.1.36-1.20.1-Forge.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/PuzzlesLib-v8.1.36-1.20.1-Forge.jar",
+      "sha1": "d2e79bc84f0f2e75e3212ab236af08528117b213",
+      "size": 1790007
+    },
+    {
+      "path": "mods/Quark-4.0-462.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/Quark-4.0-462.jar",
+      "sha1": "9b0fb82995622a0070c00827c698c43b49d9d14b",
+      "size": 14935230
+    },
+    {
+      "path": "mods/resourcefulconfig-forge-1.20.1-2.1.3.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/resourcefulconfig-forge-1.20.1-2.1.3.jar",
+      "sha1": "597d40920dcc935f963842c817dcc4901862ab14",
+      "size": 136923
+    },
+    {
+      "path": "mods/resourcefullib-forge-1.20.1-2.1.29.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/resourcefullib-forge-1.20.1-2.1.29.jar",
+      "sha1": "6fc590a7c56a720fec57e290cbb0a106efbb3ffa",
+      "size": 432753
+    },
+    {
+      "path": "mods/Searchables-forge-1.20.1-1.0.3.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/Searchables-forge-1.20.1-1.0.3.jar",
+      "sha1": "ed5a23ec30c90fd06b3f1d8140614028e1fafaee",
+      "size": 77732
+    },
+    {
+      "path": "mods/semi_keep_inventory-1.0.0-forge-1.20.1.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/semi_keep_inventory-1.0.0-forge-1.20.1.jar",
+      "sha1": "7bc51fbe1b48764b03e688fccdb1f9abf3ff31c4",
+      "size": 650137
+    },
+    {
+      "path": "mods/smart-villagers-0.34.0-forge-1.20.1.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/smart-villagers-0.34.0-forge-1.20.1.jar",
+      "sha1": "a8bac17dfa94c9dc3b3af391068548b111e89e11",
+      "size": 830488
+    },
+    {
+      "path": "mods/smoothchunk-1.20.1-4.4.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/smoothchunk-1.20.1-4.4.jar",
+      "sha1": "1da0455655c0c4d6678e7ca408b78fcac69838ad",
+      "size": 17275
+    },
+    {
+      "path": "mods/sophisticatedbackpacks-1.20.1-3.26.22.2264.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/sophisticatedbackpacks-1.20.1-3.26.22.2264.jar",
+      "sha1": "0942539932930b2f3ccf2e42cdbe5aad6dd1a7fd",
+      "size": 1240374
+    },
+    {
+      "path": "mods/sophisticatedcore-1.20.1-1.5.41.2500.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/sophisticatedcore-1.20.1-1.5.41.2500.jar",
+      "sha1": "dd2a903250c5d7fd8f5ef5a0ca83babf27303bb6",
+      "size": 1786223
+    },
+    {
+      "path": "mods/sophisticatedstorage-1.20.1-1.5.23.2248.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/sophisticatedstorage-1.20.1-1.5.23.2248.jar",
+      "sha1": "c0544b262d94d6ba88594d24fa2df66aa3c3f75e",
+      "size": 2106442
+    },
+    {
+      "path": "mods/Stackable Potions-forge-1.20.1-1.0.0.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/Stackable%20Potions-forge-1.20.1-1.0.0.jar",
+      "sha1": "dafaeba2507ffc8b301f62569044536e795b8404",
+      "size": 10691
+    },
+    {
+      "path": "mods/TConstruct-1.20.1-3.12.1.231.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/TConstruct-1.20.1-3.12.1.231.jar",
+      "sha1": "8a9a09e625ee106cf8befa953c372af4e955116c",
+      "size": 23870231
+    },
+    {
+      "path": "mods/TerraBlender-forge-1.20.1-3.0.1.10.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/TerraBlender-forge-1.20.1-3.0.1.10.jar",
+      "sha1": "3bd99fb59e8b06b04e78b5153790c1e08b2be5dc",
+      "size": 107532
+    },
+    {
+      "path": "mods/Tinkers-Thinking-0.2.4.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/Tinkers-Thinking-0.2.4.jar",
+      "sha1": "a8d0239215d7911a8e43a9e8f8a6717cca683faf",
+      "size": 6162902
+    },
+    {
+      "path": "mods/TinkersKatanas-1.20.1-1.6.0.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/TinkersKatanas-1.20.1-1.6.0.jar",
+      "sha1": "e9077ef6df201e68d1f1e08a1589d7091fbadb92",
+      "size": 1515234
+    },
+    {
+      "path": "mods/TinkersLevellingAddon-1.20.1-1.5.0.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/TinkersLevellingAddon-1.20.1-1.5.0.jar",
+      "sha1": "1ea1237699ec0b70d640185595e0facf597f3ba3",
+      "size": 357074
+    },
+    {
+      "path": "mods/tinkersplatinumtungsten-1.1.0-universal-1.20.1.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/tinkersplatinumtungsten-1.1.0-universal-1.20.1.jar",
+      "sha1": "4875b1c790ff207c54b8a69b1c73c11d5b87b392",
+      "size": 837969
+    },
+    {
+      "path": "mods/tinkers_advanced_core-3.0.0-beta.5.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/tinkers_advanced_core-3.0.0-beta.5.jar",
+      "sha1": "7488e0d3ce345a449a426232f3b041e4b622b195",
+      "size": 189755
+    },
+    {
+      "path": "mods/tinkers_advanced_tools-3.0.0-beta.4.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/tinkers_advanced_tools-3.0.0-beta.4.jar",
+      "sha1": "2aae36bd1437558edd920d25081d6fbc1fd981bd",
+      "size": 1304477
+    },
+    {
+      "path": "mods/tinkers_ingenuity-1.2.0.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/tinkers_ingenuity-1.2.0.jar",
+      "sha1": "ac5afe5e2b78da4758f159659d53a2614cb376f7",
+      "size": 3131391
+    },
+    {
+      "path": "mods/titanium-1.20.1-3.8.37.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/titanium-1.20.1-3.8.37.jar",
+      "sha1": "eaf9d82e05d42c507b60e68e6d4622b5afeef392",
+      "size": 622121
+    },
+    {
+      "path": "mods/treeharvester-1.20.1-11.1.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/treeharvester-1.20.1-11.1.jar",
+      "sha1": "ea81b5ceff4f2216d17b786a99968134e00f1fcf",
+      "size": 115282
+    },
+    {
+      "path": "mods/tru.e-ending-v1.1.0c.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/tru.e-ending-v1.1.0c.jar",
+      "sha1": "ab318879312d428eda430006efd14911a15ddd44",
+      "size": 5525883
+    },
+    {
+      "path": "mods/veinmining-forge-1.5.0+1.20.1.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/veinmining-forge-1.5.0%2B1.20.1.jar",
+      "sha1": "e484d2f2556bb638c4c3da5e5542eae70035f98a",
+      "size": 230264
+    },
+    {
+      "path": "mods/voicechat-forge-1.20.1-2.6.27.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/voicechat-forge-1.20.1-2.6.27.jar",
+      "sha1": "5eb3ace18a6b7cdb56e80f12bb763d9f593183d0",
+      "size": 4941878
+    },
+    {
+      "path": "mods/waystones-forge-1.20.1-14.1.21.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/waystones-forge-1.20.1-14.1.21.jar",
+      "sha1": "61952fb248a9689fe46d5ffb223fcc41e31fef1a",
+      "size": 536782
+    },
+    {
+      "path": "mods/weaponmaster_ydm-forge-1.20.1-4.2.3.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/weaponmaster_ydm-forge-1.20.1-4.2.3.jar",
+      "sha1": "9fe819dc110461f55909dabbed73e4fe3bdde158",
+      "size": 283977
+    },
+    {
+      "path": "mods/YungsApi-1.20-Forge-4.0.6.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/YungsApi-1.20-Forge-4.0.6.jar",
+      "sha1": "af584b690f5646c6032002b58abc4591beed3833",
+      "size": 370524
+    },
+    {
+      "path": "mods/YungsBetterCaves-1.20.1-Forge-2.0.7.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/YungsBetterCaves-1.20.1-Forge-2.0.7.jar",
+      "sha1": "1bd1beb5f0dac5e6257055051ba37d13245e63f9",
+      "size": 407680
+    },
+    {
+      "path": "mods/YungsBetterDesertTemples-1.20-Forge-3.0.3.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/YungsBetterDesertTemples-1.20-Forge-3.0.3.jar",
+      "sha1": "31b386b2dbaa4933e0a10ccdfb25f56da16931a6",
+      "size": 918012
+    },
+    {
+      "path": "mods/YungsBetterDungeons-1.20-Forge-4.0.4.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/YungsBetterDungeons-1.20-Forge-4.0.4.jar",
+      "sha1": "67a9e1c2ff126ab54cea8e0709d178915243039e",
+      "size": 792381
+    },
+    {
+      "path": "mods/YungsBetterEndIsland-1.20-Forge-2.0.6.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/YungsBetterEndIsland-1.20-Forge-2.0.6.jar",
+      "sha1": "4e7bf109981593061b8100bc8bf23e1c9bbcbb76",
+      "size": 387111
+    },
+    {
+      "path": "mods/YungsBetterJungleTemples-1.20-Forge-2.0.5.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/YungsBetterJungleTemples-1.20-Forge-2.0.5.jar",
+      "sha1": "0b3c8556983895fea980247bb4d437ca535e7259",
+      "size": 806652
+    },
+    {
+      "path": "mods/YungsBetterMineshafts-1.20-Forge-4.0.4.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/YungsBetterMineshafts-1.20-Forge-4.0.4.jar",
+      "sha1": "e2cbc574807a994bb9610184eb4bbfe29a6c0774",
+      "size": 492998
+    },
+    {
+      "path": "mods/YungsBetterNetherFortresses-1.20-Forge-2.0.6.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/YungsBetterNetherFortresses-1.20-Forge-2.0.6.jar",
+      "sha1": "889cd16a93764d1d6af2e2dda5bbc286a2683e7a",
+      "size": 619255
+    },
+    {
+      "path": "mods/YungsBetterOceanMonuments-1.20-Forge-3.0.4.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/YungsBetterOceanMonuments-1.20-Forge-3.0.4.jar",
+      "sha1": "d8e74ed19903752a97ed0e1d2b1a8bf378bc252f",
+      "size": 1033262
+    },
+    {
+      "path": "mods/YungsBetterStrongholds-1.20-Forge-4.0.3.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/YungsBetterStrongholds-1.20-Forge-4.0.3.jar",
+      "sha1": "3730238c56edca4bb5b2238e1314aec572ced385",
+      "size": 473564
+    },
+    {
+      "path": "mods/YungsBetterWitchHuts-1.20-Forge-3.0.3.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/YungsBetterWitchHuts-1.20-Forge-3.0.3.jar",
+      "sha1": "71fee574f920c6b05004f100ba07e9b8d5844169",
+      "size": 179190
+    },
+    {
+      "path": "mods/YungsMenuTweaks-1.20.1-Forge-1.0.2.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/YungsMenuTweaks-1.20.1-Forge-1.0.2.jar",
+      "sha1": "b43a0bc054d3974076d36b5cfec6aeab968d24a6",
+      "size": 157602
+    },
+    {
+      "path": "mods/Zeta-1.0-31.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/Zeta-1.0-31.jar",
+      "sha1": "8c4a8ef0444b53ff408d5b89126285031081d92f",
+      "size": 1006518
+    },
+    {
+      "path": "mods/[1.20.1] SecurityCraft v1.10.2.1.jar",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/c6b5c21d1b5d4313e797a7796d3d27e29eebb8c0/dragonmine/archivos/mods/%5B1.20.1%5D%20SecurityCraft%20v1.10.2.1.jar",
+      "sha1": "6184ca6af68a0a4e8ca4dd28a542b5d1a6c2e3ab",
+      "size": 4995865
+    }
+  ]
+}
