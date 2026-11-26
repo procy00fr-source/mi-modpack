@@ -1,0 +1,9 @@
+[
+  {"version":1},
+  {"type":"recipe","value":"create:pressing#create:pressing/desh_ingot#item_stack\u0026ad_astra:desh_plate"},
+  {"type":"item_stack","value":"{Count:1b,id:\"minecraft:netherite_block\"}"},
+  {"type":"recipe","value":"minecraft:crafting#dragonminez:gete_block#item_stack\u0026dragonminez:gete_block"},
+  {"type":"recipe","value":"minecraft:crafting#dragonminez:kikono_block#item_stack\u0026dragonminez:kikono_block"},
+  {"type":"recipe","value":"minecraft:crafting#tconstruct:common/slime/earth/congealed#item_stack\u0026tconstruct:earth_congealed_slime"},
+  {"type":"item_stack","value":"{Count:1b,id:\"alexsmobs:void_worm_mandible\"}"}
+]

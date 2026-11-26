@@ -1,0 +1,53 @@
+
+#Meditation.
+[meditation]
+	#Players can meditate. false = off.
+	enabled = true
+	#How training points are reckoned: "statpoints" = statPointsPerHour at the player's own price per stat point; "minigame" = tpSharePercent of DragonMineZ' minigame minute (before 1.5.1).
+	rewardRule = "statpoints"
+	#Status points' worth of training points per hour at the first stage (rule statpoints). 0 = no points.
+	#Range: 0.0 ~ 1000.0
+	statPointsPerHour = 3.0
+	#Training points per minute at the first stage, in percent of a minute of training (rule minigame). 0 = none.
+	#Range: 0.0 ~ 100.0
+	tpSharePercent = 2.0
+	#Reward factor of the highest stage.
+	#Range: 1.0 ~ 10.0
+	topStageFactor = 3.0
+	#Extra reward in percent per further player meditating nearby. 0 = none.
+	#Range: 0 ~ 100
+	groupBonusPercentPerMember = 10
+	#Most extra reward from a group in percent. 0 = none.
+	#Range: 0 ~ 300
+	groupBonusMaxPercent = 30
+	#Blocks within which players meditate together.
+	#Range: 1 ~ 32
+	groupRadius = 8
+	#Rewarded minutes per player and day. 0 = no rewards.
+	#Range: 0 ~ 1440
+	dailyRewardMinutes = 30
+	#Rewarded minutes per session. 0 = no rewards.
+	#Range: 0 ~ 1440
+	sessionRewardMinutes = 20
+	#Minutes without meditating before a new session starts. 0 = every start is new.
+	#Range: 0 ~ 1440
+	sessionCooldownMinutes = 5
+	#Length of a reward day in ticks (24000 = one Minecraft day).
+	#Range: 1200 ~ 720000
+	rewardDayTicks = 24000
+	#Form mastery per minute from the Deep stage on, for the worn form and stack. 0 = none.
+	#Range: 0.0 ~ 100.0
+	masteryDeepPerMinute = 0.15
+	#Form mastery per minute at the Transcendent stage. 0 = none.
+	#Range: 0.0 ~ 100.0
+	masteryTranscendentPerMinute = 0.3
+	#Ultra Instinct mastery per minute from the Deep stage on for its owners who do not wear it. 0 = none.
+	#Range: 0.0 ~ 100.0
+	ultraInstinctPerMinute = 0.1
+	#Extra mastery and points in percent at Kami's Lookout, the Other World, the Sacred Worlds and Beerus' planet. 0 = none.
+	#Range: 0 ~ 300
+	placeBonusPercent = 25
+	#Meditation skill level needed to float. 0 = everyone.
+	#Range: 0 ~ 100
+	levitationSkillLevel = 2
+

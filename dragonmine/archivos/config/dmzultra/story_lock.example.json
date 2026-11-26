@@ -1,0 +1,10 @@
+{
+  "_about": "Copy to story_lock.json to use it (read at server start; a world's dmzultra/story_lock.json wins over it). enabled: true/false overrides [forms] storyLock. milestones: move a milestone's quest everywhere (saga:number, DragonMineZ' numbering). rows: race/group.form (* = any race / the whole group) -> a milestone id, saga:number, or - (never locked). The milestones and rows are in the jar under data/dmzultra/story_lock; docs/v05/story_lock.md lists them.",
+  "milestones": {
+    "cell_games": "android_saga:14"
+  },
+  "rows": {
+    "saiyan/supersaiyan.supersaiyan2": "cell_games",
+    "*/kaioken.x100": "jiren"
+  }
+}

@@ -1,0 +1,6 @@
+
+#Shin's Kai Kai into the Demon Realm, the way in without DragonMineZ' capsule.
+[gate]
+	#true = Shin beside Old Kai takes players into the Demon Realm once DragonMineZ' capsule would (daima_saga:3), and a Shin in the realm takes them back. false = only the capsule; Shin in the realm still takes anyone there back.
+	enabled = true
+

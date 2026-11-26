@@ -1,0 +1,221 @@
+{
+  "race": "saiyan",
+  "subraces": [
+    {
+      "key": "fullblood",
+      "enabled": true,
+      "plain": true,
+      "order": 0,
+      "tail": "born",
+      "lean": {},
+      "growth": [],
+      "forms": [],
+      "passives": [],
+      "look": {
+        "defaults": {},
+        "parts": [],
+        "scale": 1.0
+      },
+      "text": {
+        "source": "MANGA"
+      },
+      "budget": {
+        "M": 0,
+        "C": 0,
+        "S": 0,
+        "B": 0,
+        "U": 0
+      }
+    },
+    {
+      "key": "half",
+      "enabled": true,
+      "plain": false,
+      "order": 20,
+      "tail": "optional",
+      "lean": {
+        "STR": -0.04,
+        "SKP": 0.02,
+        "ENE": 0.02
+      },
+      "growth": [
+        {
+          "below": 400,
+          "tp": 1.15
+        },
+        {
+          "below": 1200,
+          "tp": 1.05
+        },
+        {
+          "below": -1,
+          "tp": 0.95
+        }
+      ],
+      "forms": [
+        {
+          "group": "ssgrades",
+          "levels": [
+            1
+          ],
+          "price": 0.8
+        },
+        {
+          "group": "oozaru",
+          "price": 1.2
+        }
+      ],
+      "passives": [
+        {
+          "kind": "hidden_potential",
+          "healthBelow": 0.3,
+          "kiDamage": 0.08,
+          "furyFill": 0.25
+        }
+      ],
+      "heritageLean": {
+        "card": "saiyan:1:B",
+        "cooldownSeconds": 40
+      },
+      "look": {
+        "defaults": {},
+        "parts": [],
+        "scale": 1.0
+      },
+      "text": {
+        "source": "MANGA"
+      },
+      "budget": {
+        "M": 0,
+        "C": 0,
+        "S": -1,
+        "B": 0,
+        "U": 1
+      }
+    },
+    {
+      "key": "quarter",
+      "enabled": true,
+      "plain": false,
+      "order": 30,
+      "tail": "none",
+      "lean": {
+        "STR": -0.04,
+        "VIT": -0.02,
+        "SKP": 0.03,
+        "ENE": 0.03
+      },
+      "growth": [],
+      "forms": [
+        {
+          "group": "ssgrades",
+          "price": 1.25
+        },
+        {
+          "group": "supersaiyan",
+          "price": 1.25
+        },
+        {
+          "group": "oozaru",
+          "price": 1.25
+        }
+      ],
+      "passives": [
+        {
+          "kind": "prodigy",
+          "techniqueXp": 0.15,
+          "flightKi": -0.2,
+          "dashKi": -0.2
+        }
+      ],
+      "heritageLean": {
+        "card": "saiyan:1:A",
+        "surgeSeconds": 2
+      },
+      "look": {
+        "defaults": {},
+        "parts": [],
+        "scale": 1.0
+      },
+      "text": {
+        "source": "ANIME FILM GUIDE"
+      },
+      "budget": {
+        "M": 1,
+        "C": 0,
+        "S": 0,
+        "B": -1,
+        "U": 0
+      }
+    },
+    {
+      "key": "sadala",
+      "enabled": true,
+      "plain": false,
+      "order": 40,
+      "tail": "none",
+      "lean": {
+        "SKP": 0.03,
+        "PWR": 0.02,
+        "VIT": -0.03,
+        "RES": -0.02
+      },
+      "growth": [],
+      "forms": [
+        {
+          "group": "oozaru",
+          "closed": true,
+          "option": "saiyan.sadala.closeGreatApe",
+          "openPrice": 1.25,
+          "alsoForms": [
+            "supersaiyan.supersaiyan4"
+          ],
+          "reason": "subrace.dmzultra.saiyan.sadala.closed"
+        },
+        {
+          "group": "ssgrades",
+          "levels": [
+            1,
+            2
+          ],
+          "price": 0.8
+        },
+        {
+          "group": "supersaiyan",
+          "levels": [
+            1,
+            2
+          ],
+          "price": 0.8
+        }
+      ],
+      "passives": [
+        {
+          "kind": "sadala_ignition",
+          "seconds": 30,
+          "upkeep": -0.15,
+          "mastery": 0.15
+        }
+      ],
+      "heritageLean": {
+        "card": "saiyan:1:A",
+        "surgeSeconds": 2
+      },
+      "look": {
+        "defaults": {},
+        "parts": [],
+        "scale": 1.0
+      },
+      "text": {
+        "source": "MANGA ANIME"
+      },
+      "budget": {
+        "M": 1,
+        "C": 0,
+        "S": -1,
+        "B": 0,
+        "U": 0
+      }
+    }
+  ]
+}

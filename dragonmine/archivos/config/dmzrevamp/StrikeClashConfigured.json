@@ -1,0 +1,20 @@
+{
+  "enabled": true,
+  "meterSpeedMultiplier": 1.0,
+  "goodAreaSizeMultiplier": 1.0,
+  "perfectAreaFraction": 0.35,
+  "goodMinimumEfficiency": 0.5,
+  "momentumGainDefaultMultiplier": 1.0,
+  "momentumDecayPerTick": 0.96,
+  "innerAdvantageLow": 0.2,
+  "innerAdvantageHigh": 0.8,
+  "maxClashDurationTicks": 600,
+  "meleeDMGInfluence": true,
+  "meleeDMGInfluenceMultiplier": 0.75,
+  "goodAreaSpeedInfluence": true,
+  "goodAreaSpeedInfluenceMultiplier": 1.0,
+  "winnerDamageIncreaseMultiplier": 1.2,
+  "strikeAttackHasDelay": true,
+  "strikeAttackDelayTicks": 10,
+  "strikeClashLateInputWindowTicks": 10
+}

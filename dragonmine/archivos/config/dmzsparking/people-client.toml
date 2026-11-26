@@ -1,0 +1,13 @@
+
+#How fighters and companions show to you.
+[people]
+	#The standing's badge (ally, friendly, neutral, wary, hostile) before a fighter's name over the head and in the menu. false = none.
+	badges = true
+	#Speech bubbles over the heads of fighters and residents. false = none.
+	bubbles = true
+	#Each line a bubble shows within 24 blocks also in the chat. false = only the bubble.
+	bubblesInChat = false
+	#Size of the speech bubbles in percent of the normal size. 100 = normal.
+	#Range: 50 ~ 200
+	bubbleSizePercent = 100
+

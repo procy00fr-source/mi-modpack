@@ -1,0 +1,20 @@
+{
+  "Race": "your_dmz_race_id",
+  "Enabled": false,
+  "SpawnIn": false,
+  "PlanetSpawn": "earth",
+  "HairOn": false,
+  "ClothesOn": false,
+  "Gender": "both",
+  "BreedingMode": "gender",
+  "BreedingEnabled": false,
+  "MainBodyTextureOnSpawn": 1,
+  "Forms": [
+    {
+      "Group": "example_group",
+      "Form": "example_form",
+      "Enabled": true,
+      "Cost": -1
+    }
+  ]
+}

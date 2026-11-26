@@ -1,0 +1,42 @@
+{
+  "baseStats": {
+    "STR": 3,
+    "SKP": 0,
+    "RES": 3,
+    "VIT": 3,
+    "PWR": 2,
+    "ENE": 1
+  },
+  "statScaling": {
+    "STR_scaling": 0.65,
+    "SKP_scaling": 0.5,
+    "STM_scaling": 1.2,
+    "DEF_scaling": 0.9,
+    "DEF_scaling_max": 1.8,
+    "VIT_scaling": 1.5,
+    "VIT_scaling_max": 6.0,
+    "PWR_scaling": 0.6,
+    "ENE_scaling": 1.55
+  },
+  "baseHp5": 0.9,
+  "hp5VitScaling": 0.03,
+  "baseEp5": -0.55,
+  "ep5EneScaling": -0.015,
+  "baseSp5": -1.45,
+  "sp5StmScaling": -0.005,
+  "tpCostMultiplier": 0.0,
+  "tpGainMultiplier": 0.25,
+  "passive": {
+    "enabled": true,
+    "values": {
+      "stmToHpRegenRatio": 0.5,
+      "healingBonus": 0.25,
+      "lowHpThreshold": 0.3,
+      "lowHpMultiplier": 2.0
+    }
+  },
+  "configVersion": "2.2.1",
+  "displayName": "Tank",
+  "displayColor": "#FF55FF",
+  "exclusiveRaces": []
+}

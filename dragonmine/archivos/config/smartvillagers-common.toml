@@ -1,0 +1,106 @@
+
+#Smart Villagers common settings
+[work]
+	#Allow farmer villagers to harvest mature crops and replant them.
+	farmersHarvest = true
+	#Allow dedicated lumberjacks and legacy fletcher workers to cut natural tree logs.
+	woodcuttersWork = true
+	#Allow mason villagers to work as builders and mine exposed stone, coal, iron, copper, and clay in covered mines.
+	buildersMine = true
+	#Allow mason villagers to build projects explicitly started by a player using the bell planner.
+	buildersConstruct = true
+	#Allow shepherd villagers to work as gardeners, taking saplings and flowers from storage and planting them outdoors.
+	gardenersPlant = true
+	#Allow toolsmith villagers to work as dedicated miners in exposed, covered mines.
+	minersWork = true
+	#Allow guards, armorers and weaponsmiths to fight nearby monsters and hostile rebels.
+	guardsDefend = true
+	#Allow cleric villagers to heal injured villagers and survival players.
+	healersHeal = true
+	#Allow leatherworker villagers to rescue critically injured villagers and guide them back to the bell.
+	rescuersWork = true
+	#Allow cartographer villagers to travel on safe daytime resource expeditions.
+	expeditionsEnabled = true
+	#Allow builders to add a reinforced second-tier roof to completed Smart Villagers houses.
+	buildingsUpgrade = true
+	#Allow dedicated courier villagers to carry real items along player-configured chest and barrel delivery routes.
+	couriersWork = true
+	#Horizontal search radius for crops and natural trees.
+	#Range: 6 ~ 32
+	workRadius = 14
+	#Horizontal radius in which gardeners search for planting spaces and plant supplies.
+	#Range: 6 ~ 24
+	gardenRadius = 12
+	#Horizontal search radius for a chest or barrel.
+	#Range: 8 ~ 48
+	storageRadius = 24
+	#Maximum distance from a village bell at which builders may create houses.
+	#Range: 16 ~ 64
+	constructionRadius = 32
+	#Maximum number of Smart Villagers houses around one bell. Set to zero to disable new houses while keeping repairs enabled.
+	#Range: 0 ~ 8
+	maxBuildingsPerVillage = 2
+	#Workers deliver cargo after collecting this many items.
+	#Range: 1 ~ 64
+	maxCargo = 12
+	#Maximum villagers updated in one level work pass. A pass occurs twice per second.
+	#Range: 1 ~ 64
+	maxWorkersPerPass = 16
+	#Radius used by guards, healers, rescuers, and expedition staging.
+	#Range: 8 ~ 64
+	communityRadius = 24
+	#Minecraft days builders wait before upgrading a newly completed house.
+	#Range: 0 ~ 7
+	upgradeDelayDays = 1
+	#Damage dealt by a villager guard per strike.
+	#Range: 1.0 ~ 20.0
+	guardDamage = 5.0
+	#Items a courier leaves in the source storage before moving the surplus elsewhere.
+	#Range: 1 ~ 32
+	courierReserve = 8
+	#Allow beekeepers to borrow bottles/shears, harvest ripe smoked hives and return their cargo.
+	beekeepersWork = true
+	#Allow cooks to take small food batches from village storage, prepare them at a kitchen table, and return the meals.
+	cooksWork = true
+	#Allow adult rebels recruited at rebel camps to attack other villagers. Guards defend against enabled rebels.
+	rebelsAttack = true
+	#Damage dealt by a rebel per strike, at most once per second.
+	#Range: 1.0 ~ 20.0
+	rebelDamage = 3.0
+	#Maximum target distance from a rebel's camp, or from the rebel if it has no job site.
+	#Range: 4 ~ 32
+	rebelRadius = 16
+	#Allow scientists to run supplied experiments inside equipped laboratories.
+	scientistsWork = true
+	#Allow market and restaurant managers, cashiers, janitors and waiters to operate supplied businesses.
+	businessesWork = true
+	#Maximum descending staircase depth for a dedicated miner's own mine.
+	#Range: 4 ~ 32
+	minerDepth = 12
+	#Maximum horizontal tunnel extension after the staircase.
+	#Range: 8 ~ 64
+	minerTunnelLength = 32
+	#Loaded-block radius for reachable exposed ore around a dedicated miner.
+	#Range: 3 ~ 12
+	minerOreRadius = 6
+	#Allow fishermen at their claimed barrels to fish at player-selected water using real fishing rods.
+	fishersWork = true
+	#Maximum player-configured delivery routes per courier station.
+	#Range: 1 ~ 16
+	courierMaxRoutes = 8
+	#Maximum horizontal distance of route endpoints from their courier station. Endpoints must be loaded.
+	#Range: 8 ~ 128
+	courierRouteRadius = 48
+	#Maximum movement speed modifier for normal Smart Villagers work. Emergency fire escape, combat and rescue keep their own speeds.
+	#Range: 0.2 ~ 1.25
+	workWalkSpeed = 0.45
+	#Minimum game ticks between a fisherman's real catches. The first cast still uses the native fishing wait and rod enchantments. 20 ticks = one second.
+	#Range: 0 ~ 24000
+	fisherCatchIntervalTicks = 1600
+	#Each fisherman samples a persistent daily fish target from 1 to this maximum, inclusive. Only actual fish items count; junk and treasure are preserved. Zero disables the daily fish limit.
+	#Range: 0 ~ 64
+	fisherDailyCatchMaximum = 10
+	#Food points a farmer keeps from real harvested crops for eating, breeding and sharing. Bread is worth4; carrots, potatoes and beetroot1. Zero disables this extra reserve.
+	#Range: 0 ~ 128
+	farmerFoodReserve = 24
+

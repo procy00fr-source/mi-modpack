@@ -1,0 +1,18 @@
+#Allowed Values: ALL, OTHERS, OFF
+shockwaves = "ALL"
+#Allowed Values: ALL, OTHERS, OFF
+sonicFlight = "ALL"
+#Range: 0.0 ~ 1.0
+boomVolume = 0.5
+#Confirmed melee sparks and short pursuit trails; essential timing cues remain.
+combatFlash = true
+#Presentation-only camera roll intensity; reduced motion also disables this.
+#Range: 0.0 ~ 1.0
+combatShake = 0.5
+#Ticks to hold the departure camera after Step Vanish. Input and combat continue. 20 ticks = 1 second.
+#Range: 0 ~ 30
+vanishCameraHoldTicks = 20
+#Ticks to ease back after the hold; reduced motion disables both.
+#Range: 1 ~ 20
+vanishCameraCatchupTicks = 6
+

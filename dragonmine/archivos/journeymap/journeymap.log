@@ -1,0 +1,400 @@
+[23:12:48] [Render thread/INFO] [JMLogger] JourneyMap log initialized.
+[23:12:48] [Render thread/INFO] [JourneymapClient] initialize ENTER
+[23:12:48] [Render thread/INFO] [ClientAPI] [ClientAPI] built with JourneyMap API 2.0.0
+[23:12:48] [Render thread/WARN] [JourneymapClient] Create is installed without Create Repair: Create's train-map overlay on the fullscreen map is disabled. Install the Create Repair mod to restore it.
+[23:12:48] [Render thread/DEBUG] [JourneymapClient] Loading and Generating Journeymap configs
+[23:12:48] [Render thread/TRACE] [ThemeLoader] Initializing themes ...
+[23:12:48] [Render thread/DEBUG] [FileHandler] ZipFilePath:C:/Users/amerc/curseforge/minecraft/Instances/Dragon Mine Z/mods/journeymap-forge-1.20.1-6.0.8.jar zipEntryName:assets/journeymap/theme/victorian_ destDir:C:\Users\amerc\curseforge\minecraft\Instances\Dragon Mine Z\journeymap\icon\theme\victorian_ overWrite:true fromPath:C:/Users/amerc/curseforge/minecraft/Instances/Dragon Mine Z/mods/journeymap-forge-1.20.1-6.0.8.jar
+[23:12:48] [Render thread/DEBUG] [FileHandler] ZipFilePath:C:/Users/amerc/curseforge/minecraft/Instances/Dragon Mine Z/mods/journeymap-forge-1.20.1-6.0.8.jar zipEntryName:assets/journeymap/theme/flat destDir:C:\Users\amerc\curseforge\minecraft\Instances\Dragon Mine Z\journeymap\icon\theme\flat overWrite:true fromPath:C:/Users/amerc/curseforge/minecraft/Instances/Dragon Mine Z/mods/journeymap-forge-1.20.1-6.0.8.jar
+[23:12:49] [Render thread/DEBUG] [FileHandler] ZipFilePath:C:/Users/amerc/curseforge/minecraft/Instances/Dragon Mine Z/mods/journeymap-forge-1.20.1-6.0.8.jar zipEntryName:assets/journeymap/theme/vault_flat destDir:C:\Users\amerc\curseforge\minecraft\Instances\Dragon Mine Z\journeymap\icon\theme\vault_flat overWrite:true fromPath:C:/Users/amerc/curseforge/minecraft/Instances/Dragon Mine Z/mods/journeymap-forge-1.20.1-6.0.8.jar
+[23:12:49] [Render thread/DEBUG] [FileHandler] ZipFilePath:C:/Users/amerc/curseforge/minecraft/Instances/Dragon Mine Z/mods/journeymap-forge-1.20.1-6.0.8.jar zipEntryName:assets/journeymap/theme/vault destDir:C:\Users\amerc\curseforge\minecraft\Instances\Dragon Mine Z\journeymap\icon\theme\vault overWrite:true fromPath:C:/Users/amerc/curseforge/minecraft/Instances/Dragon Mine Z/mods/journeymap-forge-1.20.1-6.0.8.jar
+[23:12:50] [Render thread/INFO] [PropertiesBase] core (FirstLoaded) Setting config file to version "6.0.8": journeymap.core.config
+[23:12:50] [Render thread/INFO] [PropertiesBase] core (Valid) Creating config file: C:\Users\amerc\curseforge\minecraft\Instances\Dragon Mine Z\journeymap\config\6.0\journeymap.core.config
+[23:12:50] [Render thread/INFO] [PropertiesBase] fullmap (FirstLoaded) Setting config file to version "6.0.8": journeymap.fullmap.config
+[23:12:50] [Render thread/INFO] [PropertiesBase] fullmap (Valid) Creating config file: C:\Users\amerc\curseforge\minecraft\Instances\Dragon Mine Z\journeymap\config\6.0\journeymap.fullmap.config
+[23:12:50] [Render thread/INFO] [PropertiesBase] minimap (Initialized) Setting config file to version "6.0.8": journeymap.minimap.config
+[23:12:50] [Render thread/INFO] [PropertiesBase] minimap (Valid) Creating config file: C:\Users\amerc\curseforge\minecraft\Instances\Dragon Mine Z\journeymap\config\6.0\journeymap.minimap.config
+[23:12:50] [Render thread/INFO] [PropertiesBase] minimap2 (FirstLoaded) Setting config file to version "6.0.8": journeymap.minimap2.config
+[23:12:50] [Render thread/INFO] [PropertiesBase] minimap2 (Valid) Creating config file: C:\Users\amerc\curseforge\minecraft\Instances\Dragon Mine Z\journeymap\config\6.0\journeymap.minimap2.config
+[23:12:50] [Render thread/INFO] [PropertiesBase] topo (FirstLoaded) Setting config file to version "6.0.8": journeymap.topo.config
+[23:12:50] [Render thread/INFO] [PropertiesBase] topo (Valid) Creating config file: C:\Users\amerc\curseforge\minecraft\Instances\Dragon Mine Z\journeymap\config\6.0\journeymap.topo.config
+[23:12:50] [Render thread/INFO] [PropertiesBase] webmap (FirstLoaded) Setting config file to version "6.0.8": journeymap.webmap.config
+[23:12:50] [Render thread/INFO] [PropertiesBase] webmap (Valid) Creating config file: C:\Users\amerc\curseforge\minecraft\Instances\Dragon Mine Z\journeymap\config\6.0\journeymap.webmap.config
+[23:12:50] [Render thread/INFO] [PropertiesBase] waypoint (FirstLoaded) Setting config file to version "6.0.8": journeymap.waypoint.config
+[23:12:50] [Render thread/INFO] [PropertiesBase] waypoint (Valid) Creating config file: C:\Users\amerc\curseforge\minecraft\Instances\Dragon Mine Z\journeymap\config\6.0\journeymap.waypoint.config
+[23:12:50] [Render thread/INFO] [PropertiesBase] rendering (FirstLoaded) Setting config file to version "6.0.8": journeymap.rendering.config
+[23:12:50] [Render thread/INFO] [PropertiesBase] rendering (Valid) Creating config file: C:\Users\amerc\curseforge\minecraft\Instances\Dragon Mine Z\journeymap\config\6.0\journeymap.rendering.config
+[23:12:50] [Render thread/INFO] [?] Version: JourneyMap 1.20.1-6.0.8, built with forge 0.92.3+1.20.1
+forge: 47.4.10
+Environment: os.name, os.arch, java.version, user.country, user.language=null, game language=en_us, locale=en_us
+Features: 
+	RadarPlayers : singleplayer = true , multiplayer = true
+	RadarAnimals : singleplayer = true , multiplayer = true
+	RadarMobs : singleplayer = true , multiplayer = true
+	RadarVillagers : singleplayer = true , multiplayer = true
+	MapTopo : singleplayer = true , multiplayer = true
+	MapSurface : singleplayer = true , multiplayer = true
+	MapCaves : singleplayer = true , multiplayer = true
+	MapBiome : singleplayer = true , multiplayer = true
+MiniMapProperties{state=SavedOk, file=journeymap.minimap.config, configVersion=6.0.8, infoSlotTimeFormat=HH:mm:ss, zoomLevel=512, compassFontScale=1.0, infoSlotFontScale=1.0, terrainAlpha=100, showEntityNames=false, showPassiveNames=false, positionX=0.9, positionY=0.25, effectVertical=false, showPlayerHeading=true, sizePercent=30, playerDisplayScale=1.0, showDayNight=true, showPets=true, showPlayerNames=true, preferredMapType=day, showCompass=true, showNpcNames=false, mobDisplay=jm.common.entity_display.dots_and_outlined_icons, showHostileNames=false, systemTimeRealFormat=HH:mm:ss, shape=jm.minimap.shape_circle, showSelf=true, showVillagerNames=false, selfDisplayScale=1.0, showGrid=true, reticleOrientation=jm.minimap.orientation.compass, minimapLockedMapType=jm.common.map_type.auto, effectTranslateX=0, info3LabelPosition=jm.minimap.info_slot.bottom, showWaypoints=true, info2LabelPosition=jm.minimap.info_slot.top, minimapKeyMovementSpeed=0.001, info1LabelPosition=jm.minimap.info_slot.top, showAnimals=true, infoSlotAlpha=0.7, effectTranslateY=0, showWaypointLabels=true, showAmbientNames=false, moveEffectIcons=true, showTeamNames=true, position=jm.minimap.position_topright, fontScale=1.0, info4LabelPosition=jm.minimap.info_slot.bottom, showPlayers=true, waypointIconScale=1.0, frameAlpha=100, effectReversed=false, backgroundAlpha=0.8, enabled=true, showVillagers=true, info2Label=jm.theme.labelsource.gametime, hudRenderLayer=jm.minimap.hud_render_layer_last, info3Label=jm.theme.labelsource.location, caveLayer=4, showMobs=true, waypointLabelScale=1.0, showReticle=true, orientation=jm.minimap.orientation.north, info4Label=jm.theme.labelsource.biome, locationFormat=xzyv, playerDisplay=jm.common.entity_display.outlined_icons, mobDisplayScale=1.0, showOffScreenPlayers=true, showCaves=true, hideEffectIcons=false, showMobHeading=true, locationFormatVerbose=true, showAmbientCreatures=false, showPetNames=false, info1Label=jm.theme.labelsource.blank, showNoIconNames=true}
+MiniMapProperties{state=SavedOk, file=journeymap.minimap2.config, configVersion=6.0.8, infoSlotTimeFormat=HH:mm:ss, zoomLevel=512, compassFontScale=1.0, infoSlotFontScale=1.0, terrainAlpha=100, showEntityNames=false, showPassiveNames=false, positionX=0.9, positionY=0.25, effectVertical=false, showPlayerHeading=true, sizePercent=30, playerDisplayScale=1.0, showDayNight=true, showPets=true, showPlayerNames=true, preferredMapType=day, showCompass=true, showNpcNames=false, mobDisplay=jm.common.entity_display.dots_and_outlined_icons, showHostileNames=false, systemTimeRealFormat=HH:mm:ss, shape=jm.minimap.shape_rectangle, showSelf=true, showVillagerNames=false, selfDisplayScale=1.0, showGrid=true, reticleOrientation=jm.minimap.orientation.compass, minimapLockedMapType=jm.common.map_type.auto, effectTranslateX=0, info3LabelPosition=jm.minimap.info_slot.bottom, showWaypoints=true, info2LabelPosition=jm.minimap.info_slot.top, minimapKeyMovementSpeed=0.001, info1LabelPosition=jm.minimap.info_slot.top, showAnimals=true, infoSlotAlpha=0.7, effectTranslateY=0, showWaypointLabels=true, showAmbientNames=false, moveEffectIcons=true, showTeamNames=true, position=jm.minimap.position_topright, fontScale=1.0, info4LabelPosition=jm.minimap.info_slot.bottom, showPlayers=true, waypointIconScale=1.0, frameAlpha=100, effectReversed=false, backgroundAlpha=0.8, enabled=true, showVillagers=true, info2Label=jm.theme.labelsource.gametime, hudRenderLayer=jm.minimap.hud_render_layer_last, info3Label=jm.theme.labelsource.location, caveLayer=4, showMobs=true, waypointLabelScale=1.0, showReticle=true, orientation=jm.minimap.orientation.north, info4Label=jm.theme.labelsource.biome, locationFormat=xzyv, playerDisplay=jm.common.entity_display.outlined_icons, mobDisplayScale=1.0, showOffScreenPlayers=true, showCaves=true, hideEffectIcons=false, showMobHeading=true, locationFormatVerbose=true, showAmbientCreatures=false, showPetNames=false, info1Label=jm.theme.labelsource.blank, showNoIconNames=true}
+FullMapProperties{state=SavedOk, file=journeymap.fullmap.config, configVersion=6.0.8, zoomLevel=512, minimalMode=false, showPlayers=true, waypointIconScale=1.0, showEntityNames=false, showPassiveNames=false, showPlayerHeading=true, showVillagers=true, showPlayerLoc=true, showKeys=true, playerDisplayScale=1.0, showMobs=true, showPets=true, waypointLabelScale=1.0, showPlayerNames=true, preferredMapType=day, showNpcNames=false, mobDisplay=jm.common.entity_display.dots_and_outlined_icons, showHostileNames=false, pauseGame=false, showSelf=true, locationFormat=xzyv, playerDisplay=jm.common.entity_display.outlined_icons, showVillagerNames=false, mobDisplayScale=1.0, selfDisplayScale=1.0, showOffScreenPlayers=true, showGrid=true, showMouseLoc=true, showWaypoints=true, showCaves=true, showThemeButton=true, showAnimals=true, showMobHeading=true, showWaypointLabels=true, locationFormatVerbose=true, showAmbientNames=false, showAmbientCreatures=false, showTeamNames=true, showPetNames=false, fontScale=1.0, showNoIconNames=true}
+WaypointProperties{state=SavedOk, file=journeymap.waypoint.config, configVersion=6.0.8, autoRemoveDeathpointDistance=2, showPlayers=false, dateFormat=MM-dd-yyyy, autoHideIconAngle=5, playerMaxDistance=0, autoRemoveDeathpoints=false, autoHideIcon=false, autoHideLabelAngle=5, renderWaypointsWorld=true, showLabelBackground=true, showDeleteConfirmation=true, managerDimensionFocus=false, fullscreenDoubleClickToCreate=true, minDistance=4, coordinatesFormat=XZY, boldLabel=false, disableShare=false, showDeathpointlabel=true, autoHideLabelVertical=true, textureSmall=true, useActionsButton=false, beaconEnabled=true, createDeathpoints=true, disableStrikeThrough=false, renderWaypointsMap=true, showName=true, autoHideLabelVerticalAngle=10, maxDistance=0, ignoreRenderDistance=false, autoHideLabel=true, autoRemoveTempWaypoints=2, teleportCommand=/execute in {dim} run tp {name} {x} {y} {z}, showStaticBeam=true, renderWaypoints=true, wholeNumberTeleportCoords=false, timeFormat=HH:mm:ss, shaderBeacon=false, playerMinDistance=10, showDistance=true, showRotatingBeam=true, fontScale=2.0, managerEnabled=true}
+WebMapProperties{state=SavedOk, file=journeymap.webmap.config, configVersion=6.0.8, port=8080, enabled=false}
+CoreProperties{state=SavedOk, file=journeymap.core.config, configVersion=6.0.8, maxPlayersData=32, mapSurfaceAboveCaves=true, dataCachingEnabled=true, maxAmbientCreaturesData=32, optionsManagerViewed=null, announceMod=true, ignoreSnow=false, colorPassive=#bbbbbb, colorPassiveLabel=#bbbbbb, mapShadows=true, mapBlendWater=true, playerIconFade=true, renderDistanceSurfaceMax=0, seedId=false, colorPetLabel=#0077ff, radarVerticalDistance=16, mapBlendGrass=true, recordCacheStats=false, hideSneakingEntities=true, initialSortOrder=Name, colorPlayerLabel=#ffffff, revealShape=jm.minimap.shape_circle, mapBiome=true, minimapPresetOverlay=true, caveShader=jm.common.map_filter.default, colorVillagerLabel=#88e188, alwaysMapSurface=false, biomeShader=jm.common.map_filter.default, colorVillager=#88e188, mapPlants=false, colorPet=#0077ff, sortDescending=true, radarLateralDistance=64, mapBathymetry=false, mapCrops=true, maxMobsData=32, dayShader=jm.common.map_filter.default, mapPlantShadows=false, alwaysMapCaves=false, checkUpdates=true, colorHostileLabel=#ff0000, mapBlendFoliage=true, netherSurfaceLighting=true, topoMax=0, hideSpectators=false, mappingEnabled=true, colorPlayer=#ffffff, cacheVillagersData=2000, minimapMapTypeOverlay=true, logLevel=INFO, maxVillagersData=32, mapWaterBiomeColors=true, maxAnimalsData=32, mapTransparency=true, caveBlackAsClear=false, caveModeThreshold=2, legacyIcons=false, netherShader=jm.common.map_filter.default, caveIgnoreGlass=true, mapTopography=true, renderDistanceCaveMax=0, mapAntialiasing=true, colorSelf=#0000ff, cachePlayersData=2000, mapOnlyPlayerChunk=false, nightShader=jm.common.map_filter.default, cacheMobsData=3000, drawStepUpdateRate=500, cachePlayerData=1000, splashViewed=null, colorHostile=#ff0000, topoShader=jm.common.map_filter.default, allowMiniMapBehindScreens=true, cacheAnimalsData=3000, ignoreHeightmaps=false, lodsEnabled=true, themeName=Purist, mapCaveLighting=true, renderDelay=500, mobIconFade=true, serverIp=false, glErrorChecking=false, autoMapPoll=2000}
+[23:12:50] [Render thread/DEBUG] [StatTimer] elapsed was slow: 1950.6726
+[23:12:50] [Render thread/INFO] [JourneymapClient] initialize EXIT, elapsed count 1 avg 1950.67ms
+[23:13:02] [Render thread/INFO] [JourneymapClientForge] Journeymap PostInit
+[23:13:02] [Render thread/DEBUG] [JourneymapClient] postInitialize ENTER
+[23:13:02] [Render thread/TRACE] [ThemeLoader] Initializing themes ...
+[23:13:02] [Render thread/DEBUG] [FileHandler] ZipFilePath:C:/Users/amerc/curseforge/minecraft/Instances/Dragon Mine Z/mods/journeymap-forge-1.20.1-6.0.8.jar zipEntryName:assets/journeymap/theme/victorian_ destDir:C:\Users\amerc\curseforge\minecraft\Instances\Dragon Mine Z\journeymap\icon\theme\victorian_ overWrite:true fromPath:C:/Users/amerc/curseforge/minecraft/Instances/Dragon Mine Z/mods/journeymap-forge-1.20.1-6.0.8.jar
+[23:13:03] [Render thread/DEBUG] [FileHandler] ZipFilePath:C:/Users/amerc/curseforge/minecraft/Instances/Dragon Mine Z/mods/journeymap-forge-1.20.1-6.0.8.jar zipEntryName:assets/journeymap/theme/flat destDir:C:\Users\amerc\curseforge\minecraft\Instances\Dragon Mine Z\journeymap\icon\theme\flat overWrite:true fromPath:C:/Users/amerc/curseforge/minecraft/Instances/Dragon Mine Z/mods/journeymap-forge-1.20.1-6.0.8.jar
+[23:13:03] [Render thread/DEBUG] [FileHandler] ZipFilePath:C:/Users/amerc/curseforge/minecraft/Instances/Dragon Mine Z/mods/journeymap-forge-1.20.1-6.0.8.jar zipEntryName:assets/journeymap/theme/vault_flat destDir:C:\Users\amerc\curseforge\minecraft\Instances\Dragon Mine Z\journeymap\icon\theme\vault_flat overWrite:true fromPath:C:/Users/amerc/curseforge/minecraft/Instances/Dragon Mine Z/mods/journeymap-forge-1.20.1-6.0.8.jar
+[23:13:03] [Render thread/DEBUG] [FileHandler] ZipFilePath:C:/Users/amerc/curseforge/minecraft/Instances/Dragon Mine Z/mods/journeymap-forge-1.20.1-6.0.8.jar zipEntryName:assets/journeymap/theme/vault destDir:C:\Users\amerc\curseforge\minecraft\Instances\Dragon Mine Z\journeymap\icon\theme\vault overWrite:true fromPath:C:/Users/amerc/curseforge/minecraft/Instances/Dragon Mine Z/mods/journeymap-forge-1.20.1-6.0.8.jar
+[23:13:04] [Render thread/INFO] [ThemeLoader] Preloaded theme textures: 73
+[23:13:04] [Render thread/DEBUG] [StatTimer] elapsed was slow: 1619.543
+[23:13:04] [Render thread/INFO] [JourneymapClient] postInitialize EXIT, elapsed count 1 avg 1619.54ms
+[23:27:02] [Render thread/INFO] [PlayerConnectHandler] onDisconnect: world is null
+[23:27:09] [Render thread/INFO] [ColorPalette] Color palette file generated for 0 blockstates in 0ms for: Default Palette
+[23:27:23] [Render thread/INFO] [JourneymapClient] World UID is set to: 59b6f18a-249f-44e3-8ee9-f761f6ea882d
+[23:27:23] [Render thread/INFO] [InternalStateHandler] Connection initiated with Journeymap Server: true
+[23:27:23] [Render thread/INFO] [InternalStateHandler] Teleport Enabled: false
+[23:27:23] [Render thread/INFO] [InternalStateHandler] Server set waypointTeleportOnly: false
+[23:27:23] [Render thread/INFO] [InternalStateHandler] Server set globalWaypointTeleportOnly: false
+[23:27:23] [Render thread/INFO] [InternalStateHandler] Expanded Radar Enabled: true
+[23:27:23] [Render thread/INFO] [InternalStateHandler] Server Admin Enabled: false
+[23:27:23] [Render thread/INFO] [InternalStateHandler] Server set show in-game beacons: true
+[23:27:23] [Render thread/INFO] [InternalStateHandler] Server set waypoints allowed: true
+[23:27:23] [Render thread/INFO] [InternalStateHandler] Server set Server Admin read only mode: true
+[23:27:23] [Render thread/INFO] [InternalStateHandler] Server set maxSurfaceRenderDistance to: 0
+[23:27:23] [Render thread/INFO] [InternalStateHandler] Server setmaxCaveRenderDistance to: 0
+[23:27:23] [Render thread/INFO] [InternalStateHandler] Server set allow mutliplayer options: true
+[23:27:23] [Render thread/INFO] [InternalStateHandler] Server set globalWaypointsOnly: false
+[23:27:23] [Render thread/INFO] [InternalStateHandler] Server set allow radarLateralDistance options: 512
+[23:27:23] [Render thread/INFO] [InternalStateHandler] Server set allow radarVerticalDistance options: 320
+[23:27:23] [Render thread/INFO] [InternalStateHandler] Server set allow maxAnimalsData options: 128
+[23:27:23] [Render thread/INFO] [InternalStateHandler] Server set allow maxAmbientCreaturesData options: 128
+[23:27:23] [Render thread/INFO] [InternalStateHandler] Server set allow maxMobsData options: 128
+[23:27:23] [Render thread/INFO] [InternalStateHandler] Server set allow maxPlayersData options: 128
+[23:27:23] [Render thread/INFO] [InternalStateHandler] Server set allow maxVillagersData options: 128
+[23:27:23] [Render thread/INFO] [InternalStateHandler] Server set allow playerRadarNamesEnabled options: true
+[23:27:23] [Render thread/INFO] [InternalStateHandler] Server set allow minimapEnabled options: true
+[23:27:23] [Render thread/INFO] [InternalStateHandler] Server set allow hideCoordinates options: false
+[23:27:24] [Render thread/INFO] [HandshakePacket] JourneyMap server version: 6.0.8 (client version: 6.0.8)
+[23:27:24] [Render thread/INFO] [InternalStateHandler] Connection initiated with Journeymap Server: true
+[23:27:24] [Render thread/INFO] [InternalStateHandler] Teleport Enabled: false
+[23:27:24] [Render thread/INFO] [InternalStateHandler] Server set waypointTeleportOnly: false
+[23:27:24] [Render thread/INFO] [InternalStateHandler] Server set globalWaypointTeleportOnly: false
+[23:27:24] [Render thread/INFO] [InternalStateHandler] Expanded Radar Enabled: true
+[23:27:24] [Render thread/INFO] [InternalStateHandler] Server Admin Enabled: false
+[23:27:24] [Render thread/INFO] [InternalStateHandler] Server set show in-game beacons: true
+[23:27:24] [Render thread/INFO] [InternalStateHandler] Server set waypoints allowed: true
+[23:27:24] [Render thread/INFO] [InternalStateHandler] Server set Server Admin read only mode: true
+[23:27:24] [Render thread/INFO] [InternalStateHandler] Server set maxSurfaceRenderDistance to: 0
+[23:27:24] [Render thread/INFO] [InternalStateHandler] Server setmaxCaveRenderDistance to: 0
+[23:27:24] [Render thread/INFO] [InternalStateHandler] Server set allow mutliplayer options: true
+[23:27:24] [Render thread/INFO] [InternalStateHandler] Server set globalWaypointsOnly: false
+[23:27:24] [Render thread/INFO] [InternalStateHandler] Server set allow radarLateralDistance options: 512
+[23:27:24] [Render thread/INFO] [InternalStateHandler] Server set allow radarVerticalDistance options: 320
+[23:27:24] [Render thread/INFO] [InternalStateHandler] Server set allow maxAnimalsData options: 128
+[23:27:24] [Render thread/INFO] [InternalStateHandler] Server set allow maxAmbientCreaturesData options: 128
+[23:27:24] [Render thread/INFO] [InternalStateHandler] Server set allow maxMobsData options: 128
+[23:27:24] [Render thread/INFO] [InternalStateHandler] Server set allow maxPlayersData options: 128
+[23:27:24] [Render thread/INFO] [InternalStateHandler] Server set allow maxVillagersData options: 128
+[23:27:24] [Render thread/INFO] [InternalStateHandler] Server set allow playerRadarNamesEnabled options: true
+[23:27:24] [Render thread/INFO] [InternalStateHandler] Server set allow minimapEnabled options: true
+[23:27:24] [Render thread/INFO] [InternalStateHandler] Server set allow hideCoordinates options: false
+[23:27:24] [Render thread/INFO] [HandshakePacket] JourneyMap server version: 6.0.8 (client version: 6.0.8)
+[23:27:52] [Render thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): optionsManagerViewed=null
+[23:27:52] [Render thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): splashViewed=null
+[23:27:52] [Render thread/INFO] [ModBlockDelegate] Custom modded block handling enabled for create
+[23:27:52] [Render thread/INFO] [WaypointGroupStore] Loaded 0 waypoint groups from disk.
+[23:27:52] [Render thread/INFO] [LegacyWaypointFileMigrator] 0 Legacy waypoints found that need to be migrated and backed up.
+[23:27:52] [Render thread/INFO] [ColorPalette] Color palette file generated for 0 blockstates in 0ms for: C:\Users\amerc\curseforge\minecraft\Instances\Dragon Mine Z\journeymap\colorpalette.json
+[23:27:52] [Render thread/INFO] [ColorPalette] Color palette file generated for 0 blockstates in 2ms for: C:\Users\amerc\curseforge\minecraft\Instances\Dragon Mine Z\journeymap\data\mp\domination~immigrants~tun~ply~gg_59b6f18a~249f~44e3~8ee9~f761f6ea882d\colorpalette.json
+[23:27:52] [Render thread/INFO] [JourneymapClient] Mapping started in C:\Users\amerc\curseforge\minecraft\Instances\Dragon Mine Z\journeymap\data\mp\domination~immigrants~tun~ply~gg_59b6f18a~249f~44e3~8ee9~f761f6ea882d\overworld. Memory: 4096MB total, 663MB free 
+[23:27:52] [Render thread/INFO] [JMChunkCache] JMChunkCache: opened at C:\Users\amerc\curseforge\minecraft\Instances\Dragon Mine Z\journeymap\data\mp\domination~immigrants~tun~ply~gg_59b6f18a~249f~44e3~8ee9~f761f6ea882d\overworld\chunk_cache
+[23:27:52] [Render thread/INFO] [WaypointHandler] WaypointBackend selected: Server (was=null, shouldBeRemote=true, isJMServer=true, serverManagedWP=true, isServerManagedWaypointConnection=true, hasSingleplayerServer=false)
+[23:27:52] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:27:52] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/tarantula_hawk.png
+[23:27:52] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/rattlesnake.png
+[23:27:52] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/hammerhead_shark.png
+[23:27:52] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:27:53] [Render thread/INFO] [InternalStateHandler] Connection initiated with Journeymap Server: true
+[23:27:53] [Render thread/INFO] [InternalStateHandler] Teleport Enabled: false
+[23:27:53] [Render thread/INFO] [InternalStateHandler] Server set waypointTeleportOnly: false
+[23:27:53] [Render thread/INFO] [InternalStateHandler] Server set globalWaypointTeleportOnly: false
+[23:27:53] [Render thread/INFO] [InternalStateHandler] Expanded Radar Enabled: true
+[23:27:53] [Render thread/INFO] [InternalStateHandler] Server Admin Enabled: false
+[23:27:53] [Render thread/INFO] [InternalStateHandler] Server set show in-game beacons: true
+[23:27:53] [Render thread/INFO] [InternalStateHandler] Server set waypoints allowed: true
+[23:27:53] [Render thread/INFO] [InternalStateHandler] Server set Server Admin read only mode: true
+[23:27:53] [Render thread/INFO] [InternalStateHandler] Server set maxSurfaceRenderDistance to: 0
+[23:27:53] [Render thread/INFO] [InternalStateHandler] Server setmaxCaveRenderDistance to: 0
+[23:27:53] [Render thread/INFO] [InternalStateHandler] Server set allow mutliplayer options: true
+[23:27:53] [Render thread/INFO] [InternalStateHandler] Server set globalWaypointsOnly: false
+[23:27:53] [Render thread/INFO] [InternalStateHandler] Server set allow radarLateralDistance options: 512
+[23:27:53] [Render thread/INFO] [InternalStateHandler] Server set allow radarVerticalDistance options: 320
+[23:27:53] [Render thread/INFO] [InternalStateHandler] Server set allow maxAnimalsData options: 128
+[23:27:53] [Render thread/INFO] [InternalStateHandler] Server set allow maxAmbientCreaturesData options: 128
+[23:27:53] [Render thread/INFO] [InternalStateHandler] Server set allow maxMobsData options: 128
+[23:27:53] [Render thread/INFO] [InternalStateHandler] Server set allow maxPlayersData options: 128
+[23:27:53] [Render thread/INFO] [InternalStateHandler] Server set allow maxVillagersData options: 128
+[23:27:53] [Render thread/INFO] [InternalStateHandler] Server set allow playerRadarNamesEnabled options: true
+[23:27:53] [Render thread/INFO] [InternalStateHandler] Server set allow minimapEnabled options: true
+[23:27:53] [Render thread/INFO] [InternalStateHandler] Server set allow hideCoordinates options: false
+[23:27:53] [Render thread/INFO] [InternalStateHandler] Connection initiated with Journeymap Server: true
+[23:27:53] [Render thread/INFO] [InternalStateHandler] Teleport Enabled: false
+[23:27:53] [Render thread/INFO] [InternalStateHandler] Server set waypointTeleportOnly: false
+[23:27:53] [Render thread/INFO] [InternalStateHandler] Server set globalWaypointTeleportOnly: false
+[23:27:53] [Render thread/INFO] [InternalStateHandler] Expanded Radar Enabled: true
+[23:27:53] [Render thread/INFO] [InternalStateHandler] Server Admin Enabled: false
+[23:27:53] [Render thread/INFO] [InternalStateHandler] Server set show in-game beacons: true
+[23:27:53] [Render thread/INFO] [InternalStateHandler] Server set waypoints allowed: true
+[23:27:53] [Render thread/INFO] [InternalStateHandler] Server set Server Admin read only mode: true
+[23:27:53] [Render thread/INFO] [InternalStateHandler] Server set maxSurfaceRenderDistance to: 0
+[23:27:53] [Render thread/INFO] [InternalStateHandler] Server setmaxCaveRenderDistance to: 0
+[23:27:53] [Render thread/INFO] [InternalStateHandler] Server set allow mutliplayer options: true
+[23:27:53] [Render thread/INFO] [InternalStateHandler] Server set globalWaypointsOnly: false
+[23:27:53] [Render thread/INFO] [InternalStateHandler] Server set allow radarLateralDistance options: 512
+[23:27:53] [Render thread/INFO] [InternalStateHandler] Server set allow radarVerticalDistance options: 320
+[23:27:53] [Render thread/INFO] [InternalStateHandler] Server set allow maxAnimalsData options: 128
+[23:27:53] [Render thread/INFO] [InternalStateHandler] Server set allow maxAmbientCreaturesData options: 128
+[23:27:53] [Render thread/INFO] [InternalStateHandler] Server set allow maxMobsData options: 128
+[23:27:53] [Render thread/INFO] [InternalStateHandler] Server set allow maxPlayersData options: 128
+[23:27:53] [Render thread/INFO] [InternalStateHandler] Server set allow maxVillagersData options: 128
+[23:27:53] [Render thread/INFO] [InternalStateHandler] Server set allow playerRadarNamesEnabled options: true
+[23:27:53] [Render thread/INFO] [InternalStateHandler] Server set allow minimapEnabled options: true
+[23:27:53] [Render thread/INFO] [InternalStateHandler] Server set allow hideCoordinates options: false
+[23:27:56] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/mimic_octopus.png
+[23:28:00] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:28:00] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:28:00] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/hammerhead_shark.png
+[23:28:02] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/tarantula_hawk.png
+[23:28:02] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/rattlesnake.png
+[23:28:04] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:28:04] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:28:05] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/rattlesnake.png
+[23:28:07] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:28:07] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:28:08] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/rattlesnake.png
+[23:28:08] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/tarantula_hawk.png
+[23:28:10] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:28:10] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:28:11] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/rattlesnake.png
+[23:28:11] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/tarantula_hawk.png
+[23:28:14] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:28:14] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:28:17] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/rattlesnake.png
+[23:28:17] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:28:17] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:28:19] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:28:19] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:28:20] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/rattlesnake.png
+[23:28:20] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/mimic_octopus.png
+[23:28:22] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:28:22] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:28:22] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/mimic_octopus.png
+[23:28:23] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/rattlesnake.png
+[23:28:23] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:28:23] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:28:23] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/rattlesnake.png
+[23:28:23] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/mimic_octopus.png
+[23:28:25] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:28:25] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/rattlesnake.png
+[23:28:25] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/mimic_octopus.png
+[23:28:25] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:28:27] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:28:27] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:28:27] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/rattlesnake.png
+[23:28:30] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:28:30] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:28:32] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/rattlesnake.png
+[23:28:32] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:28:32] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:28:34] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:28:34] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:28:35] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/rattlesnake.png
+[23:28:37] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:28:37] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:28:38] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/rattlesnake.png
+[23:28:40] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:28:40] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:28:41] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/rattlesnake.png
+[23:28:42] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:28:42] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:28:44] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/rattlesnake.png
+[23:28:44] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:28:44] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:28:46] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:28:46] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:28:47] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/rattlesnake.png
+[23:28:48] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:28:48] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:28:48] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/rattlesnake.png
+[23:28:50] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/rattlesnake.png
+[23:28:50] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:28:50] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:28:52] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:28:52] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:28:52] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/rattlesnake.png
+[23:28:54] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:28:54] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/rattlesnake.png
+[23:28:54] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:28:56] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:28:56] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:28:56] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/rattlesnake.png
+[23:28:58] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:28:58] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:28:58] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/rattlesnake.png
+[23:29:00] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:29:00] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:29:00] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/rattlesnake.png
+[23:29:03] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:29:03] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:29:03] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/rattlesnake.png
+[23:29:06] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/rattlesnake.png
+[23:29:06] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:29:06] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:29:09] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:29:09] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:29:09] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/rattlesnake.png
+[23:29:12] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:29:12] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:29:14] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/rattlesnake.png
+[23:29:15] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:29:15] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:29:17] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/rattlesnake.png
+[23:29:19] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:29:19] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:29:20] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/rattlesnake.png
+[23:29:23] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:29:23] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:29:26] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:29:26] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:29:29] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:29:29] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:29:32] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:29:32] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:29:35] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:29:35] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:29:38] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:29:38] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:29:42] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:29:42] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:29:44] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:29:44] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:29:47] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:29:47] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:29:51] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:29:51] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:29:55] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:29:55] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:30:00] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:30:00] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:30:04] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:30:04] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:30:08] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:30:08] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:30:12] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:30:12] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:30:18] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:30:18] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:30:23] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:30:23] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:30:27] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:30:27] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:30:32] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:30:32] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:30:39] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:30:39] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:30:44] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:30:44] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:30:48] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:30:48] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:30:54] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:30:54] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:30:58] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:30:58] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:31:02] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:31:02] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:31:08] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:31:08] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:31:08] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/tarantula_hawk.png
+[23:31:11] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/mimic_octopus.png
+[23:31:16] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:31:16] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:31:20] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/mimic_octopus.png
+[23:31:23] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:31:23] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/mimic_octopus.png
+[23:31:23] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:31:23] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/tarantula_hawk.png
+[23:31:28] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/mimic_octopus.png
+[23:31:28] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:31:28] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/tarantula_hawk.png
+[23:31:28] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:31:34] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/tarantula_hawk.png
+[23:31:34] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:31:34] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:31:34] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/mimic_octopus.png
+[23:31:39] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/tarantula_hawk.png
+[23:31:39] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:31:39] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/mimic_octopus.png
+[23:31:39] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:31:43] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/tarantula_hawk.png
+[23:31:43] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:31:43] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/mimic_octopus.png
+[23:31:43] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:31:47] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:31:47] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/tarantula_hawk.png
+[23:31:47] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:31:48] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/mimic_octopus.png
+[23:31:52] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:31:52] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/tarantula_hawk.png
+[23:31:52] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:31:52] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/mimic_octopus.png
+[23:31:57] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:31:57] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:31:57] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/mimic_octopus.png
+[23:32:00] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:32:00] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:32:00] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/mimic_octopus.png
+[23:32:03] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:32:03] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:32:03] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/mimic_octopus.png
+[23:32:06] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:32:06] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/mimic_octopus.png
+[23:32:06] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:32:10] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:32:10] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:32:10] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/mimic_octopus.png
+[23:32:14] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:32:14] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:32:14] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/mimic_octopus.png
+[23:32:21] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/mimic_octopus.png
+[23:32:21] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:32:21] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:32:28] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/mimic_octopus.png
+[23:32:28] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/roadrunner.png
+[23:32:28] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:32:31] [Render thread/INFO] [ChatLog] JourneyMap: Create's built-in train map is not compatible with JourneyMap 6 and was disabled. Install the Create Repair mod to restore it.
+[23:32:31] [Render thread/INFO] [ChatLog] JourneyMap: Press [KEYPAD 6]
+[23:32:50] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/frilled_shark.png
+[23:32:53] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/giant_squid.png
+[23:32:53] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/frilled_shark.png
+[23:32:53] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/giant_squid.png
+[23:32:53] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/fly.png
+[23:33:39] [Render thread/INFO] [ColorPalette] Color palette file generated for 0 blockstates in 1ms for: Default Palette
+[23:34:56] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/frilled_shark_depressurized.png
+[23:35:10] [Render thread/WARN] [JMLogger] Image is null: alexsmobs:textures/entity_icon/frilled_shark_depressurized.png
+[23:35:10] [Render thread/INFO] [TextureCache] [JourneyMap]: Purging Theme Images
+[23:35:10] [Render thread/INFO] [TextureCache] [JourneyMap]: Purging Region Images
+[23:35:10] [Render thread/INFO] [TextureCache] [JourneyMap]: Purging Mob Icon Images
+[23:35:10] [Render thread/INFO] [WaypointHandler] WaypointBackend selected: Client (was=Server, shouldBeRemote=false, isJMServer=false, serverManagedWP=false, isServerManagedWaypointConnection=false, hasSingleplayerServer=false)
+[23:35:10] [Render thread/INFO] [WaypointGroupStore] Loaded 1 waypoint groups from disk.
+[23:35:10] [Render thread/INFO] [WaypointStore] Loaded 0 waypoints from disk.
+[23:35:10] [Render thread/INFO] [LegacyWaypointFileMigrator] 0 Legacy waypoints found that need to be migrated and backed up.
+[23:35:10] [Render thread/INFO] [WaypointHandler] WaypointBackend selected: Client (was=null, shouldBeRemote=false, isJMServer=false, serverManagedWP=false, isServerManagedWaypointConnection=false, hasSingleplayerServer=false)
+[23:35:10] [Render thread/INFO] [JourneymapClient] Mapping halted in C:\Users\amerc\curseforge\minecraft\Instances\Dragon Mine Z\journeymap\data\mp\domination~immigrants~tun~ply~gg_59b6f18a~249f~44e3~8ee9~f761f6ea882d\minecraft:overworld
+[23:35:10] [Render thread/INFO] [JourneymapClient] Mapping halted in C:\Users\amerc\curseforge\minecraft\Instances\Dragon Mine Z\journeymap\data\mp\domination~immigrants~tun~ply~gg_59b6f18a~249f~44e3~8ee9~f761f6ea882d\minecraft:overworld
+[23:35:10] [Render thread/INFO] [JourneymapClient] World UID is set to: null

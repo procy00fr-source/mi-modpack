@@ -1,0 +1,5 @@
+{
+  "_about": "DMZ Ultra reward ledger. A recurring reward (daily, weekly) is taken per character up to its system\u0027s own limit; all characters of one account together take at most accountCapFactor times that limit. accountCaps names a fixed cap for a group instead.",
+  "accountCapFactor": 3,
+  "accountCaps": {}
+}

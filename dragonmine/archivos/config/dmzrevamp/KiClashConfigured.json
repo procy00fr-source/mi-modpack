@@ -1,0 +1,30 @@
+{
+  "meterSpeedMultiplier": 1.0,
+  "goodAreaSizeMultiplier": 1.0,
+  "perfectAreaFraction": 0.35,
+  "goodMinimumEfficiency": 0.5,
+  "momentumGainDefaultMultiplier": 1.0,
+  "momentumDecayPerTick": 0.96,
+  "innerAdvantageLow": 0.2,
+  "innerAdvantageHigh": 0.8,
+  "maxClashDurationTicks": 600,
+  "allowedKiAttacks": [
+    "Medium_Ball",
+    "Giant_Ball",
+    "Wave",
+    "Laser",
+    "Beam",
+    "Explosion"
+  ],
+  "KiDMGInfluence": true,
+  "KiDMGInfluenceMultiplier": 0.75,
+  "overchargeInfluence": true,
+  "overchargeInfluenceMultiplier": 0.75,
+  "allowTransformationMidClash": true,
+  "cancelIffTooStrong": true,
+  "cancelMulti": 20.0,
+  "AllowHelpers": true,
+  "helpersSizeIncreaseMultiplier": 0.75,
+  "MomentumLossReducePerHelper": 0.1,
+  "MaxMomentumLossPerHelper": 0.6
+}

@@ -1,0 +1,90 @@
+DRAGON MINE Z: OVERHAUL - CUSTOM CLASS PASSIVES
+=================================================
+
+This file explains how to add an Overhaul passive to any custom class JSON in
+config/dragonminez/classes. Put the settings inside the class passive.values object.
+Keys are case-insensitive, but using the spelling shown below is recommended.
+
+Enable a custom passive with:
+  "passive": {
+    "enabled": true,
+    "values": {
+      "Custom Passive": true,
+      "PassiveType": 1
+    }
+  }
+
+PassiveType
+  1 = Simple: one permanent bonus or reduction.
+  2 = Combo: timed stacks earned by configured combat actions.
+  3 = Resource: a bonus scaled by current HP, Ki, or Stamina.
+  4 = Special: a unique predefined mechanic.
+
+PassiveType, Type, Effect, MaxStacks, StackTime, and ResourceType are
+whole-number fields. Do not write decimal values for those keys.
+
+SIMPLE (PassiveType 1)
+  Required: Effect, Value. Value is a decimal percentage (0.2 means 20%).
+  Effect 1 = Melee and Strike defense penetration
+  Effect 2 = Ki damage defense penetration
+  Effect 3 = Incoming damage ignored
+  Effect 4 = Strike Attack cost reduction
+  Effect 5 = Ki Attack cost reduction
+  Effect 6 = Strike Attack cooldown reduction
+  Effect 7 = Ki Attack cooldown reduction
+  Effect 8 = HP regeneration increase
+  Effect 9 = passive and active Ki regeneration increase
+  Effect 10 = Stamina regeneration increase
+
+COMBO (PassiveType 2)
+  Required: Type, MaxStacks, StackTime, Effect, MaxValue.
+  MaxValue is a decimal percentage and is reached at maximum stacks (0.2 = 20%).
+  Every stack has its own StackTime duration in ticks.
+  Type 1 = successful Melee or Strike hits
+  Type 2 = successful Ki Attack hits
+  Type 3 = blocked incoming attacks
+  Type 4 = parried incoming attacks
+  Type 5 = evaded attacks (perfect dodge/counter)
+  Effect 1 = Melee and Strike damage
+  Effect 2 = Ki damage
+  Effect 3 = all outgoing damage
+  Effect 4 = Defense
+  Effect 5 = Speed
+  Effect 6 = HP regeneration
+  Effect 7 = Ki regeneration
+  Effect 8 = Stamina regeneration
+  Effect 9 = critical damage
+  Effect 10 = critical chance
+  Effect 11 = critical chance and critical damage
+
+RESOURCE (PassiveType 3)
+  Required: Type, Effect, Value, ResourceType.
+  Value is the maximum decimal percentage bonus (0.2 = 20%).
+  Type 1 = HP, Type 2 = Ki, Type 3 = Stamina.
+  ResourceType 1 = reaches full strength at 10% resource or less.
+  ResourceType 2 = reaches full strength at 90% resource or more.
+  Effect uses the same Effect list as COMBO.
+
+SPECIAL (PassiveType 4)
+  Required: Type, Value. Value is a decimal multiplier (0.5 means 50%).
+  Type 1 = add a share of Speed as final Melee/Strike damage
+  Type 2 = add a share of Speed as final Ki damage
+  Type 3 = landing a Strike Attack empowers the next Strike Attack
+  Type 4 = landing a Ki Attack empowers the next Ki Attack
+  Type 5 = a parry reflects a share of the original damage
+  Type 6 = at 50% HP or less, set Release to the Potential Unlock limit multiplied
+           by (1 + Value) for 30 seconds; its 90-second cooldown starts afterward
+
+Example - Special Potential passive:
+  "passive": {
+    "enabled": true,
+    "values": {
+      "Custom Passive": true,
+      "PassiveType": 4,
+      "Type": 6,
+      "Value": 0.5
+    }
+  }
+
+Run /dmzreload after saving class JSON files. Existing players must use a class
+configured with Custom Passive enabled for its mechanics to apply.

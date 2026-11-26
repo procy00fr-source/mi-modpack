@@ -1,0 +1,39 @@
+
+#Ships built by players from a ship core and ship blocks.
+[ownShips]
+	#true = a ship core can take off, pack and repaint. false = the core only shows its values.
+	enabled = true
+	#Most blocks one ship may have, hull and contents together (blocks).
+	#Range: 16 ~ 8192
+	maxBlocks = 2048
+	#Longest edge of a ship's box (blocks).
+	#Range: 4 ~ 96
+	maxEdge = 48
+	#Blocks set per server tick while a ship lands or is set down (blocks per tick).
+	#Range: 16 ~ 4096
+	buildPerTick = 256
+	#Most players flying in one ship, the pilot included (players).
+	#Range: 1 ~ 32
+	maxCrew = 8
+	#Most blocks a flying ship shows on a client (blocks). 0 = only its crew is drawn.
+	#Range: 0 ~ 8192
+	maxDrawnBlocks = 4096
+	#Highest engine tier (tiers). 0 = engines cannot be upgraded.
+	#Range: 0 ~ 10
+	maxTier = 4
+	#Speed gained per engine tier, as a multiple of the pod's speed (3.0 total at most). 0 = tiers do not change speed.
+	#Range: 0.0 ~ 1.0
+	tierStep = 0.25
+	#Item an engine upgrade costs (item id).
+	upgradeItem = "dragonminez:vehicle_engine"
+	#Items per upgrade, times the new tier (items). 0 = upgrades are free.
+	#Range: 0 ~ 64
+	upgradeCount = 1
+	#true = repainting takes one dye of the new colour from the inventory. false = free.
+	paintNeedsDye = true
+	#Most height difference of the ground under a landing ship (blocks). 0 = only flat ground.
+	#Range: 0 ~ 16
+	landingUnevenness = 4
+	#true = every player gets the Capsule Corp. ship once after DragonMineZ' gt_saga:2. false = never.
+	gtShip = true
+

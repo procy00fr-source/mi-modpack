@@ -1,0 +1,219 @@
+{
+  "configVersion": "2.2.1",
+  "hasGender": false,
+  "useVanillaSkin": false,
+  "customModel": "",
+  "isLayered": true,
+  "headBones": [],
+  "racialSkill": "bioandroidrevamp",
+  "hasSaiyanTail": false,
+  "auraType": "kakarot",
+  "auraType3D": "userPreference",
+  "aura3DStyle": {
+    "size": [
+      1.1,
+      1.17,
+      1.02
+    ],
+    "flamePeaks": 12,
+    "waveFrequency": 2.0,
+    "waveSpeed": 5.0,
+    "waveAmplitude": 0.75,
+    "noiseDetail": 0.1,
+    "upwardBias": 0.54,
+    "coreAlpha": 0.05,
+    "rimAlpha": 1.0,
+    "rimPower": 4.0,
+    "rimThreshold": 0.05,
+    "coreColor": "",
+    "rimColor": "",
+    "noiseColor": "",
+    "bloomIntensity": 1.0,
+    "spikeDensity": 32,
+    "spikeBurstRate": 3.0,
+    "spikeRarity": 3.0,
+    "bandStart": 0.5,
+    "secondBorderColor": ""
+  },
+  "defaultModelScaling": [
+    0.9375,
+    0.9375,
+    0.9375
+  ],
+  "defaultBodyType": 0,
+  "slimBodyTypes": [],
+  "defaultHairType": 0,
+  "defaultEyesType": 0,
+  "defaultNoseType": 0,
+  "defaultMouthType": 0,
+  "defaultTattooType": 0,
+  "defaultBodyColor": "#396E14",
+  "defaultBodyColor2": "#c7b022",
+  "defaultBodyColor3": "#fa9a02",
+  "defaultHairColor": "#38628F",
+  "defaultEye1Color": "#2E2424",
+  "defaultEye2Color": "#F06F6E",
+  "defaultAuraColor": "#1AA700",
+  "formSkillsCosts": {
+    "legendaryforms": {
+      "buyFromMaster": false,
+      "prices": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "godforms": {
+      "buyFromMaster": false,
+      "prices": [
+        160000,
+        1000000
+      ]
+    },
+    "superforms": {
+      "buyFromMaster": false,
+      "prices": [
+        26000,
+        57000,
+        88000,
+        125000,
+        200000,
+        320000
+      ]
+    },
+    "geneticforms": {
+      "buyFromMaster": false,
+      "prices": [
+        900000,
+        2200000
+      ]
+    },
+    "coreforms": {
+      "buyFromMaster": false,
+      "prices": [
+        3000000,
+        5500000,
+        8000000,
+        11000000,
+        14000000
+      ]
+    },
+    "genomehuman": {
+      "buyFromMaster": false,
+      "prices": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "genomesaiyan": {
+      "buyFromMaster": false,
+      "prices": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "genomenamekian": {
+      "buyFromMaster": false,
+      "prices": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "genomefrostdemon": {
+      "buyFromMaster": false,
+      "prices": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "genomemajin": {
+      "buyFromMaster": false,
+      "prices": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "genomealien": {
+      "buyFromMaster": false,
+      "prices": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "genomesphinxian": {
+      "buyFromMaster": false,
+      "prices": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "genomedemon": {
+      "buyFromMaster": false,
+      "prices": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "genometaimujin": {
+      "buyFromMaster": false,
+      "prices": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "genomesoulreaper": {
+      "buyFromMaster": false,
+      "prices": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "genomeangel": {
+      "buyFromMaster": false,
+      "prices": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "genomeglind": {
+      "buyFromMaster": false,
+      "prices": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "genomeandroid": {
+      "buyFromMaster": false,
+      "prices": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "parasiteforms": {
+      "buyFromMaster": true,
+      "prices": [
+        260000,
+        465000
+      ]
+    },
+    "cellmax": {
+      "buyFromMaster": true,
+      "prices": [
+        2147483647
+      ]
+    }
+  }
+}

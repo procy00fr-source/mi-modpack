@@ -1,0 +1,7 @@
+
+#Arrival on Vegeta.
+[arrival]
+	#Seconds a traveller waits at most before the pod takes him back.
+	#Range: 10 ~ 3600
+	waitSeconds = 180
+

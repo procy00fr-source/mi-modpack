@@ -1,0 +1,32 @@
+{
+  "_comments": {
+    "enabled": "When false, the custom Majin Absorption racial action does not work.",
+    "allowMobAbsorption": "When true, Majin Absorption can absorb non-player mobs.",
+    "allowPlayerAbsorption": "When true, Majin Absorption can absorb player targets.",
+    "absorptionChargeTicks": "Ticks the racial action must be charged before Majin Absorption occurs. DMZ\u0027s default Majin absorption charge is 25 ticks.",
+    "healthRegenRatio": "Max health ratio healed after successful absorption. 0.25 \u003d 25% max health.",
+    "statCopyRatio": "Ratio copied from target stats. 0.05 \u003d 5% of target stat values.",
+    "effectDecayPerUse": "Each successful absorption loses this ratio of its boost per previous absorption. 0.05 \u003d 5% less per use.",
+    "maxAbsorptionUses": "Overrides the amount of usable Absorptions. Default: 10. Set 0 to use the automatic limit from effectDecayPerUse.",
+    "maxBonusBaseStatRatio": "Maximum permanent absorption bonus per stat compared to the absorber\u0027s untransformed base stat. 1.0 caps total bonus at 100% of that base stat; 0 removes the cap.",
+    "targetCurrentHealthDamageThreshold": "Absorption can occur when target current HP multiplied by this value is lower than the Majin player\u0027s Melee or Ki Damage. 1.0 \u003d current HP must be lower than damage.",
+    "boostedStats": "DMZ stats affected by Majin Absorption permanent bonuses. DEF and STM use the target\u0027s RES/base defense stat value."
+  },
+  "enabled": true,
+  "allowMobAbsorption": true,
+  "allowPlayerAbsorption": true,
+  "absorptionChargeTicks": 25,
+  "healthRegenRatio": 0.25,
+  "statCopyRatio": 0.05,
+  "effectDecayPerUse": 0.05,
+  "maxAbsorptionUses": 10,
+  "maxBonusBaseStatRatio": 1.0,
+  "targetCurrentHealthDamageThreshold": 1.0,
+  "boostedStats": [
+    "STR",
+    "SKP",
+    "PWR",
+    "DEF",
+    "STM"
+  ]
+}

@@ -1,0 +1,446 @@
+{
+  "configVersion": "2.2.1",
+  "enabled": true,
+  "displayName": "tournament.dragonminez.otherworld",
+  "format": "BRACKET",
+  "difficultyStars": 5,
+  "qualifierSlots": 8,
+  "reentryCooldownSeconds": 5400,
+  "matchTimeoutSeconds": 480,
+  "nextRoundSeconds": 30,
+  "rulesAcceptSeconds": 60,
+  "returnSeconds": 15,
+  "arrivalSeconds": 60,
+  "lethal": false,
+  "ring": {
+    "x": 110,
+    "y": 98,
+    "z": 110,
+    "radius": 8
+  },
+  "champion": {
+    "entityId": "dragonminez:saga_gogeta_ssj",
+    "health": 1990000.0,
+    "meleeDamage": 503000.0,
+    "kiDamage": 650000.0,
+    "aiTier": 4,
+    "perRoundScaling": 1.0,
+    "dmzrevamp$state": {
+      "mobEffects": [],
+      "transformMobEffects": [],
+      "transformStages": [
+        {
+          "mobEffects": []
+        },
+        {
+          "mobEffects": []
+        },
+        {
+          "mobEffects": []
+        }
+      ],
+      "canTransformStages": [
+        true,
+        true,
+        true
+      ],
+      "transformEntities": [
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  },
+  "semifinalist": {
+    "entityId": "dragonminez:saga_paikuhan",
+    "health": 418000.0,
+    "meleeDamage": 142000.0,
+    "kiDamage": 254000.0,
+    "aiTier": 3,
+    "perRoundScaling": 1.0,
+    "dmzrevamp$state": {
+      "mobEffects": [],
+      "transformMobEffects": [],
+      "transformStages": [
+        {
+          "mobEffects": []
+        },
+        {
+          "mobEffects": []
+        },
+        {
+          "mobEffects": []
+        }
+      ],
+      "canTransformStages": [
+        true,
+        true,
+        true
+      ],
+      "transformEntities": [
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  },
+  "finalist": {
+    "entityId": "dragonminez:saga_goku_end_ssj",
+    "health": 493000.0,
+    "meleeDamage": 109000.0,
+    "kiDamage": 131000.0,
+    "aiTier": 3,
+    "perRoundScaling": 1.0,
+    "halo": true,
+    "dmzrevamp$state": {
+      "mobEffects": [],
+      "transformMobEffects": [],
+      "transformStages": [
+        {
+          "mobEffects": []
+        },
+        {
+          "mobEffects": []
+        },
+        {
+          "mobEffects": []
+        }
+      ],
+      "canTransformStages": [
+        true,
+        true,
+        true
+      ],
+      "transformEntities": [
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  },
+  "contenders": [
+    {
+      "entityId": "#dragonminez:npc_buusaga",
+      "health": 274000.0,
+      "meleeDamage": 135000.0,
+      "kiDamage": 162000.0,
+      "aiTier": 2,
+      "perRoundScaling": 1.08,
+      "dmzrevamp$state": {
+        "mobEffects": [],
+        "transformMobEffects": [],
+        "transformStages": [
+          {
+            "mobEffects": []
+          },
+          {
+            "mobEffects": []
+          },
+          {
+            "mobEffects": []
+          }
+        ],
+        "canTransformStages": [
+          true,
+          true,
+          true
+        ],
+        "transformEntities": [
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "Defense": 87900.0
+    },
+    {
+      "entityId": "#dragonminez:npc_buusaga",
+      "health": 274000.0,
+      "meleeDamage": 135000.0,
+      "kiDamage": 162000.0,
+      "aiTier": 2,
+      "perRoundScaling": 1.08,
+      "dmzrevamp$state": {
+        "mobEffects": [],
+        "transformMobEffects": [],
+        "transformStages": [
+          {
+            "mobEffects": []
+          },
+          {
+            "mobEffects": []
+          },
+          {
+            "mobEffects": []
+          }
+        ],
+        "canTransformStages": [
+          true,
+          true,
+          true
+        ],
+        "transformEntities": [
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "Defense": 87900.0
+    },
+    {
+      "entityId": "#dragonminez:npc_buusaga",
+      "health": 274000.0,
+      "meleeDamage": 135000.0,
+      "kiDamage": 162000.0,
+      "aiTier": 2,
+      "perRoundScaling": 1.08,
+      "dmzrevamp$state": {
+        "mobEffects": [],
+        "transformMobEffects": [],
+        "transformStages": [
+          {
+            "mobEffects": []
+          },
+          {
+            "mobEffects": []
+          },
+          {
+            "mobEffects": []
+          }
+        ],
+        "canTransformStages": [
+          true,
+          true,
+          true
+        ],
+        "transformEntities": [
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "Defense": 87900.0
+    },
+    {
+      "entityId": "#dragonminez:npc_buusaga",
+      "health": 274000.0,
+      "meleeDamage": 135000.0,
+      "kiDamage": 162000.0,
+      "aiTier": 2,
+      "perRoundScaling": 1.08,
+      "dmzrevamp$state": {
+        "mobEffects": [],
+        "transformMobEffects": [],
+        "transformStages": [
+          {
+            "mobEffects": []
+          },
+          {
+            "mobEffects": []
+          },
+          {
+            "mobEffects": []
+          }
+        ],
+        "canTransformStages": [
+          true,
+          true,
+          true
+        ],
+        "transformEntities": [
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "Defense": 87900.0
+    },
+    {
+      "entityId": "#dragonminez:npc_buusaga",
+      "health": 274000.0,
+      "meleeDamage": 135000.0,
+      "kiDamage": 162000.0,
+      "aiTier": 3,
+      "perRoundScaling": 1.08,
+      "dmzrevamp$state": {
+        "mobEffects": [],
+        "transformMobEffects": [],
+        "transformStages": [
+          {
+            "mobEffects": []
+          },
+          {
+            "mobEffects": []
+          },
+          {
+            "mobEffects": []
+          }
+        ],
+        "canTransformStages": [
+          true,
+          true,
+          true
+        ],
+        "transformEntities": [
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "Defense": 87900.0
+    },
+    {
+      "entityId": "#dragonminez:npc_buusaga",
+      "health": 274000.0,
+      "meleeDamage": 135000.0,
+      "kiDamage": 162000.0,
+      "aiTier": 3,
+      "perRoundScaling": 1.08,
+      "dmzrevamp$state": {
+        "mobEffects": [],
+        "transformMobEffects": [],
+        "transformStages": [
+          {
+            "mobEffects": []
+          },
+          {
+            "mobEffects": []
+          },
+          {
+            "mobEffects": []
+          }
+        ],
+        "canTransformStages": [
+          true,
+          true,
+          true
+        ],
+        "transformEntities": [
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "Defense": 87900.0
+    },
+    {
+      "entityId": "#dragonminez:npc_buusaga",
+      "health": 274000.0,
+      "meleeDamage": 135000.0,
+      "kiDamage": 162000.0,
+      "aiTier": 3,
+      "perRoundScaling": 1.08,
+      "dmzrevamp$state": {
+        "mobEffects": [],
+        "transformMobEffects": [],
+        "transformStages": [
+          {
+            "mobEffects": []
+          },
+          {
+            "mobEffects": []
+          },
+          {
+            "mobEffects": []
+          }
+        ],
+        "canTransformStages": [
+          true,
+          true,
+          true
+        ],
+        "transformEntities": [
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "Defense": 87900.0
+    },
+    {
+      "entityId": "#dragonminez:npc_buusaga",
+      "health": 274000.0,
+      "meleeDamage": 135000.0,
+      "kiDamage": 162000.0,
+      "aiTier": 3,
+      "perRoundScaling": 1.08,
+      "dmzrevamp$state": {
+        "mobEffects": [],
+        "transformMobEffects": [],
+        "transformStages": [
+          {
+            "mobEffects": []
+          },
+          {
+            "mobEffects": []
+          },
+          {
+            "mobEffects": []
+          }
+        ],
+        "canTransformStages": [
+          true,
+          true,
+          true
+        ],
+        "transformEntities": [
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "Defense": 87900.0
+    },
+    {
+      "entityId": "#dragonminez:npc_buusaga",
+      "health": 274000.0,
+      "meleeDamage": 135000.0,
+      "kiDamage": 162000.0,
+      "aiTier": 3,
+      "perRoundScaling": 1.08,
+      "dmzrevamp$state": {
+        "mobEffects": [],
+        "transformMobEffects": [],
+        "transformStages": [
+          {
+            "mobEffects": []
+          },
+          {
+            "mobEffects": []
+          },
+          {
+            "mobEffects": []
+          }
+        ],
+        "canTransformStages": [
+          true,
+          true,
+          true
+        ],
+        "transformEntities": [
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "Defense": 87900.0
+    }
+  ],
+  "rewards": {
+    "trainingPoints": 3000000,
+    "alignment": 10,
+    "commands": []
+  }
+}

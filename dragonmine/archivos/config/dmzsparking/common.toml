@@ -1,0 +1,251 @@
+
+#Prices this mod writes into DragonMineZ' config files.
+[prices]
+	#true = a price is written only when missing; your edits stay. false = our prices are written on every start.
+	keepEditedPrices = true
+
+#Balance of the forms this mod adds.
+[forms]
+	#Balance profile of our forms: "sparking" (default) or "classic" (older, stronger stack forms). Forms you edited are kept.
+	balanceProfile = "sparking"
+	#true = missing form files, prices, skills and teachers of our forms are added on start. false = nothing is added.
+	installForms = true
+	#true = the Namekian Giant is a stack skill on top of any race form (X menu); DragonMineZ' Giant race form leaves superforms.json once, backup in config/dmzsparking/backup. false = Giant stays DragonMineZ' race form. Not used with Overhaul installed.
+	namekGiantStack = true
+	#true = DragonMineZ' Majin pure forms are reordered Evil -> Super -> Powered-up -> Kid (numbers stay per level; only DragonMineZ' own, unedited layout is changed, with a backup). false = DragonMineZ' order (Kid first).
+	majinOrder = true
+	#true = our Saiyan god forms run God -> Blue -> Perfected -> Evolved (numbers stay per level; only our own unedited old layout is changed, with a backup). false = an existing file keeps Evolved before Perfected.
+	blueOrder = true
+	#true = the four hidden God Ki combinations (God Ki charged again on SSJ2, LSSJ, Majuub or Kid Buu) can be found and worn. false = they are never found, listed or worn. Their numbers are in config/dragonminez/forms/godkienhancement.json.
+	hiddenGodKiCombinations = true
+
+#Dragon Balls and dragons.
+[dragonballs]
+	#Minutes Shenron rests after a wish. 0 = no rest.
+	#Range: 0 ~ 100000
+	shenronCooldownMinutes = 30
+	#Minutes Porunga rests after a wish. 0 = no rest.
+	#Range: 0 ~ 100000
+	porungaCooldownMinutes = 60
+	#Minutes every other dragon rests after a wish. 0 = no rest.
+	#Range: 0 ~ 100000
+	otherDragonCooldownMinutes = 60
+	#Minutes less rest per unused wish (dragons with 3 or more wishes). 0 = no reduction.
+	#Range: 0 ~ 100000
+	unusedWishMinutes = 20
+	#true = Shenron grants 1 wish until the caller finished "A New Guardian", then 3. false = DragonMineZ' number.
+	shenronStoryWishes = true
+	#Balls of a resting dragon turn to stone and vanish from the radar. false = they stay as they are.
+	stoneWhileResting = true
+	#Carried Dragon Balls drop where the player logs out or leaves the dimension. false = they stay in the inventory.
+	dropBallsOnLeave = true
+	#The Dragon Radar also shows Dragon Balls lying on the ground as items. false = only placed balls.
+	radarShowsDropped = true
+	#Dragon Balls cannot be put into chests, barrels, shulker boxes, hoppers or other containers. false = allowed.
+	noBallsInContainers = true
+
+#How players appear to each other.
+[players]
+	#Shows race and titles after the name in the tab list. false = plain names.
+	tabListTitles = true
+	#Shows a short title tag before the name in chat, e.g. [GoD]. false = no tag.
+	chatPrefix = true
+	#Hovering a name in chat shows race, class, level, power and titles. false = no hover text.
+	chatHover = true
+
+#Only used while DragonMineZ: Overhaul is installed.
+[overhaul]
+	#true = existing form files are moved to Overhaul's scale too (backup kept). false = only missing files and forms.
+	applyFormProfile = false
+
+#Unused; the [modules] section decides.
+[world]
+	#Leave empty. "classic" = Dynamic World off regardless of [modules].
+	mode = ""
+
+#Dynamic World parts, each can be switched off.
+[modules]
+	#The mandatory story starts by itself and NOW shows it. false = the quest tree as DragonMineZ ships it (also turns off arrivals, films, prologues).
+	story = true
+	#Story enemies arrive in the world (pods, landings, craters). false = DragonMineZ places them. Needs story.
+	arrivals = true
+	#A film fight cannot start during a story fight or scene. false = films start whenever allowed. Needs story.
+	films = true
+	#New characters start with their race's origin prologue. false = they start at Classic 1. Needs story.
+	prologues = true
+
+#The fighting school at the pass.
+[school]
+	#true = the fighting school is built in this world. false = none (since 1.5.1 also in new worlds; a school already built stays).
+	buildInExistingWorlds = false
+
+#Fighting in the ring.
+[arena]
+	#Leaving the ring loses a fight between players. false = no ring-out.
+	ringOutPlayerVersusPlayer = true
+	#Leaving the ring loses a fight against NPC fighters. false = no ring-out.
+	ringOutAgainstFighters = true
+	#true = fighters can fly in the Tournament of Power ring. false = no flight there during the fight.
+	flightInTournamentOfPower = false
+
+#Behaviour next to other DragonMineZ add-ons.
+[compatibility]
+
+	#Unused; delete this section.
+	[compatibility.dmzsuper]
+		#Unused.
+		beerusPlanet = false
+		#Unused.
+		forms = false
+
+#Flight.
+[flight]
+	#Blocks per tick Combat Flight sinks without ascend or descend held. 0 = hold height.
+	#Range: 0.0 ~ 1.0
+	combatFlightSink = 0.0
+	#Ticks the flight aura keeps burning after you slow down. 0 = no hold.
+	#Range: 0 ~ 200
+	auraLatchTicks = 20
+	#Aura particles per tick trailing behind a flying player. 0 = none.
+	#Range: 0 ~ 12
+	auraSweepPerTick = 2
+	#Size of the trailing aura particles, as a multiple of the body size.
+	#Range: 0.1 ~ 4.0
+	auraSweepScale = 1.0
+	#Ki trail particles per tick behind a flying player. 0 = none.
+	#Range: 0 ~ 12
+	trailsPerTick = 2
+	#Largest size of the ki trail particles.
+	#Range: 0.05 ~ 3.0
+	trailScale = 0.6
+	#Blocks per tick a player must fly before trails appear. 0 = always.
+	#Range: 0.0 ~ 3.0
+	trailMinSpeed = 0.35
+
+#Lock-on targeting.
+[lockOn]
+	#Half-angle of the lock-on search cone in degrees.
+	#Range: 1.0 ~ 90.0
+	coneDegrees = 45.0
+	#How much higher battle power is preferred among targets in the cone. 0 = angle and distance only.
+	#Range: 0.0 ~ 5.0
+	powerWeight = 0.5
+	#Ticks a lock-on survives without line of sight. 0 = lost at once.
+	#Range: 0 ~ 200
+	occlusionGraceTicks = 40
+
+#Majin absorption.
+[absorption]
+	#Share of an absorbed fighter's stats you gain (0.25 = a quarter, at most half your own). 0 = off.
+	#Range: 0.0 ~ 2.0
+	statShare = 0.25
+
+#Knockout instead of death when a party member falls in a fight.
+[partyKnockout]
+	#Party members can be knocked out and revived with a Senzu bean. false = every fall is a death.
+	enabled = true
+	#Seconds a knocked-out player can be revived.
+	#Range: 5 ~ 300
+	windowSeconds = 30
+	#Seconds the rescuer must hold still with the Senzu bean.
+	#Range: 1 ~ 30
+	rescueSeconds = 3
+	#Revives per player and story attempt. 0 = never knocked out.
+	#Range: 0 ~ 10
+	rescuesPerAttempt = 2
+	#STORY = only story fights. ALL_PVE = any fight against NPCs (not world bosses, PvP, tournaments or sparring).
+	#Allowed Values: STORY, ALL_PVE
+	scope = "STORY"
+	#Revives per player within windowMinutes. 0 = no limit.
+	#Range: 0 ~ 100
+	rescuesPerWindow = 0
+	#Length of the rescuesPerWindow window in minutes.
+	#Range: 1 ~ 1440
+	windowMinutes = 10
+	#PARTY = party members can revive. ANYONE = any player.
+	#Allowed Values: PARTY, ANYONE
+	rescuers = "PARTY"
+	#ALL_PVE outside story fights: blocks a helper must be within for a knockout. Otherwise the fall is a death.
+	#Range: 4 ~ 256
+	helperRange = 24
+	#ALL_PVE outside story fights: blocks within which helpers are called to a knocked-out player.
+	#Range: 4 ~ 512
+	presenceRange = 48
+
+#Your part when an ally finishes a story fight (Spirit Bomb, sword, ...), in ticks (20 = 1 second).
+[storyRoles]
+	#Ticks you must keep hitting the enemy while the ally charges.
+	#Range: 20 ~ 2400
+	pressureTicks = 240
+	#Ticks you have to hit the enemy after "Now!".
+	#Range: 10 ~ 600
+	openingTicks = 60
+	#Ticks within which the ally's hit must come before yours.
+	#Range: 5 ~ 400
+	togetherTicks = 40
+	#Ticks you must charge ki next to the ally.
+	#Range: 20 ~ 2400
+	energyTicks = 200
+	#Story allies fight beside you (on Hard and above they only stand by). false = they only watch.
+	alliesFight = true
+	#Seconds of quiet after a story scene has said its last line before the next quest begins (its enemy, tracker and scene).
+	#Range: 0 ~ 30
+	scenePauseSeconds = 4
+
+#Signature kits of this mod's story bosses (Hit, Zamasu, Black, Jiren, Toppo, Broly, Cell Max, Dyspo). Kit files: data/dmzsparking/boss_kits, a datapack can replace them.
+[bossKits]
+	#Our story bosses fight with their kit: DragonMineZ techniques, evasion, healing, phases. false = the plain DragonMineZ saga fight.
+	enabled = true
+	#Bosses change their fight at health thresholds (stronger, faster, new techniques, a line). false = no phases.
+	phases = true
+	#Multiplier on every kit heal and regeneration (1.0 = as designed). 0 = bosses never heal.
+	#Range: 0.0 ~ 3.0
+	healScale = 1.0
+	#Share of max health below which no kit heals (0.2 = 20 %). Keeps the story endings from 15 % untouched; cannot go below 0.16.
+	#Range: 0.16 ~ 1.0
+	healFloor = 0.2
+	#Multiplier on how long a kit holds its target still (Hit's Time Skip, 1.0 = 0.8 s). 0 = never held; the teleport behind stays.
+	#Range: 0.0 ~ 3.0
+	stunScale = 1.0
+
+#Blocks that ki may not break.
+[protection]
+	#Story allies and companions blow blocks out with their ki. false = their ki breaks no block.
+	alliesBreakBlocks = false
+	#Beerus' planet cannot be broken, built on or blasted (operators in creative may build). false = like any world.
+	beerusPlanetProtected = true
+
+#The Tournament of Power's stage in the World of Void.
+[top]
+	#Zeno and the Grand Priest in his sphere, Beerus, Whis and the eliminated on the stand (the old DBC arena's layout); false = all of them on the stage beside the fight.
+	v7Layout = true
+
+#The in-game form builder (/dmzsparking formbuilder).
+[formBuilder]
+	#The builder opens at all. false = the command refuses and nothing can be saved from it; saved looks stay in force.
+	enabled = true
+	#Permission level that may save from the builder on a server (2 = operator). The single-player host always may.
+	#Range: 0 ~ 4
+	savePermissionLevel = 2
+	#Highest strength multiplier a form made in the builder may have. 0 = the strongest loaded form of the same kind.
+	#Range: 0.0 ~ 1000.0
+	maxMultiplier = 0.0
+
+#Ships.
+[vehicles]
+	#Whis offers every player a Cube after the Tournament of Destroyers. false = no offer.
+	cubeGift = true
+	#No longer read: the ships' sale and recipes are switched in dmzsparking/ship-yard.toml.
+	largeShips = false
+	#Blocks per tick at most when a ship is set down (all ships together).
+	#Range: 256 ~ 16384
+	buildBlocksPerTick = 16384
+	#Milliseconds per tick at most when a ship is set down.
+	#Range: 1 ~ 40
+	buildMillisPerTick = 10
+
+#Diagnosis.
+[diagnosis]
+	#Logs one line per minute counting mob spawns by type and reason. false = off.
+	spawnWatch = false
+

@@ -1,0 +1,332 @@
+{
+  "character:taimujin/chronotornforms": {
+    "prices": [
+      475000,
+      635000,
+      860000
+    ],
+    "buyFromMaster": false
+  },
+  "character:angel/unboundforms": {
+    "prices": [
+      500000,
+      670000,
+      910000
+    ],
+    "buyFromMaster": false
+  },
+  "character:sekhari/primalprideforms": {
+    "prices": [
+      105000,
+      140000,
+      290000
+    ],
+    "buyFromMaster": false
+  },
+  "character:seiunjin/supernovaforms": {
+    "prices": [
+      105000,
+      145000,
+      285000
+    ],
+    "buyFromMaster": false
+  },
+  "character:makaijin/abyssbornforms": {
+    "prices": [
+      105000,
+      145000,
+      290000
+    ],
+    "buyFromMaster": false
+  },
+  "character:taimujin/ravagerforms": {
+    "prices": [
+      250000,
+      420000
+    ],
+    "buyFromMaster": true
+  },
+  "character:angel/severedforms": {
+    "prices": [
+      285000,
+      540000
+    ],
+    "buyFromMaster": true
+  },
+  "character:sekhari/devourerforms": {
+    "prices": [
+      280000,
+      510000
+    ],
+    "buyFromMaster": true
+  },
+  "character:seiunjin/blackholeforms": {
+    "prices": [
+      250000,
+      455000
+    ],
+    "buyFromMaster": true
+  },
+  "character:makaijin/demonkingforms": {
+    "prices": [
+      280000,
+      530000
+    ],
+    "buyFromMaster": true
+  },
+  "character:soulreaper/hogyokuforms": {
+    "prices": [
+      390000,
+      640000
+    ],
+    "buyFromMaster": true
+  },
+  "character:soulreaper/hollowbornforms": {
+    "prices": [
+      105000
+    ],
+    "buyFromMaster": false
+  },
+  "skills:corruptedforms": {
+    "prices": [
+      270000,
+      385000,
+      605000
+    ],
+    "buyFromMaster": false
+  },
+  "skills:thrallforms": {
+    "prices": [
+      155000,
+      290000,
+      415000
+    ],
+    "buyFromMaster": false
+  },
+  "skills:daimaoforms": {
+    "prices": [
+      335000,
+      530000
+    ],
+    "buyFromMaster": false
+  },
+  "skills:tyrantforms": {
+    "prices": [
+      325000,
+      500000,
+      775000
+    ],
+    "buyFromMaster": false
+  },
+  "skills:maliceforms": {
+    "prices": [
+      230000,
+      355000,
+      560000
+    ],
+    "buyFromMaster": false
+  },
+  "skills:parasiteforms": {
+    "prices": [
+      260000,
+      465000
+    ],
+    "buyFromMaster": false
+  },
+  "skills:kishinforms": {
+    "prices": [
+      300000,
+      570000
+    ],
+    "buyFromMaster": false
+  },
+  "skills:ravagerforms": {
+    "prices": [
+      250000,
+      420000
+    ],
+    "buyFromMaster": false
+  },
+  "skills:severedforms": {
+    "prices": [
+      285000,
+      540000
+    ],
+    "buyFromMaster": false
+  },
+  "skills:devourerforms": {
+    "prices": [
+      280000,
+      510000
+    ],
+    "buyFromMaster": false
+  },
+  "skills:blackholeforms": {
+    "prices": [
+      250000,
+      455000
+    ],
+    "buyFromMaster": false
+  },
+  "skills:demonkingforms": {
+    "prices": [
+      280000,
+      530000
+    ],
+    "buyFromMaster": false
+  },
+  "skills:reflectionforms": {
+    "prices": [
+      120000,
+      290000,
+      730000
+    ],
+    "buyFromMaster": false
+  },
+  "skills:gammaframeforms": {
+    "prices": [
+      565000,
+      955000
+    ],
+    "buyFromMaster": false
+  },
+  "skills:hogyokuforms": {
+    "prices": [
+      390000,
+      640000
+    ],
+    "buyFromMaster": false
+  },
+  "character:saiyan/corruptedforms": {
+    "prices": [
+      270000,
+      385000,
+      605000
+    ],
+    "buyFromMaster": true
+  },
+  "character:human/thrallforms": {
+    "prices": [
+      155000,
+      290000,
+      415000
+    ],
+    "buyFromMaster": true
+  },
+  "character:namekian/daimaoforms": {
+    "prices": [
+      335000,
+      530000
+    ],
+    "buyFromMaster": true
+  },
+  "character:frostdemon/tyrantforms": {
+    "prices": [
+      325000,
+      500000,
+      775000
+    ],
+    "buyFromMaster": true
+  },
+  "character:majin/maliceforms": {
+    "prices": [
+      230000,
+      355000,
+      560000
+    ],
+    "buyFromMaster": true
+  },
+  "character:bioandroid/parasiteforms": {
+    "prices": [
+      260000,
+      465000
+    ],
+    "buyFromMaster": true
+  },
+  "character:glind/kishinforms": {
+    "prices": [
+      300000,
+      570000
+    ],
+    "buyFromMaster": true
+  },
+  "character:majin/reflectionforms": {
+    "prices": [
+      120000,
+      290000,
+      730000
+    ],
+    "buyFromMaster": false
+  },
+  "character:human/gammaframeforms": {
+    "prices": [
+      565000,
+      955000
+    ],
+    "buyFromMaster": true
+  },
+  "character:human/twentyoneforms": {
+    "prices": [
+      -1
+    ],
+    "buyFromMaster": false
+  },
+  "character:shinjin/kibitoshinforms": {
+    "prices": [
+      -1,
+      -1
+    ],
+    "buyFromMaster": false
+  },
+  "character:majin/grandkaiforms": {
+    "prices": [
+      -1,
+      -1
+    ],
+    "buyFromMaster": false
+  },
+  "character:majin/shapeupforms": {
+    "prices": [
+      -1
+    ],
+    "buyFromMaster": false
+  },
+  "character:human/godclassforms": {
+    "prices": [
+      -1
+    ],
+    "buyFromMaster": false
+  },
+  "skills:twentyoneforms": {
+    "prices": [
+      -1
+    ],
+    "buyFromMaster": false
+  },
+  "skills:kibitoshinforms": {
+    "prices": [
+      -1,
+      -1
+    ],
+    "buyFromMaster": false
+  },
+  "skills:grandkaiforms": {
+    "prices": [
+      -1,
+      -1
+    ],
+    "buyFromMaster": false
+  },
+  "skills:shapeupforms": {
+    "prices": [
+      -1
+    ],
+    "buyFromMaster": false
+  },
+  "skills:godclassforms": {
+    "prices": [
+      -1
+    ],
+    "buyFromMaster": false
+  }
+}

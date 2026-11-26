@@ -1,0 +1,234 @@
+{
+  "configVersion": "2.2.1",
+  "enabled": true,
+  "displayName": "tournament.dragonminez.baba",
+  "format": "GAUNTLET",
+  "difficultyStars": 1,
+  "reentryCooldownSeconds": 1200,
+  "matchTimeoutSeconds": 300,
+  "nextRoundSeconds": 30,
+  "rulesAcceptSeconds": 60,
+  "returnSeconds": 15,
+  "arrivalSeconds": 60,
+  "ring": {
+    "x": 70,
+    "y": 4,
+    "z": 61,
+    "radius": 4
+  },
+  "champion": {
+    "entityId": "dragonminez:saga_kid_goku",
+    "health": 400.0,
+    "meleeDamage": 92.0,
+    "kiDamage": 111.0,
+    "aiTier": 3,
+    "perRoundScaling": 1.0,
+    "dmzrevamp$state": {
+      "mobEffects": [],
+      "transformMobEffects": [],
+      "transformStages": [
+        {
+          "mobEffects": []
+        },
+        {
+          "mobEffects": []
+        },
+        {
+          "mobEffects": []
+        }
+      ],
+      "canTransformStages": [
+        true,
+        true,
+        true
+      ],
+      "transformEntities": [
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  },
+  "semifinalist": {
+    "entityId": "dragonminez:saga_masked_warrior",
+    "health": 361.0,
+    "meleeDamage": 78.0,
+    "kiDamage": 135.0,
+    "aiTier": 2,
+    "perRoundScaling": 1.0,
+    "dmzrevamp$state": {
+      "mobEffects": [],
+      "transformMobEffects": [],
+      "transformStages": [
+        {
+          "mobEffects": []
+        },
+        {
+          "mobEffects": []
+        },
+        {
+          "mobEffects": []
+        }
+      ],
+      "canTransformStages": [
+        true,
+        true,
+        true
+      ],
+      "transformEntities": [
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  },
+  "contenders": [
+    {
+      "entityId": "dragonminez:saga_dracula",
+      "health": 248.0,
+      "meleeDamage": 79.0,
+      "kiDamage": 0.0,
+      "aiTier": 1,
+      "perRoundScaling": 1.1,
+      "dmzrevamp$state": {
+        "mobEffects": [],
+        "transformMobEffects": [],
+        "transformStages": [
+          {
+            "mobEffects": []
+          },
+          {
+            "mobEffects": []
+          },
+          {
+            "mobEffects": []
+          }
+        ],
+        "canTransformStages": [
+          true,
+          true,
+          true
+        ],
+        "transformEntities": [
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "Defense": 126.0
+    },
+    {
+      "entityId": "dragonminez:saga_invisible_man",
+      "health": 242.0,
+      "meleeDamage": 75.0,
+      "kiDamage": 0.0,
+      "aiTier": 1,
+      "perRoundScaling": 1.1,
+      "dmzrevamp$state": {
+        "mobEffects": [],
+        "transformMobEffects": [],
+        "transformStages": [
+          {
+            "mobEffects": []
+          },
+          {
+            "mobEffects": []
+          },
+          {
+            "mobEffects": []
+          }
+        ],
+        "canTransformStages": [
+          true,
+          true,
+          true
+        ],
+        "transformEntities": [
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "Defense": 56.0
+    },
+    {
+      "entityId": "dragonminez:saga_akkuman",
+      "health": 207.0,
+      "meleeDamage": 22.0,
+      "kiDamage": 251.0,
+      "aiTier": 1,
+      "perRoundScaling": 1.1,
+      "dmzrevamp$state": {
+        "mobEffects": [],
+        "transformMobEffects": [],
+        "transformStages": [
+          {
+            "mobEffects": []
+          },
+          {
+            "mobEffects": []
+          },
+          {
+            "mobEffects": []
+          }
+        ],
+        "canTransformStages": [
+          true,
+          true,
+          true
+        ],
+        "transformEntities": [
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "Defense": 40.0
+    },
+    {
+      "entityId": "dragonminez:saga_mummy",
+      "health": 451.0,
+      "meleeDamage": 56.0,
+      "kiDamage": 0.0,
+      "aiTier": 1,
+      "perRoundScaling": 1.1,
+      "dmzrevamp$state": {
+        "mobEffects": [],
+        "transformMobEffects": [],
+        "transformStages": [
+          {
+            "mobEffects": []
+          },
+          {
+            "mobEffects": []
+          },
+          {
+            "mobEffects": []
+          }
+        ],
+        "canTransformStages": [
+          true,
+          true,
+          true
+        ],
+        "transformEntities": [
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "Defense": 70.0
+    }
+  ],
+  "rewards": {
+    "trainingPoints": 10000,
+    "alignment": 5,
+    "commands": []
+  }
+}

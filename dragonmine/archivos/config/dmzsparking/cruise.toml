@@ -1,0 +1,16 @@
+
+#Bulma's cruise ship, the Princess Bulma.
+[princessBulma]
+	#Minecraft days between two birthday parties on the ship. 0 = never.
+	#Range: 0 ~ 100000
+	birthdayEveryDays = 96
+	#Minecraft days a birthday party lasts.
+	#Range: 1 ~ 30
+	birthdayLengthDays = 1
+	#Blocks from world spawn searched for the ship's anchorage. When the story calls the ship and this holds no open sea, its search goes on further out, up to 8192 (this value is kept).
+	#Range: 256 ~ 30000
+	searchRadius = 2048
+	#Minutes between the departure notice and leaving (repeated while players are aboard).
+	#Range: 1 ~ 60
+	departNoticeMinutes = 5
+

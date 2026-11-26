@@ -1,0 +1,15 @@
+{
+  "formReduction": {
+    "enabled": true,
+    "FormReductionCap": 0.7,
+    "formDivisorMulti": 0.05,
+    "masteryInfluence": true,
+    "zeroMasteryMulti": 0.5,
+    "currentHealthInfluence": false,
+    "zeroHealthMulti": 0.5,
+    "currentKiInfluence": true,
+    "zeroKiMulti": 0.0,
+    "currentStaminaInfluence": false,
+    "zeroStaminaInfluence": 0.5
+  }
+}

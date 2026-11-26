@@ -1,0 +1,64 @@
+{
+  "configVersion": "2.2.1",
+  "hasGender": true,
+  "useVanillaSkin": false,
+  "customModel": "demon",
+  "isLayered": true,
+  "headBones": [
+    "ears1",
+    "hair"
+  ],
+  "racialSkill": "",
+  "hasSaiyanTail": false,
+  "auraType": "kakarot",
+  "defaultModelScaling": [
+    0.9375,
+    0.9375,
+    0.9375
+  ],
+  "defaultBodyType": 1,
+  "defaultHairType": 7,
+  "defaultEyesType": 0,
+  "defaultNoseType": 0,
+  "defaultMouthType": 0,
+  "defaultTattooType": 0,
+  "defaultBodyColor": "#9DC7EB",
+  "defaultBodyColor2": "#9DC7EB",
+  "defaultBodyColor3": "#9DC7EB",
+  "defaultHairColor": "#FFFFFF",
+  "defaultEye1Color": "#D0C64F",
+  "defaultEye2Color": "#D0C64F",
+  "defaultAuraColor": "#F5B7E6",
+  "formSkillsCosts": {
+    "superforms": {
+      "buyFromMaster": false,
+      "prices": [
+        150000,
+        450000,
+        1200000
+      ]
+    },
+    "makaioshinforms": {
+      "buyFromMaster": false,
+      "prices": [
+        300000,
+        850000,
+        2000000
+      ]
+    },
+    "souleaterforms": {
+      "buyFromMaster": false,
+      "prices": [
+        105000,
+        115000,
+        295000
+      ]
+    },
+    "createdforms": {
+      "buyFromMaster": true,
+      "prices": [
+        -1
+      ]
+    }
+  }
+}

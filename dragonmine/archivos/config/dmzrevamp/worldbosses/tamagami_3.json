@@ -1,0 +1,24 @@
+{
+  "Enabled": true,
+  "ScaleWithMorePlayers": true,
+  "HpIncreasePerPlayer": 1.0,
+  "DamageIncreasePerPlayer": 0.2,
+  "DefenseIncreasePerPlayer": 0.2,
+  "MinionsStatShare": 0.1,
+  "BossStats": {
+    "base": {
+      "HP": 321000.0,
+      "MeleeDamage": 120000.0,
+      "KiDamage": 110000.0,
+      "Defense": 110000.0,
+      "MovementSpeed": 0.48
+    },
+    "powered": {
+      "HP": 355000.0,
+      "MeleeDamage": 151000.0,
+      "KiDamage": 138000.0,
+      "Defense": 138000.0,
+      "MovementSpeed": 0.5
+    }
+  }
+}

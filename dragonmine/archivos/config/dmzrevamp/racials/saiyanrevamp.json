@@ -1,0 +1,37 @@
+{
+  "_comments": {
+    "activationHealthThreshold": "HP ratio where Zenkai tracking starts. 0.25 \u003d 25% HP or lower.",
+    "maxStacks": "Maximum stacks gained from normal near-death damage.",
+    "deathPreventionMaxStacks": "Maximum stacks when lethal damage is survived by death prevention.",
+    "statBonusPerStack": "Flat stat gain ratio per stack. 0.005 \u003d +0.5% of the current raw stat per stack.",
+    "cooldownSeconds": "Cooldown after a Zenkai is awarded.",
+    "zenkaiDecayPerUse": "Each successful Zenkai loses this ratio of its boost per previous Zenkai. 0.05 \u003d 5% less per use.",
+    "maxZenkais": "Overrides the amount of usable Zenkais. Default: 10. Set 0 to use the automatic limit from zenkaiDecayPerUse. Invalid negative or above-decay values are treated as 0.",
+    "maxZenkaiReleaseBonus": "Maximum additive release gained progressively from Zenkais. 0.15 means +15 release points at the final usable Zenkai.",
+    "friendlyFistStackMultiplier": "Stack multiplier when damage came from a player with Friendly Fist active.",
+    "shadowDummyGiveZenkai": "Whether damage caused by a DragonMineZ Shadow Dummy can contribute to Zenkai.",
+    "shadowDummyFriendlyFist": "When Shadow Dummy Zenkai is enabled, treats its damage like Friendly Fist damage and applies friendlyFistStackMultiplier.",
+    "maxBonusBaseStatRatio": "Maximum permanent Zenkai bonus per stat compared to the player\u0027s untransformed base stat. 1.0 caps total bonus at 100% of that base stat; 0 removes the cap.",
+    "boostedStats": "DMZ stats affected by Zenkai permanent bonuses. RES is split into equal DEF and STM bonuses."
+  },
+  "activationHealthThreshold": 0.25,
+  "maxStacks": 24,
+  "deathPreventionMaxStacks": 48,
+  "statBonusPerStack": 0.005,
+  "cooldownSeconds": 900,
+  "zenkaiDecayPerUse": 0.05,
+  "maxZenkais": 10,
+  "maxZenkaiReleaseBonus": 0.15,
+  "friendlyFistStackMultiplier": 0.5,
+  "shadowDummyGiveZenkai": false,
+  "shadowDummyFriendlyFist": true,
+  "maxBonusBaseStatRatio": 1.0,
+  "boostedStats": [
+    "STR",
+    "SKP",
+    "RES",
+    "VIT",
+    "PWR",
+    "ENE"
+  ]
+}

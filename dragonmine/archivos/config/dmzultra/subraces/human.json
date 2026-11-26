@@ -1,0 +1,113 @@
+{
+  "race": "human",
+  "subraces": [
+    {
+      "key": "earthling",
+      "enabled": true,
+      "plain": true,
+      "order": 0,
+      "lean": {},
+      "growth": [],
+      "forms": [],
+      "passives": [],
+      "look": {
+        "defaults": {},
+        "parts": [],
+        "scale": 1.0
+      },
+      "text": {
+        "source": "MANGA"
+      },
+      "budget": {
+        "M": 0,
+        "C": 0,
+        "S": 0,
+        "B": 0,
+        "U": 0
+      }
+    },
+    {
+      "key": "threeeyed",
+      "enabled": true,
+      "plain": false,
+      "order": 20,
+      "lean": {
+        "SKP": 0.03,
+        "ENE": 0.02,
+        "VIT": -0.03,
+        "STR": -0.02
+      },
+      "growth": [],
+      "forms": [
+        {
+          "group": "superforms",
+          "price": 1.1
+        }
+      ],
+      "passives": [
+        {
+          "kind": "third_eye",
+          "radius": 12,
+          "kiSense": 0.2,
+          "solarFlareLonger": 0.3
+        }
+      ],
+      "heritageLean": {
+        "card": "human:1:crane_school",
+        "kikohoKiCost": -0.1
+      },
+      "look": {
+        "defaults": {},
+        "parts": [],
+        "scale": 1.0
+      },
+      "text": {
+        "source": "GUIDE"
+      },
+      "budget": {
+        "M": 0,
+        "C": 1,
+        "S": -1,
+        "B": 0,
+        "U": 0
+      }
+    },
+    {
+      "key": "beastfolk",
+      "enabled": true,
+      "plain": false,
+      "order": 30,
+      "lean": {
+        "STR": 0.02,
+        "SKP": 0.03,
+        "ENE": -0.03,
+        "PWR": -0.02
+      },
+      "growth": [],
+      "forms": [],
+      "passives": [
+        {
+          "kind": "keen_senses",
+          "trailSeconds": 20,
+          "fall": -0.5,
+          "nightSprint": 0.05
+        }
+      ],
+      "look": {
+        "defaults": {},
+        "parts": [],
+        "scale": 1.0
+      },
+      "text": {
+        "source": "MANGA GUIDE"
+      },
+      "budget": {
+        "M": 1,
+        "C": 0,
+        "S": 0,
+        "B": -1,
+        "U": 0
+      }
+    }
+  ]
+}

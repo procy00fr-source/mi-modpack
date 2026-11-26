@@ -1,0 +1,88 @@
+{
+  "enabled": true,
+  "tpScale": 1.0,
+  "wardrobe": {
+    "enabled": "default",
+    "zeniShop": true,
+    "poses": true
+  },
+  "moments": {
+    "enabled": "default",
+    "tpScale": 1.0
+  },
+  "featured": {
+    "enabled": "default",
+    "weekStartsOn": "MONDAY",
+    "pool": [],
+    "modifiers": [],
+    "weeklyTp": 3000,
+    "weeklyZeni": 2000
+  },
+  "arcs": {
+    "enabled": "default",
+    "favourDiscount": 0.1,
+    "weightSurge": true
+  },
+  "power": {
+    "enabled": "default",
+    "milestones": true,
+    "rankings": true,
+    "canonCast": true,
+    "scouterCrack": true
+  },
+  "codex": {
+    "enabled": "default",
+    "firstFootfall": true
+  },
+  "legacy": {
+    "enabled": "default",
+    "accountWide": true
+  },
+  "budokai": {
+    "enabled": "default",
+    "everyDays": 7,
+    "hour": 19,
+    "npcEntrants": true,
+    "satan": true
+  },
+  "racial": {
+    "enabled": "default"
+  },
+  "xs": {
+    "enabled": "default"
+  },
+  "_about": {
+    "enabled": "Master switch of every engagement feature. false: none of them starts anything new; what runs is finished or refunded; saves are kept. (default true)",
+    "tpScale": "Scale on all TP the engagement features pay (after progression/TpScale). (default 1.0, 0.0 to 10.0)",
+    "wardrobe.enabled": "The Wardrobe: titles on nameplates, canon outfits, nameplate frames, victory poses (cosmetic only). \"default\": on once the feature is finished in this build. (default default, true / false / default)",
+    "wardrobe.zeniShop": "Some outfits are sold for Zeni (Bulma\u0027s Wardrobe tab, Planet Vegeta\u0027s armoury, Roshi). (default true)",
+    "wardrobe.poses": "Victory poses after a won spar, duel, Budokai bout or raid. (default true)",
+    "moments.enabled": "Canon Moments: the hidden Ascension chapter of anime moments, the after-fight card, riddles. \"default\": on once the feature is finished in this build. (default default, true / false / default)",
+    "moments.tpScale": "Scale on the small TP a Canon Moment pays once. (default 1.0, 0.0 to 10.0)",
+    "featured.enabled": "The Featured Fight of the week and the calendar page. \"default\": on once the feature is finished in this build. (default default, true / false / default)",
+    "featured.weekStartsOn": "The day the featured week starts, 00:00 server time (MONDAY ... SUNDAY). (default MONDAY)",
+    "featured.pool": "Fight ids the weekly pick draws from (empty: every fight that registered itself). (default [])",
+    "featured.modifiers": "Modifier ids the weekly pick may use (empty: every registered modifier). (default [])",
+    "featured.weeklyTp": "Base TP of the weekly bonus (first clear of the week, per character, account cap). (default 3000, 0 to 1000000)",
+    "featured.weeklyZeni": "Zeni of the weekly bonus. (default 2000, 0 to 1000000)",
+    "arcs.enabled": "Training Arcs under a master (steps, graduation, the master\u0027s favour). \"default\": on once the feature is finished in this build. (default default, true / false / default)",
+    "arcs.favourDiscount": "TP price cut on that master\u0027s own techniques after his arc (0.10 \u003d 10 %). (default 0.1, 0.0 to 0.5)",
+    "arcs.weightSurge": "Taking weighted gear off mid-fight gives a short speed surge once per fight (never in duels or the Budokai). (default true)",
+    "power.enabled": "Power Readings and Universe Rankings. \"default\": on once the feature is finished in this build. (default default, true / false / default)",
+    "power.milestones": "Canon power readings read out once as your Battle Power passes them. (default true)",
+    "power.rankings": "The Universe Rankings boards (daily snapshot). (default true)",
+    "power.canonCast": "The canon cast at scaled readings fills the boards of small servers and singleplayer. (default true)",
+    "power.scouterCrack": "The over-9000 reading cracks a scouter in a short staged moment (each player\u0027s scene setting still decides). (default true)",
+    "codex.enabled": "The Scouter Codex (fighters, races, worlds, masters, forms, featured weeks). \"default\": on once the feature is finished in this build. (default default, true / false / default)",
+    "codex.firstFootfall": "The first character of the server to land on a world gets its first footfall (and a news line). (default true)",
+    "legacy.enabled": "Legacy: Codex entries, titles and outfits unlocked by any character of an account stay unlocked for all of them (nothing else carries). \"default\": on once the feature is finished in this build. (default default, true / false / default)",
+    "legacy.accountWide": "Legacy items are shared by every character of the account. (default true)",
+    "budokai.enabled": "The Tenkaichi Budokai circuit (preliminaries, bracket, reigning champion, seasons). \"default\": on once the feature is finished in this build. (default default, true / false / default)",
+    "budokai.everyDays": "Real days between two circuits on a server. (default 7, 1 to 60)",
+    "budokai.hour": "Hour of the day (server time) a circuit starts. (default 19, 0 to 23)",
+    "budokai.npcEntrants": "Canon NPC entrants fill the bracket. (default true)",
+    "budokai.satan": "Mr. Satan\u0027s exhibition after a final (a comic staged moment, opt-in scenes). (default true)",
+    "racial.enabled": "Racial Mastery (cosmetic look levels of the racial ability, one challenge per race). \"default\": on once the feature is finished in this build. (default default, true / false / default)",
+    "xs.enabled": "The small expansions of existing systems (saga epilogues, travel-event kinds, wish board, ...). \"default\": on once the feature is finished in this build. (default default, true / false / default)"
+  }
+}

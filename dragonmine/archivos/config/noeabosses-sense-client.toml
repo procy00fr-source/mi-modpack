@@ -1,0 +1,8 @@
+#Range: 0.0 ~ 1.0
+detectionSound = 0.55
+#Range: 0.0 ~ 1.0
+detectionFlash = 0.45
+#Range: 0.0 ~ 1.0
+cameraMotion = 0.35
+reducedMotion = false
+

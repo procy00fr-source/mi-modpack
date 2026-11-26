@@ -1,0 +1,13 @@
+{
+  "customRaceFolder": "dragonminez_CUSTOM_races",
+  "CustomRacePlanets": [
+    {
+      "Enabled": false,
+      "Dimension": "dmzplus:vegeta",
+      "Races": [
+        "dragonminez:saiyan",
+        "dragonminez:Tsufuru"
+      ]
+    }
+  ]
+}

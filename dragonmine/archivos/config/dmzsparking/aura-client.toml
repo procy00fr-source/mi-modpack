@@ -1,0 +1,8 @@
+
+#Ultra Instinct silhouette aura.
+[silhouetteAura]
+	#"high", "low" (for weak graphics) or "off" (DragonMineZ' aura). Off by itself with a shader pack.
+	quality = "high"
+	#Logs what the aura draws and checks for GL errors, for bug reports. false = off.
+	diagnostics = false
+

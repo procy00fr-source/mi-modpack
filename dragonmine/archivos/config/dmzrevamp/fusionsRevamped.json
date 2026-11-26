@@ -1,0 +1,25 @@
+{
+  "configVersion": 1,
+  "allowDifferentRaceMetamoruFusion": true,
+  "fusionRevamped": {
+    "enabled": true,
+    "metamoruMinBonus": 0.5,
+    "metamoruMaxBonus": 1.0,
+    "potaraMinBonus": 0.75,
+    "potaraMaxBonus": 1.25,
+    "fusionBoosts": [
+      "STR",
+      "SKP",
+      "PWR",
+      "DEF",
+      "STM",
+      "VIT",
+      "ENE"
+    ],
+    "scaleAddition": true,
+    "transformationsLowerFusedTimer": true,
+    "fusionTransformationDecreaseMultiplier": 1.0
+  },
+  "allowAndroidFusion": false,
+  "fusionBetweenAndroids": true
+}

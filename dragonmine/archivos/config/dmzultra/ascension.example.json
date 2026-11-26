@@ -1,0 +1,971 @@
+{
+  "enabled": true,
+  "tpScale": 1.0,
+  "ladders": [
+    {
+      "id": "hunter",
+      "chapter": "warrior",
+      "counter": "j.DEFEAT",
+      "hidden": false,
+      "steps": [
+        {
+          "goal": 10,
+          "tp": 200,
+          "marks": 0
+        },
+        {
+          "goal": 50,
+          "tp": 500,
+          "marks": 0
+        },
+        {
+          "goal": 250,
+          "tp": 1500,
+          "marks": 1
+        },
+        {
+          "goal": 1000,
+          "tp": 4000,
+          "marks": 2
+        },
+        {
+          "goal": 5000,
+          "tp": 9000,
+          "marks": 3
+        }
+      ]
+    },
+    {
+      "id": "giants",
+      "chapter": "warrior",
+      "counter": "j.DEFEAT_STRONG",
+      "hidden": false,
+      "steps": [
+        {
+          "goal": 3,
+          "tp": 400,
+          "marks": 0
+        },
+        {
+          "goal": 15,
+          "tp": 1200,
+          "marks": 1
+        },
+        {
+          "goal": 50,
+          "tp": 3500,
+          "marks": 2
+        },
+        {
+          "goal": 150,
+          "tp": 8000,
+          "marks": 3
+        }
+      ]
+    },
+    {
+      "id": "blows",
+      "chapter": "warrior",
+      "counter": "j.HITS",
+      "hidden": false,
+      "steps": [
+        {
+          "goal": 100,
+          "tp": 200,
+          "marks": 0
+        },
+        {
+          "goal": 1000,
+          "tp": 800,
+          "marks": 0
+        },
+        {
+          "goal": 5000,
+          "tp": 3000,
+          "marks": 0
+        },
+        {
+          "goal": 25000,
+          "tp": 8000,
+          "marks": 0
+        }
+      ]
+    },
+    {
+      "id": "ki",
+      "chapter": "warrior",
+      "counter": "j.KI_ATTACKS",
+      "hidden": false,
+      "steps": [
+        {
+          "goal": 20,
+          "tp": 300,
+          "marks": 0
+        },
+        {
+          "goal": 200,
+          "tp": 1000,
+          "marks": 0
+        },
+        {
+          "goal": 1000,
+          "tp": 3000,
+          "marks": 0
+        },
+        {
+          "goal": 5000,
+          "tp": 7000,
+          "marks": 0
+        }
+      ]
+    },
+    {
+      "id": "techniques_used",
+      "chapter": "warrior",
+      "counter": "j.STRIKES",
+      "hidden": false,
+      "steps": [
+        {
+          "goal": 30,
+          "tp": 300,
+          "marks": 0
+        },
+        {
+          "goal": 300,
+          "tp": 1200,
+          "marks": 0
+        },
+        {
+          "goal": 1500,
+          "tp": 4000,
+          "marks": 0
+        }
+      ]
+    },
+    {
+      "id": "evade",
+      "chapter": "warrior",
+      "counter": "j.EVADES",
+      "hidden": false,
+      "steps": [
+        {
+          "goal": 25,
+          "tp": 300,
+          "marks": 0
+        },
+        {
+          "goal": 250,
+          "tp": 1200,
+          "marks": 0
+        },
+        {
+          "goal": 1500,
+          "tp": 4000,
+          "marks": 0
+        }
+      ]
+    },
+    {
+      "id": "guard",
+      "chapter": "warrior",
+      "counter": "j.BLOCKS",
+      "hidden": false,
+      "steps": [
+        {
+          "goal": 25,
+          "tp": 300,
+          "marks": 0
+        },
+        {
+          "goal": 250,
+          "tp": 1200,
+          "marks": 0
+        },
+        {
+          "goal": 1500,
+          "tp": 4000,
+          "marks": 0
+        }
+      ]
+    },
+    {
+      "id": "dash",
+      "chapter": "warrior",
+      "counter": "j.DASHES",
+      "hidden": false,
+      "steps": [
+        {
+          "goal": 50,
+          "tp": 200,
+          "marks": 0
+        },
+        {
+          "goal": 500,
+          "tp": 800,
+          "marks": 0
+        },
+        {
+          "goal": 3000,
+          "tp": 2500,
+          "marks": 0
+        }
+      ]
+    },
+    {
+      "id": "transformed",
+      "chapter": "warrior",
+      "counter": "j.DEFEAT_TRANSFORMED",
+      "hidden": false,
+      "steps": [
+        {
+          "goal": 10,
+          "tp": 500,
+          "marks": 0
+        },
+        {
+          "goal": 60,
+          "tp": 2000,
+          "marks": 0
+        },
+        {
+          "goal": 300,
+          "tp": 6000,
+          "marks": 0
+        }
+      ]
+    },
+    {
+      "id": "training",
+      "chapter": "warrior",
+      "counter": "j.TP_GAINED",
+      "hidden": false,
+      "steps": [
+        {
+          "goal": 5000,
+          "tp": 500,
+          "marks": 0
+        },
+        {
+          "goal": 50000,
+          "tp": 2000,
+          "marks": 0
+        },
+        {
+          "goal": 500000,
+          "tp": 6000,
+          "marks": 0
+        },
+        {
+          "goal": 5000000,
+          "tp": 15000,
+          "marks": 0
+        }
+      ]
+    },
+    {
+      "id": "spars",
+      "chapter": "warrior",
+      "counter": "j.SPARS_WON",
+      "hidden": false,
+      "steps": [
+        {
+          "goal": 1,
+          "tp": 400,
+          "marks": 0
+        },
+        {
+          "goal": 10,
+          "tp": 1500,
+          "marks": 0
+        },
+        {
+          "goal": 50,
+          "tp": 5000,
+          "marks": 0
+        },
+        {
+          "goal": 200,
+          "tp": 10000,
+          "marks": 0
+        }
+      ]
+    },
+    {
+      "id": "events",
+      "chapter": "warrior",
+      "counter": "j.EVENTS_WON",
+      "hidden": false,
+      "steps": [
+        {
+          "goal": 1,
+          "tp": 500,
+          "marks": 0
+        },
+        {
+          "goal": 10,
+          "tp": 2000,
+          "marks": 0
+        },
+        {
+          "goal": 50,
+          "tp": 6000,
+          "marks": 0
+        }
+      ]
+    },
+    {
+      "id": "waves",
+      "chapter": "warrior",
+      "counter": "j.WAVES",
+      "hidden": false,
+      "steps": [
+        {
+          "goal": 5,
+          "tp": 400,
+          "marks": 0
+        },
+        {
+          "goal": 25,
+          "tp": 1800,
+          "marks": 0
+        },
+        {
+          "goal": 100,
+          "tp": 5500,
+          "marks": 0
+        }
+      ]
+    },
+    {
+      "id": "tournaments",
+      "chapter": "warrior",
+      "counter": "j.TOURNAMENTS",
+      "hidden": false,
+      "steps": [
+        {
+          "goal": 1,
+          "tp": 1500,
+          "marks": 0
+        },
+        {
+          "goal": 5,
+          "tp": 5000,
+          "marks": 0
+        },
+        {
+          "goal": 20,
+          "tp": 12000,
+          "marks": 0
+        }
+      ]
+    },
+    {
+      "id": "forms_owned",
+      "chapter": "forms",
+      "counter": "c.forms",
+      "hidden": false,
+      "steps": [
+        {
+          "goal": 1,
+          "tp": 500,
+          "marks": 0
+        },
+        {
+          "goal": 3,
+          "tp": 1500,
+          "marks": 0
+        },
+        {
+          "goal": 6,
+          "tp": 3500,
+          "marks": 0
+        },
+        {
+          "goal": 10,
+          "tp": 7000,
+          "marks": 0
+        },
+        {
+          "goal": 15,
+          "tp": 12000,
+          "marks": 0
+        }
+      ]
+    },
+    {
+      "id": "forms_mastered",
+      "chapter": "mastery",
+      "counter": "c.mastered",
+      "hidden": false,
+      "steps": [
+        {
+          "goal": 1,
+          "tp": 800,
+          "marks": 0
+        },
+        {
+          "goal": 3,
+          "tp": 2500,
+          "marks": 1
+        },
+        {
+          "goal": 6,
+          "tp": 6000,
+          "marks": 2
+        },
+        {
+          "goal": 10,
+          "tp": 12000,
+          "marks": 4,
+          "title": "ascension_ascendant"
+        }
+      ]
+    },
+    {
+      "id": "transforms",
+      "chapter": "forms",
+      "counter": "j.TRANSFORMS",
+      "hidden": false,
+      "steps": [
+        {
+          "goal": 1,
+          "tp": 200,
+          "marks": 0
+        },
+        {
+          "goal": 25,
+          "tp": 800,
+          "marks": 0
+        },
+        {
+          "goal": 100,
+          "tp": 2500,
+          "marks": 0
+        },
+        {
+          "goal": 500,
+          "tp": 6000,
+          "marks": 0
+        }
+      ]
+    },
+    {
+      "id": "lines",
+      "chapter": "forms",
+      "counter": "c.lines",
+      "hidden": false,
+      "steps": [
+        {
+          "goal": 1,
+          "tp": 600,
+          "marks": 0
+        },
+        {
+          "goal": 3,
+          "tp": 2000,
+          "marks": 0
+        },
+        {
+          "goal": 5,
+          "tp": 5000,
+          "marks": 0
+        },
+        {
+          "goal": 8,
+          "tp": 10000,
+          "marks": 0
+        }
+      ]
+    },
+    {
+      "id": "techniques",
+      "chapter": "skills",
+      "counter": "c.techniques",
+      "hidden": false,
+      "steps": [
+        {
+          "goal": 1,
+          "tp": 300,
+          "marks": 0
+        },
+        {
+          "goal": 5,
+          "tp": 1000,
+          "marks": 0
+        },
+        {
+          "goal": 10,
+          "tp": 2500,
+          "marks": 0
+        },
+        {
+          "goal": 20,
+          "tp": 6000,
+          "marks": 0
+        },
+        {
+          "goal": 35,
+          "tp": 10000,
+          "marks": 0
+        }
+      ]
+    },
+    {
+      "id": "skill_levels",
+      "chapter": "mastery",
+      "counter": "c.skills",
+      "hidden": false,
+      "steps": [
+        {
+          "goal": 5,
+          "tp": 400,
+          "marks": 0
+        },
+        {
+          "goal": 20,
+          "tp": 1500,
+          "marks": 0
+        },
+        {
+          "goal": 50,
+          "tp": 4000,
+          "marks": 0
+        },
+        {
+          "goal": 100,
+          "tp": 9000,
+          "marks": 0
+        }
+      ]
+    },
+    {
+      "id": "landings",
+      "chapter": "worlds",
+      "counter": "j.LANDINGS",
+      "hidden": false,
+      "steps": [
+        {
+          "goal": 1,
+          "tp": 300,
+          "marks": 0
+        },
+        {
+          "goal": 10,
+          "tp": 1000,
+          "marks": 0
+        },
+        {
+          "goal": 50,
+          "tp": 3000,
+          "marks": 0
+        },
+        {
+          "goal": 200,
+          "tp": 8000,
+          "marks": 0
+        }
+      ]
+    },
+    {
+      "id": "universes",
+      "chapter": "worlds",
+      "counter": "c.universes",
+      "hidden": false,
+      "steps": [
+        {
+          "goal": 2,
+          "tp": 500,
+          "marks": 0
+        },
+        {
+          "goal": 5,
+          "tp": 1500,
+          "marks": 0
+        },
+        {
+          "goal": 8,
+          "tp": 4000,
+          "marks": 0
+        },
+        {
+          "goal": 12,
+          "tp": 8000,
+          "marks": 0
+        }
+      ]
+    },
+    {
+      "id": "freed",
+      "chapter": "worlds",
+      "counter": "j.WORLDS_FREED",
+      "hidden": false,
+      "steps": [
+        {
+          "goal": 1,
+          "tp": 600,
+          "marks": 0
+        },
+        {
+          "goal": 5,
+          "tp": 2000,
+          "marks": 0
+        },
+        {
+          "goal": 15,
+          "tp": 6000,
+          "marks": 0
+        },
+        {
+          "goal": 40,
+          "tp": 12000,
+          "marks": 0
+        }
+      ]
+    },
+    {
+      "id": "taken",
+      "chapter": "worlds",
+      "counter": "j.WORLDS_TAKEN",
+      "hidden": false,
+      "steps": [
+        {
+          "goal": 1,
+          "tp": 600,
+          "marks": 0
+        },
+        {
+          "goal": 5,
+          "tp": 2000,
+          "marks": 0
+        },
+        {
+          "goal": 15,
+          "tp": 6000,
+          "marks": 0
+        },
+        {
+          "goal": 40,
+          "tp": 12000,
+          "marks": 0
+        }
+      ]
+    },
+    {
+      "id": "sagas",
+      "chapter": "worlds",
+      "counter": "c.sagas",
+      "hidden": false,
+      "steps": [
+        {
+          "goal": 1,
+          "tp": 1000,
+          "marks": 0
+        },
+        {
+          "goal": 3,
+          "tp": 3000,
+          "marks": 0
+        },
+        {
+          "goal": 6,
+          "tp": 8000,
+          "marks": 0
+        },
+        {
+          "goal": 10,
+          "tp": 15000,
+          "marks": 0
+        }
+      ]
+    },
+    {
+      "id": "quests",
+      "chapter": "worlds",
+      "counter": "c.quests",
+      "hidden": false,
+      "steps": [
+        {
+          "goal": 1,
+          "tp": 200,
+          "marks": 0
+        },
+        {
+          "goal": 10,
+          "tp": 1000,
+          "marks": 0
+        },
+        {
+          "goal": 50,
+          "tp": 4000,
+          "marks": 0
+        },
+        {
+          "goal": 200,
+          "tp": 10000,
+          "marks": 0
+        }
+      ]
+    },
+    {
+      "id": "angel",
+      "chapter": "gods",
+      "counter": "c.angel",
+      "hidden": false,
+      "steps": [
+        {
+          "goal": 1,
+          "tp": 1500,
+          "marks": 0
+        },
+        {
+          "goal": 3,
+          "tp": 5000,
+          "marks": 0
+        },
+        {
+          "goal": 5,
+          "tp": 12000,
+          "marks": 0
+        },
+        {
+          "goal": 7,
+          "tp": 20000,
+          "marks": 0
+        }
+      ]
+    },
+    {
+      "id": "destroyer",
+      "chapter": "gods",
+      "counter": "c.destroyer",
+      "hidden": false,
+      "steps": [
+        {
+          "goal": 1,
+          "tp": 2000,
+          "marks": 0
+        },
+        {
+          "goal": 2,
+          "tp": 8000,
+          "marks": 0
+        },
+        {
+          "goal": 3,
+          "tp": 20000,
+          "marks": 0
+        }
+      ]
+    },
+    {
+      "id": "god_ki",
+      "chapter": "gods",
+      "counter": "c.godki",
+      "hidden": false,
+      "steps": [
+        {
+          "goal": 1,
+          "tp": 5000,
+          "marks": 0
+        }
+      ]
+    },
+    {
+      "id": "kai",
+      "chapter": "gods",
+      "counter": "c.kai",
+      "hidden": false,
+      "steps": [
+        {
+          "goal": 1,
+          "tp": 1500,
+          "marks": 1
+        },
+        {
+          "goal": 2,
+          "tp": 4000,
+          "marks": 1
+        },
+        {
+          "goal": 4,
+          "tp": 9000,
+          "marks": 2,
+          "title": "ascension_kai_keeper"
+        },
+        {
+          "goal": 5,
+          "tp": 16000,
+          "marks": 3,
+          "title": "ascension_kai_supreme"
+        },
+        {
+          "goal": 6,
+          "tp": 20000,
+          "marks": 4,
+          "title": "ascension_kai_elder"
+        }
+      ]
+    },
+    {
+      "id": "angel_rank",
+      "chapter": "gods",
+      "counter": "c.angel_rank",
+      "hidden": false,
+      "steps": [
+        {
+          "goal": 1,
+          "tp": 3000,
+          "marks": 1,
+          "title": "angel_instructor"
+        },
+        {
+          "goal": 2,
+          "tp": 8000,
+          "marks": 2,
+          "title": "angel_guardian"
+        },
+        {
+          "goal": 3,
+          "tp": 15000,
+          "marks": 4,
+          "title": "angel_emissary"
+        }
+      ]
+    },
+    {
+      "id": "angel_taught",
+      "chapter": "gods",
+      "counter": "c.angel_taught",
+      "hidden": false,
+      "steps": [
+        {
+          "goal": 3,
+          "tp": 500,
+          "marks": 0
+        },
+        {
+          "goal": 15,
+          "tp": 2000,
+          "marks": 0
+        },
+        {
+          "goal": 50,
+          "tp": 6000,
+          "marks": 0
+        }
+      ]
+    },
+    {
+      "id": "angel_table",
+      "chapter": "gods",
+      "counter": "c.angel_dishes",
+      "hidden": false,
+      "steps": [
+        {
+          "goal": 3,
+          "tp": 300,
+          "marks": 0
+        },
+        {
+          "goal": 10,
+          "tp": 1200,
+          "marks": 0
+        },
+        {
+          "goal": 25,
+          "tp": 4000,
+          "marks": 0
+        }
+      ]
+    },
+    {
+      "id": "angel_reports",
+      "chapter": "gods",
+      "counter": "c.angel_reports",
+      "hidden": false,
+      "steps": [
+        {
+          "goal": 1,
+          "tp": 500,
+          "marks": 0
+        },
+        {
+          "goal": 4,
+          "tp": 2000,
+          "marks": 0
+        },
+        {
+          "goal": 12,
+          "tp": 6000,
+          "marks": 0
+        }
+      ]
+    },
+    {
+      "id": "over_9000",
+      "chapter": "legends",
+      "counter": "c.bp",
+      "hidden": true,
+      "steps": [
+        {
+          "goal": 9001,
+          "tp": 900,
+          "marks": 0
+        }
+      ]
+    },
+    {
+      "id": "fusion",
+      "chapter": "legends",
+      "counter": "j.FUSIONS",
+      "hidden": true,
+      "steps": [
+        {
+          "goal": 1,
+          "tp": 2000,
+          "marks": 0
+        }
+      ]
+    },
+    {
+      "id": "golden",
+      "chapter": "legends",
+      "counter": "form:supersaiyan",
+      "hidden": true,
+      "steps": [
+        {
+          "goal": 1,
+          "tp": 3000,
+          "marks": 3
+        }
+      ]
+    },
+    {
+      "id": "spirit_bomb",
+      "chapter": "legends",
+      "counter": "technique:spiritbomb",
+      "hidden": true,
+      "steps": [
+        {
+          "goal": 1,
+          "tp": 2500,
+          "marks": 0
+        }
+      ]
+    },
+    {
+      "id": "shenron",
+      "chapter": "legends",
+      "counter": "j.DRAGON",
+      "hidden": true,
+      "steps": [
+        {
+          "goal": 1,
+          "tp": 1500,
+          "marks": 2,
+          "title": "ascension_legend"
+        }
+      ]
+    }
+  ]
+}

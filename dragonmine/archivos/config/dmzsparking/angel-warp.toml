@@ -1,0 +1,36 @@
+
+#Angel warp: Whis' and Zeno's ferry with departure, flight and arrival.
+[angelWarp]
+	#Shows the angel warp and takes the party along. false = instant teleport of the player alone.
+	enabled = true
+	#Blocks around Whis within which party members are asked to come along.
+	#Range: 1 ~ 16
+	ringRadius = 5
+	#Players travelling together at most.
+	#Range: 1 ~ 6
+	maxTravellers = 6
+	#Seconds a party member has to answer.
+	#Range: 3 ~ 60
+	askSeconds = 10
+	#Ticks of the departure.
+	#Range: 10 ~ 200
+	departTicks = 12
+	#Ticks from the light column to the arrival.
+	#Range: 10 ~ 400
+	warpTicks = 56
+	#Seconds Whis stays at the destination. 0 = leaves at once.
+	#Range: 0 ~ 60
+	whisStaySeconds = 5
+	#Colour of the light's rim, #RRGGBB.
+	ringColour = "#E8FFFF"
+	#Colour of the light's outer edge and streaks, #RRGGBB.
+	bandColour = "#7FE8E0"
+	#Sound when Whis strikes his staff.
+	staffSound = "dragonminez:staff_slam"
+	#Sound when the light closes.
+	riseSound = "minecraft:block.beacon.activate"
+	#Sound at the arrival.
+	fallSound = "minecraft:block.beacon.deactivate"
+	#true = players may let the camera follow the flight. false = every camera stays at the eyes.
+	cameraFollows = true
+

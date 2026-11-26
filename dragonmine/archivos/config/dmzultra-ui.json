@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "autoSmall": true,
+  "smallBelow": {
+    "height": 600,
+    "width": 900
+  },
+  "profiles": {
+    "default": {
+      "preset": "small",
+      "hud": 0.75,
+      "menu": 0.957,
+      "elements": {
+        "quest_tracker": {
+          "preset.mode": "compact"
+        },
+        "notices": {
+          "preset.maxCards": "2"
+        },
+        "kai_energy": {
+          "preset.shareWith": "pinned_goals"
+        },
+        "frame_modules": {
+          "preset.place": "under"
+        },
+        "target_frame": {
+          "preset.place": "world"
+        },
+        "moment_banner": {
+          "preset.slim": "true"
+        }
+      }
+    }
+  }
+}

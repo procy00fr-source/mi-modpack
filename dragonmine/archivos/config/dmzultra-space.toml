@@ -1,0 +1,167 @@
+
+[space]
+	#The space system: the galaxy, the seamless crossing between the worlds and space, planet surfaces and what lives on them. Off: every space event handler stands down (the dimensions stay registered so worlds keep loading).
+	enabled = true
+	#Planets turn round their suns and moons round their worlds (the space overhaul, gx_orbits): the home system, Namek's three suns, Planet Vegeta's and Universe 6's worlds. A new world starts with them on; on a world made before them an op is asked once in chat (/dmzultra galaxy orbits yes|no). Off: every body stays at its old place, exactly as before.
+	orbits = true
+
+	[space.crossing]
+		#Range: 400 ~ 2000
+		upHeight = 760
+		#Range: 300 ~ 1960
+		arrivalHeight = 700
+		#Range: 1.0 ~ 64.0
+		homeOrbitScale = 8.0
+
+	[space.galaxy]
+		#Group newly discovered worlds around nearby stars. Known generated destinations keep their identity and coordinates.
+		organizedSolarSystems = true
+		#Range: 620.0 ~ 1400.0
+		planetFamilyClearance = 700.0
+		#Range: 250.0 ~ 1500.0
+		planetFullSizeDistance = 550.0
+		#Range: 1800.0 ~ 6000.0
+		planetPointDistance = 2600.0
+		#Show orbital colours and geography sampled from generated surfaces. Original Earth, Moon, Namek, stars and gas-giant artwork stays unchanged.
+		surfaceMatchedPlanetMaps = true
+		#Discover stained-glass and toxic worlds outside the home system. Saved bodies and visited surfaces retain their original palette.
+		rareWorlds = true
+		#Range: 0 ~ 50
+		rareWorldChancePercent = 12
+		#Range: 3450.0 ~ 12000.0
+		rareWorldMinimumDistance = 4500.0
+		#Discover new themed planets beyond the starting area. Registered surfaces and claims keep their existing palettes.
+		exoticWorlds = true
+		#New unvisited moons may have ice-shell oceans, sulfur, obsidian, crystal or iron-dust geology. Earth Moon is unchanged.
+		variedMoons = true
+		#Range: 0 ~ 100
+		exoticChancePercent = 18
+		#Range: 1.0 ~ 1.75
+		blackHoleScale = 1.35
+		#With space.orbits on: space nobody has charted yet gets real star systems, worlds turning round each sun and moons round the worlds. Sectors a player has already seen keep their bodies where they are. Off: uncharted space keeps the old scattered field.
+		generatorV2 = true
+
+	[space.travel]
+		#Disable new autopilot flights; manual travel remains available.
+		podAutopilot = true
+		#Right-click empty air in space with a Saiyan Space Pod to deploy and automatically board it.
+		podAirDeployment = true
+		#A trip to a world of any universe (Whis, Angel Passage, the Angel Staff, Kai Kai, a black hole) sets the traveller just inside that world's air, where the seamless crossing takes them down under its usual rules. Off: they are left in space above the world, to fly down themselves.
+		tripsLand = true
+
+	[space.surfaces]
+		#Range: 1 ~ 25
+		budgetMs = 8
+		#Range: 1 ~ 8
+		maximumChunksPerTick = 4
+		#Range: 0 ~ 6
+		treeAttemptsPerChunk = 3
+		#Range: 0.0 ~ 1.0
+		windStrength = 0.12
+		#Range: 0.0 ~ 0.1
+		heatStaminaFractionPerSecond = 0.001
+		#Apply heat/cold/wind gameplay effects. Moon remains airless.
+		climateEffects = true
+		#Use native synced gravity on moon surfaces. No jump or velocity impulses are added.
+		moonGravity = true
+		#Range: 0.1 ~ 1.0
+		earthMoonGravity = 0.35
+		#Range: 0.1 ~ 1.0
+		generatedMoonGravity = 0.4
+		#Green water on new toxic worlds briefly poisons swimmers. No atmospheric damage; shelter and flight remain safe.
+		toxicWaterPoison = true
+		#Range: 0 ~ 32
+		exoticMobLocalCap = 12
+		#Range: 0.1 ~ 20.0
+		metalEnemyHealthMultiplier = 1.0
+		#Range: 0.1 ~ 20.0
+		metalEnemyDamageMultiplier = 1.0
+		#Walking over a planet surface's edge brings you round to its far side. Off: the edge is a wall of thick air instead (the fallback if the wrap misbehaves with a client mod).
+		wrapAtEdges = true
+		#The planet painter's time per tick on a dedicated server (singleplayer uses space.surfaces.budgetMs).
+		#Range: 1 ~ 25
+		dedicatedBudgetMs = 4
+		#The most chunks the planet painter finishes per tick on a dedicated server (singleplayer uses space.surfaces.maximumChunksPerTick).
+		#Range: 1 ~ 8
+		dedicatedChunksPerTick = 2
+
+	[space.wildlife]
+		#Spawn named, coloured Minecraft animals on custom planet surfaces.
+		enabled = true
+		#Range: 0 ~ 128
+		cap = 32
+		#Range: 0 ~ 512
+		residentCap = 128
+		#Range: 0 ~ 64
+		localCap = 16
+		#Range: 20 ~ 2400
+		intervalTicks = 80
+		#Range: 1 ~ 8
+		maximumGroupSize = 6
+		#Range: 16 ~ 96
+		minimumPlayerDistance = 28
+		#Range: 32 ~ 128
+		maximumPlayerDistance = 88
+		#Range: 200 ~ 72000
+		recoveryTicks = 2400
+		#Seed schools of fish and aquatic creatures only in sufficiently deep water.
+		aquatic = true
+		#Give native cows, pigs and chickens consistent alien silhouettes. Existing animals update when tracked.
+		alienAnatomy = true
+		#Range: 0 ~ 100
+		lifeChancePercent = 65
+		#Allow only lava-adapted striders in volcanic lava pools.
+		lava = true
+
+	[space.aliens]
+		#Small alien settlements on peaceful worlds (never on the canon worlds or near a settled place). false: no new settlers; those already there stay.
+		settlements = true
+		#Range: 0 ~ 12
+		inhabitantsPerSettlement = 3
+		#Range: 1 ~ 32
+		nearbyInhabitantLimit = 8
+		#Range: 0.05 ~ 20.0
+		healthMultiplier = 1.0
+		#Range: 0.0 ~ 20.0
+		damageMultiplier = 1.0
+		#DMZ armour texture stems; cosmetic only, no headwear and no item drops. Missing textures fall back to piccolo_gi.
+		outfits = ["piccolo_gi", "goku_gi", "trunks_gi", "blackgoku"]
+		#Alien inhabitants that were attacked throw DragonMineZ ki blasts from mid range (6 to 28 blocks). Off: they fight in melee only.
+		kiBlasts = true
+
+	[space.wave2]
+		#Planet and moon destruction by ki attacks, the worlds' end pictures and their restoration (0.4). Protected worlds, worlds with a player on them and worlds with claimed land are never destroyed. Off: nothing more is destroyed; what lies destroyed stays so until restored.
+		destruction = true
+		#Planet missions on the worlds of space: defenders and encounters, our Conquest campaigns, marks, monuments and garrisons, civilisations that grow back, the mission on the Galaxy Atlas card (on in 0.4). Off stands them down at once; the Angel Path then waives its stage-6 rescue so nobody is stuck.
+		missions = true
+		#Abandoned stations and block asteroid fields placed in space (wave 2, off until it ships).
+		stations = false
+		#The dead-space hunt and heartbeat (wave 2, off until it ships); active hunters are cleaned up when off.
+		voidPredator = false
+		#Range: 1000.0 ~ 256000.0
+		destructionVisibilityRange = 64000.0
+		#Range: 16.0 ~ 1024.0
+		missionHelperRange = 128.0
+		#Range: 0.0 ~ 100.0
+		missionRewardMultiplier = 1.0
+		#While Earth's Moon lies destroyed (and destruction is on): storms over the Overworld, crops grow at half speed, no animals spawn. Off: the Moon is only gone from the sky.
+		moonlessEarth = true
+
+	[space.superBalls]
+		#The seven Super Dragon Balls in Universes 6 and 7 (5 floating in space, 2 on worlds), the Super Dragon Ball Radar recipe, Super Shenron and his wish. Off: no ball lies anywhere, the radar finds nothing and nobody can summon; balls already held stay in inventories.
+		enabled = true
+		#Range: 0 ~ 10080
+		restMinutes = 120
+		#Range: 0 ~ 8760
+		powerBeyondHours = 24
+		#Range: 0 ~ 8760
+		perfectMasteryHours = 72
+		#Range: 30 ~ 3600
+		wishTimeoutSeconds = 300
+		#Ball races: a held Super Dragon Ball falls where its holder dies. auto = only on a multiplayer server (dedicated or LAN) with PvP on; on = always; off = never.
+		dropOnDeath = "auto"
+		#Range: 0 ~ 365
+		holdDays = 7
+		#Ball races: the atlas radar layer names the player holding each ball. Off: a held ball is only marked as held, with no name.
+		showHolders = false
+

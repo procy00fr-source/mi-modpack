@@ -1,0 +1,113 @@
+{
+  "configVersion": "2.2.1",
+  "hasGender": true,
+  "useVanillaSkin": false,
+  "customModel": "",
+  "isLayered": true,
+  "headBones": [
+    "horns1",
+    "horns2",
+    "horns3",
+    "horns4",
+    "horns5"
+  ],
+  "racialSkill": "frostdemonrevamp",
+  "hasSaiyanTail": false,
+  "auraType": "kakarot",
+  "auraType3D": "userPreference",
+  "aura3DStyle": {
+    "size": [
+      1.1,
+      1.17,
+      1.02
+    ],
+    "flamePeaks": 12,
+    "waveFrequency": 2.0,
+    "waveSpeed": 5.0,
+    "waveAmplitude": 0.75,
+    "noiseDetail": 0.1,
+    "upwardBias": 0.54,
+    "coreAlpha": 0.05,
+    "rimAlpha": 1.0,
+    "rimPower": 4.0,
+    "rimThreshold": 0.05,
+    "coreColor": "",
+    "rimColor": "",
+    "noiseColor": "",
+    "bloomIntensity": 1.0,
+    "spikeDensity": 32,
+    "spikeBurstRate": 3.0,
+    "spikeRarity": 3.0,
+    "bandStart": 0.5,
+    "secondBorderColor": ""
+  },
+  "defaultModelScaling": [
+    0.7375,
+    0.7375,
+    0.7375
+  ],
+  "defaultBodyType": 0,
+  "slimBodyTypes": [],
+  "defaultHairType": 0,
+  "defaultEyesType": 0,
+  "defaultNoseType": 0,
+  "defaultMouthType": 0,
+  "defaultTattooType": 0,
+  "defaultBodyColor": "#FFFFFF",
+  "defaultBodyColor2": "#E8A2FF",
+  "defaultBodyColor3": "#FF39A9",
+  "defaultHairColor": "#8B1BCC",
+  "defaultEye1Color": "#FF001D",
+  "defaultEye2Color": "#FF001D",
+  "defaultAuraColor": "#5F00FF",
+  "formSkillsCosts": {
+    "legendaryforms": {
+      "buyFromMaster": false,
+      "prices": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "godforms": {
+      "buyFromMaster": false,
+      "prices": []
+    },
+    "superforms": {
+      "buyFromMaster": false,
+      "prices": [
+        18000,
+        31000,
+        52000,
+        83000,
+        117000,
+        187000
+      ]
+    },
+    "emperorforms": {
+      "buyFromMaster": false,
+      "prices": [
+        900000,
+        2200000
+      ]
+    },
+    "glacierforms": {
+      "buyFromMaster": false,
+      "prices": [
+        3000000,
+        5500000,
+        8000000,
+        11000000,
+        14000000
+      ]
+    },
+    "tyrantforms": {
+      "buyFromMaster": true,
+      "prices": [
+        325000,
+        500000,
+        775000
+      ]
+    }
+  }
+}

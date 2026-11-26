@@ -1,0 +1,29 @@
+
+[ki_drops]
+	#Controls how blocks destroyed by DragonMineZ Ki attacks are handled.
+	#DELETE    = Original DragonMineZ behavior. Blocks are deleted without drops.
+	#DROP_RARE = Only ores and configured important blocks drop.
+	#DROP_ALL  = All eligible blocks use normal Minecraft block drops.
+	#Allowed Values: DELETE, DROP_RARE, DROP_ALL
+	mode = "DROP_RARE"
+
+[rare_blocks]
+	#When DROP_RARE is active, blocks in the forge:ores tag will drop.
+	#This allows many modded ores to work automatically.
+	drop_forge_ores = true
+	#Additional blocks that should drop in DROP_RARE mode.
+	#Use registry IDs such as minecraft:ancient_debris or modid:block_name.
+	extra_drop_blocks = ["minecraft:ancient_debris", "minecraft:chest", "minecraft:trapped_chest", "minecraft:barrel"]
+	#Blocks listed here will NEVER produce drops from Ki destruction.
+	#The block may still be destroyed normally by DragonMineZ.
+	#Blacklist takes priority over DROP_ALL and DROP_RARE.
+	blacklist = []
+
+[performance]
+	#Maximum number of blocks that one Ki projectile or queued terrain pass may destroy with drops.
+	#After this limit is reached, further blocks use DragonMineZ's original delete behavior.
+	#0 disables Ki block drops completely.
+	#Higher values can create large numbers of item entities and cause lag.
+	#Range: 0 ~ 100000
+	max_dropped_blocks_per_projectile = 500
+

@@ -1,0 +1,134 @@
+{
+  "race": "frostdemon",
+  "subraces": [
+    {
+      "key": "cold",
+      "enabled": true,
+      "plain": true,
+      "order": 0,
+      "lean": {},
+      "growth": [],
+      "forms": [],
+      "passives": [],
+      "look": {
+        "defaults": {},
+        "parts": [],
+        "scale": 1.0
+      },
+      "text": {
+        "source": "MANGA"
+      },
+      "budget": {
+        "M": 0,
+        "C": 0,
+        "S": 0,
+        "B": 0,
+        "U": 0
+      }
+    },
+    {
+      "key": "titan",
+      "enabled": true,
+      "plain": false,
+      "order": 20,
+      "lean": {
+        "VIT": 0.04,
+        "RES": 0.03,
+        "STR": 0.01,
+        "SKP": -0.05,
+        "ENE": -0.03
+      },
+      "growth": [],
+      "forms": [
+        {
+          "group": "tyrantforms",
+          "price": 1.15
+        }
+      ],
+      "passives": [
+        {
+          "kind": "royal_bulk",
+          "knockback": -0.25,
+          "dashKi": 0.1,
+          "flightKi": 0.1
+        }
+      ],
+      "look": {
+        "defaults": {},
+        "parts": [],
+        "scale": 1.2
+      },
+      "text": {
+        "source": "MANGA"
+      },
+      "budget": {
+        "M": -1,
+        "C": 0,
+        "S": 1,
+        "B": 0,
+        "U": 0
+      }
+    },
+    {
+      "key": "frost",
+      "enabled": true,
+      "plain": false,
+      "order": 30,
+      "lean": {
+        "SKP": 0.03,
+        "PWR": 0.02,
+        "STR": -0.03,
+        "RES": -0.02
+      },
+      "growth": [],
+      "forms": [
+        {
+          "group": "evolutionforms",
+          "levels": [
+            1,
+            2
+          ],
+          "price": 0.6
+        },
+        {
+          "group": "evolutionforms",
+          "levels": [
+            3,
+            4,
+            5
+          ],
+          "price": 1.1
+        }
+      ],
+      "passives": [
+        {
+          "kind": "hidden_needle",
+          "mobPoisonSeconds": 3,
+          "playerKiPauseSeconds": 1,
+          "playerImmuneSeconds": 10,
+          "mobPoisonLevel": 2,
+          "fightGapSeconds": 30
+        },
+        {
+          "kind": "two_faces",
+          "alignmentLoss": -0.25
+        }
+      ],
+      "look": {
+        "defaults": {},
+        "parts": [],
+        "scale": 1.0
+      },
+      "text": {
+        "source": "MANGA"
+      },
+      "budget": {
+        "M": 0,
+        "C": 0,
+        "S": -1,
+        "B": 1,
+        "U": 0
+      }
+    }
+  ]
+}
