@@ -1,8 +1,0 @@
-
-["Transformation Music"]
-	#Volume multiplier for transformation music, independent of vanilla's
-	#Music slider (this stacks on top of it). 1.0 = normal volume,
-	#0.5 = half volume, 0.0 = muted, 2.0 = double volume.
-	#Range: 0.0 ~ 2.0
-	transformMusicVolume = 1.0
-

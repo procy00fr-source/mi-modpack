@@ -1,9 +1,0 @@
-#Reduce cosmetic debris and aura geometry. Attack warnings always remain visible.
-reducedEffects = false
-#Raid camera shake strength. Zero disables shake.
-#Range: 0.0 ~ 1.0
-cameraShake = 0.2
-#Volume of raid warning and attack sounds.
-#Range: 0.0 ~ 1.0
-effectVolume = 0.7
-

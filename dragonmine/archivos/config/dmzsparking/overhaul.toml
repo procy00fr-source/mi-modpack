@@ -1,6 +1,0 @@
-
-#Only used while DragonMineZ: Overhaul is installed.
-[overhaul]
-	#true = replace existing saga quest files with Overhaul's defaults on every start (backup kept). false = only missing files are written.
-	applyQuestProfile = false
-

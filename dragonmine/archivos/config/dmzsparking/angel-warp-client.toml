@@ -1,6 +1,0 @@
-
-#Angel warp camera.
-[angelWarp]
-	#The camera rises and follows the group during the warp. false = it stays at your eyes.
-	cameraFollows = true
-

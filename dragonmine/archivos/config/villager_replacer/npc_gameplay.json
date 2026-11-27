@@ -1,9 +1,0 @@
-{
-  "allowNpcGriefing": false,
-  "allowNpcKiDestruction": false,
-  "enableVillagerExpansionDragonBalls": true,
-  "npcPowerScale": 1.0,
-  "npcStatScale": 1.0,
-  "npcRandomScaleMin": 0.8,
-  "npcRandomScaleMax": 1.2
-}

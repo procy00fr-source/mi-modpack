@@ -1,8 +1,0 @@
-#Accent colour for the world menus, #RRGGBB.
-accent = "#C9A227"
-#Seconds between world snapshot captures while playing.
-#Range: 5 ~ 3600
-snapshotIntervalSeconds = 60
-#Disables screen transitions and hover animations.
-reduceMotion = false
-

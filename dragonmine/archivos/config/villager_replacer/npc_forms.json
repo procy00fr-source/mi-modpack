@@ -1,9 +1,0 @@
-{
-  "autoDiscoverDmzForms": true,
-  "includeStackForms": true,
-  "defaultTpCost": 50,
-  "skillLevelCost": 20,
-  "maxTpCost": 100000,
-  "races": {},
-  "forms": []
-}
