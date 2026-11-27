@@ -47,13 +47,13 @@
       "id": "dragonmine",
       "name": "DragonMineZ",
       "description": "Minecraft",
-      "version": "1.0.4",
+      "version": "1.0.5",
       "minecraft": "1.20.1",
       "loader": {
         "type": "forge",
         "version": "47.4.10"
       },
-      "manifest": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5ed7b761fd40fcfd52fb005fd3b68b9c8db64376/dragonmine/manifest.json"
+      "manifest": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/4c62b2a837d7e6d6b62c8feef9b87f6e5f85d248/dragonmine/manifest.json"
     }
   ]
 }
