@@ -1,0 +1,146 @@
+{
+  "_about": "DMZ Ultra, Namekian Dragon Balls: what a player dragon grants per tier I..V (docs/v05/namekian_dragon_balls.md 3.6). 0 \u003d not offered at that tier. Every figure is clamped to its native ceiling (_ceiling) and lowered to Shenron\u0027s or Porunga\u0027s own list when that is lower: no player dragon ever outdoes them. A form, mastery, race, slot, God Ki or Pothala wish is never accepted.",
+  "_ceiling": {
+    "nb_revive": "Shenron 3",
+    "nb_senzu": "Shenron 16",
+    "nb_materials": "Shenron 32 + 64",
+    "nb_blessing": "ours, 60 min",
+    "nb_power": "Porunga 75 (Shenron 100)",
+    "nb_fortune": "Super Shenron 60",
+    "nb_racial_reset": "Shenron",
+    "nb_recustomize": "Shenron",
+    "nb_relocate": "Porunga",
+    "nb_homeward": "ours",
+    "nb_difficulty": "Shenron",
+    "nb_evil": "ours"
+  },
+  "nb_revive": {
+    "targets": [
+      1,
+      1,
+      3,
+      3,
+      3
+    ],
+    "massCost": [
+      1,
+      1,
+      2,
+      2,
+      1
+    ]
+  },
+  "nb_senzu": {
+    "amount": [
+      4,
+      6,
+      8,
+      10,
+      12
+    ]
+  },
+  "nb_materials": {
+    "kikono": [
+      8,
+      12,
+      16,
+      24,
+      32
+    ],
+    "iron": [
+      16,
+      24,
+      32,
+      48,
+      64
+    ]
+  },
+  "nb_blessing": {
+    "minutes": [
+      20,
+      30,
+      40,
+      50,
+      60
+    ]
+  },
+  "nb_power": {
+    "amount": [
+      0,
+      25,
+      40,
+      55,
+      65
+    ]
+  },
+  "nb_fortune": {
+    "points": [
+      8,
+      12,
+      18,
+      24,
+      30
+    ]
+  },
+  "nb_racial_reset": {
+    "offered": [
+      0,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "nb_recustomize": {
+    "offered": [
+      0,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "nb_relocate": {
+    "offered": [
+      0,
+      0,
+      1,
+      1,
+      1
+    ]
+  },
+  "nb_homeward": {
+    "reach": [
+      0,
+      0,
+      1,
+      1,
+      2
+    ],
+    "party": [
+      3,
+      3,
+      3,
+      3,
+      3
+    ]
+  },
+  "nb_difficulty": {
+    "offered": [
+      0,
+      0,
+      0,
+      1,
+      1
+    ]
+  },
+  "nb_evil": {
+    "offered": [
+      0,
+      0,
+      0,
+      1,
+      1
+    ]
+  }
+}

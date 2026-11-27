@@ -78,7 +78,8 @@
       },
       "triggerItemCosts": [],
       "durationItemCosts": [],
-      "mobEffects": []
+      "mobEffects": [],
+      "sagaRequisite": "buu_saga:35"
     },
     "black": {
       "name": "black",

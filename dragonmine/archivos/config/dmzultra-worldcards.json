@@ -66,6 +66,72 @@
         "ultra": "",
         "savedAt": 0
       }
+    },
+    "Maol": {
+      "lastPlayed": 1795668724696,
+      "info": {
+        "source": "NONE",
+        "created": false,
+        "name": "",
+        "race": "",
+        "class": "",
+        "level": 0,
+        "form": "",
+        "bp": "",
+        "bpRaw": 0.0,
+        "dimension": "",
+        "universe": 0,
+        "playTicks": -1,
+        "characters": 0,
+        "preset": "",
+        "rules": {},
+        "ultra": "",
+        "savedAt": 0
+      }
+    },
+    "Ixys": {
+      "lastPlayed": 1795792088244,
+      "info": {
+        "source": "NONE",
+        "created": false,
+        "name": "",
+        "race": "",
+        "class": "",
+        "level": 0,
+        "form": "",
+        "bp": "",
+        "bpRaw": 0.0,
+        "dimension": "",
+        "universe": 0,
+        "playTicks": -1,
+        "characters": 0,
+        "preset": "",
+        "rules": {},
+        "ultra": "",
+        "savedAt": 0
+      }
+    },
+    "Mundo nuevo": {
+      "lastPlayed": 1795809560562,
+      "info": {
+        "source": "LEVEL_DAT",
+        "created": true,
+        "name": "",
+        "race": "saiyan",
+        "class": "warrior",
+        "level": 1,
+        "form": "",
+        "bp": "",
+        "bpRaw": 0.0,
+        "dimension": "dragonminez:otherworld",
+        "universe": 0,
+        "playTicks": -1,
+        "characters": 1,
+        "preset": "",
+        "rules": {},
+        "ultra": "",
+        "savedAt": 0
+      }
     }
   }
 }

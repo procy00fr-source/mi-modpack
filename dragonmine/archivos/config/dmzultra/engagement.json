@@ -4,7 +4,11 @@
   "wardrobe": {
     "enabled": "default",
     "zeniShop": true,
-    "poses": true
+    "poses": true,
+    "storeHint": "",
+    "chatTitles": true,
+    "nameplateTitles": true,
+    "announceGrants": true
   },
   "moments": {
     "enabled": "default",
@@ -83,6 +87,10 @@
     "budokai.npcEntrants": "Canon NPC entrants fill the bracket. (default true)",
     "budokai.satan": "Mr. Satan\u0027s exhibition after a final (a comic staged moment, opt-in scenes). (default true)",
     "racial.enabled": "Racial Mastery (cosmetic look levels of the racial ability, one challenge per race). \"default\": on once the feature is finished in this build. (default default, true / false / default)",
-    "xs.enabled": "The small expansions of existing systems (saga epilogues, travel-event kinds, wish board, ...). \"default\": on once the feature is finished in this build. (default default, true / false / default)"
+    "xs.enabled": "The small expansions of existing systems (saga epilogues, travel-event kinds, wish board, ...). \"default\": on once the feature is finished in this build. (default default, true / false / default)",
+    "wardrobe.storeHint": "Cosmetics a player does not own are listed greyed in the Wardrobe with this line, when it is set: \"\" \u003d not listed, \"default\" \u003d \"Unlock on the server store or by events\", any other text is shown as written (no link is ever added by the mod). (default )",
+    "wardrobe.chatTitles": "The worn title in front of the player\u0027s name in chat. Turn off when a server addon formats chat itself (it can read the title). (default true)",
+    "wardrobe.nameplateTitles": "The worn title over the player\u0027s nameplate. (default true)",
+    "wardrobe.announceGrants": "A chat line to the player when a cosmetic is given to them. (default true)"
   }
 }

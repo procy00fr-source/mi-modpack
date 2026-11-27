@@ -1,0 +1,4 @@
+{
+  "hinweis": "Only what you change: planets and fields here are read over the defaults in the jar (data/dmzsparking/living/planeten.json, shown in game by /dmzsparking living profile). Example: {\"vegeta\": {\"staerke\": {\"kaempfer\": {\"von\": 800, \"bis\": 1500, \"deckel\": 5000}}}}",
+  "planeten": {}
+}

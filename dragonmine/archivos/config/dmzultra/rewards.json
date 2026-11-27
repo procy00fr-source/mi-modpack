@@ -1,0 +1,4 @@
+{
+  "_about": "The base of every reward that grows with the fighter (the Kai and Angel paths, Konso, former Starmark grants): a foe of the fighter's own strength's worth of TP, times basePayPercent / 100. 0 to 1000; 100 is the balance the mod is made for.",
+  "basePayPercent": 100.0
+}

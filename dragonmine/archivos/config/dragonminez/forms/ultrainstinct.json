@@ -62,7 +62,9 @@
       "allowFreeTransformOnMastery": 46.2,
       "formStackable": true,
       "stackDrainMultiplier": 2.0,
-      "incompatibleWith": [],
+      "incompatibleWith": [
+        "ultimate.ultimate"
+      ],
       "shareMasteryWith": [],
       "shareMasteryMultiplier": 1.0,
       "outlineShader": {
@@ -73,7 +75,38 @@
       },
       "triggerItemCosts": [],
       "durationItemCosts": [],
-      "mobEffects": []
+      "mobEffects": [],
+      "sagaRequisite": "buu_saga:35",
+      "auraType3D": "smooth",
+      "extraAuraType3D": "smooth",
+      "aura3DStyle": {
+        "size": [
+          0.98,
+          1.08,
+          0.94
+        ],
+        "flamePeaks": 8,
+        "waveSpeed": 2.6,
+        "waveAmplitude": 0.32,
+        "noiseDetail": 0.06,
+        "upwardBias": 0.7,
+        "coreAlpha": 0.02,
+        "rimAlpha": 0.7,
+        "rimPower": 2.0,
+        "rimColor": "#1466FF",
+        "bloomIntensity": 0.9
+      },
+      "extraAura3DStyle": {
+        "size": [
+          1.06,
+          1.18,
+          1.0
+        ],
+        "waveSpeed": 3.0,
+        "waveAmplitude": 0.55,
+        "coreAlpha": 0.0,
+        "rimAlpha": 0.28
+      }
     },
     "mastered": {
       "name": "mastered",
@@ -134,7 +167,9 @@
       "allowFreeTransformOnMastery": 57.3,
       "formStackable": true,
       "stackDrainMultiplier": 2.6,
-      "incompatibleWith": [],
+      "incompatibleWith": [
+        "ultimate.ultimate"
+      ],
       "shareMasteryWith": [],
       "shareMasteryMultiplier": 1.0,
       "outlineShader": {
@@ -145,7 +180,38 @@
       },
       "triggerItemCosts": [],
       "durationItemCosts": [],
-      "mobEffects": []
+      "mobEffects": [],
+      "auraType3D": "smooth",
+      "extraAuraType3D": "smooth",
+      "aura3DStyle": {
+        "size": [
+          0.96,
+          1.06,
+          0.92
+        ],
+        "flamePeaks": 8,
+        "waveSpeed": 2.2,
+        "waveAmplitude": 0.26,
+        "noiseDetail": 0.04,
+        "upwardBias": 0.74,
+        "coreAlpha": 0.0,
+        "rimAlpha": 0.55,
+        "rimPower": 1.6,
+        "coreColor": "#E4DEED",
+        "rimColor": "#0052EB",
+        "bloomIntensity": 1.1
+      },
+      "extraAura3DStyle": {
+        "size": [
+          1.06,
+          1.18,
+          1.0
+        ],
+        "waveSpeed": 3.0,
+        "waveAmplitude": 0.55,
+        "coreAlpha": 0.0,
+        "rimAlpha": 0.22
+      }
     },
     "true": {
       "name": "true",

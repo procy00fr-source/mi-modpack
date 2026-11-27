@@ -63,17 +63,17 @@
         -1,
         -1,
         -1,
-        1500000,
-        5000000
+        -1,
+        -1
       ]
     },
     "godforms": {
       "buyFromMaster": false,
       "prices": [
-        80000,
-        160000,
-        320000,
-        1000000
+        -1,
+        -1,
+        -1,
+        -1
       ]
     },
     "superforms": {
@@ -95,16 +95,16 @@
     "evildivineforms": {
       "buyFromMaster": false,
       "prices": [
-        200000,
-        400000,
-        800000,
-        1500000
+        -1,
+        -1,
+        -1,
+        -1
       ]
     },
     "beastforms": {
       "buyFromMaster": true,
       "prices": [
-        650000
+        -1
       ]
     },
     "ultraforms": {
@@ -122,6 +122,12 @@
         270000,
         385000,
         605000
+      ]
+    },
+    "dmzsparking_af": {
+      "buyFromMaster": true,
+      "prices": [
+        2147483647
       ]
     }
   }

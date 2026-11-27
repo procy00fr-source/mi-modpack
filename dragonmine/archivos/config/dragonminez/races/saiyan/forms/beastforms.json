@@ -73,7 +73,10 @@
       },
       "triggerItemCosts": [],
       "durationItemCosts": [],
-      "mobEffects": []
+      "mobEffects": [],
+      "otherworldTimeDrain": 3.0,
+      "otherworldTimeDrainMastered": 2.5,
+      "sagaRequisite": "buu_saga:35"
     }
   }
 }

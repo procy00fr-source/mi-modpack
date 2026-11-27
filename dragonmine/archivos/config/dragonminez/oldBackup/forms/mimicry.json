@@ -1,0 +1,91 @@
+{
+  "configVersion": "2.2.0",
+  "groupName": "mimicry",
+  "formType": "mimicry",
+  "forms": {
+    "mimicry": {
+      "name": "mimicry",
+      "unlockOnSkillLevel": 1,
+      "formCombo": "",
+      "customModel": "",
+      "keepBaseFormHeadBones": true,
+      "transformationAnimation": "transf.generic",
+      "bodyColor1": "",
+      "bodyColor2": "",
+      "bodyColor3": "",
+      "extraFormLayer": "",
+      "extraFormColor": "",
+      "hairType": "base",
+      "forcedHairCode": "",
+      "hairColor": "",
+      "eye1Color": "",
+      "eye2Color": "",
+      "auraType": "kakarot",
+      "auraLayer": 0,
+      "auraColor": "#E36BFF",
+      "extraAuraLayer": 1,
+      "extraAuraColor": "#FFB3F0",
+      "extraAuraType": "kakarot",
+      "hasLightnings": true,
+      "lightningColor": "#FFFFFF",
+      "tintColor": "#FF9AE6",
+      "tintIntensity": 0.15,
+      "modelScaling": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "strMultiplier": 3.66,
+      "skpMultiplier": 3.66,
+      "stmMultiplier": 1.0,
+      "defMultiplier": 3.12,
+      "vitMultiplier": 1.0,
+      "pwrMultiplier": 3.66,
+      "eneMultiplier": 1.0,
+      "speedMultiplier": 1.0,
+      "staminaDrainMultiplier": 1.0,
+      "energyDrain": 0.0,
+      "staminaDrain": 0.08,
+      "healthDrain": 0.0,
+      "attackSpeed": 1.15,
+      "maxMastery": 100.0,
+      "masteryPerHitDealt": 0.04,
+      "masteryPerHitReceived": 0.04,
+      "passiveMasteryEveryFiveSeconds": 0.006,
+      "maxCostMultiplier": 0.75,
+      "maxStatsMultiplier": 1.0,
+      "formRequisite": "",
+      "formRequisiteType": "all",
+      "unlockOnMastery": 0.0,
+      "stackOnMastery": 25.0,
+      "instantTransformOnMastery": 40.0,
+      "allowFreeTransformOnMastery": 50.0,
+      "formStackable": true,
+      "stackDrainMultiplier": 2.0,
+      "incompatibleWith": [
+        ""
+      ],
+      "shareMasteryWith": [],
+      "shareMasteryMultiplier": 1.0,
+      "outlineShader": {
+        "enabled": false,
+        "primaryColor": "#FFFFFF",
+        "secondaryColor": "#FFFFFF",
+        "outlineThickness": 1.5
+      },
+      "triggerItemCosts": [
+        {
+          "itemId": "minecraft:cookie",
+          "itemTag": "",
+          "nbt": "",
+          "count": 1,
+          "consume": true
+        }
+      ],
+      "durationItemCosts": [],
+      "mobEffects": [],
+      "otherworldTimeDrain": 3.0,
+      "otherworldTimeDrainMastered": 1.5
+    }
+  }
+}

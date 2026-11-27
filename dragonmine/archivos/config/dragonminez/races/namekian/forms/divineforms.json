@@ -54,9 +54,9 @@
       "passiveMasteryEveryFiveSeconds": 0.006,
       "maxCostMultiplier": 0.64,
       "maxStatsMultiplier": 1.5,
-      "formRequisite": "",
+      "formRequisite": "superforms.supernamekian",
       "formRequisiteType": "all",
-      "unlockOnMastery": 0.0,
+      "unlockOnMastery": 25.0,
       "stackOnMastery": 0.0,
       "instantTransformOnMastery": 36.0,
       "allowFreeTransformOnMastery": 51.0,
@@ -77,7 +77,9 @@
       },
       "triggerItemCosts": [],
       "durationItemCosts": [],
-      "mobEffects": []
+      "mobEffects": [],
+      "otherworldTimeDrain": 3.0,
+      "otherworldTimeDrainMastered": 1.5
     },
     "golden": {
       "name": "golden",
@@ -153,7 +155,9 @@
       },
       "triggerItemCosts": [],
       "durationItemCosts": [],
-      "mobEffects": []
+      "mobEffects": [],
+      "otherworldTimeDrain": 3.0,
+      "otherworldTimeDrainMastered": 1.5
     },
     "awakenedgoldengiant": {
       "name": "awakenedgoldengiant",
@@ -229,7 +233,9 @@
       },
       "triggerItemCosts": [],
       "durationItemCosts": [],
-      "mobEffects": []
+      "mobEffects": [],
+      "otherworldTimeDrain": 3.0,
+      "otherworldTimeDrainMastered": 1.5
     },
     "supernamekiangod": {
       "name": "supernamekiangod",
@@ -290,7 +296,9 @@
       "allowFreeTransformOnMastery": 70.0,
       "formStackable": true,
       "stackDrainMultiplier": 2.4,
-      "incompatibleWith": [],
+      "incompatibleWith": [
+        "ultimate.ultimate"
+      ],
       "shareMasteryWith": [],
       "shareMasteryMultiplier": 0.25,
       "outlineShader": {
@@ -301,7 +309,9 @@
       },
       "triggerItemCosts": [],
       "durationItemCosts": [],
-      "mobEffects": []
+      "mobEffects": [],
+      "otherworldTimeDrain": 3.0,
+      "otherworldTimeDrainMastered": 1.5
     }
   }
 }

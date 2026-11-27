@@ -70,7 +70,11 @@
     },
     "godforms": {
       "buyFromMaster": false,
-      "prices": []
+      "prices": [
+        -1,
+        -1,
+        -1
+      ]
     },
     "superforms": {
       "buyFromMaster": false,

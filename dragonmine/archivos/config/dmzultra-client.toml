@@ -80,7 +80,7 @@
 	#The title screen: 'ultra' = DMZ Ultra's own (a live scene, our logo, the menu as leaning plates, a news card);
 	#'vanilla' = Minecraft's, with DragonMineZ' changes, exactly as without DMZ Ultra. Every button other mods add stays and
 	#works either way. Applies at once.
-	title = "ultra"
+	title = "vanilla"
 	#The pause menu: 'ultra' = DMZ Ultra's (the world blurred behind, RESUME first, DMZ Ultra's pages one click away,
 	#your fighter on a status card); 'vanilla' = Minecraft's. Every button other mods add stays and works. Applies at once.
 	pause = "ultra"
@@ -250,23 +250,23 @@
 	#Charging ki shakes the place: a ring of pressure along the ground, dust and pebbles drawn in and lifted, a pool of light,
 	#cracks of light at high power, lightning for forms that have it, heat in the air, a rumble that rises and a burst at the
 	#release - in place of DragonMineZ' dust squares and ground sprite. false gives those back at once.
-	kiCharge = true
+	kiCharge = false
 	#Draw every fighter's aura (standing, charging, in flight) as a flame with body - a sheet of fire round the fighter seen
 	#from any side - in place of DragonMineZ' painted flame turned to the camera. Colours and layers stay those DragonMineZ
 	#gives the aura. false draws DragonMineZ' own aura at once.
 	#Never drawn while a shader pack is active.
-	auras = true
+	auras = false
 	#Give ki blasts and beams a white-hot heart, a ribbon of light behind them, light on the ground they pass, a flare at the
 	#hands, pulses along a beam and a boiling clash point - added to what DragonMineZ draws, which stays. false: only that.
-	blasts = true
+	blasts = false
 	#Where a blast lands: a flash, a dome of fire that tears into smoke, a shockwave along the ground, debris and a scorch
 	#that fades; a ring and sparks for a hit, a blow and a block - in place of DragonMineZ' explosion and hit sprites.
 	#false gives those sprites back at once.
-	impacts = true
+	impacts = false
 	#What fast movement and a change of form show: a burst of the fighter's aura when a form is taken or left (seen by
 	#everyone, outside the opt-in scenes), a ribbon of the aura's light behind a fast flight, dust kicked back and speed lines
 	#at a dash, a snap of light at both ends of a vanishing step or an Instant Transmission. false: nothing is added.
-	movement = true
+	movement = false
 
 [shaders]
 	#Under a shader pack, draw DMZ Ultra's lights and effects after the pack's finished picture - the auras, charging ki,
@@ -304,7 +304,7 @@
 	#and the theme's emblem and motif, titles in DragonMineZ' font. Chosen in game on the Look and sound page and on the
 	#Interface page (Menus and Look sections); the switch takes effect at once. The HUD's player and target frames keep their
 	#own look in both styles.
-	uiStyle = "tenkaichi"
+	uiStyle = "glass"
 	#How much the menus move: full - slabs slide in when a menu opens, tabs wipe, buttons lift under the pointer and punch
 	#when pressed, headers drift (default); reduced - shorter moves, no overshoot, no shake, no drift; off - nothing moves.
 	uiMotion = "full"
@@ -847,7 +847,7 @@
 	#After a knock-out: off, pve (default; non-player foes only), or always. The server may disable this.
 	autoRetarget = "pve"
 	#Remembers that the once-only shoulder camera offer was shown; this does not enable the camera.
-	shoulderOfferSeen = false
+	shoulderOfferSeen = true
 
 [lockonUi]
 	#Show direction, distance and height for a hard-locked fighter outside the screen.
@@ -992,11 +992,11 @@
 
 [auraLook]
 	#Every form its own aura: canon colours, shape, flicker, rim and sparks for canon forms, an original look for invented races and forms (assets/dmzultra/auras). Off: the plain flame in the colours DragonMineZ gives it.
-	styles = true
+	styles = false
 	#The particles and ornaments an aura style adds round the fire (halo, clock, sand vortex, embers, petals...). Off: the fire alone. The Low quality preset thins them by itself.
-	extras = true
+	extras = false
 	#Every form its own aura sound: a burst as the form is taken, a breathing loop while the aura is up, a power-down as it is let go (our own synthesised sets, assets/dmzultra/auras/sounds.json), mixed behind DragonMineZ' own hum and transformation sounds, which keep playing. Follows the aura styles (off with them). Off: DragonMineZ' sounds alone.
-	sounds = true
+	sounds = false
 
 [top]
 	#Tournament of Power: when a universe is knocked out, its god and its fighters in the stands fade away in a
@@ -1104,13 +1104,13 @@
 [auraLook3d]
 	#3D auras: every Dragon Ball aura as a body of fire round the fighter - layered shells that turn and climb, an inner
 	#glow hugging the body, flame tongues that rise and break off, sparks and lightning. Off: the flat flame of the effects engine.
-	volume = true
+	volume = false
 	#Classic DragonMineZ auras: DragonMineZ' own aura is drawn exactly as it comes, and none of ours (neither the 3D aura nor the
 	#flame). The ground, charge and movement effects follow their own switches.
-	classic = false
+	classic = true
 	#Where our aura sounds play for a fighter, DragonMineZ' aura hum, spark crackle and transformation sounds stand aside, so the two
 	#never play on top of each other. Off: both play (DragonMineZ' in front, as before).
-	quietDmzSounds = true
+	quietDmzSounds = false
 	#How much the 3D auras may cost: auto (follows the quality preset), low, medium, high or ultra.
 	#Low: two shells, few tongues, 4 full auras at once. Ultra: five shells, dense tongues, 16 full auras at once.
 	quality = "auto"
@@ -1162,16 +1162,16 @@
 	#Draw ki blasts, beams, discs and spheres as DragonMineZ does (with the lighter extras of vfx.blasts) instead of DMZ Ultra's
 	#look: a white-hot core in a layered body of the attack's colour, spiral ribbons, a head that pushes, each great technique its own
 	#signature, a gathering at the hands and a clash that boils. false (default): ours.
-	classicLook = false
+	classicLook = true
 	#Play DMZ Ultra's ki sounds - one crisp sound for each moment of an attack (its gathering, its release, a beam held, its
 	#impact, a clash), far explosions muffled - in place of DragonMineZ' ki sounds, which then never play over them. true (default).
-	sounds = true
+	sounds = false
 	#A small kick of the camera when you fire, and a jolt from great impacts near you that fades with distance. It follows
 	#Minecraft's Distortion Effects slider. true (default).
-	cameraShake = true
+	cameraShake = false
 	#The picture flashes white for an instant at a great explosion close to you (never with Minecraft's Hide Lightning Flashes).
 	#true (default).
-	flashFrame = true
+	flashFrame = false
 
 [craftModules]
 	#Fitted ship modules show on the hull: armour plates, shield emitters, boosters, a cargo pod, a radar mast, the fold coil. Off: the hulls look as they come.
@@ -1414,7 +1414,7 @@
 	#static and sparks, the radiation's glow, the dark of a dead sector, the drifting rocks.
 	visualIntensity = "normal"
 	#The galaxy atlas shows hazard zones and each sector's danger, with a legend (a chip on the atlas turns it on and off).
-	atlasOverlay = true
+	atlasOverlay = false
 	#The hazard gauge sounds a soft tone when a hazard starts to build and a sharper one when it starts to hurt.
 	warningTones = true
 	#Debris fields are drawn as drifting, tumbling rocks round you (the strikes are felt either way).

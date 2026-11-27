@@ -73,7 +73,9 @@
       },
       "triggerItemCosts": [],
       "durationItemCosts": [],
-      "mobEffects": []
+      "mobEffects": [],
+      "otherworldTimeDrain": 3.0,
+      "otherworldTimeDrainMastered": 2.5
     }
   }
 }

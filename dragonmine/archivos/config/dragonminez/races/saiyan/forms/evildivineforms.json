@@ -75,7 +75,10 @@
       },
       "triggerItemCosts": [],
       "durationItemCosts": [],
-      "mobEffects": []
+      "mobEffects": [],
+      "otherworldTimeDrain": 3.0,
+      "otherworldTimeDrainMastered": 1.5,
+      "sagaRequisite": "buu_saga:35"
     },
     "supersaiyanroseevolved": {
       "name": "supersaiyanroseevolved",
@@ -149,7 +152,9 @@
       },
       "triggerItemCosts": [],
       "durationItemCosts": [],
-      "mobEffects": []
+      "mobEffects": [],
+      "otherworldTimeDrain": 3.0,
+      "otherworldTimeDrainMastered": 1.5
     },
     "supersaiyanrose3": {
       "name": "supersaiyanrose3",
@@ -223,7 +228,9 @@
       },
       "triggerItemCosts": [],
       "durationItemCosts": [],
-      "mobEffects": []
+      "mobEffects": [],
+      "otherworldTimeDrain": 3.0,
+      "otherworldTimeDrainMastered": 1.5
     },
     "supersaiyanrosefullpower": {
       "name": "supersaiyanrosefullpower",
@@ -284,7 +291,9 @@
       "allowFreeTransformOnMastery": 62.0,
       "formStackable": true,
       "stackDrainMultiplier": 2.44,
-      "incompatibleWith": [],
+      "incompatibleWith": [
+        "ultimate.ultimate"
+      ],
       "shareMasteryWith": [],
       "shareMasteryMultiplier": 0.25,
       "outlineShader": {
@@ -295,7 +304,9 @@
       },
       "triggerItemCosts": [],
       "durationItemCosts": [],
-      "mobEffects": []
+      "mobEffects": [],
+      "otherworldTimeDrain": 3.0,
+      "otherworldTimeDrainMastered": 1.5
     }
   }
 }

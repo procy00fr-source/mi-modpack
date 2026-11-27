@@ -70,10 +70,10 @@
     "godforms": {
       "buyFromMaster": false,
       "prices": [
-        80000,
-        160000,
-        320000,
-        1000000
+        -1,
+        -1,
+        -1,
+        -1
       ]
     },
     "superforms": {

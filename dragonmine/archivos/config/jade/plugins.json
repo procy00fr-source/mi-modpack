@@ -51,9 +51,6 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
-  "l2hostility": {
-    "mob": true
-  },
   "fallen_gems_affixes": {
     "entity_affixes": true,
     "deadeye_marked": true
@@ -70,9 +67,6 @@
   },
   "infuserapothcompat": {
     "infuser_stats": true
-  },
-  "twilightforest": {
-    "quest_ram_wool": true
   },
   "jade": {
     "coordinates.rel": false,

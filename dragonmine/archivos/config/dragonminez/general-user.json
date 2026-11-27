@@ -1,7 +1,7 @@
 {
   "configVersion": "2.2.1",
   "firstPersonAnimated": true,
-  "impactFramesEnabled": false,
+  "impactFramesEnabled": true,
   "reserveFirstHotbarSlot": true,
   "kiSoundVolume": 100,
   "alwaysVisibleHudValues": true,
@@ -21,7 +21,10 @@
     "skills_general",
     "quest_menu",
     "race_selection",
-    "customization_class"
+    "customization_class",
+    "skills_techniques",
+    "skills_forms",
+    "quest_difficulty"
   ],
   "showAccumulativeDamage": true,
   "rhythmAudioOffsetMs": -48,

@@ -67,7 +67,10 @@
     },
     "godforms": {
       "buyFromMaster": false,
-      "prices": []
+      "prices": [
+        -1,
+        -1
+      ]
     },
     "superforms": {
       "buyFromMaster": false,
@@ -129,6 +132,35 @@
       "buyFromMaster": false,
       "prices": [
         -1
+      ]
+    },
+    "majuubstyle": {
+      "buyFromMaster": true,
+      "prices": [
+        2147483647
+      ]
+    },
+    "god": {
+      "buyFromMaster": true,
+      "prices": [
+        2147483647,
+        2147483647
+      ]
+    },
+    "hellfusion": {
+      "buyFromMaster": true,
+      "prices": [
+        2147483647,
+        2147483647,
+        2147483647
+      ]
+    },
+    "majincells": {
+      "buyFromMaster": true,
+      "prices": [
+        2147483647,
+        2147483647,
+        2147483647
       ]
     }
   }

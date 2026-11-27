@@ -7,7 +7,7 @@
   },
   "profiles": {
     "default": {
-      "preset": "small",
+      "preset": "custom",
       "hud": 0.75,
       "menu": 0.957,
       "elements": {

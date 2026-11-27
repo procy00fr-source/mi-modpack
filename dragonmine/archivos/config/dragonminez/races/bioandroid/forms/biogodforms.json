@@ -73,7 +73,9 @@
       },
       "triggerItemCosts": [],
       "durationItemCosts": [],
-      "mobEffects": []
+      "mobEffects": [],
+      "otherworldTimeDrain": 3.0,
+      "otherworldTimeDrainMastered": 1.5
     },
     "perfectblue": {
       "name": "perfectblue",
@@ -134,7 +136,9 @@
       "allowFreeTransformOnMastery": 50.0,
       "formStackable": true,
       "stackDrainMultiplier": 2.0,
-      "incompatibleWith": [],
+      "incompatibleWith": [
+        "ultimate.ultimate"
+      ],
       "shareMasteryWith": [],
       "shareMasteryMultiplier": 1.0,
       "outlineShader": {
@@ -145,7 +149,9 @@
       },
       "triggerItemCosts": [],
       "durationItemCosts": [],
-      "mobEffects": []
+      "mobEffects": [],
+      "otherworldTimeDrain": 3.0,
+      "otherworldTimeDrainMastered": 1.5
     }
   }
 }

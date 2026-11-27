@@ -1,6 +1,6 @@
 {
   "comment": "Files this mod installed into config/dragonminez, and a fingerprint of the versions it shipped. Used to hand groups back when compatibility.dmzsuper.forms is false, and to refresh our own forms after an update. Do not edit.",
-  "bundleHash": "c2fba19921d1c803",
+  "bundleHash": "edb8fa30f6d0cccc",
   "installed": [
     "forms/frostgodforms.json",
     "forms/ultraego.json",

@@ -270,7 +270,16 @@
     "kibitoshinforms",
     "grandkaiforms",
     "shapeupforms",
-    "godclassforms"
+    "godclassforms",
+    "divinehuntforms",
+    "makaioshinforms",
+    "souleaterforms",
+    "tuffleforms",
+    "babyhost",
+    "god",
+    "shapeup",
+    "hellfusion",
+    "majincells"
   ],
   "stackSkills": [
     "kaioken",
@@ -282,7 +291,11 @@
     "ultrainstinct",
     "visoredmask",
     "beast",
-    "godki"
+    "godki",
+    "namekgiant",
+    "godkienhancement",
+    "mimicry",
+    "overclock"
   ],
   "androidBlacklistedForms": [
     "superforms",
@@ -2877,6 +2890,36 @@
       "allowedRaces": [
         "soulreaper"
       ]
+    },
+    "namekgiant": {
+      "costs": [
+        -1
+      ],
+      "allowedRaces": [
+        "namekian"
+      ]
+    },
+    "godkienhancement": {
+      "costs": [
+        -1
+      ],
+      "allowedRaces": []
+    },
+    "mimicry": {
+      "costs": [
+        -1
+      ],
+      "allowedRaces": [
+        "majin"
+      ]
+    },
+    "overclock": {
+      "costs": [
+        -1
+      ],
+      "allowedRaces": [
+        "human"
+      ]
     }
   },
   "skillOfferings": {
@@ -3050,7 +3093,8 @@
       "ultimate_masenko",
       "rush_combination",
       "black_flash",
-      "beast"
+      "beast",
+      "beastforms"
     ],
     "default": [
       "kicontrol",

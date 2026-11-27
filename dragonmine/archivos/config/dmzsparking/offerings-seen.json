@@ -1,0 +1,14 @@
+{
+  "piccolo": "potentialunlock,kicontrol,masenko,makkanko,ki_barrage,kienzan,hellzone_grenade,darkness_eye_beam",
+  "krillin": "kicontrol,sprint,kisense,kienzan,kienzan_doble,ki_barrage,taiyoken,afterimage,deadly_dance",
+  "cell": "kicontrol,instant_transmission,kimanipulation,ki_infusion,kiprotection,defense_penetration,healing_reduction,kiboost,kamehameha,kienzan,galick_gun,masenko,death_beam,ki_barrage,afterimage,deadly_dance,meteor,android_combo,perfect_rush",
+  "frieza": "kicontrol,fly,jump,sprint,kisense,meditation,potentialunlock,death_beam,emperor_death_beam,supernova,kienzan_doble,deadly_dance,meteor,death_chaser",
+  "vegeta": "kicontrol,defense_penetration,potentialunlock,galick_gun,big_bang,final_flash,final_explosion,fake_moon,deadly_dance_vegetto,spirit_breaker,spirit_breaking_cannon",
+  "goku": "kicontrol,fly,instant_transmission,fusion,kamehameha,spiritbomb,dragon_fist,super_god_fist,oozaru_fist,beam_sword_slash",
+  "gohan": "kicontrol,kiboost,kiprotection,kisense,masenko,makkanko,kamehameha,ki_barrage",
+  "tien": "kicontrol,taiyoken,dodonpa,kikoho,neo_kikoho",
+  "roshi": "jump,meditation,kicontrol,kamehameha,afterimage",
+  "kingkai": "kicontrol,kaioken,potentialunlock,kimanipulation,kaioken_attack,spiritbomb",
+  "trunks": "kicontrol,kiboost,kiprotection,burning_attack,heat_dome,shining_sword_attack,galick_gun,ki_barrage,meteor",
+  "buu": "assault_rain,gum_punch,mystic_ball,sleep_recovery,candy_beam,gum_bind"
+}

@@ -73,7 +73,8 @@
       },
       "triggerItemCosts": [],
       "durationItemCosts": [],
-      "mobEffects": []
+      "mobEffects": [],
+      "sagaRequisite": "buu_saga:35"
     },
     "orangegiantbioandroid": {
       "name": "orangegiantbioandroid",
