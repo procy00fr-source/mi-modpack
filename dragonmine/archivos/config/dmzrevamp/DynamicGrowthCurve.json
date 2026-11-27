@@ -1,0 +1,8 @@
+{
+  "configVersion": 3,
+  "enabled": true,
+  "baseXp": 70.0,
+  "currentStatMultiplier": 2.0,
+  "statExponent": 1.35,
+  "xpPercentagePerGravityPerSecond": 0.005
+}

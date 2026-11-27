@@ -1,0 +1,18 @@
+{
+  "comment": "Files this mod installed into config/dragonminez, and a fingerprint of the versions it shipped. Used to hand groups back when compatibility.dmzsuper.forms is false, and to refresh our own forms after an update. Do not edit.",
+  "bundleHash": "edb8fa30f6d0cccc",
+  "installed": [
+    "forms/frostgodforms.json",
+    "forms/ultraego.json",
+    "forms/ultrainstinct.json",
+    "forms/friezabiodata.json",
+    "races/saiyan/forms/beastforms.json",
+    "races/saiyan/forms/godforms.json",
+    "forms/piccolobiodata.json",
+    "forms/godki.json",
+    "races/saiyan/forms/evildivineforms.json",
+    "races/namekian/forms/divineforms.json",
+    "races/bioandroid/forms/cellmax.json",
+    "races/bioandroid/forms/biogodforms.json"
+  ]
+}

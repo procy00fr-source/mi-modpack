@@ -1,0 +1,25 @@
+
+#Story tracker panel.
+[trackerPanel]
+	#Screen corner of the panel.
+	corner = "BOTTOM_RIGHT"
+	#GUI pixels from the side edge. 0 = default margin.
+	#Range: 0 ~ 400
+	offsetX = 0
+	#GUI pixels from the top or bottom edge. 0 = default margin.
+	#Range: 0 ~ 400
+	offsetY = 0
+	#Size in percent.
+	#Range: 50 ~ 200
+	size = 100
+	#Background opacity in percent. 0 = no background.
+	#Range: 0 ~ 100
+	opacity = 85
+	#Hides panel and arrow during a fight. false = always shown.
+	hideInCombat = false
+
+#Plate over a waiting story enemy.
+[fightOffer]
+	#Shows a plate with name and strength over a waiting story enemy. false = no plate.
+	plate = true
+

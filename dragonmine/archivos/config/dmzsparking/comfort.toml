@@ -1,0 +1,61 @@
+
+#Skipping Classic: a new character may start right before Raditz (Z). Operators always can, with /dmzsparking story skipclassic.
+[classic_skip]
+	#true = the start screen offers the card 'Start at Z' to new characters. false = only operators can skip Classic.
+	offerToPlayers = true
+	#true = the skills, ki techniques and forms Classic rewards are still given, so nothing is lost for good. false = none. Attribute points, training points and items are always paid as if Classic was played, at the difficulty the player chooses.
+	keepUnlocks = true
+
+#The ki ward block: shields the blocks around it from every ki blast (players, enemies, allies).
+[ki_ward]
+	#true = placed ki wards protect. false = they are plain blocks.
+	enabled = true
+	#Protected blocks in every direction around a ward (a cube), in blocks. 0 = a ward protects nothing.
+	#Range: 0 ~ 64
+	radius = 16
+
+#Instant Transmission takes others along: party members standing close and your companions.
+[transmission]
+	#true = a travel by Instant Transmission (menu or to a player) takes others along. false = only the user goes.
+	takeOthersAlong = true
+	#Instant Transmission skill levels per carried passenger, in levels (level 5 with 2 = 2 passengers).
+	#Range: 1 ~ 20
+	levelsPerPassenger = 2
+	#Most passengers in one jump, in fighters. 0 = nobody is carried.
+	#Range: 0 ~ 16
+	maxPassengers = 4
+	#How close a party member must stand to be taken along, in blocks.
+	#Range: 1 ~ 16
+	reach = 4
+	#Extra ki per passenger, in percent of the user's maximum ki. 0 = passengers cost nothing.
+	#Range: 0 ~ 100
+	kiPercentPerPassenger = 5
+
+#Player-hosted tournaments (/dmzsparking tournament).
+[tournament]
+	#How strongly strength decides a bout between two computer fighters (a power of the strength ratio). 0 = a coin flip, as in DragonMineZ.
+	#Range: 0.0 ~ 4.0
+	strengthWeight = 1.0
+	#true = the host may invite every story character he has defeated in a finished quest. false = only DragonMineZ' tournament fighters.
+	storyGuests = true
+	#Value mode 'random': lowest roll, in percent of the guest's DragonMineZ values.
+	#Range: 1 ~ 1000
+	randomMinPercent = 50
+	#Value mode 'random': highest roll, in percent of the guest's DragonMineZ values.
+	#Range: 1 ~ 1000
+	randomMaxPercent = 150
+	#true = tournaments can also be held at Baba's palace, the Cell Games, the Universe 6 arena, the Zeno Expo and the World of Void, and DragonMineZ' Other World grounds. false = the Budokai only.
+	otherArenas = true
+	#true = a right-click on one of DragonMineZ' tournament hosts (the announcer, Baba, Cell, the Other World announcer) opens the
+	#tournament window: DragonMineZ' own cup, a custom tournament, and Talk for DragonMineZ' dialogue unchanged. false = DragonMineZ' dialogue as without
+	#this mod; the custom tournament stays on /dmzsparking tournament.
+	hostWindow = true
+	#true = DragonMineZ' own tournaments get the painted crowd around their ring too (drawing only, DragonMineZ' run is only read).
+	crowdAtDmzCups = true
+	#true = in a custom tournament the computer fighters who wait for their bout stand at the ring (at most 8). false = they appear for their bout only.
+	benchFighters = true
+	#'Fill empty seats' in the tournament window fills the bracket up to this many seats with fighters you have met or beaten,
+	#nearest your strength first (a preview, nothing is taken without confirming). 0 = no such button.
+	#Range: 0 ~ 16
+	fillSeats = 8
+

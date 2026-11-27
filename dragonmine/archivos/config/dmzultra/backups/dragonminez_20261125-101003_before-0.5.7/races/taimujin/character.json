@@ -1,0 +1,55 @@
+{
+  "configVersion": "2.2.1",
+  "hasGender": true,
+  "useVanillaSkin": false,
+  "customModel": "taimujin",
+  "isLayered": true,
+  "headBones": [
+    "hair"
+  ],
+  "racialSkill": "",
+  "hasSaiyanTail": false,
+  "auraType": "kakarot",
+  "defaultModelScaling": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "defaultBodyType": 0,
+  "defaultHairType": 0,
+  "defaultEyesType": 0,
+  "defaultNoseType": 0,
+  "defaultMouthType": 0,
+  "defaultTattooType": 0,
+  "defaultBodyColor": "#CC97FB",
+  "defaultBodyColor2": "#FFFFFF",
+  "defaultBodyColor3": "#FFFFFF",
+  "defaultHairColor": "#1B1B24",
+  "defaultEye1Color": "#F5C842",
+  "defaultEye2Color": "#F5C842",
+  "defaultAuraColor": "#9B6BFF",
+  "formSkillsCosts": {
+    "superforms": {
+      "buyFromMaster": false,
+      "prices": [
+        175000,
+        525000,
+        1350000
+      ]
+    },
+    "godforms": {
+      "buyFromMaster": true,
+      "prices": [
+        150000,
+        350000,
+        800000
+      ]
+    },
+    "createdforms": {
+      "buyFromMaster": true,
+      "prices": [
+        -1
+      ]
+    }
+  }
+}

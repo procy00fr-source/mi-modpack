@@ -1,0 +1,71 @@
+
+["Animal Spawns"]
+	#true by default
+	"Spawn Pronghorn" = true
+	#true by default
+	"Spawn Cinnamon Bears" = true
+	#true by default
+	"Spawn Mountain Bluebirds" = true
+	#true by default
+	"Spawn Yellow Bellied Marmots" = true
+	#true by default
+	"Spawn Rubber Boas" = true
+	#true by default
+	"Spawn Sea Otters" = true
+	#true by default
+	"Spawn California Sheephead" = true
+	#true by default
+	"Spawn Nudibranch" = true
+	#true by default
+	"Spawn Swell Shark" = true
+	#true by default
+	"Spawn California Condor" = true
+	#true by default
+	"Spawn Grey Whale" = true
+	#true by default
+	"Spawn Rockfish" = true
+	#true by default
+	"Spawn Elk" = true
+	#true by default
+	"Spawn Newt" = true
+
+["Animal Behavior"]
+	#true by default
+	"Puma's Attack Players" = true
+
+["Natural Features"]
+	#true by default
+	"Spawn Geysers" = true
+	#true by default
+	"Spawn Mudpots" = true
+	#true by default
+	"Spawn Hotsprings" = true
+	#true by default
+	"Spawn Whitebark Pines" = true
+	#true by default
+	"Spawn Grand Geyser Field Spruce" = true
+	#true by default
+	"Spawn Asters" = true
+	#true by default
+	"Spawn Rocky Mountain Dwarf Sunflower" = true
+	#true by default
+	"Spawn Bull Kelp" = true
+	#true by default
+	"Spawn Winged Kelp" = true
+	#true by default
+	"Spawn Tide Pools" = true
+	#true by default
+	"Spawn Shrubs" = true
+
+["Rare skin variants"]
+	#Chance for piebald pronghorn skin. example 0.02 is 2%  0.5 is 50%     (default is 0.02) 
+	"chance to get piebald pronghorn" = 0.1
+	#Chance for luecistic rubber boa skin. example 0.02 is 2%  0.5 is 50%   (default is 0.02) 
+	"chance to get Luecistic Rubber Boa" = 0.02
+
+["Monster Spawns"]
+	#true by default
+	"Spawn Kelpies" = true
+	#true by default
+	"Spawn Seepers" = true
+

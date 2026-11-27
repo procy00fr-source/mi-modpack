@@ -1,0 +1,141 @@
+{
+  "race": "bioandroid",
+  "subraces": [
+    {
+      "key": "cell",
+      "enabled": true,
+      "plain": true,
+      "order": 0,
+      "lean": {},
+      "growth": [],
+      "forms": [],
+      "passives": [],
+      "look": {
+        "defaults": {},
+        "parts": [],
+        "scale": 1.0
+      },
+      "text": {
+        "source": "MANGA"
+      },
+      "budget": {
+        "M": 0,
+        "C": 0,
+        "S": 0,
+        "B": 0,
+        "U": 0
+      }
+    },
+    {
+      "key": "celljr",
+      "enabled": true,
+      "plain": false,
+      "order": 20,
+      "lean": {
+        "SKP": 0.04,
+        "STR": 0.01,
+        "VIT": -0.03,
+        "PWR": -0.02
+      },
+      "growth": [
+        {
+          "below": 400,
+          "tp": 1.1
+        },
+        {
+          "below": 1200,
+          "tp": 1.0
+        },
+        {
+          "below": -1,
+          "tp": 0.97
+        }
+      ],
+      "forms": [
+        {
+          "group": "bioevolution",
+          "price": 1.15
+        }
+      ],
+      "passives": [
+        {
+          "kind": "playful_terror",
+          "dashCooldown": -0.15,
+          "afterDashHit": 0.08,
+          "windowSeconds": 1
+        }
+      ],
+      "look": {
+        "defaults": {
+          "bodyColor": "#9FD3F2",
+          "bodyColor2": "#1A1A1A"
+        },
+        "parts": [],
+        "scale": 0.8
+      },
+      "text": {
+        "source": "MANGA"
+      },
+      "budget": {
+        "M": 1,
+        "C": 0,
+        "S": -1,
+        "B": 0,
+        "U": 0
+      }
+    },
+    {
+      "key": "cellmax",
+      "enabled": true,
+      "plain": false,
+      "order": 30,
+      "lean": {
+        "VIT": 0.04,
+        "STR": 0.03,
+        "SKP": -0.04,
+        "ENE": -0.03
+      },
+      "growth": [],
+      "forms": [
+        {
+          "group": "cellmax",
+          "price": 0.75
+        },
+        {
+          "group": "bioevolution",
+          "levels": [
+            3,
+            4
+          ],
+          "price": 1.1
+        }
+      ],
+      "passives": [
+        {
+          "kind": "unfinished_rage",
+          "healthBelow": 0.4,
+          "melee": 0.08,
+          "techniqueXp": -0.1
+        }
+      ],
+      "look": {
+        "defaults": {
+          "bodyColor": "#C8352E",
+          "bodyColor2": "#3E8F4A"
+        },
+        "parts": [],
+        "scale": 1.2
+      },
+      "text": {
+        "source": "FILM"
+      },
+      "budget": {
+        "M": -1,
+        "C": 0,
+        "S": 0,
+        "B": 1,
+        "U": 0
+      }
+    }
+  ]
+}

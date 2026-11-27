@@ -1,0 +1,113 @@
+{
+  "configVersion": "2.2.1",
+  "enabled": true,
+  "displayName": "tournament.dmzsparking.cup",
+  "format": "BRACKET",
+  "difficultyStars": 1,
+  "qualifierSlots": 16,
+  "reentryCooldownSeconds": 0,
+  "victoryCooldownSeconds": 0,
+  "matchTimeoutSeconds": 420,
+  "nextRoundSeconds": 30,
+  "rulesAcceptSeconds": 60,
+  "returnSeconds": 15,
+  "arrivalSeconds": 60,
+  "lethal": false,
+  "ring": {
+    "radius": 6
+  },
+  "champion": {
+    "entityId": "#dmzsparking:tournament_bye",
+    "dmzrevamp$state": {
+      "mobEffects": [],
+      "transformMobEffects": [],
+      "transformStages": [
+        {
+          "mobEffects": []
+        },
+        {
+          "mobEffects": []
+        },
+        {
+          "mobEffects": []
+        }
+      ],
+      "canTransformStages": [
+        true,
+        true,
+        true
+      ],
+      "transformEntities": [
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  },
+  "semifinalist": {
+    "entityId": "#dmzsparking:tournament_bye",
+    "dmzrevamp$state": {
+      "mobEffects": [],
+      "transformMobEffects": [],
+      "transformStages": [
+        {
+          "mobEffects": []
+        },
+        {
+          "mobEffects": []
+        },
+        {
+          "mobEffects": []
+        }
+      ],
+      "canTransformStages": [
+        true,
+        true,
+        true
+      ],
+      "transformEntities": [
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  },
+  "contenders": [
+    {
+      "entityId": "#dmzsparking:tournament_bye",
+      "dmzrevamp$state": {
+        "mobEffects": [],
+        "transformMobEffects": [],
+        "transformStages": [
+          {
+            "mobEffects": []
+          },
+          {
+            "mobEffects": []
+          },
+          {
+            "mobEffects": []
+          }
+        ],
+        "canTransformStages": [
+          true,
+          true,
+          true
+        ],
+        "transformEntities": [
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    }
+  ],
+  "rewards": {
+    "trainingPoints": 0,
+    "alignment": 0,
+    "commands": []
+  }
+}

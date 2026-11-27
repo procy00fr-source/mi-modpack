@@ -1,0 +1,42 @@
+{
+  "baseStats": {
+    "STR": 0,
+    "SKP": 2,
+    "RES": 1,
+    "VIT": 0,
+    "PWR": 4,
+    "ENE": 5
+  },
+  "statScaling": {
+    "STR_scaling": 0.3,
+    "SKP_scaling": 0.7,
+    "STM_scaling": 0.9,
+    "DEF_scaling": 0.6,
+    "DEF_scaling_max": 1.2,
+    "VIT_scaling": 1.5,
+    "VIT_scaling_max": 6.0,
+    "PWR_scaling": 0.9,
+    "ENE_scaling": 1.85
+  },
+  "baseHp5": -0.85,
+  "hp5VitScaling": -0.03,
+  "baseEp5": 6.45,
+  "ep5EneScaling": 0.125,
+  "baseSp5": 5.55,
+  "sp5StmScaling": 0.025,
+  "tpCostMultiplier": -0.1,
+  "tpGainMultiplier": 0.25,
+  "passive": {
+    "enabled": true,
+    "values": {
+      "effectDurationBonus": 0.25,
+      "costReduction": 0.2,
+      "effectCooldownReduction": 0.15,
+      "cooldownReduction": 0.2
+    }
+  },
+  "configVersion": "2.2.1",
+  "displayName": "Cleric",
+  "displayColor": "#55FF55",
+  "exclusiveRaces": []
+}

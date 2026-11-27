@@ -1,0 +1,70 @@
+{
+  "configVersion": "2.2.1",
+  "style": "modern",
+  "layout": {
+    "extras": {
+      "scouter": {
+        "anchorX": 0.0,
+        "anchorY": 0.5,
+        "offsetX": 0.0,
+        "offsetY": -50.406822,
+        "scale": 2.0,
+        "visible": true,
+        "hotbar": false,
+        "mirrored": false
+      },
+      "notifications": {
+        "anchorX": 1.0,
+        "anchorY": 1.0,
+        "offsetX": 0.0,
+        "offsetY": -32.800026,
+        "scale": 0.8999999,
+        "visible": true,
+        "hotbar": false,
+        "mirrored": false
+      },
+      "boss_contribution": {
+        "anchorX": 1.0,
+        "anchorY": 0.5,
+        "offsetX": -5.999989,
+        "offsetY": -10.558184,
+        "scale": 0.8000001,
+        "visible": true,
+        "hotbar": false,
+        "mirrored": false
+      }
+    },
+    "modern": {
+      "party": {
+        "anchorX": 0.0,
+        "anchorY": 0.5,
+        "offsetX": 29.0,
+        "offsetY": -31.333963,
+        "scale": 0.67,
+        "visible": true,
+        "hotbar": false,
+        "mirrored": false
+      },
+      "reserve": {
+        "anchorX": 0.0,
+        "anchorY": 0.5,
+        "offsetX": 3.0,
+        "offsetY": -51.203953,
+        "scale": 1.0,
+        "visible": true,
+        "hotbar": false,
+        "mirrored": false
+      },
+      "rage": {
+        "anchorX": 0.0,
+        "anchorY": 0.5,
+        "offsetX": 16.5,
+        "offsetY": -51.203953,
+        "scale": 1.0,
+        "visible": true,
+        "hotbar": false,
+        "mirrored": false
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+
+#Who may float in space without a pod or ship. Anyone else is set down safely, as before.
+[breath]
+	#true = wearing the space helmet and the space suit (chest) lets a player float in space; leggings and boots are not needed. false = the suit does nothing.
+	suit = true
+	#true = a player granted the wish (/dmzsparking space breath grant) may float. false = the wish does nothing.
+	wish = true
+	#true = the races listed below may float without a suit. false = no race may.
+	race = true
+	#DragonMineZ race ids that survive in space (Frieza, Kid Buu). Empty = none.
+	races = ["frostdemon", "majin"]
+	#true = creative and spectator players count as floaters (zero gravity, way back into a planet). false = they do not; they are still never set down.
+	creative = true
+
+#The way into space and back without a pod.
+[route]
+	#true = a floater flying above a planet's build top comes out in space above that planet. false = never.
+	rise = true
+	#Blocks above the world's build top at which the rise into space happens. 0 = at the build top itself.
+	#Range: 0 ~ 512
+	riseAboveBuildTop = 32
+	#The rise into space never happens below this height, whatever the world's build top. 0 = only the line above counts.
+	#Range: 0 ~ 4096
+	riseAtLeastY = 700
+	#true = a floater flying into a landable planet's shell is set down on its ground. false = never.
+	enter = true
+
+#Wrecks (and pirates) a free flier may come across in space.
+[encounters]
+	#true = encounters happen. false = never.
+	enabled = true
+	#Chance in percent per minute and free flier that a wreck appears. 0 = never.
+	#Range: 0 ~ 100
+	chancePercent = 10
+	#Chance in percent that a wreck is guarded by pirates. 0 = never.
+	#Range: 0 ~ 100
+	pirateChancePercent = 35
+	#Pirates guarding a wreck. 0 = none.
+	#Range: 0 ~ 12
+	pirates = 3
+	#Entity ids of the pirates (DragonMineZ' Frieza soldiers by default). Empty = no pirates.
+	pirateTypes = ["dragonminez:saga_friezasoldier01", "dragonminez:saga_friezasoldier02", "dragonminez:saga_friezasoldier03"]
+	#Blocks from the free flier at which a wreck appears.
+	#Range: 16 ~ 128
+	distance = 48
+	#Minutes until a wreck and its pirates are cleared away.
+	#Range: 1 ~ 240
+	lifetimeMinutes = 15
+	#Blocks: a wreck with no player this near is cleared away at once.
+	#Range: 32 ~ 1024
+	reach = 192
+	#Most wrecks at once per player. 0 = none.
+	#Range: 0 ~ 8
+	perPlayer = 1
+	#Most wrecks at once on the server. 0 = none.
+	#Range: 0 ~ 64
+	serverMax = 6
+	#Loot table of the wreck's chest (a data pack may replace it).
+	lootTable = "minecraft:chests/shipwreck_treasure"
+

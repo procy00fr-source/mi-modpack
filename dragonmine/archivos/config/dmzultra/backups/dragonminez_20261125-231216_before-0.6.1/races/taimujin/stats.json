@@ -1,0 +1,38 @@
+{
+  "configVersion": "2.2.1",
+  "classes": {
+    "race": {
+      "baseStats": {
+        "STR": 5,
+        "SKP": 5,
+        "RES": 5,
+        "VIT": 5,
+        "PWR": 5,
+        "ENE": 5
+      },
+      "statScaling": {
+        "STR_scaling": 0.55,
+        "SKP_scaling": 0.715,
+        "STM_scaling": 0.9,
+        "DEF_scaling": 0.6,
+        "DEF_scaling_max": 1.2,
+        "VIT_scaling": 1.15,
+        "VIT_scaling_max": 4.6,
+        "PWR_scaling": 0.65,
+        "ENE_scaling": 1.25
+      },
+      "baseHp5": 5.0,
+      "hp5VitScaling": 0.06,
+      "baseEp5": 5.0,
+      "ep5EneScaling": 0.05,
+      "baseSp5": 14.0,
+      "sp5StmScaling": 0.15,
+      "tpCostMultiplier": 1.0,
+      "tpGainMultiplier": 1.0,
+      "passive": {
+        "enabled": true,
+        "values": {}
+      }
+    }
+  }
+}

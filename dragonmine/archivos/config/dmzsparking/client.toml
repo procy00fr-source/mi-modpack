@@ -1,0 +1,6 @@
+
+#The dragon's wish screen.
+[wishes]
+	#"sparking" = this mod's wish screen with confirmations. "dmz" = DragonMineZ' own.
+	screen = "sparking"
+

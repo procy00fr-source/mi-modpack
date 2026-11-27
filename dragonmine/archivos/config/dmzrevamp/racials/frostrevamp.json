@@ -1,0 +1,13 @@
+{
+  "_comments": {
+    "speedAndPowerBoostPerMissingHpPercent": "Multiplicative bonus per 1% missing HP. 0.005 \u003d +0.5% per missing HP percent.",
+    "attackStaminaCostReduction": "Stamina cost reduction for attacks only. 0.5 \u003d 50% less attack stamina cost.",
+    "boostedStats": "DMZ stats affected by Dangerously Fast."
+  },
+  "speedAndPowerBoostPerMissingHpPercent": 0.005,
+  "attackStaminaCostReduction": 0.5,
+  "boostedStats": [
+    "SKP",
+    "PWR"
+  ]
+}

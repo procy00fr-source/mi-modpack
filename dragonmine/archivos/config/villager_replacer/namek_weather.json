@@ -1,0 +1,10 @@
+{
+  "enabled": false,
+  "rainChancePerCheck": 0.08,
+  "checkIntervalTicks": 200,
+  "minRainTicks": 2400,
+  "maxRainTicks": 7200,
+  "allowThunder": false,
+  "thunderChance": 0.05,
+  "minClearTicks": 1200
+}

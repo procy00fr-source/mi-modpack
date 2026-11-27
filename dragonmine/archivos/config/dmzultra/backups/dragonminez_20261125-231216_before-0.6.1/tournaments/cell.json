@@ -1,0 +1,411 @@
+{
+  "configVersion": "2.2.1",
+  "enabled": true,
+  "displayName": "tournament.dragonminez.cell",
+  "format": "BRACKET",
+  "difficultyStars": 4,
+  "qualifierSlots": 8,
+  "reentryCooldownSeconds": 3600,
+  "matchTimeoutSeconds": 420,
+  "nextRoundSeconds": 30,
+  "rulesAcceptSeconds": 60,
+  "returnSeconds": 15,
+  "arrivalSeconds": 60,
+  "lethal": true,
+  "ring": {
+    "x": 37,
+    "y": 6,
+    "z": 37,
+    "radius": 6
+  },
+  "champion": {
+    "entityId": "dragonminez:saga_cell_superperfect",
+    "health": 547000.0,
+    "meleeDamage": 116000.0,
+    "kiDamage": 199000.0,
+    "aiTier": 3,
+    "perRoundScaling": 1.0,
+    "dmzrevamp$state": {
+      "mobEffects": [],
+      "transformMobEffects": [],
+      "transformStages": [
+        {
+          "mobEffects": []
+        },
+        {
+          "mobEffects": []
+        },
+        {
+          "mobEffects": []
+        }
+      ],
+      "canTransformStages": [
+        true,
+        true,
+        true
+      ],
+      "transformEntities": [
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  },
+  "semifinalist": {
+    "entityId": "dragonminez:saga_gohan_mid_ssj",
+    "health": 469000.0,
+    "meleeDamage": 95800.0,
+    "kiDamage": 144000.0,
+    "aiTier": 3,
+    "perRoundScaling": 1.0,
+    "dmzrevamp$state": {
+      "mobEffects": [],
+      "transformMobEffects": [],
+      "transformStages": [
+        {
+          "mobEffects": []
+        },
+        {
+          "mobEffects": []
+        },
+        {
+          "mobEffects": []
+        }
+      ],
+      "canTransformStages": [
+        true,
+        true,
+        true
+      ],
+      "transformEntities": [
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  },
+  "contenders": [
+    {
+      "entityId": "#dragonminez:z_fighters_cell",
+      "health": 311000.0,
+      "meleeDamage": 81600.0,
+      "kiDamage": 97900.0,
+      "aiTier": 1,
+      "perRoundScaling": 1.08,
+      "dmzrevamp$state": {
+        "mobEffects": [],
+        "transformMobEffects": [],
+        "transformStages": [
+          {
+            "mobEffects": []
+          },
+          {
+            "mobEffects": []
+          },
+          {
+            "mobEffects": []
+          }
+        ],
+        "canTransformStages": [
+          true,
+          true,
+          true
+        ],
+        "transformEntities": [
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "Defense": 73400.0
+    },
+    {
+      "entityId": "#dragonminez:z_fighters_cell",
+      "health": 311000.0,
+      "meleeDamage": 81600.0,
+      "kiDamage": 97900.0,
+      "aiTier": 1,
+      "perRoundScaling": 1.08,
+      "dmzrevamp$state": {
+        "mobEffects": [],
+        "transformMobEffects": [],
+        "transformStages": [
+          {
+            "mobEffects": []
+          },
+          {
+            "mobEffects": []
+          },
+          {
+            "mobEffects": []
+          }
+        ],
+        "canTransformStages": [
+          true,
+          true,
+          true
+        ],
+        "transformEntities": [
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "Defense": 73400.0
+    },
+    {
+      "entityId": "#dragonminez:z_fighters_cell",
+      "health": 311000.0,
+      "meleeDamage": 81600.0,
+      "kiDamage": 97900.0,
+      "aiTier": 2,
+      "perRoundScaling": 1.08,
+      "dmzrevamp$state": {
+        "mobEffects": [],
+        "transformMobEffects": [],
+        "transformStages": [
+          {
+            "mobEffects": []
+          },
+          {
+            "mobEffects": []
+          },
+          {
+            "mobEffects": []
+          }
+        ],
+        "canTransformStages": [
+          true,
+          true,
+          true
+        ],
+        "transformEntities": [
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "Defense": 73400.0
+    },
+    {
+      "entityId": "#dragonminez:z_fighters_cell",
+      "health": 311000.0,
+      "meleeDamage": 81600.0,
+      "kiDamage": 97900.0,
+      "aiTier": 2,
+      "perRoundScaling": 1.08,
+      "dmzrevamp$state": {
+        "mobEffects": [],
+        "transformMobEffects": [],
+        "transformStages": [
+          {
+            "mobEffects": []
+          },
+          {
+            "mobEffects": []
+          },
+          {
+            "mobEffects": []
+          }
+        ],
+        "canTransformStages": [
+          true,
+          true,
+          true
+        ],
+        "transformEntities": [
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "Defense": 73400.0
+    },
+    {
+      "entityId": "#dragonminez:z_fighters_cell",
+      "health": 311000.0,
+      "meleeDamage": 81600.0,
+      "kiDamage": 97900.0,
+      "aiTier": 2,
+      "perRoundScaling": 1.08,
+      "dmzrevamp$state": {
+        "mobEffects": [],
+        "transformMobEffects": [],
+        "transformStages": [
+          {
+            "mobEffects": []
+          },
+          {
+            "mobEffects": []
+          },
+          {
+            "mobEffects": []
+          }
+        ],
+        "canTransformStages": [
+          true,
+          true,
+          true
+        ],
+        "transformEntities": [
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "Defense": 73400.0
+    },
+    {
+      "entityId": "#dragonminez:z_fighters_cell",
+      "health": 311000.0,
+      "meleeDamage": 81600.0,
+      "kiDamage": 97900.0,
+      "aiTier": 3,
+      "perRoundScaling": 1.08,
+      "dmzrevamp$state": {
+        "mobEffects": [],
+        "transformMobEffects": [],
+        "transformStages": [
+          {
+            "mobEffects": []
+          },
+          {
+            "mobEffects": []
+          },
+          {
+            "mobEffects": []
+          }
+        ],
+        "canTransformStages": [
+          true,
+          true,
+          true
+        ],
+        "transformEntities": [
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "Defense": 73400.0
+    },
+    {
+      "entityId": "#dragonminez:z_fighters_cell",
+      "health": 311000.0,
+      "meleeDamage": 81600.0,
+      "kiDamage": 97900.0,
+      "aiTier": 3,
+      "perRoundScaling": 1.08,
+      "dmzrevamp$state": {
+        "mobEffects": [],
+        "transformMobEffects": [],
+        "transformStages": [
+          {
+            "mobEffects": []
+          },
+          {
+            "mobEffects": []
+          },
+          {
+            "mobEffects": []
+          }
+        ],
+        "canTransformStages": [
+          true,
+          true,
+          true
+        ],
+        "transformEntities": [
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "Defense": 73400.0
+    },
+    {
+      "entityId": "#dragonminez:z_fighters_cell",
+      "health": 311000.0,
+      "meleeDamage": 81600.0,
+      "kiDamage": 97900.0,
+      "aiTier": 3,
+      "perRoundScaling": 1.08,
+      "dmzrevamp$state": {
+        "mobEffects": [],
+        "transformMobEffects": [],
+        "transformStages": [
+          {
+            "mobEffects": []
+          },
+          {
+            "mobEffects": []
+          },
+          {
+            "mobEffects": []
+          }
+        ],
+        "canTransformStages": [
+          true,
+          true,
+          true
+        ],
+        "transformEntities": [
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "Defense": 73400.0
+    },
+    {
+      "entityId": "#dragonminez:z_fighters_cell",
+      "health": 311000.0,
+      "meleeDamage": 81600.0,
+      "kiDamage": 97900.0,
+      "aiTier": 3,
+      "perRoundScaling": 1.08,
+      "dmzrevamp$state": {
+        "mobEffects": [],
+        "transformMobEffects": [],
+        "transformStages": [
+          {
+            "mobEffects": []
+          },
+          {
+            "mobEffects": []
+          },
+          {
+            "mobEffects": []
+          }
+        ],
+        "canTransformStages": [
+          true,
+          true,
+          true
+        ],
+        "transformEntities": [
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "Defense": 73400.0
+    }
+  ],
+  "rewards": {
+    "trainingPoints": 1000000,
+    "alignment": 10,
+    "commands": []
+  }
+}

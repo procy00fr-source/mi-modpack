@@ -1,0 +1,49 @@
+{
+  "configVersion": "2.2.1",
+  "hasGender": true,
+  "useVanillaSkin": false,
+  "customModel": "bleach_hollow",
+  "isLayered": true,
+  "headBones": [
+    "hair"
+  ],
+  "racialSkill": "",
+  "hasSaiyanTail": false,
+  "auraType": "kakarot",
+  "defaultModelScaling": [
+    0.9375,
+    0.9375,
+    0.9375
+  ],
+  "defaultBodyType": 0,
+  "defaultHairType": 0,
+  "defaultEyesType": 0,
+  "defaultNoseType": 0,
+  "defaultMouthType": 0,
+  "defaultTattooType": 0,
+  "defaultBodyColor": "#3A3840",
+  "defaultBodyColor2": "#E2DCCB",
+  "defaultBodyColor3": "#24222A",
+  "defaultHairColor": "#2A211C",
+  "defaultEye1Color": "#5A4632",
+  "defaultEye2Color": "#5A4632",
+  "defaultAuraColor": "#E8303A",
+  "formSkillsCosts": {
+    "superforms": {
+      "buyFromMaster": false,
+      "prices": [
+        735000,
+        795000,
+        925000,
+        1000000
+      ]
+    },
+    "resurreccionforms": {
+      "buyFromMaster": false,
+      "prices": [
+        1850000,
+        0
+      ]
+    }
+  }
+}

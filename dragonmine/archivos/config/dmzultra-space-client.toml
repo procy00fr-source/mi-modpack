@@ -1,0 +1,40 @@
+
+[space]
+	#Space sun lens flare strength; 0 disables optical ghosts. Planets, rocks, ships and terrain occlude the light, and the flare fades in and out.
+	#Range: 0.0 ~ 2.0
+	lensFlareStrength = 0.65
+
+	[space.celestial]
+		#Star corona brightness; 0 disables the glow. No shader pack required.
+		#Range: 0.0 ~ 3.0
+		starGlow = 1.0
+		#Outer corona radius relative to the visible star surface.
+		#Range: 1.2 ~ 4.0
+		starCoronaRadius = 2.8
+
+	[space.surfaces]
+		#How walking over a planet surface's edge (round to its far side) is drawn. SEAMLESS: the loaded ground moves with you and nothing shows (needs Minecraft's own chunk renderer). SAFE: a plain move, the far side's chunks load in like after a teleport (right for Embeddium, Rubidium or Sodium). AUTO: SAFE when one of those is installed, else SEAMLESS.
+		#Allowed Values: AUTO, SEAMLESS, SAFE
+		wrapMode = "AUTO"
+
+	[space.quality]
+		#How much the space renderer draws: LOW, MEDIUM, HIGH or ULTRA (flare ghosts, the light round a star, the frame budget...). AUTO follows the graphics preset (/dmzultra graphics).
+		#Allowed Values: AUTO, LOW, MEDIUM, HIGH, ULTRA
+		level = "AUTO"
+		#Measure the space passes on the graphics card too (GPU timer queries), for /dmzultra space perf and the frame budget. Off, or a driver without timer queries: CPU only.
+		gpuTimers = true
+		#Write one line a minute to the log with the space renderer's frame cost while in space.
+		perfLog = false
+
+	[space.effects]
+		#Lens flares round the stars also without a shader pack.
+		lensFlaresWithoutShaderPack = true
+		#Streaks of space dust stream past at speed: flying by hand, by pod or by ship (above DragonMineZ' own flying speed).
+		speedStreaks = true
+		#Near a star the picture shimmers with heat at its edges (a screen shader; off: a plain glow of heat).
+		heatShimmer = true
+		#No fog in space: ships, rocks and pods do not dim at the edge of the render distance (a shader pack keeps its own fog).
+		noFogInSpace = true
+		#Under a shader pack, the sky drawn after the pack's picture lies at the far end of the depth range, so ships, rocks, pods and far mountains stay in front of it. Off: as before (it could paint over them).
+		farDepthSkyUnderPack = true
+

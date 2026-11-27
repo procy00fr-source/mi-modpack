@@ -1,0 +1,41 @@
+{
+  "baseStats": {
+    "STR": 2,
+    "SKP": 3,
+    "RES": 2,
+    "VIT": 2,
+    "PWR": 2,
+    "ENE": 2
+  },
+  "statScaling": {
+    "STR_scaling": 0.65,
+    "SKP_scaling": 0.85,
+    "STM_scaling": 1.3,
+    "DEF_scaling": 0.6,
+    "DEF_scaling_max": 1.2,
+    "VIT_scaling": 1.15,
+    "VIT_scaling_max": 4.6,
+    "PWR_scaling": 0.75,
+    "ENE_scaling": 1.85
+  },
+  "baseHp5": 0.45,
+  "hp5VitScaling": 0.015,
+  "baseEp5": -0.9,
+  "ep5EneScaling": -0.025,
+  "baseSp5": 1.65,
+  "sp5StmScaling": 0.01,
+  "tpCostMultiplier": 0.0,
+  "tpGainMultiplier": 0.0,
+  "passive": {
+    "enabled": true,
+    "values": {
+      "parryPoiseDamageBonus": 0.1,
+      "guardBrokenDamageBonus": 0.5,
+      "guardBrokenKnockbackBonus": 1.0
+    }
+  },
+  "configVersion": "2.2.1",
+  "displayName": "Duelist",
+  "displayColor": "#00AA00",
+  "exclusiveRaces": []
+}

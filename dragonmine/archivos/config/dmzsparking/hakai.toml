@@ -1,0 +1,20 @@
+
+#Hakai, the destroyer's technique.
+[hakai]
+	#Appointed destroyers receive Hakai. false = nobody gets it anew (learned copies keep working).
+	enabled = true
+	#Ticks the target is held before it crumbles.
+	#Range: 5 ~ 100
+	gripTicks = 20
+	#Blocks the target may be away at release.
+	#Range: 4.0 ~ 64.0
+	range = 32.0
+	#Degrees the target may be off the caster's view at release.
+	#Range: 10 ~ 90
+	facingDegrees = 45
+	#A creature crumbles if its health is at most Hakai's damage times this. 0 = never crumbles.
+	#Range: 0.0 ~ 100.0
+	eraseHealthFactor = 3.0
+	#Mod ids whose creatures only take damage and never crumble.
+	protectedNamespaces = ["dragonminez", "dmzsparking"]
+

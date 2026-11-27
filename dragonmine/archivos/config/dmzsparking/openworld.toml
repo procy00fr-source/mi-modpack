@@ -1,0 +1,193 @@
+
+#Open world wages.
+[wage]
+	#Open world activities pay training points. false = none.
+	enabled = true
+	#Wage per minute of effort, in minutes of DragonMineZ minigame training at the player's current stat price.
+	#Range: 0.0 ~ 5.0
+	rate = 0.85
+	#Stat points' worth per player and day paid in full; above it the wage is cut. 0 = no daily budget.
+	#Range: 0.0 ~ 1000000.0
+	dailyBudgetPoints = 0.0
+	#Percent of the wage still paid once the daily budget is spent.
+	#Range: 0.0 ~ 100.0
+	afterBudgetPercent = 25.0
+	#Cut the wage of players above the level storyCapLevels sets for their saga progress. false = no cap.
+	storyCap = false
+	#Percent of the wage still paid above that level.
+	#Range: 0.0 ~ 100.0
+	storyCapPercent = 50.0
+	#Saga progress and highest full-wage level, e.g. "saiyan_saga:16=400"; the furthest completed entry counts.
+	storyCapLevels = []
+	#Blocks within which an active party member is paid as a fellow fighter.
+	#Range: 0 ~ 512
+	partyRadius = 64
+	#Seconds a player counts as active after moving or fighting; idle players are paid nothing.
+	#Range: 5 ~ 3600
+	activeSeconds = 60
+
+#Daily orders: repeatable DragonMineZ side quests, a few per player and day.
+[dailyOrders]
+	#Daily orders are offered. false = none.
+	enabled = true
+	#Orders per player and day, drawn from the pool of the player's saga progress.
+	#Range: 1 ~ 4
+	perDay = 3
+	#Effort minutes one finished order is worth.
+	#Range: 0.0 ~ 600.0
+	minutes = 8.0
+
+#Exploration: the first visit of a landmark or a world.
+[exploration]
+	#First visits show their name. false = none.
+	enabled = true
+	#Unused since 1.5.1: discoveries pay no TP.
+	#Range: 0.0 ~ 600.0
+	minutes = 3.0
+	#Numbers of places found that are milestones.
+	milestones = [10, 25, 50]
+	#Unused since 1.5.1: milestones pay no TP.
+	#Range: 0.0 ~ 600.0
+	milestoneMinutes = 15.0
+	#Mods whose structures count as places.
+	namespaces = ["dragonminez", "dmzsparking"]
+
+#Meals: dishes that give DragonMineZ' own TP gain effect.
+[meals]
+	#Meals give the effect. false = plain food.
+	enabled = true
+	#Seconds the effect of a meal lasts.
+	#Range: 1 ~ 86400
+	seconds = 600
+
+#Combat zones: named areas whose foes meet each player at his own level (OW-4).
+[zones]
+	#Zones show their name and send encounters. false = no zones, no encounters, no villains.
+	enabled = true
+	#One zone per line: id|dimension|biomes|foes|bosses. Biomes: ids, #tags or * for all; foes and bosses: entity ids, comma-separated. The first matching line wins; a spot in no line has no encounters.
+	list = ["earth_rocky|minecraft:overworld|dragonminez:rocky|dragonminez:saga_saibaman1,dragonminez:saga_saibaman2,dragonminez:saga_saibaman3|dragonminez:saga_saiyan_soldier,dragonminez:saga_saiyan_elite", "earth_wasteland|minecraft:overworld|#dragonminez:is_desertlike,#minecraft:is_badlands|dragonminez:bandit,dragonminez:red_ribbon_soldier,dragonminez:robot1|dragonminez:saga_general_blue,dragonminez:saga_colonel_silver,dragonminez:saga_tao_pai_pai", "earth_mountains|minecraft:overworld|#dragonminez:is_mountainlike,#minecraft:is_hill|dragonminez:red_ribbon_soldier,dragonminez:robot2,dragonminez:robot3|dragonminez:saga_sergeant_metallic,dragonminez:saga_ninja_murasaki,dragonminez:saga_general_black_robot", "earth_wilds|minecraft:overworld|#minecraft:is_jungle,#minecraft:is_savanna|dragonminez:bandit,dragonminez:red_ribbon_soldier,dragonminez:saga_pilaf_robot|dragonminez:saga_tambourine,dragonminez:saga_drum", "namek|dragonminez:namek|*|dragonminez:saga_friezasoldier01,dragonminez:saga_friezasoldier02,dragonminez:saga_friezasoldier03|dragonminez:saga_dodoria,dragonminez:saga_zarbon,dragonminez:saga_cui"]
+	#Minutes before the same zone shows its name again for a player. 0 = every time it is entered.
+	#Range: 0 ~ 1440
+	nameAgainMinutes = 10
+	#Seconds between two zone names for a player, whichever zones. 0 = no gap.
+	#Range: 0 ~ 3600
+	nameGapSeconds = 60
+	#Show a zone's name as a big title in the middle of the screen. false = one short line above the hotbar.
+	nameAsTitle = false
+	#Seconds between two encounter checks per player. 0 = no encounters.
+	#Range: 0 ~ 3600
+	encounterSeconds = 45
+	#Percent chance per check that a group of foes appears.
+	#Range: 0 ~ 100
+	encounterChance = 35
+	#Fewest foes in a group.
+	#Range: 1 ~ 8
+	groupMin = 2
+	#Most foes in a group.
+	#Range: 1 ~ 8
+	groupMax = 3
+	#Health of a grunt in percent of a matched foe (100 = about 25 of the player's hardest hits).
+	#Range: 1.0 ~ 1000.0
+	gruntHealthPercent = 40.0
+	#Damage of a grunt in percent of a matched foe (100 = about 20 hits to bring the player down).
+	#Range: 1.0 ~ 1000.0
+	gruntDamagePercent = 60.0
+	#Effort minutes per grunt of a cleared group.
+	#Range: 0.0 ~ 600.0
+	minutesPerFoe = 1.0
+	#Blocks between the player and his foes at which they give up and leave.
+	#Range: 24 ~ 512
+	leashBlocks = 96
+	#Minutes an encounter may last before its foes leave.
+	#Range: 1 ~ 240
+	lifetimeMinutes = 15
+
+#Villains: after a few cleared groups a villain with DragonMineZ' red aura comes; each win calls a stronger one.
+[villains]
+	#Cleared groups before a villain comes. 0 = no villains.
+	#Range: 0 ~ 100
+	after = 5
+	#Every n-th villain is a super villain (a boss of the zone). 0 = none.
+	#Range: 0 ~ 100
+	superEvery = 3
+	#Villains per player and day. 0 = no limit.
+	#Range: 0 ~ 1000
+	perDay = 0
+	#Effort minutes a villain pays at the start of the chain.
+	#Range: 0.0 ~ 600.0
+	minutes = 4.0
+	#Per villain beaten: extra health and wage, in percent of the first villain's.
+	#Range: 0.0 ~ 1000.0
+	stepPercent = 15.0
+	#Villains beaten after which the chain stops growing.
+	#Range: 0 ~ 1000
+	maxSteps = 10
+	#Health and wage of a super villain, times a villain's.
+	#Range: 1.0 ~ 100.0
+	superFactor = 2.0
+
+#Outposts: Red Ribbon remnants and Frieza posts with a garrison; taken, they come back after a while (OW-5).
+[outposts]
+	#Outposts stand in their zones. false = none.
+	enabled = true
+	#Zones with outposts: zoneId=commander, the commander's entity id. The garrison is the zone's foes.
+	zones = ["earth_wasteland=dragonminez:red_ribbon_commander", "earth_mountains=dragonminez:red_ribbon_commander", "namek=dragonminez:saga_cui"]
+	#Blocks of the grid one outpost stands in (one per cell, where the cell's middle lies in its zone).
+	#Range: 128 ~ 100000
+	cellBlocks = 768
+	#Soldiers of an outpost besides the commander.
+	#Range: 1 ~ 16
+	garrison = 5
+	#Hours of server time until a taken outpost is manned again. 0 = at once.
+	#Range: 0.0 ~ 10000.0
+	rebuildHours = 6.0
+	#Effort minutes taking an outpost pays, once per rebuild and player.
+	#Range: 0.0 ~ 600.0
+	minutes = 10.0
+
+#Training grounds: Korin's Tower, King Kai's Planet, Snake Way and waterfalls (OW-6).
+[training]
+	#Training grounds pay for training done there. false = none.
+	enabled = true
+	#One ground per line: id|bonusPercent. Ids: korin, kai, snake_way, waterfall.
+	grounds = ["korin|25", "kai|25", "snake_way|15", "waterfall|10"]
+	#Training actions (ki attacks, strike attacks, dashes) that make one effort minute.
+	#Range: 1 ~ 10000
+	actionsPerMinute = 40
+	#Training actions at one ground for its daily session goal. 0 = no session goal.
+	#Range: 0 ~ 100000
+	sessionActions = 150
+	#Effort minutes the daily session goal of a ground pays.
+	#Range: 0.0 ~ 600.0
+	sessionMinutes = 5.0
+
+#The bounty board and rematches (OW-7).
+[bounties]
+	#The board offers wanted posters and rematches. false = an empty board.
+	enabled = true
+	#Wanted posters per player and day.
+	#Range: 0 ~ 10
+	perDay = 3
+	#Effort minutes a bounty pays.
+	#Range: 0.0 ~ 600.0
+	minutes = 6.0
+	#Effort minutes a rematch pays.
+	#Range: 0.0 ~ 600.0
+	rematchMinutes = 6.0
+	#Rematches per player and day. 0 = no rematches.
+	#Range: 0 ~ 100
+	rematchesPerDay = 3
+
+#The server's weekly goal: all players together (OW-8).
+[weeklyGoal]
+	#A weekly goal runs. false = none.
+	enabled = true
+	#Goals taking turns week by week, kind=target. Kinds: encounters, villains, outposts, bounties.
+	goals = ["encounters=200", "villains=30", "outposts=12", "bounties=40"]
+	#Deeds a player needs to share in the weekly reward.
+	#Range: 1 ~ 100000
+	minShare = 3
+	#Effort minutes the reached weekly goal pays each sharer.
+	#Range: 0.0 ~ 6000.0
+	minutes = 30.0
+

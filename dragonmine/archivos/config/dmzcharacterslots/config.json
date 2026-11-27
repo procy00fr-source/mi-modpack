@@ -1,0 +1,8 @@
+{
+  "defaultMaxSlots": 2,
+  "groupMaxSlots": {
+    "vip": 3,
+    "vip+": 5
+  },
+  "autoTakeOverForeignStorage": false
+}

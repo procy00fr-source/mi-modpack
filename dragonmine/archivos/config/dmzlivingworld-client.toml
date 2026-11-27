@@ -1,0 +1,40 @@
+
+#Dragon Mine Z: Living World — client readability settings.
+#These affect only this player's presentation and can also be changed from L -> Settings -> Display.
+[readability]
+	#Scale of Living World fighter names/faction labels. 1.0 = base size.
+	#Range: 0.65 ~ 4.0
+	nameplateScale = 1.18
+	#Scale of short dialogue drawn above Living World fighters.
+	#Range: 0.65 ~ 4.0
+	dialogueScale = 1.12
+	#Extra blocks above the fighter before drawing the nameplate. Useful with KISense/other bars.
+	#Range: -0.25 ~ 8.0
+	nameplateVerticalOffset = 0.34
+	#Show the player-specific Trusted/Friendly/Neutral/Wary/Hostile badge beside names.
+	showDispositionIcon = true
+	#Show faction text beneath a Living World fighter's name.
+	showFactionLabel = true
+	#Show short in-world Living World dialogue above fighters.
+	showDialogue = true
+	#Maximum distance in blocks for fighter names. Wanted fighters and faction leaders retain at least 64 blocks of visibility.
+	#Range: 8 ~ 4096
+	nameplateDistance = 48
+	#Maximum distance in blocks for the faction label.
+	#Range: 6 ~ 4096
+	factionLabelDistance = 30
+	#Maximum distance in blocks for floating dialogue.
+	#Range: 8 ~ 4096
+	dialogueDistance = 42
+	#Also mirror nearby Living World NPC speech into normal chat. Floating dialogue remains available independently.
+	speechToChat = true
+	#Maximum distance in blocks for NPC speech mirrored into chat.
+	#Range: 8 ~ 4096
+	speechChatRadius = 42
+	#Scale for Living World HUDs. 1.0 = base size.
+	#Range: 0.5 ~ 3.0
+	hudScale = 1.0
+	#Additional scale used only by the faction quest HUD.
+	#Range: 0.5 ~ 3.0
+	factionQuestHudScale = 0.85
+

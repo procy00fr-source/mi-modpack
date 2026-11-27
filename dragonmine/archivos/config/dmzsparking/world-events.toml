@@ -1,0 +1,83 @@
+
+#Frieza's attack on Planet Vegeta (world event; also needs /dmzsparking world rule friezaAttack true).
+[friezaAttack]
+	#Allows the event on this server. false = never runs.
+	enabled = false
+	#true = the server starts it by itself every autoIntervalMinutes. false = only an operator starts it.
+	autoStart = false
+	#Minutes of server play between two automatic starts. 0 = never automatic.
+	#Range: 0 ~ 100000
+	autoIntervalMinutes = 0
+	#How often the event can run per world.
+	#Range: 1 ~ 100
+	maxRuns = 1
+	#Minutes of warning before the attack (server running time).
+	#Range: 1 ~ 120
+	warningMinutes = 10
+	#Longest duration of the attack in minutes (server running time).
+	#Range: 2 ~ 240
+	battleMinutes = 25
+	#Success chance in percent without any help (also the minimum).
+	#Range: 0 ~ 100
+	baseChance = 10
+	#Highest success chance in percent.
+	#Range: 0 ~ 100
+	maxChance = 85
+	#Success chance in percent per freed attack post.
+	#Range: 0 ~ 100
+	postWeight = 10
+	#Success chance in percent per repelled wave.
+	#Range: 0 ~ 100
+	waveWeight = 5
+	#Success chance in percent per evacuated resident.
+	#Range: 0 ~ 100
+	evacueeWeight = 1
+	#Evacuated residents counted at most. 0 = evacuations do not count.
+	#Range: 0 ~ 100
+	evacueeCap = 15
+	#Enemy waves during the attack. 0 = none.
+	#Range: 0 ~ 12
+	waves = 4
+	#Soldiers per attack post for one player.
+	#Range: 1 ~ 32
+	soldiersPerPost = 4
+	#Soldiers per wave for one player.
+	#Range: 1 ~ 32
+	soldiersPerWave = 5
+	#Extra soldiers per further player, in percent of the one-player number. 0 = no extra.
+	#Range: 0 ~ 400
+	extraParticipantPercent = 50
+	#Most soldiers in one post or wave.
+	#Range: 1 ~ 64
+	maxGroup = 16
+	#Training points per contribution point, only while minutesPerPoint = 0. 0 = no training points.
+	#Range: 0 ~ 100000
+	tpPerPoint = 150
+	#Most training points per player and run, only while minutesPerPoint = 0. 0 = none.
+	#Range: 0 ~ 10000000
+	tpCap = 15000
+	#Open world wage per contribution point, in effort minutes at the player's current stat price (openworld.toml rate). 0 = the fixed training points above instead.
+	#Range: 0.0 ~ 600.0
+	minutesPerPoint = 0.5
+	#Most effort minutes per player and run. 0 = no cap.
+	#Range: 0.0 ~ 6000.0
+	minutesCap = 30.0
+	#Fixed starts in the server's local time while autoStart is true, e.g. "SAT 20:00" or "DAILY 19:30". Empty = none.
+	schedule = []
+	#Minutes before a scheduled start that everybody is told. 0 = no announcement.
+	#Range: 0 ~ 1440
+	announceMinutes = 30
+	#Minutes after a scheduled time it may still start (a server that was down longer skips it).
+	#Range: 0 ~ 1440
+	scheduleGraceMinutes = 30
+	#Test worlds only: lets operators fix the outcome with /dmzsparking event testroll. false = off.
+	allowTestRoll = false
+
+#Destroying planets outside the event.
+[planetDestruction]
+	#true = players with the power can destroy a planet. false = only operators can.
+	enabled = false
+	#Seconds of countdown before a planet is destroyed.
+	#Range: 10 ~ 3600
+	countdownSeconds = 60
+

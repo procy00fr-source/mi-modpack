@@ -1,0 +1,40 @@
+{
+  "baseStats": {
+    "STR": 5,
+    "SKP": 1,
+    "RES": 3,
+    "VIT": 1,
+    "PWR": 1,
+    "ENE": 1
+  },
+  "statScaling": {
+    "STR_scaling": 0.85,
+    "SKP_scaling": 0.6,
+    "STM_scaling": 1.2,
+    "DEF_scaling": 0.85,
+    "DEF_scaling_max": 1.7,
+    "VIT_scaling": 1.3,
+    "VIT_scaling_max": 5.2,
+    "PWR_scaling": 0.75,
+    "ENE_scaling": 1.55
+  },
+  "baseHp5": 0.65,
+  "hp5VitScaling": 0.025,
+  "baseEp5": -1.55,
+  "ep5EneScaling": -0.035,
+  "baseSp5": -2.45,
+  "sp5StmScaling": -0.015,
+  "tpCostMultiplier": 0.0,
+  "tpGainMultiplier": 0.0,
+  "passive": {
+    "enabled": true,
+    "values": {
+      "redirectPct": 0.15,
+      "lifestealPct": 0.15
+    }
+  },
+  "configVersion": "2.2.1",
+  "displayName": "Paladin",
+  "displayColor": "#FFFF55",
+  "exclusiveRaces": []
+}

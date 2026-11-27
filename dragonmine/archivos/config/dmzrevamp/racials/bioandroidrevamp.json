@@ -1,0 +1,8 @@
+{
+  "_comments": {
+    "effectMultiplier": "Multiplier applied to borrowed Human, Saiyan, Frost Demon and Namekian effects. 0.15 \u003d 15% strength. Native Bio Android actions are never scaled.",
+    "healthRegenMultiplier": "Multiplier applied to Bio-Android race HP regeneration. 0.5 matches the standard Overhaul race HP regeneration rate."
+  },
+  "effectMultiplier": 0.15,
+  "healthRegenMultiplier": 0.5
+}

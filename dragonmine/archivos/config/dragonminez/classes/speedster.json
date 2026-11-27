@@ -1,0 +1,42 @@
+{
+  "baseStats": {
+    "STR": 1,
+    "SKP": 6,
+    "RES": 0,
+    "VIT": 0,
+    "PWR": 3,
+    "ENE": 2
+  },
+  "statScaling": {
+    "STR_scaling": 0.65,
+    "SKP_scaling": 0.9,
+    "STM_scaling": 1.1,
+    "DEF_scaling": 0.5,
+    "DEF_scaling_max": 1.0,
+    "VIT_scaling": 1.15,
+    "VIT_scaling_max": 4.6,
+    "PWR_scaling": 0.65,
+    "ENE_scaling": 1.55
+  },
+  "baseHp5": 0.1,
+  "hp5VitScaling": -0.005,
+  "baseEp5": -1.25,
+  "ep5EneScaling": -0.03,
+  "baseSp5": 2.5,
+  "sp5StmScaling": 0.025,
+  "tpCostMultiplier": 0.0,
+  "tpGainMultiplier": 0.0,
+  "passive": {
+    "enabled": true,
+    "values": {
+      "stackDurationTicks": 100.0,
+      "speedBonusPerStack": 0.01,
+      "meleeDamageSpeedSharePerStack": 0.025,
+      "maxStacks": 10.0
+    }
+  },
+  "configVersion": "2.2.1",
+  "displayName": "Speedster",
+  "displayColor": "#00AAAA",
+  "exclusiveRaces": []
+}
