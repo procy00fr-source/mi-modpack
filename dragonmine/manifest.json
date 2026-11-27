@@ -1,14 +1,14 @@
 {
   "id": "dragonmine",
   "name": "DragonMineZ",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "minecraft": "1.20.1",
   "loader": {
     "type": "forge",
     "version": "47.4.10"
   },
   "modsEstrictos": true,
-  "publicado": "2026-11-26T04:53:21.391Z",
+  "publicado": "2026-11-27T20:03:28.452Z",
   "files": [
     {
       "path": "config/ad_astra-client.jsonc",
@@ -1457,6 +1457,42 @@
       "size": 282
     },
     {
+      "path": "config/dmzsparking/backup/blueorder-20261127-144615/races/saiyan/forms/godforms.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dmzsparking/backup/blueorder-20261127-144615/races/saiyan/forms/godforms.json",
+      "sha1": "87e823c4620638aced5243ca8640dddfd186bcfd",
+      "size": 8921
+    },
+    {
+      "path": "config/dmzsparking/backup/majinorder-20261127-144615/races/majin/forms/pureforms.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dmzsparking/backup/majinorder-20261127-144615/races/majin/forms/pureforms.json",
+      "sha1": "24b0f670279f588d012bab23a87ed52235663590",
+      "size": 18814
+    },
+    {
+      "path": "config/dmzsparking/backup/priceless-20261127-144615/races/bioandroid/character.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dmzsparking/backup/priceless-20261127-144615/races/bioandroid/character.json",
+      "sha1": "cfef0d689d1198a5d7ab312c5db3800da474da36",
+      "size": 4373
+    },
+    {
+      "path": "config/dmzsparking/backup/priceless-20261127-144615/races/namekian/character.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dmzsparking/backup/priceless-20261127-144615/races/namekian/character.json",
+      "sha1": "0a2b3d1940d5a36d24b2ea48a6a05aa839199bda",
+      "size": 2153
+    },
+    {
+      "path": "config/dmzsparking/backup/priceless-20261127-144615/races/saiyan/character.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dmzsparking/backup/priceless-20261127-144615/races/saiyan/character.json",
+      "sha1": "4855c2a125a33ef37d179e2f0cf2b00b22cdee11",
+      "size": 2383
+    },
+    {
+      "path": "config/dmzsparking/backup/ui-nur-stack-20261127-144615/forms/ultraego.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dmzsparking/backup/ui-nur-stack-20261127-144615/forms/ultraego.json",
+      "sha1": "bc8aa6924f30c12ca8aa654ca7844109238e13c3",
+      "size": 4404
+    },
+    {
       "path": "config/dmzsparking/cities.toml",
       "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/7a3b76dff9ecbb4ad70089923c80d03f8a89df37/dragonmine/archivos/config/dmzsparking/cities.toml",
       "sha1": "382a4139369609a293412210eee2b6cab6a40c9d",
@@ -1511,6 +1547,18 @@
       "size": 11975
     },
     {
+      "path": "config/dmzsparking/forms-judged.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dmzsparking/forms-judged.json",
+      "sha1": "5c9c673b7e39ccc1e0ba8745addcab51ec3e78a5",
+      "size": 1281
+    },
+    {
+      "path": "config/dmzsparking/forms.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dmzsparking/forms.json",
+      "sha1": "2be2bc5d9b570b74885193365c5833e15c83682e",
+      "size": 1119
+    },
+    {
       "path": "config/dmzsparking/gravity.toml",
       "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/7a3b76dff9ecbb4ad70089923c80d03f8a89df37/dragonmine/archivos/config/dmzsparking/gravity.toml",
       "sha1": "4ad79f5accb3dd5bca3446dcc9a030478bfbd877",
@@ -1523,10 +1571,28 @@
       "size": 691
     },
     {
+      "path": "config/dmzsparking/living.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dmzsparking/living.json",
+      "sha1": "420a448ae6a9cd17de9748e3fef6a57ceeecc094",
+      "size": 310
+    },
+    {
       "path": "config/dmzsparking/meditation.toml",
       "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/7a3b76dff9ecbb4ad70089923c80d03f8a89df37/dragonmine/archivos/config/dmzsparking/meditation.toml",
       "sha1": "369feaa9d6499576049b7c339698159a32d73e0f",
       "size": 2143
+    },
+    {
+      "path": "config/dmzsparking/offerings-returned.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dmzsparking/offerings-returned.json",
+      "sha1": "622342349316f82a710882bf1a60a7854bbb6b68",
+      "size": 222
+    },
+    {
+      "path": "config/dmzsparking/offerings-seen.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dmzsparking/offerings-seen.json",
+      "sha1": "932a80c91dbe85cc9e531e091d189e954b18f105",
+      "size": 1450
     },
     {
       "path": "config/dmzsparking/openworld.toml",
@@ -4038,9 +4104,9 @@
     },
     {
       "path": "config/dmzultra/engagement.json",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/7a3b76dff9ecbb4ad70089923c80d03f8a89df37/dragonmine/archivos/config/dmzultra/engagement.json",
-      "sha1": "748c21abf734707ecfa78b0e342b6bc40b6f9cd4",
-      "size": 5670
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dmzultra/engagement.json",
+      "sha1": "48fc49be87d1f9a489c2400010b1c171b81e6a3d",
+      "size": 6455
     },
     {
       "path": "config/dmzultra/ledger.json",
@@ -4053,6 +4119,12 @@
       "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/7a3b76dff9ecbb4ad70089923c80d03f8a89df37/dragonmine/archivos/config/dmzultra/migration/prices_v2.json",
       "sha1": "597730b56d269b59deda8d5167231688adb1958f",
       "size": 21126
+    },
+    {
+      "path": "config/dmzultra/nballs_wishes.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dmzultra/nballs_wishes.json",
+      "sha1": "9af167458e4e5fa5d0a2a56b3697b03631611b5e",
+      "size": 2132
     },
     {
       "path": "config/dmzultra/noncanon_on_0.6.done",
@@ -4083,6 +4155,12 @@
       "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/7a3b76dff9ecbb4ad70089923c80d03f8a89df37/dragonmine/archivos/config/dmzultra/retunes.txt",
       "sha1": "02a51a2ec7980edb14aebf2682bf79719ec5a5fb",
       "size": 26
+    },
+    {
+      "path": "config/dmzultra/rewards.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dmzultra/rewards.json",
+      "sha1": "8d0a646110c93e0424d1b750b817ca680e0a36c5",
+      "size": 287
     },
     {
       "path": "config/dmzultra/skills_repair_0.4.done",
@@ -4218,9 +4296,9 @@
     },
     {
       "path": "config/dmzultra-client.toml",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/7a3b76dff9ecbb4ad70089923c80d03f8a89df37/dragonmine/archivos/config/dmzultra-client.toml",
-      "sha1": "6f284cf310ca2eb32d8144ed47dda794f96f67e9",
-      "size": 83771
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dmzultra-client.toml",
+      "sha1": "a6444e35576005e0538dbbb8ccf12cc443bd1a0b",
+      "size": 83780
     },
     {
       "path": "config/dmzultra-common.toml",
@@ -4230,15 +4308,15 @@
     },
     {
       "path": "config/dmzultra-forms.json",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/7a3b76dff9ecbb4ad70089923c80d03f8a89df37/dragonmine/archivos/config/dmzultra-forms.json",
-      "sha1": "47ed838f03b2febbb11cb4808ae7413528b82a8f",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dmzultra-forms.json",
+      "sha1": "8a3b2d30ae3d6441963804a413dfc45c286d39ec",
       "size": 743
     },
     {
       "path": "config/dmzultra-menus.properties",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/7a3b76dff9ecbb4ad70089923c80d03f8a89df37/dragonmine/archivos/config/dmzultra-menus.properties",
-      "sha1": "41b97aa46cd1943ac494d7622306db0537d75a3a",
-      "size": 207
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dmzultra-menus.properties",
+      "sha1": "7d2dd3fa5087badc9d4376d6512760ab18787990",
+      "size": 209
     },
     {
       "path": "config/dmzultra-space-client.toml",
@@ -4254,21 +4332,21 @@
     },
     {
       "path": "config/dmzultra-ui.json",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/7a3b76dff9ecbb4ad70089923c80d03f8a89df37/dragonmine/archivos/config/dmzultra-ui.json",
-      "sha1": "e1f7b88a2c44a33cfcb8b222ff9554b27b3a109a",
-      "size": 667
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dmzultra-ui.json",
+      "sha1": "89113cc21d7f92cff3a9a30a551a8092abbf43e9",
+      "size": 668
     },
     {
       "path": "config/dmzultra-ui.json.bak",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/7a3b76dff9ecbb4ad70089923c80d03f8a89df37/dragonmine/archivos/config/dmzultra-ui.json.bak",
-      "sha1": "81d8199129f099fe5e047f67f02558156fcb8608",
-      "size": 350
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dmzultra-ui.json.bak",
+      "sha1": "9836badb65d882efdbb7c8e6a4e49c067e3ba744",
+      "size": 694
     },
     {
       "path": "config/dmzultra-worldcards.json",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/7a3b76dff9ecbb4ad70089923c80d03f8a89df37/dragonmine/archivos/config/dmzultra-worldcards.json",
-      "sha1": "d51ced8df3531366108bd295d1aea39ea210371e",
-      "size": 1557
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dmzultra-worldcards.json",
+      "sha1": "801d209ca459b760c8659fae1736d1e5a8e575ce",
+      "size": 2971
     },
     {
       "path": "config/dragonminez/classes/berserker.json",
@@ -4380,27 +4458,39 @@
     },
     {
       "path": "config/dragonminez/forms/friezabiodata.json",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/7a3b76dff9ecbb4ad70089923c80d03f8a89df37/dragonmine/archivos/config/dragonminez/forms/friezabiodata.json",
-      "sha1": "fd1bcf9807206c00575fe9553473408bc07bf9bb",
-      "size": 4488
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/forms/friezabiodata.json",
+      "sha1": "7b03497fdfaefc79abdfdb59148852f4d4044877",
+      "size": 4376
     },
     {
       "path": "config/dragonminez/forms/frostgodforms.json",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/7a3b76dff9ecbb4ad70089923c80d03f8a89df37/dragonmine/archivos/config/dragonminez/forms/frostgodforms.json",
-      "sha1": "4c2925f89238272523e8711f5294f233a1ca96ba",
-      "size": 4617
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/forms/frostgodforms.json",
+      "sha1": "a7c72e0bc694828fc91947de842416999dd49c08",
+      "size": 4497
     },
     {
       "path": "config/dragonminez/forms/godki.json",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/7a3b76dff9ecbb4ad70089923c80d03f8a89df37/dragonmine/archivos/config/dragonminez/forms/godki.json",
-      "sha1": "001676d1c65991e58cd1f4f3582074d51c298abf",
-      "size": 5935
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/forms/godki.json",
+      "sha1": "e98c3bf7c14fd7a2acc7847fa300c38905ae3597",
+      "size": 17030
+    },
+    {
+      "path": "config/dragonminez/forms/godkienhancement.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/forms/godkienhancement.json",
+      "sha1": "133f639cfc29c11ea95526a64ee3596a3a8ce037",
+      "size": 18531
     },
     {
       "path": "config/dragonminez/forms/kaioken.json",
       "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/7a3b76dff9ecbb4ad70089923c80d03f8a89df37/dragonmine/archivos/config/dragonminez/forms/kaioken.json",
       "sha1": "494f940ad4e95de494e81a41149599a1f26696cb",
       "size": 22677
+    },
+    {
+      "path": "config/dragonminez/forms/mimicry.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/forms/mimicry.json",
+      "sha1": "2322652353bcc38f00c86c30e78fd496bf869c6d",
+      "size": 3970
     },
     {
       "path": "config/dragonminez/forms/namekgiant.json",
@@ -4415,10 +4505,16 @@
       "size": 64
     },
     {
+      "path": "config/dragonminez/forms/overclock.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/forms/overclock.json",
+      "sha1": "306e16b8dbec81634037b15bf202b369a638632c",
+      "size": 3832
+    },
+    {
       "path": "config/dragonminez/forms/piccolobiodata.json",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/7a3b76dff9ecbb4ad70089923c80d03f8a89df37/dragonmine/archivos/config/dragonminez/forms/piccolobiodata.json",
-      "sha1": "15058a8093ba66e8f95ef0b5aa1767560511a5c4",
-      "size": 4568
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/forms/piccolobiodata.json",
+      "sha1": "e6755960a36ae9abd24cce42ee79a9ce27d4dc8b",
+      "size": 4454
     },
     {
       "path": "config/dragonminez/forms/ultimate.json",
@@ -4428,15 +4524,15 @@
     },
     {
       "path": "config/dragonminez/forms/ultraego.json",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/7a3b76dff9ecbb4ad70089923c80d03f8a89df37/dragonmine/archivos/config/dragonminez/forms/ultraego.json",
-      "sha1": "bc8aa6924f30c12ca8aa654ca7844109238e13c3",
-      "size": 4404
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/forms/ultraego.json",
+      "sha1": "100d3827d6e3deb0c6b314bfbff2330db92cf524",
+      "size": 4364
     },
     {
       "path": "config/dragonminez/forms/ultrainstinct.json",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/7a3b76dff9ecbb4ad70089923c80d03f8a89df37/dragonmine/archivos/config/dragonminez/forms/ultrainstinct.json",
-      "sha1": "30c2f407e47b41718404f34120388ee475f1bcde",
-      "size": 6302
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/forms/ultrainstinct.json",
+      "sha1": "30bf7edeaa2dacb96cdeeb67f4128101ad97e52d",
+      "size": 7781
     },
     {
       "path": "config/dragonminez/forms/visoredmask.json",
@@ -4458,15 +4554,81 @@
     },
     {
       "path": "config/dragonminez/general-user.json",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/7a3b76dff9ecbb4ad70089923c80d03f8a89df37/dragonmine/archivos/config/dragonminez/general-user.json",
-      "sha1": "171204bf2c01064d1ec04ec8517c91cd54d7cd68",
-      "size": 1076
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/general-user.json",
+      "sha1": "d940d128188d5b2dfa263a2b51888d0099104308",
+      "size": 1144
     },
     {
       "path": "config/dragonminez/hud_layout.json",
       "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/7a3b76dff9ecbb4ad70089923c80d03f8a89df37/dragonmine/archivos/config/dragonminez/hud_layout.json",
       "sha1": "fbf29ef1888452ba52ccba4ee126ad964f8aafd5",
       "size": 1519
+    },
+    {
+      "path": "config/dragonminez/oldBackup/forms/godkienhancement.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/oldBackup/forms/godkienhancement.json",
+      "sha1": "efb81c639fabd426e954b1581059d59f530363aa",
+      "size": 9237
+    },
+    {
+      "path": "config/dragonminez/oldBackup/forms/mimicry.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/oldBackup/forms/mimicry.json",
+      "sha1": "8354eb61de7c08b716537da60d6c761f27cc8f52",
+      "size": 2392
+    },
+    {
+      "path": "config/dragonminez/oldBackup/forms/overclock.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/oldBackup/forms/overclock.json",
+      "sha1": "cd250c74661d0525c6846c939a2f9713760d222e",
+      "size": 2339
+    },
+    {
+      "path": "config/dragonminez/oldBackup/races/glind/forms/kaioshinforms.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/oldBackup/races/glind/forms/kaioshinforms.json",
+      "sha1": "fffcc5962dc67f6838969d83acc8512b479d360d",
+      "size": 7744
+    },
+    {
+      "path": "config/dragonminez/oldBackup/races/human/forms/godclass.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/oldBackup/races/human/forms/godclass.json",
+      "sha1": "30f37568093920915cc40cc5a04db097c45bf8c4",
+      "size": 5043
+    },
+    {
+      "path": "config/dragonminez/oldBackup/races/human/forms/hellfusion.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/oldBackup/races/human/forms/hellfusion.json",
+      "sha1": "12619a9717fcd1a61e85c96cfe1cb82d55192831",
+      "size": 7249
+    },
+    {
+      "path": "config/dragonminez/oldBackup/races/human/forms/majincells.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/oldBackup/races/human/forms/majincells.json",
+      "sha1": "c63170cc4a6ca0fe0df41b6955d5e943b35d7afc",
+      "size": 12541
+    },
+    {
+      "path": "config/dragonminez/oldBackup/races/human/forms/majuubstyle.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/oldBackup/races/human/forms/majuubstyle.json",
+      "sha1": "21d44e10c855b2fe0e2d321f52202e442c06ed0a",
+      "size": 2279
+    },
+    {
+      "path": "config/dragonminez/oldBackup/races/majin/forms/shapeup.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/oldBackup/races/majin/forms/shapeup.json",
+      "sha1": "fbbfda8f8081e4af3720413312d1157e0d787019",
+      "size": 2504
+    },
+    {
+      "path": "config/dragonminez/oldBackup/races/majin/forms/supremekai.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/oldBackup/races/majin/forms/supremekai.json",
+      "sha1": "0d931b14fdd0f1a56990dede20972cb647a300b8",
+      "size": 4969
+    },
+    {
+      "path": "config/dragonminez/oldBackup/races/saiyan/forms/dmzsparking_af.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/oldBackup/races/saiyan/forms/dmzsparking_af.json",
+      "sha1": "201b96d33d4f03d8730224d5fdfe17632ab51e8c",
+      "size": 16129
     },
     {
       "path": "config/dragonminez/races/angel/character.json",
@@ -4542,9 +4704,9 @@
     },
     {
       "path": "config/dragonminez/races/bioandroid/character.json",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/7a3b76dff9ecbb4ad70089923c80d03f8a89df37/dragonmine/archivos/config/dragonminez/races/bioandroid/character.json",
-      "sha1": "cfef0d689d1198a5d7ab312c5db3800da474da36",
-      "size": 4373
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/races/bioandroid/character.json",
+      "sha1": "db747e04156446e214e4a10b01e9d8a559f47918",
+      "size": 4364
     },
     {
       "path": "config/dragonminez/races/bioandroid/forms/bioevolution.json",
@@ -4560,9 +4722,9 @@
     },
     {
       "path": "config/dragonminez/races/bioandroid/forms/biogodforms.json",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/7a3b76dff9ecbb4ad70089923c80d03f8a89df37/dragonmine/archivos/config/dragonminez/races/bioandroid/forms/biogodforms.json",
-      "sha1": "1978b8baf4b41ea2e0e5cd2672ebc13e697ff18b",
-      "size": 4504
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/races/bioandroid/forms/biogodforms.json",
+      "sha1": "bf34f28c8c124d935598ca441f1af7d3a1c400b4",
+      "size": 4541
     },
     {
       "path": "config/dragonminez/races/bioandroid/forms/cellmax.dmzultra_free",
@@ -4572,9 +4734,9 @@
     },
     {
       "path": "config/dragonminez/races/bioandroid/forms/cellmax.json",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/7a3b76dff9ecbb4ad70089923c80d03f8a89df37/dragonmine/archivos/config/dragonminez/races/bioandroid/forms/cellmax.json",
-      "sha1": "b7b69312faf59e8085053951a6420f3fe4d5efa5",
-      "size": 2285
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/races/bioandroid/forms/cellmax.json",
+      "sha1": "997305930743f8d5b28af3182062f506e0dc8d73",
+      "size": 2283
     },
     {
       "path": "config/dragonminez/races/bioandroid/forms/coreforms.dmzultra_free",
@@ -4998,9 +5160,15 @@
     },
     {
       "path": "config/dragonminez/races/glind/character.json",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/7a3b76dff9ecbb4ad70089923c80d03f8a89df37/dragonmine/archivos/config/dragonminez/races/glind/character.json",
-      "sha1": "3b7fd6e1e0db4e3d3a1e36f96fb218af59415ff5",
-      "size": 1789
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/races/glind/character.json",
+      "sha1": "3fc3c5f930115176356d3dc55e617495322f51a9",
+      "size": 1831
+    },
+    {
+      "path": "config/dragonminez/races/glind/forms/kaioshinforms.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/races/glind/forms/kaioshinforms.json",
+      "sha1": "ef8c26b5c535bba3ef4079df8ab18ce6e9485214",
+      "size": 11774
     },
     {
       "path": "config/dragonminez/races/glind/forms/kishinforms.dmzultra_rev",
@@ -5064,9 +5232,9 @@
     },
     {
       "path": "config/dragonminez/races/human/character.json",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/7a3b76dff9ecbb4ad70089923c80d03f8a89df37/dragonmine/archivos/config/dragonminez/races/human/character.json",
-      "sha1": "2d6961d9c4852f74c9c12dd6f37bda8798b80f60",
-      "size": 2508
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/races/human/character.json",
+      "sha1": "43583b86c746a112e1fe42e4d7f03c74647bf001",
+      "size": 3036
     },
     {
       "path": "config/dragonminez/races/human/forms/androidforms.json",
@@ -5105,6 +5273,12 @@
       "size": 6334
     },
     {
+      "path": "config/dragonminez/races/human/forms/godclass.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/races/human/forms/godclass.json",
+      "sha1": "6af0e41a8112d88621c372fb70481419aaf76782",
+      "size": 7588
+    },
+    {
       "path": "config/dragonminez/races/human/forms/godclassforms.dmzultra_rev",
       "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/7a3b76dff9ecbb4ad70089923c80d03f8a89df37/dragonmine/archivos/config/dragonminez/races/human/forms/godclassforms.dmzultra_rev",
       "sha1": "356a192b7913b04c54574d18c28d46e6395428ab",
@@ -5117,10 +5291,28 @@
       "size": 2190
     },
     {
+      "path": "config/dragonminez/races/human/forms/hellfusion.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/races/human/forms/hellfusion.json",
+      "sha1": "0cee23d7b64b9103831874bfd0de80848cf5c517",
+      "size": 11618
+    },
+    {
       "path": "config/dragonminez/races/human/forms/legendaryforms.json",
       "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/7a3b76dff9ecbb4ad70089923c80d03f8a89df37/dragonmine/archivos/config/dragonminez/races/human/forms/legendaryforms.json",
       "sha1": "b7448686006a6a9d5a90c412b4fbae788b7f3fdb",
       "size": 11401
+    },
+    {
+      "path": "config/dragonminez/races/human/forms/majincells.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/races/human/forms/majincells.json",
+      "sha1": "d19c18803ee8d6b6b63b43b39fbb5963cd4f07c8",
+      "size": 19824
+    },
+    {
+      "path": "config/dragonminez/races/human/forms/majuubstyle.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/races/human/forms/majuubstyle.json",
+      "sha1": "296b0bd1843fd61da52bc65be29cc4e035e9e426",
+      "size": 3857
     },
     {
       "path": "config/dragonminez/races/human/forms/sageforms.dmzultra_free",
@@ -5178,9 +5370,9 @@
     },
     {
       "path": "config/dragonminez/races/majin/character.json",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/7a3b76dff9ecbb4ad70089923c80d03f8a89df37/dragonmine/archivos/config/dragonminez/races/majin/character.json",
-      "sha1": "6d79b999903a0bb304eaf78fa7610de66cd9b1e7",
-      "size": 2437
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/races/majin/character.json",
+      "sha1": "bd595fc40743d3883d7ca9dabb15d129c4e6986e",
+      "size": 2565
     },
     {
       "path": "config/dragonminez/races/majin/forms/chaosforms.dmzultra_free",
@@ -5250,9 +5442,9 @@
     },
     {
       "path": "config/dragonminez/races/majin/forms/pureforms.json",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/7a3b76dff9ecbb4ad70089923c80d03f8a89df37/dragonmine/archivos/config/dragonminez/races/majin/forms/pureforms.json",
-      "sha1": "24b0f670279f588d012bab23a87ed52235663590",
-      "size": 18814
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/races/majin/forms/pureforms.json",
+      "sha1": "5af5bbc60a5a44917ed59a50e687994ea7a38acc",
+      "size": 18816
     },
     {
       "path": "config/dragonminez/races/majin/forms/reflectionforms.dmzultra_rev",
@@ -5267,6 +5459,12 @@
       "size": 6355
     },
     {
+      "path": "config/dragonminez/races/majin/forms/shapeup.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/races/majin/forms/shapeup.json",
+      "sha1": "ac78f27656ac1ed768d21d59ab065656b8921f4f",
+      "size": 3803
+    },
+    {
       "path": "config/dragonminez/races/majin/forms/shapeupforms.dmzultra_rev",
       "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/7a3b76dff9ecbb4ad70089923c80d03f8a89df37/dragonmine/archivos/config/dragonminez/races/majin/forms/shapeupforms.dmzultra_rev",
       "sha1": "356a192b7913b04c54574d18c28d46e6395428ab",
@@ -5277,6 +5475,12 @@
       "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/7a3b76dff9ecbb4ad70089923c80d03f8a89df37/dragonmine/archivos/config/dragonminez/races/majin/forms/shapeupforms.json",
       "sha1": "752752a252eb17346fea49d435c0a1fea615503e",
       "size": 2165
+    },
+    {
+      "path": "config/dragonminez/races/majin/forms/supremekai.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/races/majin/forms/supremekai.json",
+      "sha1": "48c176bbc6abfdb412334ad63c8d1ec12122475e",
+      "size": 7838
     },
     {
       "path": "config/dragonminez/races/majin/stats.json",
@@ -5376,9 +5580,9 @@
     },
     {
       "path": "config/dragonminez/races/namekian/character.json",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/7a3b76dff9ecbb4ad70089923c80d03f8a89df37/dragonmine/archivos/config/dragonminez/races/namekian/character.json",
-      "sha1": "0a2b3d1940d5a36d24b2ea48a6a05aa839199bda",
-      "size": 2153
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/races/namekian/character.json",
+      "sha1": "670d5ef20bfa0e496f85928ced78955dce6c46c1",
+      "size": 2137
     },
     {
       "path": "config/dragonminez/races/namekian/forms/daimaoforms.dmzultra_rev",
@@ -5400,9 +5604,9 @@
     },
     {
       "path": "config/dragonminez/races/namekian/forms/divineforms.json",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/7a3b76dff9ecbb4ad70089923c80d03f8a89df37/dragonmine/archivos/config/dragonminez/races/namekian/forms/divineforms.json",
-      "sha1": "a3d153e1adef28a652e5422e4a51f2ae6041baa4",
-      "size": 9042
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/races/namekian/forms/divineforms.json",
+      "sha1": "c53e8e9605e054a6a9c25660dcee584f321f2fba",
+      "size": 9100
     },
     {
       "path": "config/dragonminez/races/namekian/forms/divineforms.json.dmzultra_canonsh_look2",
@@ -5478,15 +5682,15 @@
     },
     {
       "path": "config/dragonminez/races/saiyan/character.json",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/7a3b76dff9ecbb4ad70089923c80d03f8a89df37/dragonmine/archivos/config/dragonminez/races/saiyan/character.json",
-      "sha1": "4855c2a125a33ef37d179e2f0cf2b00b22cdee11",
-      "size": 2383
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/races/saiyan/character.json",
+      "sha1": "1730f82ebf149ba7e239f3144cd6f2708ccfd26c",
+      "size": 2441
     },
     {
       "path": "config/dragonminez/races/saiyan/forms/beastforms.json",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/7a3b76dff9ecbb4ad70089923c80d03f8a89df37/dragonmine/archivos/config/dragonminez/races/saiyan/forms/beastforms.json",
-      "sha1": "7414a631926add41a8a41d322e04d7a50a8c8baa",
-      "size": 2237
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/races/saiyan/forms/beastforms.json",
+      "sha1": "e28c4abe214335c328a075bd8289d15c27b30382",
+      "size": 2273
     },
     {
       "path": "config/dragonminez/races/saiyan/forms/corruptedforms.dmzultra_rev",
@@ -5501,10 +5705,16 @@
       "size": 7185
     },
     {
+      "path": "config/dragonminez/races/saiyan/forms/dmzsparking_af.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/races/saiyan/forms/dmzsparking_af.json",
+      "sha1": "66d97471ca3de679dd28c6464d49991a30fe1921",
+      "size": 17146
+    },
+    {
       "path": "config/dragonminez/races/saiyan/forms/evildivineforms.json",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/7a3b76dff9ecbb4ad70089923c80d03f8a89df37/dragonmine/archivos/config/dragonminez/races/saiyan/forms/evildivineforms.json",
-      "sha1": "f12c1f5ba850f44271fe72d1dd0821243c099601",
-      "size": 8983
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/races/saiyan/forms/evildivineforms.json",
+      "sha1": "ad717da3fda9df6add0221d674891a9e47e5a6bb",
+      "size": 9060
     },
     {
       "path": "config/dragonminez/races/saiyan/forms/falseform.json",
@@ -5514,9 +5724,9 @@
     },
     {
       "path": "config/dragonminez/races/saiyan/forms/godforms.json",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/7a3b76dff9ecbb4ad70089923c80d03f8a89df37/dragonmine/archivos/config/dragonminez/races/saiyan/forms/godforms.json",
-      "sha1": "87e823c4620638aced5243ca8640dddfd186bcfd",
-      "size": 8921
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/races/saiyan/forms/godforms.json",
+      "sha1": "f51ca453d2d8086c605bed6185242e564d5dfa3b",
+      "size": 9079
     },
     {
       "path": "config/dragonminez/races/saiyan/forms/godritual.json",
@@ -5526,14 +5736,14 @@
     },
     {
       "path": "config/dragonminez/races/saiyan/forms/legendaryforms.json",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/7a3b76dff9ecbb4ad70089923c80d03f8a89df37/dragonmine/archivos/config/dragonminez/races/saiyan/forms/legendaryforms.json",
-      "sha1": "877534c50e04ed712385d9f06673e8746c26692b",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/races/saiyan/forms/legendaryforms.json",
+      "sha1": "41a3777742b0d4e924e47c9546c1b97c125825b5",
       "size": 24549
     },
     {
       "path": "config/dragonminez/races/saiyan/forms/oozaru.json",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/7a3b76dff9ecbb4ad70089923c80d03f8a89df37/dragonmine/archivos/config/dragonminez/races/saiyan/forms/oozaru.json",
-      "sha1": "ca6a50c6c57fa7c5ab39258b848f4ab6eafb74c8",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/races/saiyan/forms/oozaru.json",
+      "sha1": "f9f55ae2f21167b3735ea6edf40035eacdbd67fe",
       "size": 25784
     },
     {
@@ -6060,9 +6270,9 @@
     },
     {
       "path": "config/dragonminez/skills.json",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/7a3b76dff9ecbb4ad70089923c80d03f8a89df37/dragonmine/archivos/config/dragonminez/skills.json",
-      "sha1": "33a2573dce02ba51f26b786c6f031851e2b1f614",
-      "size": 51822
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/skills.json",
+      "sha1": "1fc19c7d4d77e5086eb309051b6beea450e7bd60",
+      "size": 52511
     },
     {
       "path": "config/dragonminez/techniques.json",
@@ -6095,6 +6305,12 @@
       "size": 8816
     },
     {
+      "path": "config/dragonminez/tournaments/dmzsparking_cupnpc_10.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/tournaments/dmzsparking_cupnpc_10.json",
+      "sha1": "c50b9a7486c7ed818e15e748896540f63c0b6da6",
+      "size": 9075
+    },
+    {
       "path": "config/dragonminez/tournaments/dmzsparking_cupnpc_2.json",
       "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/7a3b76dff9ecbb4ad70089923c80d03f8a89df37/dragonmine/archivos/config/dragonminez/tournaments/dmzsparking_cupnpc_2.json",
       "sha1": "c9cf64ebaeaf2aeb825990ef56579d6bb6b81493",
@@ -6113,8 +6329,44 @@
       "size": 8816
     },
     {
+      "path": "config/dragonminez/tournaments/dmzsparking_cupnpc_5.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/tournaments/dmzsparking_cupnpc_5.json",
+      "sha1": "c50b9a7486c7ed818e15e748896540f63c0b6da6",
+      "size": 9075
+    },
+    {
+      "path": "config/dragonminez/tournaments/dmzsparking_cupnpc_6.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/tournaments/dmzsparking_cupnpc_6.json",
+      "sha1": "c50b9a7486c7ed818e15e748896540f63c0b6da6",
+      "size": 9075
+    },
+    {
+      "path": "config/dragonminez/tournaments/dmzsparking_cupnpc_7.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/tournaments/dmzsparking_cupnpc_7.json",
+      "sha1": "c50b9a7486c7ed818e15e748896540f63c0b6da6",
+      "size": 9075
+    },
+    {
+      "path": "config/dragonminez/tournaments/dmzsparking_cupnpc_8.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/tournaments/dmzsparking_cupnpc_8.json",
+      "sha1": "c50b9a7486c7ed818e15e748896540f63c0b6da6",
+      "size": 9075
+    },
+    {
+      "path": "config/dragonminez/tournaments/dmzsparking_cupnpc_9.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/tournaments/dmzsparking_cupnpc_9.json",
+      "sha1": "c50b9a7486c7ed818e15e748896540f63c0b6da6",
+      "size": 9075
+    },
+    {
       "path": "config/dragonminez/tournaments/dmzsparking_cup_1.json",
       "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/7a3b76dff9ecbb4ad70089923c80d03f8a89df37/dragonmine/archivos/config/dragonminez/tournaments/dmzsparking_cup_1.json",
+      "sha1": "6e165857a0ae8dfed2a5a5df4bc1219f47672373",
+      "size": 2089
+    },
+    {
+      "path": "config/dragonminez/tournaments/dmzsparking_cup_10.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/tournaments/dmzsparking_cup_10.json",
       "sha1": "6e165857a0ae8dfed2a5a5df4bc1219f47672373",
       "size": 2089
     },
@@ -6133,6 +6385,36 @@
     {
       "path": "config/dragonminez/tournaments/dmzsparking_cup_4.json",
       "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/7a3b76dff9ecbb4ad70089923c80d03f8a89df37/dragonmine/archivos/config/dragonminez/tournaments/dmzsparking_cup_4.json",
+      "sha1": "6e165857a0ae8dfed2a5a5df4bc1219f47672373",
+      "size": 2089
+    },
+    {
+      "path": "config/dragonminez/tournaments/dmzsparking_cup_5.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/tournaments/dmzsparking_cup_5.json",
+      "sha1": "6e165857a0ae8dfed2a5a5df4bc1219f47672373",
+      "size": 2089
+    },
+    {
+      "path": "config/dragonminez/tournaments/dmzsparking_cup_6.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/tournaments/dmzsparking_cup_6.json",
+      "sha1": "6e165857a0ae8dfed2a5a5df4bc1219f47672373",
+      "size": 2089
+    },
+    {
+      "path": "config/dragonminez/tournaments/dmzsparking_cup_7.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/tournaments/dmzsparking_cup_7.json",
+      "sha1": "6e165857a0ae8dfed2a5a5df4bc1219f47672373",
+      "size": 2089
+    },
+    {
+      "path": "config/dragonminez/tournaments/dmzsparking_cup_8.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/tournaments/dmzsparking_cup_8.json",
+      "sha1": "6e165857a0ae8dfed2a5a5df4bc1219f47672373",
+      "size": 2089
+    },
+    {
+      "path": "config/dragonminez/tournaments/dmzsparking_cup_9.json",
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/dragonminez/tournaments/dmzsparking_cup_9.json",
       "sha1": "6e165857a0ae8dfed2a5a5df4bc1219f47672373",
       "size": 2089
     },
@@ -6672,9 +6954,9 @@
     },
     {
       "path": "config/jade/plugins.json",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/7a3b76dff9ecbb4ad70089923c80d03f8a89df37/dragonmine/archivos/config/jade/plugins.json",
-      "sha1": "315954edd673d10e1261abcbf5f2ad64ef1f21d4",
-      "size": 2436
+      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/5d389fa6054102b1190f2e8c8c2df07debabc170/dragonmine/archivos/config/jade/plugins.json",
+      "sha1": "028da2f6570936fddbb8d500665c3b3620d5ca38",
+      "size": 2342
     },
     {
       "path": "config/jade/sort-order.json",
