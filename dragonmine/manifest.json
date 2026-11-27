@@ -1,14 +1,14 @@
 {
   "id": "dragonmine",
   "name": "DragonMineZ",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "minecraft": "1.20.1",
   "loader": {
     "type": "forge",
     "version": "47.4.10"
   },
   "modsEstrictos": true,
-  "publicado": "2026-11-27T20:12:47.858Z",
+  "publicado": "2026-11-27T20:41:01.592Z",
   "files": [
     {
       "path": "config/ad_astra-client.jsonc",
@@ -25210,24 +25210,6 @@
       "sha1": "042e2ceee33ce0c098c485f1f9e9e821eb9cbb5e",
       "size": 19853,
       "soloSiFalta": true
-    },
-    {
-      "path": "resourcepacks/DMZ HD Plus.zip",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/7a3b76dff9ecbb4ad70089923c80d03f8a89df37/dragonmine/archivos/resourcepacks/DMZ%20HD%20Plus.zip",
-      "sha1": "0d2b7d44bb42915aea58059bfae143fd08bea341",
-      "size": 17582543
-    },
-    {
-      "path": "resourcepacks/DMZ HD Texturepack 2.1.zip",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/7a3b76dff9ecbb4ad70089923c80d03f8a89df37/dragonmine/archivos/resourcepacks/DMZ%20HD%20Texturepack%202.1.zip",
-      "sha1": "7dedd68fb10736044381ba14ef8cf69de4ac41ca",
-      "size": 10481797
-    },
-    {
-      "path": "resourcepacks/Quark Programmer Art.zip",
-      "url": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/7a3b76dff9ecbb4ad70089923c80d03f8a89df37/dragonmine/archivos/resourcepacks/Quark%20Programmer%20Art.zip",
-      "sha1": "2f4cadbbaeffec5f2811b34e053450a930626c15",
-      "size": 266434
     }
   ]
 }
