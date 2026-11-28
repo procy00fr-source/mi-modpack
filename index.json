@@ -8,21 +8,11 @@
   ],
   "modpacks": [
     {
-      "id": "principal",
-      "name": "Minijuegos",
-      "description": "",
-      "version": "1.0.18",
-      "minecraft": "1.21.1",
-      "loader": {
-        "type": "neoforge",
-        "version": "21.1.256"
-      },
-      "manifest": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/902b34047222a07867fa5267892fedb0f795e18c/principal/manifest.json"
-    },
-    {
       "id": "forge-1201",
       "name": "Dinamicas Scarius",
-      "description": "Minecraft",
+      "description": "",
+      "background": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/a57a2bf64a45b6319b814672fedd15e2a6c61271/forge-1201/fondo.jpg",
+      "color": "#f3c63b",
       "version": "1.0.5",
       "minecraft": "1.20.1",
       "loader": {
@@ -32,21 +22,11 @@
       "manifest": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/e4a0355e318f3014c11f80474d198bdd105c0470/forge-1201/manifest.json"
     },
     {
-      "id": "neoforge1211",
-      "name": "Survival W.I.P",
-      "description": "",
-      "version": "1.0.2",
-      "minecraft": "1.21.1",
-      "loader": {
-        "type": "neoforge",
-        "version": "21.1.259"
-      },
-      "manifest": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/1b26b8cc9e51d45c763207ccbced8751d91ac96e/neoforge1211/manifest.json"
-    },
-    {
       "id": "dragonmine",
       "name": "DragonMineZ",
-      "description": "Minecraft",
+      "description": "Entrena, transfórmate y pelea al estilo Dragon Ball.",
+      "background": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/a57a2bf64a45b6319b814672fedd15e2a6c61271/dragonmine/fondo.jpg",
+      "color": "#ff8b1f",
       "version": "1.0.5",
       "minecraft": "1.20.1",
       "loader": {
@@ -54,6 +34,20 @@
         "version": "47.4.10"
       },
       "manifest": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/4c62b2a837d7e6d6b62c8feef9b87f6e5f85d248/dragonmine/manifest.json"
+    },
+    {
+      "id": "minecraft-rebirth",
+      "name": "Minecraft Rebirth",
+      "description": "Survival con jefes, magia, dragones y Create.",
+      "background": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/a57a2bf64a45b6319b814672fedd15e2a6c61271/minecraft-rebirth/fondo.jpg",
+      "color": "#7ccf4f",
+      "version": "1.0.0",
+      "minecraft": "1.20.1",
+      "loader": {
+        "type": "forge",
+        "version": "47.4.10"
+      },
+      "manifest": "https://raw.githubusercontent.com/procy00fr-source/mi-modpack/489b8f20dc36032298e6a90091541566b14500d5/minecraft-rebirth/manifest.json"
     }
   ]
 }
